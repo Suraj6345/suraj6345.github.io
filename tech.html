@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology - ParticleLab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reusing variables from screenshot styles */
+        :root { --primary: #00f2ff; --primary-glow: rgba(0, 242, 255, 0.3); --glass: rgba(20, 20, 25, 0.85); --border: rgba(255, 255, 255, 0.1); --text: #f0f0f0; --text-muted: rgba(255, 255, 255, 0.6); --bg: #050505; }
+        body { margin: 0; background-color: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; line-height: 1.6; }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; background: rgba(5, 5, 5, 0.8); border-bottom: 1px solid var(--border); }
+        .logo { font-size: 1.5rem; font-weight: 700; color: var(--primary); text-shadow: 0 0 15px var(--primary-glow); }
+        .nav-links a { text-decoration: none; color: var(--text-muted); margin-left: 30px; font-size: 0.9rem; }
+        
+        .container { max-width: 800px; margin: 60px auto; padding: 0 20px; }
+        h1 { font-size: 2.5rem; color: #fff; margin-bottom: 30px; }
+        h2 { color: var(--primary); margin-top: 40px; }
+        .ad-square { float: right; width: 300px; height: 250px; background: #0a0a0a; border: 1px dashed #333; margin: 0 0 20px 20px; display: flex; align-items: center; justify-content: center; color: #444; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">PARTICLE LAB</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="tech.html" style="color: var(--primary)">Technology</a>
+            <a href="playground.html" style="color: #fff; border: 1px solid var(--primary); padding: 5px 15px; border-radius: 4px;">Launch</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Behind the Simulation</h1>
+        
+        <div class="ad-square">300x250 AD</div>
+
+        <h2>WebGL & Three.js</h2>
+        <p>The core of ParticleLab is built on Three.js, a cross-browser JavaScript library used to create and display animated 3D computer graphics in a web browser using WebGL. By leveraging the GPU, we can render up to 30,000 particles at 60 frames per second.</p>
+
+        <h2>MediaPipe Gesture Detection</h2>
+        <p>We use Google's MediaPipe Hands, a high-fidelity hand and finger tracking solution. It employs machine learning (ML) to infer 21 3D landmarks of a hand from just a single frame, allowing you to manipulate the particle flow with natural movements.</p>
+
+        <h2>Custom Shaders</h2>
+        <p>To achieve the neon glow and fluid motion, we use GLSL (OpenGL Shading Language). Vertex shaders handle the positioning of each particle based on noise algorithms, while fragment shaders create the soft, glowing aesthetic of the "Point" primitives.</p>
+    </div>
+
+</body>
+</html>
