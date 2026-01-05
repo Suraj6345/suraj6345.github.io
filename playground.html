@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Shiva Engine | Precision Tracking</title>
+    <style>
+        body { margin: 0; overflow: hidden; background: #000; font-family: 'Inter', sans-serif; }
+        
+        /* Navigation Overlay */
+        #ui { 
+            position: absolute; top: 15px; left: 15px; width: 260px; 
+            background: rgba(10, 10, 15, 0.9); border: 1px solid #00f2ff; 
+            padding: 15px; border-radius: 10px; color: #fff; z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+        
+        .status { font-size: 0.65rem; text-transform: uppercase; margin-bottom: 10px; padding: 4px; border: 1px solid #333; text-align: center; }
+        .status.ok { border-color: #00ff00; color: #00ff00; }
+
+        .shape-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; }
+        button { padding: 8px; background: #1a1a1a; border: 1px solid #444; color: #fff; cursor: pointer; font-size: 0.7rem; border-radius: 4px; }
+        button.active { border-color: #00f2ff; background: rgba(0, 242, 255, 0.2); }
+
+        /* Small Debug Window */
+        .preview-wrap {
+            position: absolute; bottom: 15px; right: 15px; 
+            width: 140px; height: 105px; border: 2px solid #00f2ff; 
+            border-radius: 8px; overflow: hidden; z-index: 50;
+        }
+        #input_video { width: 100%; height: 100%; object-fit: cover; transform: scaleX(-1); opacity: 0.7; }
+
+        /* The "Finger Point" Visualizer */
+        #tracker-dot {
+            position: absolute; width: 20px; height: 20px;
+            border: 2px solid #00f2ff; border-radius: 50%;
+            pointer-events: none; z-index: 99; display: none;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 15px #00f2ff;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="tracker-dot"></div>
+
+    <div id="ui">
+        <div id="stat" class="status">Loading AI...</div>
+        <div class="shape-grid">
+            <button onclick="setShape('sphere')" id="btn-sphere" class="active">Sphere</button>
+            <button onclick="setShape('torus')" id="btn-torus">Donut</button>
+            <button onclick="setShape('helix')" id="btn-helix">DNA</button>
+            <button onclick="setShape('galaxy')" id="btn-galaxy">Galaxy</button>
+        </div>
+        <a href="shiva.html" style="display:block; margin-top:10px; color:#666; font-size:0.7rem; text-align:center;">Back to Home</a>
+    </div>
+
+    <div class="preview-wrap">
+        <video id="input_video"></video>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+
+    <script>
+        // 1. Scene Setup
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        camera.position.z = 60;
+
+        const renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        // 2. Particles
+        const count = 10000;
+        const geo = new THREE.BufferGeometry();
+        const pos = new Float32Array(count * 3);
+        const targets = { sphere: new Float32Array(count * 3), torus: new Float32Array(count * 3), helix: new Float32Array(count * 3), galaxy: new Float32Array(count * 3) };
+
+        for(let i=0; i<count; i++) {
+            const i3 = i * 3;
+            // Sphere
+            const theta = Math.random() * Math.PI * 2;
+            const phi = Math.acos(2 * Math.random() - 1);
+            targets.sphere[i3] = 35 * Math.sin(phi) * Math.cos(theta);
+            targets.sphere[i3+1] = 35 * Math.sin(phi) * Math.sin(theta);
+            targets.sphere[i3+2] = 35 * Math.cos(phi);
+            
+            // Helix
+            targets.helix[i3] = 15 * Math.cos(i*0.05);
+            targets.helix[i3+1] = (i*0.02) - 50;
+            targets.helix[i3+2] = 15 * Math.sin(i*0.05);
+
+            // Torus
+            const u = Math.random() * Math.PI * 2;
+            const v = Math.random() * Math.PI * 2;
+            targets.torus[i3] = (30 + 10 * Math.cos(v)) * Math.cos(u);
+            targets.torus[i3+1] = (30 + 10 * Math.cos(v)) * Math.sin(u);
+            targets.torus[i3+2] = 10 * Math.sin(v);
+
+            // Galaxy
+            const r = i * 0.005 * 10;
+            const a = i * 0.05;
+            targets.galaxy[i3] = r * Math.cos(a);
+            targets.galaxy[i3+1] = (Math.random()-0.5) * 10;
+            targets.galaxy[i3+2] = r * Math.sin(a);
+
+            pos[i3] = targets.sphere[i3]; pos[i3+1] = targets.sphere[i3+1]; pos[i3+2] = targets.sphere[i3+2];
+        }
+        geo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+        const mat = new THREE.PointsMaterial({ color: 0x00f2ff, size: 0.6, transparent: true, blending: THREE.AdditiveBlending });
+        const points = new THREE.Points(geo, mat);
+        scene.add(points);
+
+        // 3. Precision Tracking Math
+        let currentMode = 'sphere';
+        const fingerPos = new THREE.Vector3(-1000, -1000, 0); // Start off-screen
+        const dot = document.getElementById('tracker-dot');
+
+        function setShape(m) {
+            currentMode = m;
+            document.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+            document.getElementById('btn-'+m).classList.add('active');
+        }
+
+        // 4. AI Tracking
+        const video = document.getElementById('input_video');
+        const stat = document.getElementById('stat');
+
+        function onResults(results) {
+            if (results.multiHandLandmarks && results.multiHandLandmarks.length > 0) {
+                stat.innerText = "TRACKING ACTIVE"; stat.className = "status ok";
+                const indexFinger = results.multiHandLandmarks[0][8]; // Tip of index finger
+                
+                // Convert Normalized (0 to 1) to Screen Pixels
+                const screenX = (1 - indexFinger.x) * window.innerWidth;
+                const screenY = indexFinger.y * window.innerHeight;
+
+                // Move visual dot
+                dot.style.display = 'block';
+                dot.style.left = screenX + 'px';
+                dot.style.top = screenY + 'px';
+
+                // Convert Screen Pixels to 3D World Coordinates
+                const vector = new THREE.Vector3(
+                    ((screenX / window.innerWidth) * 2 - 1),
+                    (-(screenY / window.innerHeight) * 2 + 1),
+                    0.5
+                );
+                vector.unproject(camera);
+                const dir = vector.sub(camera.position).normalize();
+                const distance = -camera.position.z / dir.z;
+                const pos = camera.position.clone().add(dir.multiplyScalar(distance));
+                
+                fingerPos.copy(pos);
+            } else {
+                stat.innerText = "HAND NOT FOUND"; stat.className = "status";
+                dot.style.display = 'none';
+                fingerPos.set(-1000, -1000, 0);
+            }
+        }
+
+        const hands = new Hands({locateFile: (file) => `https://cdn.jsdelivr.net/npm/@mediapipe/hands/${file}`});
+        hands.setOptions({ maxNumHands: 1, modelComplexity: 1, minDetectionConfidence: 0.6 });
+        hands.onResults(onResults);
+
+        const cam = new Camera(video, { onFrame: async () => { await hands.send({image: video}); }, width: 640, height: 480 });
+        cam.start();
+
+        // 5. Animation
+        function animate() {
+            requestAnimationFrame(animate);
+            const positions = points.geometry.attributes.position.array;
+            const targetData = targets[currentMode];
+
+            for(let i=0; i<count; i++) {
+                const i3 = i * 3;
+                // Move towards home
+                positions[i3] += (targetData[i3] - positions[i3]) * 0.05;
+                positions[i3+1] += (targetData[i3+1] - positions[i3+1]) * 0.05;
+                positions[i3+2] += (targetData[i3+2] - positions[i3+2]) * 0.05;
+
+                // Repel from finger
+                const dx = positions[i3] - fingerPos.x;
+                const dy = positions[i3+1] - fingerPos.y;
+                const dist = Math.sqrt(dx*dx + dy*dy);
+                if(dist < 15) {
+                    const force = (15 - dist) * 1.5;
+                    positions[i3] += (dx/dist) * force;
+                    positions[i3+1] += (dy/dist) * force;
+                }
+            }
+            points.geometry.attributes.position.needsUpdate = true;
+            points.rotation.y += 0.002;
+            renderer.render(scene, camera);
+        }
+        animate();
+
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+    </script>
+</body>
+</html>

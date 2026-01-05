@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch 6: Refraction of Light | MituEdu Pro</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        .search-container {
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+#searchInput {
+    width: 100%;
+    max-width: 600px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#searchInput:focus {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: var(--primary-accent);
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.3);
+}
+
+#searchInput::placeholder {
+    color: var(--text-dim);
+}
+        :root {
+            --primary-accent: #a855f7; /* Purple for Light/Optics */
+            --secondary-accent: #6366f1;
+            --bg-dark: #0f172a;
+            --card-bg: #1e293b;
+            --text-bright: #f8fafc;
+            --text-dim: #94a3b8;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-bright);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .header-section {
+            background: linear-gradient(135deg, var(--primary-accent), var(--secondary-accent));
+            padding: 50px 20px;
+            border-radius: 24px;
+            text-align: center;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(168, 85, 247, 0.3);
+        }
+
+        .header-section h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: -1px;
+        }
+
+        .nav-back {
+            display: inline-block;
+            color: var(--text-bright);
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            opacity: 0.7;
+            transition: opacity 0.2s;
+        }
+
+        .nav-back:hover { opacity: 1; }
+
+        .q-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .q-card:hover {
+            transform: scale(1.01);
+            border-color: var(--primary-accent);
+        }
+
+        .q-number {
+            color: var(--primary-accent);
+            font-weight: 800;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        h3 {
+            margin: 0 0 20px 0;
+            font-size: 1.4rem;
+            color: var(--text-bright);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 15px;
+        }
+
+        .point-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .point-item {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 12px;
+            color: var(--text-dim);
+            font-size: 1.05rem;
+        }
+
+        .point-item::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--primary-accent);
+            font-weight: bold;
+        }
+
+        .image-placeholder {
+            background: rgba(0, 0, 0, 0.2);
+            border: 2px dashed rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: var(--primary-accent);
+            font-style: italic;
+        }
+
+        @media (max-width: 600px) {
+            .header-section h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="index.html" class="nav-back">← Back to Dashboard</a>
+
+        <div class="header-section">
+            <div class="search-container">
+    <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Search for questions or keywords...">
+</div>
+            <h1>Chapter 06: Refraction of Light</h1>
+            <p>Complete Point-Wise Study Guide | SSC Science 1</p>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 01</span>
+            <h3>Define Refraction of Light.</h3>
+            <div class="image-placeholder"></div>
+            <div class="point-list">
+                <div class="point-item">Light changes its direction when going from one transparent medium to another.</div>
+                <div class="point-item">This change in the direction of propagation is called refraction.</div>
+                <div class="point-item">It occurs because the velocity of light is different in different media.</div>
+                <div class="point-item">Refraction only takes place when light enters the second medium at an angle.</div>
+                <div class="point-item">If light enters a medium perpendicularly, it does not change its direction.</div>
+                <div class="point-item">Refraction is the reason behind many optical illusions like the bending of a stick in water.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 02</span>
+            <h3>State the first law of refraction.</h3>
+            <div class="point-list">
+                <div class="point-item">The incident ray and the refracted ray are on opposite sides of the normal.</div>
+                <div class="point-item">The incident ray, the refracted ray, and the normal all lie in the same plane.</div>
+                <div class="point-item">This plane is perpendicular to the interface of the two transparent media.</div>
+                <div class="point-item">This law ensures the geometric consistency of light paths across boundaries.</div>
+                <div class="point-item">It applies to all types of transparent interfaces, whether flat or curved.</div>
+                <div class="point-item">The normal is an imaginary line drawn perpendicular to the point of incidence.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 03</span>
+            <h3>State the second law of refraction (Snell's Law).</h3>
+            <div class="point-list">
+                <div class="point-item">For a given pair of media, the ratio of $\sin i$ to $\sin r$ is constant.</div>
+                <div class="point-item">Here, 'i' is the angle of incidence and 'r' is the angle of refraction.</div>
+                <div class="point-item">This constant value is called the refractive index of the second medium.</div>
+                <div class="point-item">The formula is expressed mathematically as $n = \sin i / \sin r$.</div>
+                <div class="point-item">This law is not applicable for light incident normally (where $i = 0$).</div>
+                <div class="point-item">It was experimentally derived by Willebrord Snell in the 17th century.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 04</span>
+            <h3>Define Absolute Refractive Index.</h3>
+            <div class="point-list">
+                <div class="point-item">The refractive index of a medium with respect to a vacuum is called absolute.</div>
+                <div class="point-item">It is calculated as the ratio of the speed of light in vacuum to the speed in the medium.</div>
+                <div class="point-item">The symbol used for refractive index is 'n' or '$\mu$'.</div>
+                <div class="point-item">Since it is a ratio of similar quantities, it has no units.</div>
+                <div class="point-item">The absolute refractive index of a vacuum is exactly 1.</div>
+                <div class="point-item">For all other transparent materials, the absolute refractive index is greater than 1.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 05</span>
+            <h3>How does the velocity of light change in different media?</h3>
+            <div class="point-list">
+                <div class="point-item">Light travels at its maximum speed of $3 \times 10^8$ m/s in a vacuum.</div>
+                <div class="point-item">In an optically denser medium, the velocity of light decreases.</div>
+                <div class="point-item">In an optically rarer medium, the velocity of light increases.</div>
+                <div class="point-item">The change in velocity is the fundamental cause of the refraction phenomenon.</div>
+                <div class="point-item">Light slows down in water compared to air because water is denser.</div>
+                <div class="point-item">Velocity is inversely proportional to the refractive index of the medium.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 06</span>
+            <h3>Explain the behavior of light moving from a rarer to a denser medium.</h3>
+            <div class="image-placeholder"></div>
+            <div class="point-list">
+                <div class="point-item">Air is considered a rarer medium, while glass is a denser medium.</div>
+                <div class="point-item">When light enters a denser medium, its speed decreases significantly.</div>
+                <div class="point-item">Due to this reduction in speed, the light ray bends towards the normal.</div>
+                <div class="point-item">In this case, the angle of incidence ($i$) is greater than the angle of refraction ($r$).</div>
+                <div class="point-item">The refracted ray moves closer to the perpendicular line at the point of incidence.</div>
+                <div class="point-item">This bending is predictable based on the refractive index of the denser medium.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 07</span>
+            <h3>Explain the behavior of light moving from a denser to a rarer medium.</h3>
+            <div class="image-placeholder"></div>
+            <div class="point-list">
+                <div class="point-item">Glass is a denser medium, while air is a rarer medium for light.</div>
+                <div class="point-item">When light enters a rarer medium, its speed increases.</div>
+                <div class="point-item">Due to this increase in speed, the light ray bends away from the normal.</div>
+                <div class="point-item">In this case, the angle of incidence ($i$) is smaller than the angle of refraction ($r$).</div>
+                <div class="point-item">The light ray moves further from the perpendicular line at the interface.</div>
+                <div class="point-item">This is the reason objects inside water appear closer to the surface.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 08</span>
+            <h3>What happens when a light ray is incident normally?</h3>
+            <div class="point-list">
+                <div class="point-item">Normal incidence means the light ray hits the surface at an angle of 90 degrees.</div>
+                <div class="point-item">In this case, the angle of incidence ($i$) is exactly 0 degrees.</div>
+                <div class="point-item">The light ray does not change its direction as it enters the second medium.</div>
+                <div class="point-item">Therefore, the angle of refraction ($r$) is also 0 degrees.</div>
+                <div class="point-item">Although the direction remains the same, the velocity of light still changes.</div>
+                <div class="point-item">Snell's law cannot be used for calculation in this specific scenario.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 09</span>
+            <h3>Why does a pencil appear bent when dipped in water?</h3>
+            <div class="image-placeholder"></div>
+            <div class="point-list">
+                <div class="point-item">Light rays coming from the submerged part of the pencil travel from water to air.</div>
+                <div class="point-item">Water is a denser medium, and air is a rarer medium.</div>
+                <div class="point-item">As the rays exit the water, they bend away from the normal.</div>
+                <div class="point-item">These refracted rays appear to come from a point slightly above the actual position.</div>
+                <div class="point-item">This shift creates a virtual image of the pencil that is higher than reality.</div>
+                <div class="point-item">The combination of the real part and the virtual part creates the "bent" look.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 10</span>
+            <h3>Explain the phenomenon of 'Apparent Depth'.</h3>
+            <div class="point-list">
+                <div class="point-item">Objects underwater appear to be at a shallower depth than they actually are.</div>
+                <div class="point-item">This is caused by the refraction of light at the water-air interface.</div>
+                <div class="point-item">Light rays from the object bend away from the normal upon entering the air.</div>
+                <div class="point-item">To our eyes, these rays seem to originate from a point closer to the surface.</div>
+                <div class="point-item">The depth we see is called the apparent depth, while the true depth is real depth.</div>
+                <div class="point-item">Refractive index can be calculated as: $\text{Real Depth} / \text{Apparent Depth}$.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 11</span>
+            <h3>Why do stars twinkle?</h3>
+            <div class="image-placeholder">[Image showing atmospheric refraction causing stars to twinkle]</div>
+            <div class="point-list">
+                <div class="point-item">Stars are point sources of light located very far away from the Earth.</div>
+                <div class="point-item">Their light passes through various layers of the atmosphere with different densities.</div>
+                <div class="point-item">The refractive index of these layers keeps changing due to air motion and temperature.</div>
+                <div class="point-item">This causes the light to refract continuously and change its path.</div>
+                <div class="point-item">The apparent position of the star fluctuates slightly and its brightness varies.</div>
+                <div class="point-item">This constant fluctuation in position and intensity is perceived as twinkling.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 12</span>
+            <h3>Why do planets not twinkle?</h3>
+            <div class="point-list">
+                <div class="point-item">Planets are much closer to the Earth compared to stars.</div>
+                <div class="point-item">They do not appear as point sources but as a collection of many point sources.</div>
+                <div class="point-item">Light from different points on a planet undergoes atmospheric refraction.</div>
+                <div class="point-item">Some points may appear brighter while others appear dimmer at the same time.</div>
+                <div class="point-item">The average brightness and position of the planet remain steady.</div>
+                <div class="point-item">Therefore, the twinkling effect is nullified and they appear to shine steadily.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 13</span>
+            <h3>Explain Advanced Sunrise and Delayed Sunset.</h3>
+            <div class="image-placeholder"></div>
+            <div class="point-list">
+                <div class="point-item">We can see the sun slightly before it actually rises above the horizon.</div>
+                <div class="point-item">This is due to atmospheric refraction of sunlight as it enters Earth's atmosphere.</div>
+                <div class="point-item">The air layers near the Earth are denser than those higher up.</div>
+                <div class="point-item">Light from the sun below the horizon bends towards the normal as it reaches our eyes.</div>
+                <div class="point-item">This makes the sun appear to be above the horizon when it is still below.</div>
+                <div class="point-item">A similar effect occurs at sunset, making the day about 4 minutes longer.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 14</span>
+            <h3>What is Dispersion of Light?</h3>
+            <div class="image-placeholder"></div>
+            <div class="point-list">
+                <div class="point-item">Dispersion is the process of splitting a beam of white light into its component colors.</div>
+                <div class="point-item">This happens when white light passes through a transparent medium like a glass prism.</div>
+                <div class="point-item">White light is composed of seven colors: Red, Orange, Yellow, Green, Blue, Indigo, and Violet.</div>
+                <div class="point-item">Different colors have different wavelengths and travel at different speeds in glass.</div>
+                <div class="point-item">Each color bends at a different angle depending on its specific refractive index.</div>
+                <div class="point-item">Violet light bends the most, while Red light bends the least during dispersion.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 15</span>
+            <h3>Describe the spectrum of white light.</h3>
+            <div class="point-list">
+                <div class="point-item">The band of seven colors obtained after dispersion is called a spectrum.</div>
+                <div class="point-item">The order of colors from the bottom to the top is VIBGYOR.</div>
+                <div class="point-item">Violet (V) is at the bottom as it undergoes maximum refraction.</div>
+                <div class="point-item">Red (R) is at the top as it undergoes minimum refraction.</div>
+                <div class="point-item">Each color in the spectrum corresponds to a specific range of wavelengths.</div>
+                <div class="point-item">Sir Isaac Newton was the first to use a prism to obtain the spectrum.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 16</span>
+            <h3>Why does Violet light bend more than Red light in a prism?</h3>
+            <div class="point-list">
+                <div class="point-item">The refractive index of glass is different for different colors of light.</div>
+                <div class="point-item">It is maximum for violet light and minimum for red light.</div>
+                <div class="point-item">Velocity of light is inversely proportional to the refractive index.</div>
+                <div class="point-item">Violet light travels slower in glass, so it deviates or bends the most.</div>
+                <div class="point-item">Red light travels faster in glass, so it deviates or bends the least.</div>
+                <div class="point-item">This difference in deviation is what causes the separation of colors.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 17</span>
+            <h3>What is Partial Reflection?</h3>
+            <div class="point-list">
+                <div class="point-item">When light travels from a denser to a rarer medium, part of it enters the second medium.</div>
+                <div class="point-item">This part follows the laws of refraction and is called refracted light.</div>
+                <div class="point-item">However, a small portion of the incident light turns back into the first medium.</div>
+                <div class="point-item">This turning back of light into the original medium is called partial reflection.</div>
+                <div class="point-item">This happens even if the medium is transparent, like water or glass.</div>
+                <div class="point-item">The intensity of reflected light increases as the angle of incidence increases.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 18</span>
+            <h3>Define Total Internal Reflection.</h3>
+            <div class="image-placeholder">[Image showing total internal reflection at angles greater than the critical angle]</div>
+            <div class="point-list">
+                <div class="point-item">This occurs only when light travels from a denser medium to a rarer medium.</div>
+                <div class="point-item">As the angle of incidence increases, the angle of refraction also increases.</div>
+                <div class="point-item">At a certain angle, the refracted ray travels along the interface ($r = 90^{\circ}$).</div>
+                <div class="point-item">If the incidence angle is increased further, light does not enter the rarer medium.</div>
+                <div class="point-item">Instead, the entire light ray is reflected back into the denser medium.</div>
+                <div class="point-item">This complete reflection of light is known as total internal reflection.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 19</span>
+            <h3>Define the Critical Angle.</h3>
+            <div class="point-list">
+                <div class="point-item">The critical angle is a specific angle of incidence in a denser medium.</div>
+                <div class="point-item">For this angle, the angle of refraction in the rarer medium is exactly 90 degrees.</div>
+                <div class="point-item">At the critical angle, the refracted ray grazes the surface separating the two media.</div>
+                <div class="point-item">The value of the critical angle depends on the refractive indices of both media.</div>
+                <div class="point-item">If the angle of incidence is less than the critical angle, refraction occurs.</div>
+                <div class="point-item">If the angle of incidence is greater than the critical angle, total internal reflection occurs.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 20</span>
+            <h3>Explain the formation of a Rainbow.</h3>
+            <div class="image-placeholder"></div>
+            <div class="point-list">
+                <div class="point-item">A rainbow is a natural spectrum appearing in the sky after rain.</div>
+                <div class="point-item">It is produced by the combined effect of dispersion, refraction, and internal reflection.</div>
+                <div class="point-item">Tiny water droplets in the air act like small glass prisms.</div>
+                <div class="point-item">Sunlight enters the droplet and undergoes refraction and dispersion first.</div>
+                <div class="point-item">Then, it undergoes total internal reflection inside the back of the droplet.</div>
+                <div class="point-item">Finally, light is refracted again as it exits the droplet toward our eyes.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 21</span>
+            <h3>What is a Mirage?</h3>
+            <div class="image-placeholder"></div>
+            <div class="point-list">
+                <div class="point-item">A mirage is an optical illusion often seen on hot roads or in deserts.</div>
+                <div class="point-item">It happens because the air layer near the hot ground is hotter and less dense.</div>
+                <div class="point-item">The refractive index of air increases with height above the ground.</div>
+                <div class="point-item">Light rays from a distant object (like a tree) bend upwards due to refraction.</div>
+                <div class="point-item">This creates a virtual, inverted image of the object on the ground.</div>
+                <div class="point-item">It appears as if there is a pool of water reflecting the object.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 22</span>
+            <h3>How is refractive index related to the speed of light?</h3>
+            <div class="point-list">
+                <div class="point-item">The refractive index ($n$) is a measure of how much light slows down in a medium.</div>
+                <div class="point-item">The formula is: $n = v_1 / v_2$, where $v_1$ is speed in medium 1 and $v_2$ in medium 2.</div>
+                <div class="point-item">For absolute refractive index, $v_1$ is the speed of light in vacuum ($c$).</div>
+                <div class="point-item">The higher the refractive index, the lower the speed of light in that medium.</div>
+                <div class="point-item">Light travels at $2.25 \times 10^8$ m/s in water, which has a refractive index of 1.33.</div>
+                <div class="point-item">Light travels at $2 \times 10^8$ m/s in glass, which has a refractive index of 1.5.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 23</span>
+            <h3>Define wavelength and its relation to color.</h3>
+            <div class="point-list">
+                <div class="point-item">Wavelength is the distance between two consecutive peaks of a light wave.</div>
+                <div class="point-item">Our eyes perceive different wavelengths of light as different colors.</div>
+                <div class="point-item">The visible spectrum ranges from about 400 nm to 700 nm.</div>
+                <div class="point-item">Red light has the longest wavelength, which is approximately 700 nm.</div>
+                <div class="point-item">Violet light has the shortest wavelength, which is approximately 400 nm.</div>
+                <div class="point-item">$1 \text{ nm}$ (nanometer) is equal to $10^{-9}$ meters.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 24</span>
+            <h3>What are the conditions for Total Internal Reflection?</h3>
+            <div class="point-list">
+                <div class="point-item">The light ray must travel from an optically denser medium to a rarer medium.</div>
+                <div class="point-item">The angle of incidence must be greater than the critical angle for that pair of media.</div>
+                <div class="point-item">The interface between the two media must be transparent.</div>
+                <div class="point-item">Total internal reflection cannot happen if light travels from rarer to denser.</div>
+                <div class="point-item">The intensity of the reflected ray is 100%, which is better than silvered mirrors.</div>
+                <div class="point-item">This principle is used in optical fibers for high-speed data transmission.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 25</span>
+            <h3>Explain the concept of 'Optical Density'.</h3>
+            <div class="point-list">
+                <div class="point-item">Optical density is the ability of a medium to refract or bend light.</div>
+                <div class="point-item">It is not the same as physical mass density.</div>
+                <div class="point-item">A medium with a higher refractive index is said to be optically denser.</div>
+                <div class="point-item">A medium with a lower refractive index is said to be optically rarer.</div>
+                <div class="point-item">For example, kerosene has a higher refractive index than water but lower mass density.</div>
+                <div class="point-item">Optical density determines the velocity of light within that material.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 26</span>
+            <h3>Why do we see a spectrum when using a CD or a soap bubble?</h3>
+            <div class="point-list">
+                <div class="point-item">These effects are often due to the interference or dispersion of light.</div>
+                <div class="point-item">In a soap bubble, light reflects from both the inner and outer surfaces.</div>
+                <div class="point-item">In a CD, the fine grooves act like a diffraction grating.</div>
+                <div class="point-item">These processes separate white light into its component wavelengths.</div>
+                <div class="point-item">The result is a rainbow-like pattern of colors visible on the surface.</div>
+                <div class="point-item">This proves that white light is a mixture of multiple colors.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 27</span>
+            <h3>What is the relation between frequency and refraction?</h3>
+            <div class="point-list">
+                <div class="point-item">The frequency of a light wave is determined by its source.</div>
+                <div class="point-item">When light moves from one medium to another, its frequency remains constant.</div>
+                <div class="point-item">However, the wavelength and velocity of the light change.</div>
+                <div class="point-item">The formula connecting them is $v = f \times \lambda$, where $f$ is frequency.</div>
+                <div class="point-item">Since $f$ is constant, velocity ($v$) is directly proportional to wavelength ($\lambda$).</div>
+                <div class="point-item">This constant frequency is why the color of light does not change during refraction.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 28</span>
+            <h3>Why does the sun appear oval during sunrise and sunset?</h3>
+            <div class="point-list">
+                <div class="point-item">This is caused by atmospheric refraction near the horizon.</div>
+                <div class="point-item">Light rays from the lower edge of the sun bend more than rays from the upper edge.</div>
+                <div class="point-item">This is because the air is denser closer to the Earth's surface.</div>
+                <div class="point-item">The vertical diameter of the sun appears shortened due to this uneven bending.</div>
+                <div class="point-item">The horizontal diameter remains relatively unchanged.</div>
+                <div class="point-item">This results in the sun appearing flattened or oval instead of perfectly circular.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 29</span>
+            <h3>Explain how refractive index depends on temperature.</h3>
+            <div class="point-list">
+                <div class="point-item">As the temperature of air increases, its density decreases.</div>
+                <div class="point-item">Hotter air has a lower refractive index compared to cooler air.</div>
+                <div class="point-item">This creates a gradient of refractive index in the atmosphere.</div>
+                <div class="point-item">This temperature variation is the primary cause of mirages.</div>
+                <div class="point-item">It also contributes to the "shimmering" effect seen above a campfire.</div>
+                <div class="point-item">Light rays curve as they pass through layers of air with different temperatures.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 30</span>
+            <h3>What is a prism and its role in refraction?</h3>
+            <div class="image-placeholder"></div>
+            <div class="point-list">
+                <div class="point-item">A prism is a transparent object with at least two inclined polished surfaces.</div>
+                <div class="point-item">It is typically made of glass and has a triangular cross-section.</div>
+                <div class="point-item">When light enters a prism, it refracts at the first surface (air to glass).</div>
+                <div class="point-item">It then travels through the glass and refracts again at the second surface (glass to air).</div>
+                <div class="point-item">The total deviation of the light ray depends on the angle of the prism.</div>
+                <div class="point-item">It is the primary tool used to study dispersion and the spectrum of light.</div>
+            </div>
+        </div>
+
+    </div>
+<script>
+function searchFunction() {
+    // 1. Get the text from the search bar
+    let input = document.getElementById('searchInput');
+    let filter = input.value.toUpperCase();
+    
+    // 2. Get all the Question Cards
+    let cards = document.getElementsByClassName('q-card');
+
+    // 3. Loop through cards and hide those that don't match
+    for (let i = 0; i < cards.length; i++) {
+        let textValue = cards[i].textContent || cards[i].innerText;
+        if (textValue.toUpperCase().indexOf(filter) > -1) {
+            cards[i].style.display = ""; // Show
+        } else {
+            cards[i].style.display = "none"; // Hide
+        }
+    }
+}
+</script>
+</body>
+</html>

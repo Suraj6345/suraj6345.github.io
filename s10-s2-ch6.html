@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSC Science 2 - Chapter 6: Animal Classification (1-100)</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-color: #c9d1d9;
+            --accent-color: #58a6ff; 
+            --border-color: #30363d;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            background-color: var(--bg-color);
+            padding: 10px 0;
+            z-index: 1000;
+            border-bottom: 2px solid var(--border-color);
+            margin-bottom: 30px;
+        }
+
+        #search-container {
+            width: 100%;
+            display: flex;
+            gap: 10px;
+        }
+
+        #search-input {
+            flex-grow: 1;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            background: var(--card-bg);
+            color: white;
+            font-size: 1rem;
+        }
+
+        .q-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+
+        .q-number {
+            color: var(--accent-color);
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            display: block;
+            margin-bottom: 12px;
+        }
+
+        h3 {
+            color: #ffffff;
+            margin-top: 0;
+            font-size: 1.4rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+        }
+
+        .point-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .point-item {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .point-item::before {
+            content: '🔹';
+            position: absolute;
+            left: 0;
+            font-size: 0.9rem;
+        }
+
+        .image-placeholder {
+            margin: 15px 0;
+            font-style: italic;
+            color: #8b949e;
+            display: block;
+            border-left: 3px solid var(--accent-color);
+            padding-left: 10px;
+        }
+
+        h1 { text-align: center; color: var(--accent-color); margin-bottom: 40px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Search questions or keywords..." onkeyup="filterQuestions()">
+        </div>
+    </header>
+
+    <h1>Chapter 6: Animal Classification</h1>
+
+    <div class="q-card">
+        <span class="q-number">Question 1</span>
+        <h3>Why is the classification of animals necessary?</h3>
+        <div class="point-list">
+            <div class="point-item">There are millions of animal species on Earth, making individual study impossible.</div>
+            <div class="point-item">Classification helps in identifying animals with great accuracy and ease.</div>
+            <div class="point-item">It helps in understanding the relationship between different animal groups.</div>
+            <div class="point-item">It provides information about the evolution of animals from simple to complex.</div>
+            <div class="point-item">It helps in the systematic study of the entire animal kingdom.</div>
+            <div class="point-item">A single group study can give a general idea about all animals in that group.</div>
+        </div>
+    </div>
+    <div class="q-card">
+        <span class="q-number">Question 2</span>
+        <h3>Who was the first to classify animals and what was his method?</h3>
+        <div class="point-list">
+            <div class="point-item">The Greek philosopher Aristotle was the first to classify animals.</div>
+            <div class="point-item">He used a "Artificial Method" of classification based on external criteria.</div>
+            <div class="point-item">He classified animals based on their habitat (land, water, or air).</div>
+            <div class="point-item">He also considered their body size and habits for classification.</div>
+            <div class="point-item">Other scientists like Pliny and John Ray also followed similar artificial methods.</div>
+            <div class="point-item">Linnaeus later introduced more refined artificial systems before the natural system.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 3</span>
+        <h3>What is the "Natural Method" of animal classification?</h3>
+        <div class="point-list">
+            <div class="point-item">This method is based on internal and objective biological criteria.</div>
+            <div class="point-item">It considers the type of cells (prokaryotic or eukaryotic) and body structure.</div>
+            <div class="point-item">It takes into account the chemical composition of the animal body.</div>
+            <div class="point-item">Chromosomal similarities and differences are studied in this method.</div>
+            <div class="point-item">It reflects the true evolutionary relationships between different organisms.</div>
+            <div class="point-item">This method is widely accepted in modern biological sciences.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 4</span>
+        <h3>Name the five kingdoms proposed by Robert Whittaker.</h3>
+        <div class="point-list">
+            <div class="point-item">Kingdom Monera includes all unicellular prokaryotic organisms like bacteria.</div>
+            <div class="point-item">Kingdom Protista consists of unicellular eukaryotic organisms like Amoeba.</div>
+            <div class="point-item">Kingdom Fungi includes multicellular decomposers like mushrooms and molds.</div>
+            <div class="point-item">Kingdom Plantae consists of multicellular autotrophic organisms (plants).</div>
+            <div class="point-item">Kingdom Animalia includes all multicellular heterotrophic organisms (animals).</div>
+            <div class="point-item">This system is the basis for modern hierarchical classification in biology.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 5</span>
+        <h3>Distinguish between Non-Chordates and Chordates.</h3>
+        <div class="image-placeholder"></div>
+        <div class="point-list">
+            <div class="point-item">Non-chordates lack a supporting rod called the notochord in their body.</div>
+            <div class="point-item">In chordates, the notochord is present at least during some stage of life.</div>
+            <div class="point-item">Pharyngeal gill slits are absent in all non-chordates.</div>
+            <div class="point-item">Chordates possess pharyngeal gill slits or lungs for respiration.</div>
+            <div class="point-item">In non-chordates, the nerve cord is ventral, solid, and usually paired.</div>
+            <div class="point-item">In chordates, the nerve cord is dorsal, hollow, and single.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 6</span>
+        <h3>What are the traditional sub-kingdoms of Kingdom Animalia?</h3>
+        <div class="point-list">
+            <div class="point-item">The kingdom is divided into Sub-kingdom Non-chordata and Sub-kingdom Chordata.</div>
+            <div class="point-item">Non-chordata includes ten phyla from Porifera to Hemichordata.</div>
+            <div class="point-item">Chordata includes animals that possess a notochord during development.</div>
+            <div class="point-item">This division is based on the presence or absence of a supporting rod.</div>
+            <div class="point-item">Non-chordates are considered more primitive in terms of evolution.</div>
+            <div class="point-item">Chordates are considered more advanced with complex organ systems.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 7</span>
+        <h3>List the ten phyla of Sub-kingdom Non-chordata.</h3>
+        <div class="point-list">
+            <div class="point-item">Phylum Porifera consists of pore-bearing animals like sponges.</div>
+            <div class="point-item">Phylum Coelenterata (Cnidaria) includes animals like jellyfish and hydra.</div>
+            <div class="point-item">Phylum Platyhelminthes consists of flatworms like tapeworms.</div>
+            <div class="point-item">Phylum Aschelminthes includes roundworms like Ascaris.</div>
+            <div class="point-item">Phylum Annelida consists of segmented worms like earthworms.</div>
+            <div class="point-item">Phylum Arthropoda, Mollusca, Echinodermata, Hemichordata, and Protozoa (traditional) follow.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 8</span>
+        <h3>What is "Protoplasmic Grade" of organization?</h3>
+        <div class="point-list">
+            <div class="point-item">This grade is found in unicellular organisms like Amoeba and Paramecium.</div>
+            <div class="point-item">All life functions are performed within a single cell.</div>
+            <div class="point-item">There is no division of labor between different cells.</div>
+            <div class="point-item">Various organelles perform functions similar to organs in multicellular animals.</div>
+            <div class="point-item">This is considered the simplest level of biological organization.</div>
+            <div class="point-item">Organisms belonging to Kingdom Protista exhibit this grade of organization.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 9</span>
+        <h3>Explain the "Cellular Grade" of organization.</h3>
+        <div class="point-list">
+            <div class="point-item">This grade is observed in the most primitive multicellular animals.</div>
+            <div class="point-item">Although many cells are present, they do not form tissues.</div>
+            <div class="point-item">Division of labor exists between different types of specialized cells.</div>
+            <div class="point-item">This organization is characteristic of animals in Phylum Porifera (Sponges).</div>
+            <div class="point-item">Cells are loosely held together to form a functioning body unit.</div>
+            <div class="point-item">It is an evolutionary step up from the protoplasmic grade of organization.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 10</span>
+        <h3>What is "Cell-Tissue Grade" of organization?</h3>
+        <div class="point-list">
+            <div class="point-item">In this grade, cells coordinate to form specific tissues.</div>
+            <div class="point-item">These tissues perform various physiological functions like movement or digestion.</div>
+            <div class="point-item">However, these tissues do not combine to form distinct organs.</div>
+            <div class="point-item">This grade is found in animals belonging to Phylum Coelenterata (Cnidaria).</div>
+            <div class="point-item">Nerve nets and muscle layers begin to appear at this stage.</div>
+            <div class="point-item">It represents the beginning of complex coordination in the animal kingdom.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 11</span>
+        <h3>Describe "Tissue-Organ Grade" of organization.</h3>
+        <div class="point-list">
+            <div class="point-item">In this grade, different tissues combine to form specialized organs.</div>
+            <div class="point-item">However, these organs do not work together as complete organ systems.</div>
+            <div class="point-item">This level of organization is seen in Phylum Platyhelminthes (Flatworms).</div>
+            <div class="point-item">For example, they have a distinct excretory system with flame cells.</div>
+            <div class="point-item">This grade allows for more efficient performance of specific body functions.</div>
+            <div class="point-item">It marks a transition towards the highly complex organ-system level.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 12</span>
+        <h3>What is "Organ-System Grade" of organization?</h3>
+        <div class="point-list">
+            <div class="point-item">This is the most complex level of organization in animals.</div>
+            <div class="point-item">Different organs coordinate to form functional systems like digestive or circulatory.</div>
+            <div class="point-item">Each system performs a major life process for the entire organism.</div>
+            <div class="point-item">This grade is found in all higher phyla from Annelida to Chordata.</div>
+            <div class="point-item">It allows for high levels of physical activity and metabolic efficiency.</div>
+            <div class="point-item">Humans and all vertebrate animals exhibit this grade of organization.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 13</span>
+        <h3>Explain the concept of Body Symmetry.</h3>
+        <div class="image-placeholder"></div>
+        <div class="point-list">
+            <div class="point-item">Body symmetry refers to the balance of body parts on opposite sides of an axis.</div>
+            <div class="point-item">If an animal cannot be divided into two equal halves, it is Asymmetrical.</div>
+            <div class="point-item">If it can be divided into equal halves through any plane passing through the center, it is Radial.</div>
+            <div class="point-item">If it can be divided into equal halves through only one specific plane, it is Bilateral.</div>
+            <div class="point-item">Symmetry is used as a major criterion for modern animal classification.</div>
+            <div class="point-item">Most advanced animals exhibit bilateral symmetry for better movement.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 14</span>
+        <h3>What are Asymmetrical animals?</h3>
+        <div class="point-list">
+            <div class="point-item">These animals have no definite shape or central axis for division.</div>
+            <div class="point-item">There is no plane that can divide the body into two identical halves.</div>
+            <div class="point-item">This type of body plan is found in some species of sponges.</div>
+            <div class="point-item">Amoeba is also considered asymmetrical at the unicellular level.</div>
+            <div class="point-item">It is usually found in organisms that are sessile or have irregular growth.</div>
+            <div class="point-item">Asymmetry is considered the most primitive condition of the body plan.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 15</span>
+        <h3>Describe Radial Symmetry.</h3>
+        <div class="point-list">
+            <div class="point-item">In this symmetry, the body can be divided into two equal halves by any plane.</div>
+            <div class="point-item">The plane must pass through the central imaginary axis of the body.</div>
+            <div class="point-item">This is commonly seen in circular or star-shaped animals.</div>
+            <div class="point-item">Examples include Hydra, Jellyfish, and Starfish (adult stage).</div>
+            <div class="point-item">It is advantageous for animals that receive stimuli from all directions.</div>
+            <div class="point-item">Most radially symmetrical animals are aquatic and slow-moving or sessile.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 16</span>
+        <h3>What is Bilateral Symmetry?</h3>
+        <div class="point-list">
+            <div class="point-item">In this symmetry, there is only one imaginary plane of division.</div>
+            <div class="point-item">This plane divides the body into identical left and right halves.</div>
+            <div class="point-item">Most animals, including insects, fish, and humans, exhibit this symmetry.</div>
+            <div class="point-item">It is associated with "cephalization" or the development of a distinct head.</div>
+            <div class="point-item">It allows for streamlined movement and better directional sensing.</div>
+            <div class="point-item">This is the most common type of symmetry in the animal kingdom.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 17</span>
+        <h3>Explain Diploblastic animals.</h3>
+        <div class="point-list">
+            <div class="point-item">These animals develop from only two embryonic germ layers.</div>
+            <div class="point-item">The two layers are the outer Ectoderm and the inner Endoderm.</div>
+            <div class="point-item">There is no middle Mesoderm layer present in these animals.</div>
+            <div class="point-item">Instead, a non-cellular jelly-like layer called mesoglea may be present.</div>
+            <div class="point-item">Animals in Phylum Coelenterata (Cnidaria) are diploblastic.</div>
+            <div class="point-item">This is a simpler developmental plan compared to higher animals.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 18</span>
+        <h3>What are Triploblastic animals?</h3>
+        <div class="point-list">
+            <div class="point-item">These animals develop from three distinct embryonic germ layers.</div>
+            <div class="point-item">The layers are the Ectoderm, Mesoderm (middle), and Endoderm.</div>
+            <div class="point-item">The Mesoderm gives rise to muscles, bones, and the circulatory system.</div>
+            <div class="point-item">All animals from Phylum Platyhelminthes to Chordata are triploblastic.</div>
+            <div class="point-item">This allows for the development of complex organs and a body cavity.</div>
+            <div class="point-item">Triploblasty is a requirement for the formation of a true coelom.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 19</span>
+        <h3>Define "Coelom" (Body Cavity).</h3>
+        <div class="point-list">
+            <div class="point-item">Coelom is the cavity between the body wall and the internal organs.</div>
+            <div class="point-item">It is formed from the Mesoderm during embryonic development.</div>
+            <div class="point-item">It provides space for the growth and movement of internal organs.</div>
+            <div class="point-item">The presence or absence of a coelom is a key classification feature.</div>
+            <div class="point-item">A true coelom is lined with mesodermal epithelium on both sides.</div>
+            <div class="point-item">It acts as a shock absorber for the delicate internal organs.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 20</span>
+        <h3>What are Acoelomate animals?</h3>
+        <div class="point-list">
+            <div class="point-item">These animals do not possess a body cavity (coelom).</div>
+            <div class="point-item">The space between the body wall and gut is filled with solid tissue.</div>
+            <div class="point-item">They are usually small and have a flat or simple body structure.</div>
+            <div class="point-item">Examples include animals from Phylum Porifera, Coelenterata, and Platyhelminthes.</div>
+            <div class="point-item">Their internal organs are embedded directly in the surrounding tissue.</div>
+            <div class="point-item">Acoelomates represent an early stage in the evolution of multicellular animals.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 21</span>
+        <h3>Describe Pseudocoelomate animals.</h3>
+        <div class="point-list">
+            <div class="point-item">In these animals, a body cavity is present but not lined by mesoderm.</div>
+            <div class="point-item">The cavity is formed from the blastocoel of the embryo, not the mesoderm.</div>
+            <div class="point-item">The mesoderm appears as scattered pouches between the ectoderm and endoderm.</div>
+            <div class="point-item">This type of cavity is known as a "false coelom" or pseudocoelom.</div>
+            <div class="point-item">This characteristic is unique to Phylum Aschelminthes (Roundworms).</div>
+            <div class="point-item">It provides a hydrostatic skeleton for the animal to maintain its shape.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 22</span>
+        <h3>What are Eucoelomate (True Coelomate) animals?</h3>
+        <div class="point-list">
+            <div class="point-item">These animals possess a true body cavity lined by mesoderm.</div>
+            <div class="point-item">The coelom is formed either by splitting the mesoderm or from gut pouches.</div>
+            <div class="point-item">All animals from Phylum Annelida to Chordata are true coelomates.</div>
+            <div class="point-item">It allows for greater complexity in the digestive and circulatory systems.</div>
+            <div class="point-item">Most large and active animals belong to this category.</div>
+            <div class="point-item">It is divided into schizocoelom and enterocoelom based on formation.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 23</span>
+        <h3>What is Body Segmentation?</h3>
+        <div class="point-list">
+            <div class="point-item">Segmentation is the division of the body into a series of similar units.</div>
+            <div class="point-item">If the body is divided into small, linear, similar segments, it is called Metamerism.</div>
+            <div class="point-item">Each segment is called a "metamere" or "somite."</div>
+            <div class="point-item">This is clearly visible in animals like Earthworms (Phylum Annelida).</div>
+            <div class="point-item">It allows for better movement and specialization of different body regions.</div>
+            <div class="point-item">Internal organs may also be repeated in each segment in some phyla.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 24</span>
+        <h3>List the main characteristics of Phylum Porifera.</h3>
+        <div class="image-placeholder"></div>
+        <div class="point-list">
+            <div class="point-item">These are the simplest multicellular animals, commonly called sponges.</div>
+            <div class="point-item">Their body is asymmetrical and has a cellular grade of organization.</div>
+            <div class="point-item">They have numerous pores called 'Ostia' and a large opening called 'Osculum'.</div>
+            <div class="point-item">They possess special flagellated cells called 'Collar cells' or 'Choanocytes'.</div>
+            <div class="point-item">They are mostly marine and always attached to a substrate (sessile).</div>
+            <div class="point-item">Their body is supported by spicules or spongin fibers.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 25</span>
+        <h3>Explain the "Canal System" in Sponges.</h3>
+        <div class="point-list">
+            <div class="point-item">Water enters the sponge body through numerous small pores called Ostia.</div>
+            <div class="point-item">The water circulates through a system of canals into a central cavity.</div>
+            <div class="point-item">The central cavity is called the Spongocoel.</div>
+            <div class="point-item">Collar cells create a current that pushes water out through the Osculum.</div>
+            <div class="point-item">This water flow brings in food (plankton) and oxygen for the sponge.</div>
+            <div class="point-item">It also carries away metabolic wastes and reproductive cells.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 26</span>
+        <h3>Give examples of Phylum Porifera.</h3>
+        <div class="point-list">
+            <div class="point-item">Sycon is a common marine sponge with a simple tube-like structure.</div>
+            <div class="point-item">Euspongia is also known as the "Bath Sponge."</div>
+            <div class="point-item">Hyalonema is popularly called the "Glass rope sponge."</div>
+            <div class="point-item">Euplectella is famous as "Venus's flower basket."</div>
+            <div class="point-item">Spongilla is a rare example of a freshwater sponge.</div>
+            <div class="point-item">Chalina is often called the "Finger sponge" due to its shape.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 27</span>
+        <h3>List the main characteristics of Phylum Coelenterata (Cnidaria).</h3>
+        <div class="image-placeholder"></div>
+        <div class="point-list">
+            <div class="point-item">Their body is radially symmetrical and diploblastic.</div>
+            <div class="point-item">They exhibit two body forms: the cylindrical 'Polyp' and umbrella-like 'Medusa'.</div>
+            <div class="point-item">They have a central gastrovascular cavity with a single opening (mouth).</div>
+            <div class="point-item">They possess specialized stinging cells called 'Cnidoblasts' or 'Nematocysts'.</div>
+            <div class="point-item">Most are marine, but some like Hydra live in freshwater.</div>
+            <div class="point-item">They exhibit a cell-tissue grade of organization.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 28</span>
+        <h3>What is the function of Cnidoblasts?</h3>
+        <div class="point-list">
+            <div class="point-item">Cnidoblasts are specialized cells used for both defense and offense.</div>
+            <div class="point-item">They contain a coiled, poisonous thread-like structure called a nematocyst.</div>
+            <div class="point-item">When touched, the thread is discharged to inject toxin into the prey.</div>
+            <div class="point-item">It helps in paralyzing the prey for easy consumption.</div>
+            <div class="point-item">They are also used to anchor the animal to a substrate.</div>
+            <div class="point-item">These cells are mostly concentrated on the tentacles around the mouth.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 29</span>
+        <h3>Distinguish between Polyp and Medusa.</h3>
+        <div class="point-list">
+            <div class="point-item">Polyp is a cylindrical body form that is usually sessile (attached).</div>
+            <div class="point-item">Medusa is a bowl or umbrella-shaped body form that is free-swimming.</div>
+            <div class="point-item">Hydra and Sea Anemone are examples of the Polyp form.</div>
+            <div class="point-item">Jellyfish (Aurelia) is a classic example of the Medusa form.</div>
+            <div class="point-item">Polyps usually reproduce asexually, while Medusae reproduce sexually.</div>
+            <div class="point-item">Some cnidarians alternate between these two forms in their life cycle.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 30</span>
+        <h3>Give examples of Phylum Coelenterata.</h3>
+        <div class="point-list">
+            <div class="point-item">Hydra is a freshwater polyp capable of somersaulting movement.</div>
+            <div class="point-item">Aurelia is the scientific name for the common Jellyfish.</div>
+            <div class="point-item">Physalia is known as the "Portuguese Man-of-War."</div>
+            <div class="point-item">Adamsia is the common "Sea Anemone" found on hermit crab shells.</div>
+            <div class="point-item">Pennatula is known as the "Sea Pen" due to its appearance.</div>
+            <div class="point-item">Meandrina is a type of coral known as "Brain Coral."</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 31</span>
+        <h3>List the main characteristics of Phylum Platyhelminthes.</h3>
+        <div class="point-list">
+            <div class="point-item">These are commonly called 'Flatworms' because their body is dorso-ventrally flattened.</div>
+            <div class="point-item">They are acoelomate and triploblastic animals.</div>
+            <div class="point-item">Most are endoparasites living inside other animals, but some are free-living.</div>
+            <div class="point-item">They show bilateral symmetry and a tissue-organ grade of organization.</div>
+            <div class="point-item">They are hermaphrodites, meaning both male and female systems are in one body.</div>
+            <div class="point-item">They have specialized 'Flame cells' for excretion and osmoregulation.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 32</span>
+        <h3>What are the adaptations of parasitic Flatworms?</h3>
+        <div class="point-list">
+            <div class="point-item">They have hooks and suckers to attach themselves to the host's body.</div>
+            <div class="point-item">Their body is covered by a thick cuticle to protect against host enzymes.</div>
+            <div class="point-item">They often lack a digestive system as they absorb pre-digested food.</div>
+            <div class="point-item">Their reproductive system is highly developed to ensure survival.</div>
+            <div class="point-item">They have a high anaerobic respiratory capacity to live in low-oxygen environments.</div>
+            <div class="point-item">Sense organs are usually reduced as they live in a stable internal environment.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 33</span>
+        <h3>Give examples of Phylum Platyhelminthes.</h3>
+        <div class="point-list">
+            <div class="point-item">Planaria is a free-living flatworm known for its high regeneration power.</div>
+            <div class="point-item">Fasciola hepatica is commonly known as the "Liver Fluke."</div>
+            <div class="point-item">Taenia solium is the "Pork Tapeworm" found in the human intestine.</div>
+            <div class="point-item">Schistosoma is known as the "Blood Fluke."</div>
+            <div class="point-item">Echinococcus is the "Dog Tapeworm."</div>
+            <div class="point-item">Dugesia is another common name for free-living planarians.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 34</span>
+        <h3>List the main characteristics of Phylum Aschelminthes.</h3>
+        <div class="point-list">
+            <div class="point-item">These are commonly called 'Roundworms' or 'Threadworms'.</div>
+            <div class="point-item">Their body is long, cylindrical, and unsegmented with tapering ends.</div>
+            <div class="point-item">They are triploblastic and pseudocoelomate animals.</div>
+            <div class="point-item">Their body is covered by a tough, resistant, non-living cuticle.</div>
+            <div class="point-item">They are usually unisexual (dioecious) with distinct male and female.</div>
+            <div class="point-item">Most are parasitic and cause diseases in plants and animals.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 35</span>
+        <h3>How can you distinguish between male and female Ascaris?</h3>
+        <div class="point-list">
+            <div class="point-item">The female Ascaris is generally longer and thicker than the male.</div>
+            <div class="point-item">The posterior end of the female is straight.</div>
+            <div class="point-item">The posterior end of the male is curved or hooked ventrally.</div>
+            <div class="point-item">Males possess a pair of penial setae for reproduction at the tail end.</div>
+            <div class="point-item">Females have a separate genital pore (vulva) on the ventral side.</div>
+            <div class="point-item">In males, the digestive and reproductive tracts open into a common cloaca.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 36</span>
+        <h3>Give examples of Phylum Aschelminthes.</h3>
+        <div class="point-list">
+            <div class="point-item">Ascaris lumbricoides is the common "Intestinal Roundworm."</div>
+            <div class="point-item">Wuchereria bancrofti is the "Filarial worm" causing Elephantiasis.</div>
+            <div class="point-item">Ancylostoma duodenale is known as the "Hookworm."</div>
+            <div class="point-item">Enterobius vermicularis is the "Pinworm" or "Seatworm."</div>
+            <div class="point-item">Loa loa is the "Eye worm" found in Africa.</div>
+            <div class="point-item">Rhabditis is a free-living roundworm found in soil.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 37</span>
+        <h3>List the main characteristics of Phylum Annelida.</h3>
+        <div class="point-list">
+            <div class="point-item">These are called 'Segmented worms' because the body shows metameric segmentation.</div>
+            <div class="point-item">They are triploblastic and true coelomate (eucoelomate) animals.</div>
+            <div class="point-item">They show bilateral symmetry and organ-system grade organization.</div>
+            <div class="point-item">They have specialized organs for locomotion like setae, parapodia, or suckers.</div>
+            <div class="point-item">Their circulatory system is of the 'Closed' type.</div>
+            <div class="point-item">They may be hermaphrodites (Earthworm) or unisexual (Nereis).</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 38</span>
+        <h3>What is the function of Nephridia in Annelids?</h3>
+        <div class="point-list">
+            <div class="point-item">Nephridia are specialized coiled tubular structures for excretion.</div>
+            <div class="point-item">They help in removing nitrogenous wastes from the coelomic fluid and blood.</div>
+            <div class="point-item">They also play a crucial role in osmoregulation (maintaining water balance).</div>
+            <div class="point-item">They open to the outside through small pores called nephridiopores.</div>
+            <div class="point-item">They are usually arranged segmentally throughout the body.</div>
+            <div class="point-item">This represents a more advanced excretory system than flame cells.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 39</span>
+        <h3>Give examples of Phylum Annelida.</h3>
+        <div class="point-list">
+            <div class="point-item">Pheretima posthuma is the common "Earthworm."</div>
+            <div class="point-item">Hirudinaria granulosa is the "Cattle Leech."</div>
+            <div class="point-item">Nereis is a marine annelid often called the "Clam worm."</div>
+            <div class="point-item">Aphrodite is popularly known as the "Sea Mouse."</div>
+            <div class="point-item">Tubifex is a small red worm found in polluted freshwater.</div>
+            <div class="point-item">Arenicola is commonly known as the "Lugworm."</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 40</span>
+        <h3>List the main characteristics of Phylum Arthropoda.</h3>
+        <div class="image-placeholder"></div>
+        <div class="point-list">
+            <div class="point-item">This is the largest phylum in the animal kingdom.</div>
+            <div class="point-item">They have jointed appendages (Arthros = joint, Podos = leg).</div>
+            <div class="point-item">Their body is covered by a tough chitinous exoskeleton.</div>
+            <div class="point-item">They show bilateral symmetry, triploblastic development, and true coelom.</div>
+            <div class="point-item">Their circulatory system is of the 'Open' type with a hemocoel.</div>
+            <div class="point-item">They respire through gills, book gills, book lungs, or tracheal systems.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 41</span>
+        <h3>Why is Arthropoda the most successful phylum?</h3>
+        <div class="point-list">
+            <div class="point-item">The chitinous exoskeleton provides excellent protection and prevents water loss.</div>
+            <div class="point-item">Jointed appendages allow for high mobility and specialized functions.</div>
+            <div class="point-item">They have occupied almost every possible habitat on Earth (land, air, water).</div>
+            <div class="point-item">Many have wings, allowing them to fly and colonize new areas.</div>
+            <div class="point-item">They have highly developed sense organs like compound eyes and antennae.</div>
+            <div class="point-item">Their small size and high reproductive rate ensure population survival.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 42</span>
+        <h3>Give examples of Phylum Arthropoda.</h3>
+        <div class="point-list">
+            <div class="point-item">Periplaneta americana is the common "Cockroach."</div>
+            <div class="point-item">Palaemon is the scientific name for "Prawn."</div>
+            <div class="point-item">Apis indica is the "Honey bee."</div>
+            <div class="point-item">Scolopendra is the common "Centipede."</div>
+            <div class="point-item">Limulus is the "King Crab," often called a "living fossil."</div>
+            <div class="point-item">Butterfly, Mosquito, Scorpion, and Spider are other common examples.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 43</span>
+        <h3>List the main characteristics of Phylum Mollusca.</h3>
+        <div class="point-list">
+            <div class="point-item">This is the second-largest phylum of animals.</div>
+            <div class="point-item">Their body is soft and unsegmented (Mollis = soft).</div>
+            <div class="point-item">The body is divided into three parts: Head, Visceral mass, and Foot.</div>
+            <div class="point-item">The visceral mass is covered by a fleshy fold called the 'Mantle'.</div>
+            <div class="point-item">The mantle usually secretes a hard calcareous shell for protection.</div>
+            <div class="point-item">They possess a file-like rasping organ in the mouth called 'Radula'.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 44</span>
+        <h3>What is the function of the 'Foot' in Molluscs?</h3>
+        <div class="point-list">
+            <div class="point-item">The foot is a muscular organ used primarily for locomotion.</div>
+            <div class="point-item">In snails, it helps in crawling on surfaces using mucus.</div>
+            <div class="point-item">In bivalves (clams), it is wedge-shaped and used for burrowing in sand.</div>
+            <div class="point-item">In cephalopods (Octopus), the foot is modified into tentacles around the head.</div>
+            <div class="point-item">It can also be used for capturing prey or anchoring to rocks.</div>
+            <div class="point-item">The shape and function of the foot vary greatly across different classes.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 45</span>
+        <h3>Give examples of Phylum Mollusca.</h3>
+        <div class="point-list">
+            <div class="point-item">Pila globosa is the common "Apple Snail."</div>
+            <div class="point-item">Octopus is known as the "Devil fish" and has eight arms.</div>
+            <div class="point-item">Unio is a freshwater "Mussel."</div>
+            <div class="point-item">Sepia is commonly known as "Cuttlefish."</div>
+            <div class="point-item">Loligo is the "Squid."</div>
+            <div class="point-item">Aplysia is known as the "Sea Hare."</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 46</span>
+        <h3>List the main characteristics of Phylum Echinodermata.</h3>
+        <div class="image-placeholder">
+
+[Image of a starfish water vascular system]
+</div>
+        <div class="point-list">
+            <div class="point-item">These are 'Spiny-skinned' animals (Echinos = spiny, Derma = skin).</div>
+            <div class="point-item">Their skeleton is made of calcareous ossicles or spines.</div>
+            <div class="point-item">Adults show radial symmetry, but larvae show bilateral symmetry.</div>
+            <div class="point-item">They possess a unique 'Water Vascular System' for locomotion and feeding.</div>
+            <div class="point-item">They are exclusively marine animals found on the sea floor.</div>
+            <div class="point-item">They have a high power of regeneration of lost body parts.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 47</span>
+        <h3>Explain "Water Vascular System" in Echinoderms.</h3>
+        <div class="point-list">
+            <div class="point-item">It is a system of canals filled with seawater.</div>
+            <div class="point-item">Water enters through a perforated plate called the 'Madreporite'.</div>
+            <div class="point-item">It flows through various canals to reach the 'Tube feet'.</div>
+            <div class="point-item">Tube feet are used for walking, capturing food, and respiration.</div>
+            <div class="point-item">The hydraulic pressure in the system allows the tube feet to extend or retract.</div>
+            <div class="point-item">This system compensates for the lack of a complex circulatory system.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 48</span>
+        <h3>Give examples of Phylum Echinodermata.</h3>
+        <div class="point-list">
+            <div class="point-item">Asterias is the common "Starfish" or "Sea Star."</div>
+            <div class="point-item">Echinus is known as the "Sea Urchin."</div>
+            <div class="point-item">Antedon is popularly called the "Sea Lily."</div>
+            <div class="point-item">Cucumaria is the "Sea Cucumber."</div>
+            <div class="point-item">Ophiothrix is the "Brittle Star."</div>
+            <div class="point-item">Holothuria is another genus of Sea Cucumber.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 49</span>
+        <h3>List the main characteristics of Phylum Hemichordata.</h3>
+        <div class="point-list">
+            <div class="point-item">These are small, marine, worm-like animals.</div>
+            <div class="point-item">The body is divided into three parts: Proboscis, Collar, and Trunk.</div>
+            <div class="point-item">They were previously considered chordates because of the 'Stomochord'.</div>
+            <div class="point-item">The Stomochord is a rod-like structure present in the proboscis region.</div>
+            <div class="point-item">They have pharyngeal gill slits for respiration.</div>
+            <div class="point-item">They are considered a 'Connecting Link' between non-chordates and chordates.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 50</span>
+        <h3>Why is Balanoglossus called a connecting link?</h3>
+        <div class="point-list">
+            <div class="point-item">It shows non-chordate characters like a ventral nerve cord.</div>
+            <div class="point-item">It shows chordate characters like pharyngeal gill slits.</div>
+            <div class="point-item">The stomochord was initially mistaken for a notochord.</div>
+            <div class="point-item">Its larval stage (Tornaria) resembles the larvae of echinoderms.</div>
+            <div class="point-item">It helps scientists understand how vertebrates evolved from invertebrates.</div>
+            <div class="point-item">It represents a transition in body plan and physiological systems.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 51</span>
+        <h3>List the main characteristics of Phylum Chordata.</h3>
+        <div class="image-placeholder"></div>
+        <div class="point-list">
+            <div class="point-item">They possess a supporting rod called the Notochord at some stage.</div>
+            <div class="point-item">They have a dorsal, hollow, single nerve cord.</div>
+            <div class="point-item">Pharyngeal gill slits are present for respiration (at least in embryos).</div>
+            <div class="point-item">A post-anal tail is usually present.</div>
+            <div class="point-item">The heart is located on the ventral side of the body.</div>
+            <div class="point-item">They have a closed circulatory system.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 52</span>
+        <h3>Name the three sub-phyla of Phylum Chordata.</h3>
+        <div class="point-list">
+            <div class="point-item">Sub-phylum Urochordata (Tunicata) - Notochord only in the larval tail.</div>
+            <div class="point-item">Sub-phylum Cephalochordata - Notochord extends from head to tail and persists.</div>
+            <div class="point-item">Sub-phylum Vertebrata (Craniata) - Notochord is replaced by a vertebral column.</div>
+            <div class="point-item">Urochordates and Cephalochordates are collectively called "Protochordates."</div>
+            <div class="point-item">Vertebrates are the most advanced and diverse group of chordates.</div>
+            <div class="point-item">This division is based on the fate and extent of the notochord.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 53</span>
+        <h3>Characteristics of Sub-phylum Urochordata.</h3>
+        <div class="point-list">
+            <div class="point-item">These are marine animals often called "Sea squirts."</div>
+            <div class="point-item">Their body is covered by a tunic or test made of tunicin (cellulose-like).</div>
+            <div class="point-item">The notochord is present only in the tail of the free-swimming larva.</div>
+            <div class="point-item">The adult is usually sessile and lacks a notochord and nerve cord.</div>
+            <div class="point-item">They show "Retrogressive Metamorphosis" where the larva is more advanced than the adult.</div>
+            <div class="point-item">Examples include Herdmania, Doliolum, and Salpa.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 54</span>
+        <h3>Characteristics of Sub-phylum Cephalochordata.</h3>
+        <div class="point-list">
+            <div class="point-item">These are small, fish-like marine animals.</div>
+            <div class="point-item">The notochord extends through the entire length of the body.</div>
+            <div class="point-item">The notochord persists throughout their entire life.</div>
+            <div class="point-item">They have a well-developed pharynx with numerous gill slits.</div>
+            <div class="point-item">Muscle segments called 'Myotomes' are present along the body.</div>
+            <div class="point-item">Example: Amphioxus (Branchiostoma).</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 55</span>
+        <h3>Characteristics of Sub-phylum Vertebrata.</h3>
+        <div class="point-list">
+            <div class="point-item">The embryonic notochord is replaced by a cartilaginous or bony vertebral column.</div>
+            <div class="point-item">The head is well-developed with a cranium (skull) protecting the brain.</div>
+            <div class="point-item">They have a complex brain and highly developed sense organs.</div>
+            <div class="point-item">They have a ventral muscular heart with 2, 3, or 4 chambers.</div>
+            <div class="point-item">Kidneys are present for excretion and osmoregulation.</div>
+            <div class="point-item">They are divided into six classes from Cyclostomata to Mammalia.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 56</span>
+        <h3>List the six classes of Sub-phylum Vertebrata.</h3>
+        <div class="point-list">
+            <div class="point-item">Class Cyclostomata includes jawless vertebrates like lampreys.</div>
+            <div class="point-item">Class Pisces consists of all types of fishes.</div>
+            <div class="point-item">Class Amphibia includes animals like frogs that live on land and in water.</div>
+            <div class="point-item">Class Reptilia consists of crawling animals like snakes and lizards.</div>
+            <div class="point-item">Class Aves includes all birds.</div>
+            <div class="point-item">Class Mammalia consists of animals that suckle their young ones.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 57</span>
+        <h3>Characteristics of Class Cyclostomata.</h3>
+        <div class="point-list">
+            <div class="point-item">They are jawless vertebrates (Agnatha) with a suctorial mouth.</div>
+            <div class="point-item">Their body is elongated and eel-like, lacking paired fins.</div>
+            <div class="point-item">Their skin is smooth, slimy, and devoid of scales.</div>
+            <div class="point-item">Their cranium and vertebral column are cartilaginous.</div>
+            <div class="point-item">They are mostly ectoparasites on other fishes.</div>
+            <div class="point-item">Examples: Petromyzon (Lamprey) and Myxine (Hagfish).</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 58</span>
+        <h3>Characteristics of Class Pisces (Fishes).</h3>
+        <div class="image-placeholder"></div>
+        <div class="point-list">
+            <div class="point-item">They are exclusively aquatic, cold-blooded (poikilothermic) animals.</div>
+            <div class="point-item">Their body is spindle-shaped (streamlined) to minimize water resistance.</div>
+            <div class="point-item">They have paired and unpaired fins for swimming and balance.</div>
+            <div class="point-item">Respiration occurs through gills.</div>
+            <div class="point-item">Their skin is covered with scales (placoid, cycloid, etc.).</div>
+            <div class="point-item">The heart is two-chambered (one auricle and one ventricle).</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 59</span>
+        <h3>Distinguish between Chondrichthyes and Osteichthyes.</h3>
+        <div class="point-list">
+            <div class="point-item">Chondrichthyes have a cartilaginous skeleton (e.g., Sharks).</div>
+            <div class="point-item">Osteichthyes have a bony skeleton (e.g., Rohu, Pomfret).</div>
+            <div class="point-item">Sharks have placoid scales; bony fishes have cycloid or ctenoid scales.</div>
+            <div class="point-item">In sharks, the mouth is ventral; in bony fishes, it is usually terminal.</div>
+            <div class="point-item">Sharks lack an operculum (gill cover); bony fishes possess one.</div>
+            <div class="point-item">Sharks lack an air bladder; bony fishes have one for buoyancy.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 60</span>
+        <h3>Give examples of Class Pisces.</h3>
+        <div class="point-list">
+            <div class="point-item">Scoliodon is the common "Dogfish" (Shark).</div>
+            <div class="point-item">Labeo rohita (Rohu) is a popular freshwater edible fish.</div>
+            <div class="point-item">Exocoetus is known as the "Flying fish."</div>
+            <div class="point-item">Hippocampus is the "Sea horse."</div>
+            <div class="point-item">Anabas is the "Climbing perch."</div>
+            <div class="point-item">Catla and Mrigal are other common Indian freshwater fishes.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 61</span>
+        <h3>Characteristics of Class Amphibia.</h3>
+        <div class="image-placeholder"></div>
+        <div class="point-list">
+            <div class="point-item">They can live both on land and in water (dual life).</div>
+            <div class="point-item">They require water for external fertilization and larval development.</div>
+            <div class="point-item">Their skin is moist, glandular, and lacks scales.</div>
+            <div class="point-item">They are cold-blooded animals.</div>
+            <div class="point-item">The heart is three-chambered (two auricles and one ventricle).</div>
+            <div class="point-item">Respiration occurs through gills (in larvae), lungs, or skin.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 62</span>
+        <h3>Why do amphibians need moist skin?</h3>
+        <div class="point-list">
+            <div class="point-item">Amphibians perform "Cutaneous Respiration" (breathing through skin).</div>
+            <div class="point-item">The skin must remain moist for oxygen to dissolve and diffuse into the blood.</div>
+            <div class="point-item">Mucus glands in the skin constantly secrete moisture.</div>
+            <div class="point-item">This is especially important when the animal is underwater or hibernating.</div>
+            <div class="point-item">Moist skin also helps in regulating body temperature.</div>
+            <div class="point-item">If the skin dries out, the animal may suffocate and die.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 63</span>
+        <h3>Give examples of Class Amphibia.</h3>
+        <div class="point-list">
+            <div class="point-item">Rana tigrina is the common "Indian Bullfrog."</div>
+            <div class="point-item">Bufo is the scientific name for "Toad."</div>
+            <div class="point-item">Hyla is known as the "Tree frog."</div>
+            <div class="point-item">Salamandra (Salamander) is a tailed amphibian.</div>
+            <div class="point-item">Ichthyophis is a "Caecilian" (limbless amphibian).</div>
+            <div class="point-item">Necturus is commonly called the "Mudpuppy."</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 64</span>
+        <h3>Characteristics of Class Reptilia.</h3>
+        <div class="point-list">
+            <div class="point-item">These are the first true terrestrial vertebrates.</div>
+            <div class="point-item">They show a creeping or crawling mode of locomotion.</div>
+            <div class="point-item">Their skin is dry, cornified, and covered with scales or scutes.</div>
+            <div class="point-item">They are cold-blooded animals.</div>
+            <div class="point-item">The heart is three-chambered (but 4-chambered in crocodiles).</div>
+            <div class="point-item">They lay "Cleidoic eggs" with a hard shell, so they don't need water for breeding.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 65</span>
+        <h3>Why are crocodiles unique among reptiles?</h3>
+        <div class="point-list">
+            <div class="point-item">Most reptiles have a three-chambered heart with an incomplete septum.</div>
+            <div class="point-item">Crocodiles possess a completely four-chambered heart.</div>
+            <div class="point-item">This makes their circulatory system more efficient.</div>
+            <div class="point-item">It is an evolutionary step towards the warm-blooded nature of birds and mammals.</div>
+            <div class="point-item">They also have a secondary palate to breathe while eating.</div>
+            <div class="point-item">They show more advanced parental care than most other reptiles.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 66</span>
+        <h3>Give examples of Class Reptilia.</h3>
+        <div class="point-list">
+            <div class="point-item">Naja naja is the "Indian Cobra."</div>
+            <div class="point-item">Hemidactylus is the common "Wall Lizard."</div>
+            <div class="point-item">Chelone is the "Turtle" (marine).</div>
+            <div class="point-item">Testudo is the "Tortoise" (terrestrial).</div>
+            <div class="point-item">Chameleon is the "Tree lizard" famous for changing color.</div>
+            <div class="point-item">Crocodilus (Crocodile) and Gavialis (Gharial) are large aquatic reptiles.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 67</span>
+        <h3>Characteristics of Class Aves (Birds).</h3>
+        <div class="point-list">
+            <div class="point-item">They are warm-blooded (homeothermic) animals.</div>
+            <div class="point-item">Their forelimbs are modified into wings for flight.</div>
+            <div class="point-item">Their body is covered with feathers.</div>
+            <div class="point-item">Their bones are hollow (pneumatic) to reduce body weight.</div>
+            <div class="point-item">Jaws are modified into a toothless beak.</div>
+            <div class="point-item">The heart is four-chambered.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 68</span>
+        <h3>What are the flight adaptations in birds?</h3>
+        <div class="point-list">
+            <div class="point-item">The spindle-shaped body offers minimum air resistance.</div>
+            <div class="point-item">Hollow (pneumatic) bones make the skeleton light but strong.</div>
+            <div class="point-item">Large, powerful breast muscles (pectoral muscles) move the wings.</div>
+            <div class="point-item">Air sacs connected to lungs provide extra oxygen and buoyancy.</div>
+            <div class="point-item">The absence of a urinary bladder and teeth reduces weight.</div>
+            <div class="point-item">Feathers provide insulation and surface area for flight.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 69</span>
+        <h3>Give examples of Class Aves.</h3>
+        <div class="point-list">
+            <div class="point-item">Columba livia is the "Rock Pigeon."</div>
+            <div class="point-item">Pavo cristatus is the "Indian Peafowl" (National Bird).</div>
+            <div class="point-item">Struthio camelus is the "Ostrich" (flightless bird).</div>
+            <div class="point-item">Aptenodytes is the "Penguin."</div>
+            <div class="point-item">Psittacula is the "Parrot."</div>
+            <div class="point-item">Corvus is the "Crow."</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 70</span>
+        <h3>Characteristics of Class Mammalia.</h3>
+        <div class="point-list">
+            <div class="point-item">Presence of mammary glands (milk-producing) is a unique feature.</div>
+            <div class="point-item">They are warm-blooded animals.</div>
+            <div class="point-item">Their body is covered with hair.</div>
+            <div class="point-item">They have external ears called 'Pinnae'.</div>
+            <div class="point-item">They possess a muscular diaphragm separating the thorax and abdomen.</div>
+            <div class="point-item">Most are viviparous (give birth to live young ones).</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 71</span>
+        <h3>What are the types of mammals based on reproduction?</h3>
+        <div class="point-list">
+            <div class="point-item">Monotremes (Prototheria) are egg-laying mammals like Platypus.</div>
+            <div class="point-item">Marsupials (Metatheria) have a pouch to carry underdeveloped young (e.g., Kangaroo).</div>
+            <div class="point-item">Eutherians are placental mammals where the fetus develops fully inside the uterus.</div>
+            <div class="point-item">Humans, elephants, and whales belong to the placental group.</div>
+            <div class="point-item">This classification shows the evolution of complex parental care.</div>
+            <div class="point-item">All three groups possess mammary glands to feed their young.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 72</span>
+        <h3>Give examples of Class Mammalia.</h3>
+        <div class="point-list">
+            <div class="point-item">Homo sapiens (Human).</div>
+            <div class="point-item">Panthera leo (Lion).</div>
+            <div class="point-item">Elephas maximus (Indian Elephant).</div>
+            <div class="point-item">Balaenoptera (Blue Whale) - the largest mammal.</div>
+            <div class="point-item">Pteropus (Flying fox/Bat) - a flying mammal.</div>
+            <div class="point-item">Ornithorhynchus (Platypus) - an egg-laying mammal.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 73</span>
+        <h3>What are Poikilothermic (Cold-blooded) animals?</h3>
+        <div class="point-list">
+            <div class="point-item">Their body temperature changes according to the surrounding environment.</div>
+            <div class="point-item">They cannot maintain a constant internal temperature.</div>
+            <div class="point-item">To survive extreme temperatures, they undergo hibernation or aestivation.</div>
+            <div class="point-item">Examples include all invertebrates, fish, amphibians, and reptiles.</div>
+            <div class="point-item">Their metabolic rate is usually lower than warm-blooded animals.</div>
+            <div class="point-item">This strategy saves energy but limits their activity in cold weather.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 74</span>
+        <h3>What are Homeothermic (Warm-blooded) animals?</h3>
+        <div class="point-list">
+            <div class="point-item">They maintain a constant body temperature regardless of the environment.</div>
+            <div class="point-item">They use internal metabolic heat to keep warm.</div>
+            <div class="point-item">Only Birds and Mammals are homeothermic.</div>
+            <div class="point-item">This allows them to remain active in very cold climates.</div>
+            <div class="point-item">It requires a high energy intake (more food) to maintain the temperature.</div>
+            <div class="point-item">It involves complex mechanisms like sweating, shivering, and fur/feathers.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 75</span>
+        <h3>Define Metamorphosis.</h3>
+        <div class="image-placeholder"></div>
+        <div class="point-list">
+            <div class="point-item">It is the process of transformation from an immature larval form to an adult.</div>
+            <div class="point-item">It involves significant changes in body structure and physiology.</div>
+            <div class="point-item">Complete metamorphosis includes Egg -> Larva -> Pupa -> Adult (e.g., Butterfly).</div>
+            <div class="point-item">Incomplete metamorphosis lacks the pupal stage (e.g., Cockroach).</div>
+            <div class="point-item">It is controlled by specific hormones like ecdysone and juvenile hormone.</div>
+            <div class="point-item">It allows larvae and adults to occupy different niches to avoid competition.</div>
+        </div>
+    </div>
+
+</body>
+</html>
+Would you like me to process the remaining questions (76-100) for this chapter now?
+
+    <div class="q-card">
+        <span class="q-number">Question 76</span>
+        <h3>What is "Retrogressive Metamorphosis"?</h3>
+        <div class="point-list">
+            <div class="point-item">In this, the larva is more advanced than the adult.</div>
+            <div class="point-item">Advanced characters like the notochord and nerve cord are lost during change.</div>
+            <div class="point-item">This is a characteristic feature of Sub-phylum Urochordata.</div>
+            <div class="point-item">The free-swimming larva settles down to become a sessile, simpler adult.</div>
+            <div class="point-item">It is an evolutionary "backward" step in individual development.</div>
+            <div class="point-item">Example: Herdmania.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 77</span>
+        <h3>Explain "Hermaphrodite" (Bisexual) animals.</h3>
+        <div class="point-list">
+            <div class="point-item">A single individual possesses both male and female reproductive organs.</div>
+            <div class="point-item">They can produce both eggs and sperm.</div>
+            <div class="point-item">However, most perform cross-fertilization to ensure genetic diversity.</div>
+            <div class="point-item">Examples include Earthworms, Leeches, and Tapeworms.</div>
+            <div class="point-item">This is an advantage for animals that are slow-moving or parasitic.</div>
+            <div class="point-item">It increases the chances of successful mating in sparse populations.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 78</span>
+        <h3>What are "Living Fossils"?</h3>
+        <div class="point-list">
+            <div class="point-item">These are species that have remained virtually unchanged for millions of years.</div>
+            <div class="point-item">They resemble their ancient fossil relatives very closely.</div>
+            <div class="point-item">They provide a direct link to the biological past.</div>
+            <div class="point-item">Example: Limulus (King Crab) among arthropods.</div>
+            <div class="point-item">Example: Sphenodon (Tuatara) among reptiles.</div>
+            <div class="point-item">Example: Latimeria (Coelacanth) among fishes.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 79</span>
+        <h3>Explain "Cephalization."</h3>
+        <div class="point-list">
+            <div class="point-item">It is the concentration of sense organs and nerve cells at the anterior (front) end.</div>
+            <div class="point-item">This leads to the formation of a distinct "Head."</div>
+            <div class="point-item">It is a characteristic of bilaterally symmetrical animals.</div>
+            <div class="point-item">It allows the animal to sense the environment it is moving into.</div>
+            <div class="point-item">Cephalization reached its peak in vertebrates with the development of the brain.</div>
+            <div class="point-item">Flatworms (Platyhelminthes) show the first signs of cephalization.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 80</span>
+        <h3>What is the "Notochord"?</h3>
+        <div class="point-list">
+            <div class="point-item">It is a flexible, rod-like structure found in all chordate embryos.</div>
+            <div class="point-item">It is derived from the embryonic mesoderm.</div>
+            <div class="point-item">It provides mechanical support and serves as an axis for the body.</div>
+            <div class="point-item">In higher vertebrates, it is replaced by the bony vertebral column.</div>
+            <div class="point-item">It is located between the digestive tract and the nerve cord.</div>
+            <div class="point-item">Its presence is the defining feature of the Phylum Chordata.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 81</span>
+        <h3>Difference between Open and Closed Circulatory Systems.</h3>
+        <div class="point-list">
+            <div class="point-item">In the open system, blood flows through large open spaces called sinuses.</div>
+            <div class="point-item">In the closed system, blood flows within a network of closed vessels.</div>
+            <div class="point-item">Open system is found in Arthropods and most Molluscs.</div>
+            <div class="point-item">Closed system is found in Annelids and all Chordates.</div>
+            <div class="point-item">Closed systems allow for higher blood pressure and more efficient transport.</div>
+            <div class="point-item">Open system blood (hemolymph) directly bathes the internal organs.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 82</span>
+        <h3>What are "Sessile" animals?</h3>
+        <div class="point-list">
+            <div class="point-item">These animals are permanently attached to a substrate and cannot move.</div>
+            <div class="point-item">They are usually found in aquatic environments.</div>
+            <div class="point-item">Examples include Sponges, Corals, and adult Urochordates.</div>
+            <div class="point-item">They rely on water currents to bring food and oxygen to them.</div>
+            <div class="point-item">Most have radial symmetry or are asymmetrical.</div>
+            <div class="point-item">Their larval stages are usually free-swimming to allow for dispersal.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 83</span>
+        <h3>Explain "Regeneration."</h3>
+        <div class="point-list">
+            <div class="point-item">It is the ability of an organism to regrow lost or damaged body parts.</div>
+            <div class="point-item">Lower animals like sponges and hydra have high regeneration power.</div>
+            <div class="point-item">Planaria can regrow a whole body from a small piece.</div>
+            <div class="point-item">Starfish can regrow lost arms.</div>
+            <div class="point-item">In higher animals, it is restricted to healing wounds or regrowing a tail (lizard).</div>
+            <div class="point-item">It is a form of asexual reproduction in some simple organisms.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 84</span>
+        <h3>What are "Flame Cells"?</h3>
+        <div class="point-list">
+            <div class="point-item">These are specialized excretory cells found in Phylum Platyhelminthes.</div>
+            <div class="point-item">They have a cluster of cilia that flicker like a flame.</div>
+            <div class="point-item">The flickering cilia push waste fluids into excretory canals.</div>
+            <div class="point-item">They help in maintaining the osmotic balance of the flatworm.</div>
+            <div class="point-item">They are the simplest form of a dedicated excretory system.</div>
+            <div class="point-item">They are also known as protonephridia.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 85</span>
+        <h3>What are "Malpighian Tubules"?</h3>
+        <div class="point-list">
+            <div class="point-item">These are the main excretory organs in most insects (Arthropoda).</div>
+            <div class="point-item">They are fine, hair-like tubes attached to the digestive tract.</div>
+            <div class="point-item">They remove nitrogenous wastes from the body fluid (hemolymph).</div>
+            <div class="point-item">The waste is then emptied into the intestine and excreted with feces.</div>
+            <div class="point-item">This system helps in conserving water, which is vital for land insects.</div>
+            <div class="point-item">They are named after the scientist Marcello Malpighi.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 86</span>
+        <h3>What is the 'Radula'?</h3>
+        <div class="point-list">
+            <div class="point-item">It is a unique, file-like rasping organ found in the mouth of most Molluscs.</div>
+            <div class="point-item">It is used for scraping or cutting food before it enters the esophagus.</div>
+            <div class="point-item">It consists of many rows of tiny chitinous teeth.</div>
+            <div class="point-item">Snails use the radula to scrape algae off rocks.</div>
+            <div class="point-item">Some predatory molluscs use it to drill holes in the shells of prey.</div>
+            <div class="point-item">Bivalves (clams) are the only major group of molluscs that lack a radula.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 87</span>
+        <h3>Explain "Poikilotherms" vs. "Aestivation/Hibernation."</h3>
+        <div class="point-list">
+            <div class="point-item">Poikilotherms cannot internally regulate their temperature.</div>
+            <div class="point-item">During extreme cold, they go into a deep sleep called Hibernation (Winter sleep).</div>
+            <div class="point-item">During extreme heat or drought, they enter Aestivation (Summer sleep).</div>
+            <div class="point-item">This slows down their metabolism to a minimum to save energy.</div>
+            <div class="point-item">Frogs and many reptiles show these behaviors.</div>
+            <div class="point-item">It allows them to survive in environments they otherwise couldn't.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 88</span>
+        <h3>What is a "Pneumatic Bone"?</h3>
+        <div class="point-list">
+            <div class="point-item">It is a bone that contains air cavities instead of marrow.</div>
+            <div class="point-item">It is a characteristic feature of birds (Class Aves).</div>
+            <div class="point-item">These bones make the skeleton light, which is essential for flight.</div>
+            <div class="point-item">They are connected to the respiratory system via air sacs.</div>
+            <div class="point-item">Despite being light, they are very strong due to internal struts.</div>
+            <div class="point-item">Examples include the skull, humerus, and pelvic girdle of birds.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 89</span>
+        <h3>What is "Viviparous" vs. "Oviparous"?</h3>
+        <div class="point-list">
+            <div class="point-item">Oviparous animals lay eggs (e.g., Birds, most Reptiles).</div>
+            <div class="point-item">The embryo develops outside the mother's body using yolk for nutrition.</div>
+            <div class="point-item">Viviparous animals give birth to live young ones (e.g., most Mammals).</div>
+            <div class="point-item">The embryo develops inside the mother and receives nutrients directly.</div>
+            <div class="point-item">"Ovoviviparous" animals retain eggs inside until they hatch (e.g., some Sharks).</div>
+            <div class="point-item">Viviparity provides better protection and higher survival rates for the young.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 90</span>
+        <h3>What is "Cephalopod"?</h3>
+        <div class="point-list">
+            <div class="point-item">It is a class of Molluscs where the "head" and "foot" are merged.</div>
+            <div class="point-item">The foot is modified into a ring of tentacles or arms around the head.</div>
+            <div class="point-item">They are the most intelligent and active of all invertebrates.</div>
+            <div class="point-item">Examples include Octopus, Squid, and Cuttlefish.</div>
+            <div class="point-item">Most lack an external shell (except Nautilus).</div>
+            <div class="point-item">They have well-developed eyes similar to vertebrates.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 91</span>
+        <h3>Explain "Benthic" animals.</h3>
+        <div class="point-list">
+            <div class="point-item">These are animals that live on or in the bottom of a body of water.</div>
+            <div class="point-item">They are found from the shoreline to the deepest ocean trenches.</div>
+            <div class="point-item">Examples include Starfish, Sponges, and many Molluscs.</div>
+            <div class="point-item">They are often adapted for crawling, burrowing, or attaching to rocks.</div>
+            <div class="point-item">Many are scavengers or filter feeders.</div>
+            <div class="point-item">Most Echinoderms are exclusively benthic.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 92</span>
+        <h3>What are "Social Insects"?</h3>
+        <div class="point-list">
+            <div class="point-item">These are insects that live in highly organized colonies.</div>
+            <div class="point-item">There is a clear division of labor (Caste system).</div>
+            <div class="point-item">Examples include Honey bees, Ants, and Termites.</div>
+            <div class="point-item">Usually, there is one fertile Queen, some Drones (males), and many sterile Workers.</div>
+            <div class="point-item">They communicate using chemicals called pheromones.</div>
+            <div class="point-item">Their cooperation allows them to build complex structures and survive better.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 93</span>
+        <h3>What is "Ecdysis" (Molting)?</h3>
+        <div class="point-list">
+            <div class="point-item">It is the process of shedding the old exoskeleton to allow for growth.</div>
+            <div class="point-item">This is seen in Arthropods because their chitinous shell cannot expand.</div>
+            <div class="point-item">A new, soft exoskeleton forms underneath the old one.</div>
+            <div class="point-item">The animal pumps itself with air/water to crack the old shell and crawl out.</div>
+            <div class="point-item">It then expands the new shell before it hardens.</div>
+            <div class="point-item">The animal is very vulnerable to predators during this stage.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 94</span>
+        <h3>What is the "Mantle" in Molluscs?</h3>
+        <div class="point-list">
+            <div class="point-item">It is a thin, fleshy fold of tissue that covers the visceral mass.</div>
+            <div class="point-item">It secretes the calcium carbonate shell in shelled molluscs.</div>
+            <div class="point-item">The space between the mantle and the body is the "Mantle Cavity."</div>
+            <div class="point-item">Gills (ctenidia) are usually located in this cavity for respiration.</div>
+            <div class="point-item">It also plays a role in waste removal and sensory functions.</div>
+            <div class="point-item">In squids and octopuses, the mantle is muscular and used for jet propulsion.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 95</span>
+        <h3>What are "Air Sacs" in birds?</h3>
+        <div class="point-list">
+            <div class="point-item">These are thin-walled extensions of the respiratory system.</div>
+            <div class="point-item">They store air but do not perform gas exchange themselves.</div>
+            <div class="point-item">They act as bellows to push fresh air through the lungs continuously.</div>
+            <div class="point-item">This ensures that the lungs get oxygenated air during both inhalation and exhalation.</div>
+            <div class="point-item">They also help in reducing the weight of the bird.</div>
+            <div class="point-item">They help in regulating body temperature during the high-energy flight.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 96</span>
+        <h3>What is the "Diaphragm"?</h3>
+        <div class="point-list">
+            <div class="point-item">It is a muscular sheet that separates the thoracic and abdominal cavities.</div>
+            <div class="point-item">It is a unique characteristic of Class Mammalia.</div>
+            <div class="point-item">Its contraction and relaxation are responsible for breathing (ventilation).</div>
+            <div class="point-item">When it moves down, it creates a vacuum that pulls air into the lungs.</div>
+            <div class="point-item">It is also important for activities like sneezing, coughing, and vomiting.</div>
+            <div class="point-item">It is a vital evolutionary development for high-efficiency respiration.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 97</span>
+        <h3>What is "Placenta"?</h3>
+        <div class="point-list">
+            <div class="point-item">It is a temporary organ that connects the developing fetus to the uterine wall.</div>
+            <div class="point-item">It allows for the exchange of nutrients, gases, and wastes between mother and child.</div>
+            <div class="point-item">The blood of the mother and fetus never mixes directly.</div>
+            <div class="point-item">It also secretes hormones to maintain the pregnancy.</div>
+            <div class="point-item">It is found in "Eutherian" mammals.</div>
+            <div class="point-item">It is shed from the body as "afterbirth" after the young is born.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 98</span>
+        <h3>Why are bats classified as mammals and not birds?</h3>
+        <div class="point-list">
+            <div class="point-item">They have hair on their body, not feathers.</div>
+            <div class="point-item">They possess mammary glands to feed their young.</div>
+            <div class="point-item">They have external ears (pinnae).</div>
+            <div class="point-item">They give birth to live young ones (viviparous).</div>
+            <div class="point-item">Their wings are made of skin (patagium) stretched between fingers, not feathers.</div>
+            <div class="point-item">They have a diaphragm and a four-chambered heart typical of mammals.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 99</span>
+        <h3>Why is a whale a mammal and not a fish?</h3>
+        <div class="point-list">
+            <div class="point-item">It breathes air through lungs, not gills (it must come to the surface).</div>
+            <div class="point-item">It has a four-chambered heart and is warm-blooded.</div>
+            <div class="point-item">It has hair (though very little) at some stage of life.</div>
+            <div class="point-item">It gives birth to live young ones and feeds them milk from mammary glands.</div>
+            <div class="point-item">It possesses a diaphragm.</div>
+            <div class="point-item">Its tail fluke is horizontal and moves up and down, unlike a fish's vertical tail.</div>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-number">Question 100</span>
+        <h3>Importance of the New System of Classification.</h3>
+        <div class="point-list">
+            <div class="point-item">It is based on accurate, verifiable scientific criteria.</div>
+            <div class="point-item">It reflects the evolutionary history (phylogeny) of the animal kingdom.</div>
+            <div class="point-item">It provides a standard framework for scientists worldwide to communicate.</div>
+            <div class="point-item">It integrates genetics, embryology, and anatomy.</div>
+            <div class="point-item">It helps in identifying and protecting biodiversity.</div>
+            <div class="point-item">It shows the incredible unity and diversity of life on Earth.</div>
+        </div>
+    </div>
+
+    <script>
+        function filterQuestions() {
+            let input = document.getElementById('search-input').value.toLowerCase();
+            let cards = document.getElementsByClassName('q-card');
+            
+            for (let i = 0; i < cards.length; i++) {
+                let cardText = cards[i].innerText.toLowerCase();
+                if (cardText.includes(input)) {
+                    cards[i].style.display = "";
+                } else {
+                    cards[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>

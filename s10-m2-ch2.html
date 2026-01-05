@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch 2: Pythagoras Theorem | MituEdu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Mitu<span>Edu</span></div>
+        <a href="std10-math2.html" class="back-link">← Geometry List</a>
+    </nav>
+
+    <div class="main-container">
+        <header class="chapter-header">
+            <h1>Pythagoras Theorem</h1>
+            <button class="btn-audio" onclick="playGeo2()">🔊 Listen to Formulas</button>
+        </header>
+
+        <div class="question-card">
+            <div class="q-header"><span class="q-no">Q1.</span><h3>State the Pythagoras Theorem.</h3></div>
+            <div class="answer-box">
+                <p>In a right-angled triangle, the square of the hypotenuse is equal to the sum of the squares of the other two sides.</p>
+                <p style="text-align:center; font-weight:bold;">Hypotenuse² = Side1² + Side2²</p>
+            </div>
+        </div>
+
+        <div class="question-card">
+            <div class="q-header"><span class="q-no">Q2.</span><h3>Explain the Geometric Mean Property.</h3></div>
+            <div class="answer-box">
+                <p>In a right-angled triangle, the perpendicular drawn to the hypotenuse from the opposite vertex is the geometric mean of the segments into which the hypotenuse is divided.</p>
+                <p><strong>Formula:</strong> $QS^2 = PS \times SR$</p>
+            </div>
+        </div>
+
+        <div class="question-card">
+            <div class="q-header"><span class="q-no">Q3.</span><h3>What is the Apollonius Theorem?</h3></div>
+            <div class="answer-box">
+                <p>In $\triangle ABC$, if $M$ is the midpoint of side $BC$, then:</p>
+                <p style="text-align:center;">$AB^2 + AC^2 = 2AM^2 + 2BM^2$</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function playGeo2() {
+            const msg = new SpeechSynthesisUtterance("Pythagoras theorem is the foundation of geometry. Also remember the 30 60 90 and 45 45 90 triangle properties.");
+            window.speechSynthesis.speak(msg);
+        }
+    </script>
+</body>
+</html>

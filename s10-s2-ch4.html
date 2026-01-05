@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch 4: Environmental Management | MituEdu Science 2</title>
+    <style>
+        :root {
+            --primary-accent: #10b981; /* Emerald Green for Environment */
+            --secondary-accent: #047857;
+            --bg-dark: #0f172a;
+            --card-bg: #1e293b;
+            --text-bright: #f8fafc;
+            --text-dim: #94a3b8;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-bright);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container { max-width: 1000px; margin: auto; }
+
+        .header-section {
+            background: linear-gradient(135deg, var(--primary-accent), var(--secondary-accent));
+            padding: 40px 20px;
+            border-radius: 24px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .search-container { margin-top: 20px; padding: 0 20px; }
+
+        #searchInput {
+            width: 100%;
+            max-width: 600px;
+            padding: 12px 24px;
+            border-radius: 50px;
+            border: none;
+            background: rgba(0, 0, 0, 0.2);
+            color: white;
+            outline: none;
+        }
+
+        .nav-back { display: inline-block; color: var(--text-bright); text-decoration: none; margin-bottom: 20px; }
+
+        .q-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .q-number { color: var(--primary-accent); font-weight: 800; font-size: 0.8rem; display: block; margin-bottom: 5px; }
+
+        h3 { margin: 0 0 15px 0; font-size: 1.25rem; color: #fff; }
+
+        .point-list { list-style: none; padding: 0; }
+
+        .point-item {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 8px;
+            color: var(--text-dim);
+            font-size: 0.95rem;
+        }
+
+        .point-item::before {
+            content: "🌿";
+            position: absolute;
+            left: 0;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="index.html" class="nav-back">← Back to Index</a>
+
+        <div class="header-section">
+            <h1>Chapter 04: Environmental Management</h1>
+            <div class="search-container">
+                <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Search questions (e.g. Ecosystem, Pollution, Biodiversity)...">
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 1</span>
+            <h3>What is an Ecosystem?</h3>
+            <div class="point-list">
+                <div class="point-item">An ecosystem is a self-sustaining unit formed by biotic and abiotic factors.</div>
+                <div class="point-item">Biotic factors include all living organisms like plants, animals, and microbes.</div>
+                <div class="point-item">Abiotic factors include non-living components like air, water, soil, and sunlight.</div>
+                <div class="point-item">There is a continuous interaction and exchange of energy between these factors.</div>
+                <div class="point-item">Every organism plays a specific role, such as producer, consumer, or decomposer.</div>
+                <div class="point-item">The balance of an ecosystem is vital for the survival of all species within it.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 2</span>
+            <h3>Define the role of Producers in an ecosystem.</h3>
+            <div class="point-list">
+                <div class="point-item">Producers, mainly green plants, are the primary source of food in an ecosystem.</div>
+                <div class="point-item">They convert solar energy into chemical energy through photosynthesis.</div>
+                <div class="point-item">They provide nourishment to all levels of consumers in the food chain.</div>
+                <div class="point-item">They release oxygen into the atmosphere as a byproduct of their metabolism.</div>
+                <div class="point-item">Without producers, the flow of energy in the biological world would stop.</div>
+                <div class="point-item">They form the base of the ecological pyramid in any stable environment.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 3</span>
+            <h3>What are Herbivores?</h3>
+            <div class="point-list">
+                <div class="point-item">Herbivores are primary consumers that feed directly on plants.</div>
+                <div class="point-item">They include animals like deer, rabbits, elephants, and grasshoppers.</div>
+                <div class="point-item">They convert plant energy into animal biomass for higher trophic levels.</div>
+                <div class="point-item">They possess specialized digestive systems to break down complex cellulose.</div>
+                <div class="point-item">They help in controlling the overgrowth of vegetation in a habitat.</div>
+                <div class="point-item">Herbivores are essential links between producers and carnivorous predators.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 4</span>
+            <h3>Define Carnivores.</h3>
+            <div class="point-list">
+                <div class="point-item">Carnivores are secondary or tertiary consumers that feed on other animals.</div>
+                <div class="point-item">They are adapted for hunting and eating meat with sharp teeth or claws.</div>
+                <div class="point-item">They help maintain the population of herbivores, preventing overgrazing.</div>
+                <div class="point-item">Predators like lions, tigers, and hawks are typical examples of carnivores.</div>
+                <div class="point-item">They occupy the higher levels of the food chain or energy pyramid.</div>
+                <div class="point-item">Their presence is an indicator of a healthy and balanced ecosystem.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 5</span>
+            <h3>What is the role of Decomposers?</h3>
+            <div class="point-list">
+                <div class="point-item">Decomposers include bacteria and fungi that break down dead organic matter.</div>
+                <div class="point-item">They convert complex organic compounds into simple inorganic nutrients.</div>
+                <div class="point-item">These nutrients are returned to the soil, making them available for plants.</div>
+                <div class="point-item">They act as the "cleaners" of the environment by removing waste.</div>
+                <div class="point-item">Without them, the Earth would be covered in layers of dead organisms.</div>
+                <div class="point-item">They ensure the continuous cycling of matter through the biogeochemical cycles.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 6</span>
+            <h3>Define a Food Chain.</h3>
+            
+
+[Image of a food chain showing producers, consumers, and decomposers]
+
+            <div class="point-list">
+                <div class="point-item">A food chain is a linear sequence of organisms showing who eats whom.</div>
+                <div class="point-item">It starts with a producer and ends with a top predator or decomposer.</div>
+                <div class="point-item">Each step in the food chain is known as a "trophic level."</div>
+                <div class="point-item">It demonstrates the unidirectional flow of energy in an ecosystem.</div>
+                <div class="point-item">Typically, food chains are simple and contain 3 to 5 levels.</div>
+                <div class="point-item">Any disruption in one link can affect all subsequent levels in the chain.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 7</span>
+            <h3>What is a Food Web?</h3>
+            
+            <div class="point-list">
+                <div class="point-item">A food web is a complex network of interconnected food chains.</div>
+                <div class="point-item">In nature, organisms rarely depend on a single food source.</div>
+                <div class="point-item">It provides alternative pathways for energy flow if one species declines.</div>
+                <div class="point-item">A food web represents the true complexity of nutritional relationships.</div>
+                <div class="point-item">It increases the stability and resilience of an ecosystem.</div>
+                <div class="point-item">All organisms in a habitat are part of a larger, global food web.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 8</span>
+            <h3>Explain the 10% Law of energy flow.</h3>
+            
+            <div class="point-list">
+                <div class="point-item">This law states that only 10% of energy is transferred to the next trophic level.</div>
+                <div class="point-item">The remaining 90% is used for life processes or lost as heat to the environment.</div>
+                <div class="point-item">This is why the number of trophic levels is usually limited to four or five.</div>
+                <div class="point-item">As we go higher in the pyramid, the total available energy decreases.</div>
+                <div class="point-item">Top predators receive the least amount of energy from the original source.</div>
+                <div class="point-item">This law was proposed by Raymond Lindeman in 1942.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 9</span>
+            <h3>What is Environmental Conservation?</h3>
+            <div class="point-list">
+                <div class="point-item">It is the practice of protecting the environment from degradation.</div>
+                <div class="point-item">It involves the sustainable use of natural resources like water and forests.</div>
+                <div class="point-item">Conservation aims to preserve biodiversity and prevent species extinction.</div>
+                <div class="point-item">It requires a collective effort from governments, NGOs, and individuals.</div>
+                <div class="point-item">Laws and regulations are enacted to control pollution and habitat loss.</div>
+                <div class="point-item">Conservation is essential to ensure a healthy planet for future generations.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 10</span>
+            <h3>Why is there a need for Environmental Conservation?</h3>
+            <div class="point-list">
+                <div class="point-item">To maintain the ecological balance necessary for all life forms.</div>
+                <div class="point-item">To protect the Earth from global warming and climate change.</div>
+                <div class="point-item">To ensure a continuous supply of clean air, water, and fertile soil.</div>
+                <div class="point-item">To preserve the aesthetic and medicinal value of various plant species.</div>
+                <div class="point-item">To prevent natural disasters caused by deforestation and soil erosion.</div>
+                <div class="point-item">To fulfill our moral responsibility toward the environment and future kids.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 11</span>
+            <h3>Define Pollution.</h3>
+            <div class="point-list">
+                <div class="point-item">Pollution is the undesirable change in the physical, chemical, or biological traits of the environment.</div>
+                <div class="point-item">It is caused by various substances known as "pollutants."</div>
+                <div class="point-item">Human activities like industrialization and urbanization are primary causes.</div>
+                <div class="point-item">It affects the health of humans, animals, and plants significantly.</div>
+                <div class="point-item">Pollution can occur in air, water, soil, and even through sound or light.</div>
+                <div class="point-item">It leads to the depletion of natural resources and environmental degradation.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 12</span>
+            <h3>What are Natural Pollutants?</h3>
+            <div class="point-list">
+                <div class="point-item">These are harmful substances released by natural events.</div>
+                <div class="point-item">Examples include volcanic ash, dust storms, and forest fire smoke.</div>
+                <div class="point-item">Pollen grains and fungal spores are also considered natural air pollutants.</div>
+                <div class="point-item">Methane gas from decaying organic matter is a natural greenhouse gas.</div>
+                <div class="point-item">Most natural pollutants are managed by the Earth's self-cleaning cycles.</div>
+                <div class="point-item">However, large-scale events like volcanic eruptions can cause global effects.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 13</span>
+            <h3>What are Artificial (Man-made) Pollutants?</h3>
+            <div class="point-list">
+                <div class="point-item">These are substances created and released due to human activities.</div>
+                <div class="point-item">Industrial chemicals, plastic waste, and pesticides are major examples.</div>
+                <div class="point-item">Exhaust gases from vehicles and smoke from factories are air pollutants.</div>
+                <div class="point-item">Radioactive waste from nuclear power plants is extremely dangerous.</div>
+                <div class="point-item">Sewage and agricultural runoff are primary sources of water pollution.</div>
+                <div class="point-item">These pollutants are often difficult for nature to break down or recycle.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 14</span>
+            <h3>Mention the effects of Air Pollution.</h3>
+            <div class="point-list">
+                <div class="point-item">It causes respiratory diseases like asthma, bronchitis, and lung cancer.</div>
+                <div class="point-item">It leads to the formation of acid rain, which damages crops and buildings.</div>
+                <div class="point-item">Increased $CO_2$ levels contribute to the greenhouse effect and global warming.</div>
+                <div class="point-item">Certain pollutants like CFCs cause the depletion of the ozone layer.</div>
+                <div class="point-item">Smog reduces visibility and can cause accidents in urban areas.</div>
+                <div class="point-item">Air pollution negatively impacts the photosynthesis process in plants.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 15</span>
+            <h3>Mention the effects of Water Pollution.</h3>
+            <div class="point-list">
+                <div class="point-item">It leads to waterborne diseases like cholera, typhoid, and dysentery.</div>
+                <div class="point-item">Toxic chemicals in water can kill fish and other aquatic organisms.</div>
+                <div class="point-item">It causes "Eutrophication," leading to oxygen depletion in water bodies.</div>
+                <div class="point-item">Polluted water affects the growth and yield of agricultural crops.</div>
+                <div class="point-item">Biomagnification of heavy metals in the food chain harms top predators.</div>
+                <div class="point-item">It makes water sources unfit for drinking, washing, and industrial use.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 16</span>
+            <h3>What is Soil Pollution?</h3>
+            <div class="point-list">
+                <div class="point-item">It is the contamination of soil with harmful chemicals or waste.</div>
+                <div class="point-item">Excessive use of chemical fertilizers and pesticides is a major cause.</div>
+                <div class="point-item">Industrial waste and plastic dumped in soil reduce its fertility.</div>
+                <div class="point-item">It kills beneficial soil microorganisms like earthworms and bacteria.</div>
+                <div class="point-item">Pollutants from soil can enter the food chain through plants.</div>
+                <div class="point-item">Soil pollution leads to erosion and prevents the growth of vegetation.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 17</span>
+            <h3>Define Biodiversity.</h3>
+            <div class="point-list">
+                <div class="point-item">Biodiversity is the variety and variability of life forms on Earth.</div>
+                <div class="point-item">It includes diversity at three levels: Genetic, Species, and Ecosystem.</div>
+                <div class="point-item">It is a measure of the health and stability of an environment.</div>
+                <div class="point-item">Biodiversity provides us with food, medicine, and industrial raw materials.</div>
+                <div class="point-item">It ensures the functioning of ecosystems through various services.</div>
+                <div class="point-item">Protecting biodiversity is a global priority for environmentalists.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 18</span>
+            <h3>Explain Genetic Diversity.</h3>
+            <div class="point-list">
+                <div class="point-item">It refers to the variation of genes within a single species.</div>
+                <div class="point-item">Every individual of a species is slightly different due to genetic makeup.</div>
+                <div class="point-item">For example, there are thousands of varieties of rice and mangoes.</div>
+                <div class="point-item">Genetic diversity allows a species to adapt to changing environments.</div>
+                <div class="point-item">It prevents the species from being wiped out by a single disease.</div>
+                <div class="point-item">Higher genetic diversity increases the chances of survival for a population.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 19</span>
+            <h3>Explain Species Diversity.</h3>
+            <div class="point-list">
+                <div class="point-item">It refers to the variety of different species found in a particular region.</div>
+                <div class="point-item">Some areas, like tropical rainforests, have very high species diversity.</div>
+                <div class="point-item">It is calculated by the number of species and their relative abundance.</div>
+                <div class="point-item">Different species perform different roles, maintaining the ecological balance.</div>
+                <div class="point-item">Extinction of one species can trigger a chain reaction affecting others.</div>
+                <div class="point-item">Human activities are currently causing a rapid decline in species diversity.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 20</span>
+            <h3>Explain Ecosystem Diversity.</h3>
+            <div class="point-list">
+                <div class="point-item">it refers to the variety of ecosystems present in a geographical area.</div>
+                <div class="point-item">Examples include forests, grasslands, deserts, wetlands, and oceans.</div>
+                <div class="point-item">Each ecosystem has its own unique set of biotic and abiotic factors.</div>
+                <div class="point-item">A region with multiple ecosystems supports a wider range of life.</div>
+                <div class="point-item">It involves the complex interactions between different habitats.</div>
+                <div class="point-item">Protecting entire ecosystems is the best way to conserve biodiversity.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 21</span>
+            <h3>What are Sacred Groves?</h3>
+            <div class="point-list">
+                <div class="point-item">These are patches of forest traditionally protected by local communities.</div>
+                <div class="point-item">They are conserved in the name of God or a local deity.</div>
+                <div class="point-item">Hunting or cutting trees in these areas is strictly prohibited by tradition.</div>
+                <div class="point-item">Sacred groves act as "natural sanctuaries" for many rare plant species.</div>
+                <div class="point-item">In India, they are found in the Western Ghats, Rajasthan, and Meghalaya.</div>
+                <div class="point-item">They represent an ancient and successful model of community-based conservation.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 22</span>
+            <h3>Name some endangered animal species in India.</h3>
+            <div class="point-list">
+                <div class="point-item">The Royal Bengal Tiger is a major endangered species in India.</div>
+                <div class="point-item">The Asiatic Lion is found only in the Gir Forest of Gujarat.</div>
+                <div class="point-item">The One-horned Rhinoceros is native to the marshes of Assam.</div>
+                <div class="point-item">The Snow Leopard is found in the high-altitude Himalayan regions.</div>
+                <div class="point-item">The Great Indian Bustard is a critically endangered bird in Rajasthan.</div>
+                <div class="point-item">Conservation programs like Project Tiger have been launched to protect them.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 23</span>
+            <h3>Mention the "3 R's" of environmental management.</h3>
+            <div class="point-list">
+                <div class="point-item">Reduce: Lowering the consumption of resources to minimize waste.</div>
+                <div class="point-item">Reuse: Using items multiple times instead of discarding them.</div>
+                <div class="point-item">Recycle: Processing waste materials into new, useful products.</div>
+                <div class="point-item">This hierarchy helps in reducing the burden on landfills and nature.</div>
+                <div class="point-item">It promotes the sustainable use of materials like plastic, glass, and paper.</div>
+                <div class="point-item">Adopting the 3 R's is a simple way for individuals to help the planet.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 24</span>
+            <h3>What are Rare Species?</h3>
+            <div class="point-list">
+                <div class="point-item">These are species with small populations that are not yet endangered.</div>
+                <div class="point-item">They are often confined to specific geographical areas or habitats.</div>
+                <div class="point-item">They are at high risk if their environment changes or is disturbed.</div>
+                <div class="point-item">Examples include the Red Panda and the Musk Deer.</div>
+                <div class="point-item">They require close monitoring to prevent them from becoming endangered.</div>
+                <div class="point-item">Their unique genetic traits are valuable for biological research.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 25</span>
+            <h3>What are Vulnerable Species?</h3>
+            <div class="point-list">
+                <div class="point-item">These are species whose population is decreasing rapidly.</div>
+                <div class="point-item">If the negative factors continue, they are likely to become endangered.</div>
+                <div class="point-item">Habitat loss and poaching are the primary reasons for their decline.</div>
+                <div class="point-item">Examples include the Lion-tailed Macaque and the Blue Sheep.</div>
+                <div class="point-item">Protection measures are needed immediately to stabilize their numbers.</div>
+                <div class="point-item">They serve as a "warning sign" of a degrading ecosystem.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 26</span>
+            <h3>What are Indeterminate Species?</h3>
+            <div class="point-list">
+                <div class="point-item">These are species that appear to be endangered but there is not enough data.</div>
+                <div class="point-item">Due to their secretive habits, their exact population is hard to count.</div>
+                <div class="point-item">The Giant Squirrel (Shekru) of Maharashtra is a prime example.</div>
+                <div class="point-item">They are often shy and hide in dense forests or remote areas.</div>
+                <div class="point-item">Scientists are working to collect more information about their status.</div>
+                <div class="point-item">They are given protection based on the "precautionary principle."</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 27</span>
+            <h3>Mention the objectives of the Social Forestry program.</h3>
+            <div class="point-list">
+                <div class="point-item">To plant trees on barren lands and around human settlements.</div>
+                <div class="point-item">To provide fuel, fodder, and timber to local rural communities.</div>
+                <div class="point-item">To reduce the pressure on traditional, dense forest areas.</div>
+                <div class="point-item">To improve the local microclimate and control soil erosion.</div>
+                <div class="point-item">To generate employment opportunities for the rural population.</div>
+                <div class="point-item">To involve the general public in the greening of the country.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 28</span>
+            <h3>Define "Environmental Management."</h3>
+            <div class="point-list">
+                <div class="point-item">It is the systematic approach to managing human impact on the environment.</div>
+                <div class="point-item">It aims to achieve a balance between development and conservation.</div>
+                <div class="point-item">It involves planning, monitoring, and implementing environmental policies.</div>
+                <div class="point-item">Environmental management uses scientific data to make sustainable choices.</div>
+                <div class="point-item">It includes waste management, pollution control, and resource protection.</div>
+                <div class="point-item">The goal is to ensure the long-term survival of the biosphere.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 29</span>
+            <h3>What is a "Hotspot" of biodiversity?</h3>
+            
+
+[Image of global biodiversity hotspots map]
+
+            <div class="point-list">
+                <div class="point-item">A hotspot is a region with high biodiversity that is under threat.</div>
+                <div class="point-item">To be a hotspot, an area must contain at least 1500 endemic plant species.</div>
+                <div class="point-item">It must have lost at least 70% of its original primary vegetation.</div>
+                <div class="point-item">There are currently 36 biodiversity hotspots identified globally.</div>
+                <div class="point-item">In India, the Western Ghats and Eastern Himalayas are major hotspots.</div>
+                <div class="point-item">These areas are top priorities for international conservation efforts.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 30</span>
+            <h3>Name the acts related to environmental protection in India.</h3>
+            <div class="point-list">
+                <div class="point-item">The Wildlife Protection Act (1972) prohibits poaching and trade.</div>
+                <div class="point-item">The Forest Conservation Act (1980) regulates the use of forest land.</div>
+                <div class="point-item">The Environment Protection Act (1986) provides a framework for pollution control.</div>
+                <div class="point-item">The Biological Diversity Act (2002) aims to preserve genetic resources.</div>
+                <div class="point-item">The National Green Tribunal Act (2010) handles environmental legal cases.</div>
+                <div class="point-item">These laws provide the legal authority to punish environmental offenders.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 31</span>
+            <h3>What are the roles of an individual in environmental conservation?</h3>
+            <div class="point-list">
+                <div class="point-item">To minimize the use of non-biodegradable materials like plastic.</div>
+                <div class="point-item">To save water and electricity in daily household activities.</div>
+                <div class="point-item">To plant trees and participate in local greening initiatives.</div>
+                <div class="point-item">To spread awareness among friends, family, and the community.</div>
+                <div class="point-item">To follow waste segregation (wet and dry waste) at the source.</div>
+                <div class="point-item">To support eco-friendly products and sustainable businesses.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 32</span>
+            <h3>Who was Jadav Molai Payeng?</h3>
+            <div class="point-list">
+                <div class="point-item">He is a famous environmental activist from Assam, India.</div>
+                <div class="point-item">He single-handedly planted a forest on a barren sandbar of the Brahmaputra.</div>
+                <div class="point-item">The forest, now known as "Molai Forest," covers over 1360 acres.</div>
+                <div class="point-item">He started his work in 1979 and continued for over 30 years.</div>
+                <div class="point-item">He was awarded the "Padma Shri" for his extraordinary contribution.</div>
+                <div class="point-item">His story proves that a single dedicated person can create a massive impact.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 33</span>
+            <h3>What is the Chipko Movement?</h3>
+            
+            <div class="point-list">
+                <div class="point-item">It was a non-violent social and ecological movement in the 1970s.</div>
+                <div class="point-item">It started in the Garhwal Himalayas of Uttarakhand, India.</div>
+                <div class="point-item">Local villagers, especially women, hugged trees to prevent them from being cut.</div>
+                <div class="point-item">It was led by activists like Sunderlal Bahuguna and Gaura Devi.</div>
+                <div class="point-item">The movement forced the government to rethink its forest policies.</div>
+                <div class="point-item">It became a symbol of peaceful resistance for environmental causes.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 34</span>
+            <h3>Define Global Warming.</h3>
+            <div class="point-list">
+                <div class="point-item">It is the long-term rise in the average temperature of Earth's climate.</div>
+                <div class="point-item">It is primarily caused by the increase of greenhouse gases in the air.</div>
+                <div class="point-item">Greenhouse gases like $CO_2$ and Methane trap heat from the Sun.</div>
+                <div class="point-item">Human activities like burning fossil fuels and deforestation are the causes.</div>
+                <div class="point-item">It leads to the melting of glaciers and a rise in sea levels.</div>
+                <div class="point-item">Global warming results in unpredictable and extreme weather patterns.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 35</span>
+            <h3>What are the effects of Global Warming?</h3>
+            <div class="point-list">
+                <div class="point-item">Rising sea levels threaten to submerge coastal cities and islands.</div>
+                <div class="point-item">Changes in rainfall patterns lead to frequent droughts and floods.</div>
+                <div class="point-item">It causes the loss of habitats for many cold-climate animals like polar bears.</div>
+                <div class="point-item">Increased temperatures can lead to the spread of tropical diseases.</div>
+                <div class="point-item">It affects agricultural productivity, threatening food security worldwide.</div>
+                <div class="point-item">Bleaching of coral reefs is a severe consequence of warmer oceans.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 36</span>
+            <h3>Explain the Greenhouse Effect.</h3>
+            
+            <div class="point-list">
+                <div class="point-item">It is a natural process that warms the Earth's surface.</div>
+                <div class="point-item">Sunlight passes through the atmosphere and warms the ground.</div>
+                <div class="point-item">The Earth radiates this heat back toward space as infrared radiation.</div>
+                <div class="point-item">Greenhouse gases trap some of this heat, keeping the planet livable.</div>
+                <div class="point-item">Without this effect, the Earth would be too cold for life to exist.</div>
+                <div class="point-item">However, human activity has intensified this effect to dangerous levels.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 37</span>
+            <h3>What is Acid Rain?</h3>
+            [Image illustrating the formation and effects of acid rain]
+            <div class="point-list">
+                <div class="point-item">Acid rain occurs when sulfur dioxide and nitrogen oxides mix with water.</div>
+                <div class="point-item">These gases are released by burning coal and industrial processes.</div>
+                <div class="point-item">They react with atmospheric moisture to form sulfuric and nitric acids.</div>
+                <div class="point-item">The rain that falls has a low pH, making it acidic and harmful.</div>
+                <div class="point-item">It damages the leaves of trees and makes soil unfit for farming.</div>
+                <div class="point-item">It corrodes statues and buildings, like the yellowing of the Taj Mahal.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 38</span>
+            <h3>Define Ozone Layer Depletion.</h3>
+            
+            <div class="point-list">
+                <div class="point-item">The ozone layer in the stratosphere protects Earth from harmful UV rays.</div>
+                <div class="point-item">Chemicals like Chlorofluorocarbons (CFCs) react with and destroy ozone.</div>
+                <div class="point-item">CFCs are found in old refrigerators, ACs, and aerosol sprays.</div>
+                <div class="point-item">Depletion leads to the formation of "Ozone Holes" over the poles.</div>
+                <div class="point-item">Increased UV radiation causes skin cancer, cataracts, and crop damage.</div>
+                <div class="point-item">Global agreements like the Montreal Protocol aim to phase out CFCs.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 39</span>
+            <h3>What is Radioactive Pollution?</h3>
+            <div class="point-list">
+                <div class="point-item">It is the contamination of the environment with radioactive substances.</div>
+                <div class="point-item">Sources include nuclear power plants, medical waste, and atomic tests.</div>
+                <div class="point-item">Radioactive particles emit harmful radiation like Alpha, Beta, and Gamma rays.</div>
+                <div class="point-item">Radiation causes genetic mutations and diseases like leukemia (blood cancer).</div>
+                <div class="point-item">Accidents like Chernobyl and Fukushima have shown its catastrophic impact.</div>
+                <div class="point-item">Radioactive waste remains dangerous for thousands of years.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 40</span>
+            <h3>What are the advantages of using Bio-pesticides?</h3>
+            <div class="point-list">
+                <div class="point-item">They are derived from natural materials like plants, bacteria, and minerals.</div>
+                <div class="point-item">They are generally less toxic than chemical pesticides.</div>
+                <div class="point-item">They target specific pests and do not harm beneficial insects.</div>
+                <div class="point-item">They decompose quickly, leaving no harmful residues in the soil.</div>
+                <div class="point-item">Using them prevents soil and water pollution in agricultural areas.</div>
+                <div class="point-item">They are an essential part of sustainable "Organic Farming."</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 41</span>
+            <h3>What is Noise Pollution?</h3>
+            <div class="point-list">
+                <div class="point-item">It is the presence of excessive or disturbing sound in the environment.</div>
+                <div class="point-item">Sources include loud music, traffic, industrial machinery, and construction.</div>
+                <div class="point-item">It is measured in units called "Decibels" (dB).</div>
+                <div class="point-item">Prolonged exposure can cause permanent hearing loss and tinnitus.</div>
+                <div class="point-item">It leads to psychological stress, high blood pressure, and sleep disorders.</div>
+                <div class="point-item">Noise pollution also disturbs the communication and behavior of animals.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 42</span>
+            <h3>How does plastic affect the environment?</h3>
+            <div class="point-list">
+                <div class="point-item">Plastic is non-biodegradable and stays in the environment for centuries.</div>
+                <div class="point-item">It litters our land and clogs drainage systems, causing flooding.</div>
+                <div class="point-item">Animals often mistake plastic for food, which leads to their death.</div>
+                <div class="point-item">In oceans, it breaks down into "microplastics" that enter the food chain.</div>
+                <div class="point-item">Burning plastic releases toxic gases like dioxins into the atmosphere.</div>
+                <div class="point-item">Chemical additives in plastic can leach into soil and groundwater.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 43</span>
+            <h3>Mention the ways to manage solid waste.</h3>
+            <div class="point-list">
+                <div class="point-item">Segregation of waste into biodegradable and non-biodegradable categories.</div>
+                <div class="point-item">Composting of organic waste to produce natural fertilizer.</div>
+                <div class="point-item">Recycling of materials like paper, glass, metals, and certain plastics.</div>
+                <div class="point-item">Incineration (controlled burning) for medical and hazardous waste.</div>
+                <div class="point-item">Sanitary landfills for the disposal of non-recyclable materials.</div>
+                <div class="point-item">Educating people to minimize waste generation at home.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 44</span>
+            <h3>What is "E-waste" and why is it harmful?</h3>
+            
+            <div class="point-list">
+                <div class="point-item">E-waste refers to discarded electronic devices like phones and computers.</div>
+                <div class="point-item">It contains toxic metals like lead, mercury, cadmium, and arsenic.</div>
+                <div class="point-item">If not disposed of properly, these metals can leach into the soil.</div>
+                <div class="point-item">They cause severe damage to the human nervous system and kidneys.</div>
+                <div class="point-item">E-waste is often shipped to developing countries, causing local pollution.</div>
+                <div class="point-item">Proper recycling is needed to recover valuable metals and manage toxins.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 45</span>
+            <h3>What is the role of the National Green Tribunal (NGT)?</h3>
+            <div class="point-list">
+                <div class="point-item">The NGT is a specialized judicial body for environmental cases in India.</div>
+                <div class="point-item">It provides a fast-track procedure for resolving ecological disputes.</div>
+                <div class="point-item">It has the power to order compensation for victims of pollution.</div>
+                <div class="point-item">It can stop projects that violate environmental laws or safety norms.</div>
+                <div class="point-item">The NGT helps reduce the burden on traditional courts.</div>
+                <div class="point-item">It ensures that the "Polluter Pays" principle is strictly implemented.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 46</span>
+            <h3>What is Wildlife Poaching?</h3>
+            <div class="point-list">
+                <div class="point-item">It is the illegal hunting, capturing, or killing of wild animals.</div>
+                <div class="point-item">Animals are poached for their skin, fur, tusks, horns, or bones.</div>
+                <div class="point-item">It is a major threat to endangered species like tigers and rhinos.</div>
+                <div class="point-item">Poaching disrupts the food chain and balance of the ecosystem.</div>
+                <div class="point-item">It is often fueled by high demand in the international black market.</div>
+                <div class="point-item">Anti-poaching laws and patrols are essential for wildlife survival.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 47</span>
+            <h3>Mention the importance of Wetlands.</h3>
+            
+
+[Image of a wetland ecosystem]
+
+            <div class="point-list">
+                <div class="point-item">Wetlands act as natural water filters by trapping pollutants.</div>
+                <div class="point-item">They serve as "sponges" that absorb excess water during floods.</div>
+                <div class="point-item">They are important habitats for many migratory birds and amphibians.</div>
+                <div class="point-item">Wetlands help in recharging the groundwater levels of an area.</div>
+                <div class="point-item">They are highly productive ecosystems that support a variety of life.</div>
+                <div class="point-item">Protecting wetlands is vital for local climate and water security.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 48</span>
+            <h3>What is Deforestation?</h3>
+            <div class="point-list">
+                <div class="point-item">It is the large-scale clearing of forests by humans.</div>
+                <div class="point-item">Major causes include agriculture, logging, and infrastructure projects.</div>
+                <div class="point-item">It leads to the loss of habitat for millions of species.</div>
+                <div class="point-item">Deforestation increases $CO_2$ levels, accelerating global warming.</div>
+                <div class="point-item">It causes soil erosion and reduces the fertility of the land.</div>
+                <div class="point-item">The disruption of the water cycle leads to reduced rainfall and droughts.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 49</span>
+            <h3>Define Afforestation.</h3>
+            <div class="point-list">
+                <div class="point-item">Afforestation is the process of planting trees on land that was not forested.</div>
+                <div class="point-item">It helps in increasing the total forest cover of a country.</div>
+                <div class="point-item">It is a powerful tool to combat climate change and air pollution.</div>
+                <div class="point-item">Afforestation restores degraded lands and prevents desertification.</div>
+                <div class="point-item">It provides new habitats for birds and small animals.</div>
+                <div class="point-item">Communities often participate in afforestation through "Van Mahotsav."</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 50</span>
+            <h3>What is an "Endemic Species"?</h3>
+            <div class="point-list">
+                <div class="point-item">These are species found only in one specific geographical area.</div>
+                <div class="point-item">They are not found naturally anywhere else in the world.</div>
+                <div class="point-item">For example, the Kangaroo is endemic to the continent of Australia.</div>
+                <div class="point-item">The Lion-tailed Macaque is endemic to the Western Ghats of India.</div>
+                <div class="point-item">They are very vulnerable to extinction if their local habitat is destroyed.</div>
+                <div class="point-item">Conservation of endemic species is crucial for maintaining global diversity.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 51</span>
+            <h3>What are the symptoms of Environmental Stress on humans?</h3>
+            <div class="point-list">
+                <div class="point-item">Increase in respiratory ailments like coughing and wheezing.</div>
+                <div class="point-item">Frequent headaches and irritability due to noise and air pollution.</div>
+                <div class="point-item">Skin allergies and rashes caused by exposure to toxic chemicals.</div>
+                <div class="point-item">Weakened immune systems leading to more frequent infections.</div>
+                <div class="point-item">Anxiety and depression related to the loss of natural spaces.</div>
+                <div class="point-item">Long-term health issues like hormonal imbalances and cancers.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 52</span>
+            <h3>Mention the role of IUCN.</h3>
+            <div class="point-list">
+                <div class="point-item">IUCN stands for International Union for Conservation of Nature.</div>
+                <div class="point-item">It is the world's oldest and largest global environmental network.</div>
+                <div class="point-item">It maintains the "Red List" of threatened and endangered species.</div>
+                <div class="point-item">It provides scientific data to help governments draft conservation laws.</div>
+                <div class="point-item">IUCN promotes the sustainable use of natural resources worldwide.</div>
+                <div class="point-item">It coordinates international efforts to protect the Earth's biodiversity.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 53</span>
+            <h3>What is the "Red List"?</h3>
+            <div class="point-list">
+                <div class="point-item">It is a document maintained by IUCN that categorizes species by risk.</div>
+                <div class="point-item">Categories include Extinct, Endangered, Vulnerable, and Least Concern.</div>
+                <div class="point-item">It acts as an early warning system for the extinction of species.</div>
+                <div class="point-item">The list helps in prioritizing conservation funding and efforts.</div>
+                <div class="point-item">It is updated regularly based on the latest scientific research.</div>
+                <div class="point-item">Being on the Red List brings international attention to a species' plight.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 54</span>
+            <h3>What is the impact of excessive urbanization on the environment?</h3>
+            <div class="point-list">
+                <div class="point-item">Destruction of natural habitats to build roads, buildings, and malls.</div>
+                <div class="point-item">Increased demand for energy, leading to higher fossil fuel burning.</div>
+                <div class="point-item">Generation of massive amounts of solid waste and sewage.</div>
+                <div class="point-item">Over-extraction of groundwater, causing local water scarcity.</div>
+                <div class="point-item">Higher levels of air and noise pollution in densely populated areas.</div>
+                <div class="point-item">Creation of "Urban Heat Islands" with higher local temperatures.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 55</span>
+            <h3>Define Sustainable Development.</h3>
+            <div class="point-list">
+                <div class="point-item">It is development that meets current needs without compromising future ones.</div>
+                <div class="point-item">It balances economic growth with social and environmental protection.</div>
+                <div class="point-item">It encourages the use of renewable energy over fossil fuels.</div>
+                <div class="point-item">Sustainable development promotes the efficient use of all resources.</div>
+                <div class="point-item">It aims to reduce poverty while protecting the planet's ecosystems.</div>
+                <div class="point-item">The UN's "Sustainable Development Goals" (SDGs) provide a roadmap for this.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 56</span>
+            <h3>What are Renewable Energy sources?</h3>
+            [Image showing solar, wind, and hydro energy sources]
+            <div class="point-list">
+                <div class="point-item">These are energy sources that are replenished naturally and quickly.</div>
+                <div class="point-item">Examples include solar, wind, hydro, and geothermal energy.</div>
+                <div class="point-item">They produce little to no greenhouse gas emissions during operation.</div>
+                <div class="point-item">Using them reduces our dependence on finite fossil fuels like coal.</div>
+                <div class="point-item">They are essential for a clean and sustainable energy future.</div>
+                <div class="point-item">Technology for renewable energy is becoming cheaper and more efficient.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 57</span>
+            <h3>What are Non-renewable Energy sources?</h3>
+            
+            <div class="point-list">
+                <div class="point-item">These are energy sources that take millions of years to form.</div>
+                <div class="point-item">Examples include coal, petroleum, and natural gas (fossil fuels).</div>
+                <div class="point-item">Burning them releases large amounts of $CO_2$ and pollutants.</div>
+                <div class="point-item">Their extraction causes habitat destruction and oil spills.</div>
+                <div class="point-item">These resources are limited and will eventually run out.</div>
+                <div class="point-item">Shifting away from them is the primary challenge of modern energy.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 58</span>
+            <h3>What is the "Polluter Pays Principle"?</h3>
+            <div class="point-list">
+                <div class="point-item">It is an environmental law principle where the polluter bears the costs.</div>
+                <div class="point-item">The company or person responsible for pollution must pay for the cleanup.</div>
+                <div class="point-item">It encourages industries to adopt cleaner technologies to avoid fines.</div>
+                <div class="point-item">This principle helps in the restoration of damaged environments.</div>
+                <div class="point-item">It serves as a deterrent against irresponsible waste disposal.</div>
+                <div class="point-item">In India, it is strictly applied by the National Green Tribunal.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 59</span>
+            <h3>Mention the importance of Environmental Education.</h3>
+            <div class="point-list">
+                <div class="point-item">It creates awareness about the importance of nature and ecosystems.</div>
+                <div class="point-item">It teaches children and adults how to live a more sustainable life.</div>
+                <div class="point-item">Education helps people understand the consequences of their actions.</div>
+                <div class="point-item">It empowers communities to fight for their local environmental rights.</div>
+                <div class="point-item">It is a mandatory part of the curriculum in most modern schools.</div>
+                <div class="point-item">Knowledge is the first step toward any meaningful conservation action.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 60</span>
+            <h3>What is "Biomagnification"?</h3>
+            
+
+[Image of biomagnification in an aquatic food chain]
+
+            <div class="point-list">
+                <div class="point-item">It is the increase in the concentration of toxins at higher trophic levels.</div>
+                <div class="point-item">Toxins like Mercury or DDT enter the food chain through producers.</div>
+                <div class="point-item">These chemicals are not easily excreted or broken down by organisms.</div>
+                <div class="point-item">As one animal eats another, the toxin concentration multiplies.</div>
+                <div class="point-item">Top predators (like eagles or humans) end up with the highest levels.</div>
+                <div class="point-item">This can lead to reproductive failure or death in apex species.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 61</span>
+            <h3>What are the characters of a Biosphere Reserve?</h3>
+            <div class="point-list">
+                <div class="point-item">It is a large area of land or sea protected for conservation.</div>
+                <div class="point-item">It consists of three zones: Core, Buffer, and Transition zones.</div>
+                <div class="point-item">The Core zone is strictly protected for wildlife and research.</div>
+                <div class="point-item">The Buffer zone allows limited human activity like tourism and education.</div>
+                <div class="point-item">The Transition zone allows local communities to live and work sustainably.</div>
+                <div class="point-item">India has 18 Biosphere Reserves, such as Nilgiri and Nanda Devi.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 62</span>
+            <h3>Define "In-situ Conservation".</h3>
+            <div class="point-list">
+                <div class="point-item">It is the conservation of species in their natural, original habitat.</div>
+                <div class="point-item">Examples include National Parks, Wildlife Sanctuaries, and Sacred Groves.</div>
+                <div class="point-item">It allows species to live and evolve in their natural environment.</div>
+                <div class="point-item">It protects the entire ecosystem and all the species within it.</div>
+                <div class="point-item">This is the most effective and preferred method of conservation.</div>
+                <div class="point-item">It requires large areas of land to be legally protected from human use.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 63</span>
+            <h3>Define "Ex-situ Conservation".</h3>
+            <div class="point-list">
+                <div class="point-item">It is the conservation of species outside their natural habitat.</div>
+                <div class="point-item">Examples include Zoos, Botanical Gardens, and Gene Banks.</div>
+                <div class="point-item">It is used when a species is at extremely high risk of extinction.</div>
+                <div class="point-item">It provides a safe environment for breeding and medical care.</div>
+                <div class="point-item">Genetic material like seeds or sperm can be stored for the future.</div>
+                <div class="point-item">It serves as a "backup plan" if a species disappears from the wild.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 64</span>
+            <h3>What are the effects of radioactive accidents?</h3>
+            <div class="point-list">
+                <div class="point-item">Immediate death of nearby organisms due to high-intensity radiation.</div>
+                <div class="point-item">Long-term increase in cancer and birth defects in the local population.</div>
+                <div class="point-item">Contamination of soil and water, making them unfit for use for centuries.</div>
+                <div class="point-item">Total evacuation of towns and cities, creating "ghost towns."</div>
+                <div class="point-item">Disruption of local food chains and mass death of wildlife.</div>
+                <div class="point-item">Enormous economic costs for containment and long-term monitoring.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 65</span>
+            <h3>Mention the role of NGO "Bombay Natural History Society" (BNHS).</h3>
+            <div class="point-list">
+                <div class="point-item">BNHS is one of the largest non-governmental organizations in India.</div>
+                <div class="point-item">It is dedicated to the study and conservation of birds and wildlife.</div>
+                <div class="point-item">It publishes scientific journals and provides data for conservation.</div>
+                <div class="point-item">BNHS played a key role in the vulture conservation program in India.</div>
+                <div class="point-item">It organizes nature camps and awareness programs for students.</div>
+                <div class="point-item">It works closely with the government on international environmental issues.</div>
+            </div>
+        </div>
+
+        <div class="point-list">
+            <span class="q-number">Question 66</span>
+            <h3>What is the impact of fertilizers on water bodies?</h3>
+            [Image showing eutrophication in a lake due to fertilizers]
+            <div class="point-list">
+                <div class="point-item">Rainwater washes excess fertilizers into nearby lakes and rivers.</div>
+                <div class="point-item">The high nutrient content causes a rapid growth of algae (Algal Bloom).</div>
+                <div class="point-item">This process, called Eutrophication, blocks sunlight from reaching water.</div>
+                <div class="point-item">When the algae die, bacteria use up all the oxygen to decompose them.</div>
+                <div class="point-item">Fish and other aquatic life die due to the lack of dissolved oxygen.</div>
+                <div class="point-item">The water body eventually becomes "dead" and emits foul odors.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 67</span>
+            <h3>What is "Desertification"?</h3>
+            [Image showing the process of soil desertification]
+            <div class="point-list">
+                <div class="point-item">It is the process by which fertile land becomes a desert.</div>
+                <div class="point-item">Major causes include overgrazing, deforestation, and poor irrigation.</div>
+                <div class="point-item">It results in the total loss of vegetation and biodiversity.</div>
+                <div class="point-item">The soil becomes sandy, dry, and incapable of supporting life.</div>
+                <div class="point-item">It is a significant threat in arid and semi-arid regions of the world.</div>
+                <div class="point-item">Combating desertification involves large-scale tree planting and soil care.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 68</span>
+            <h3>What are the benefits of Organic Farming?</h3>
+            <div class="point-list">
+                <div class="point-item">It avoids the use of harmful chemical fertilizers and pesticides.</div>
+                <div class="point-item">It maintains and improves the long-term health of the soil.</div>
+                <div class="point-item">Organic products are safer and healthier for human consumption.</div>
+                <div class="point-item">It promotes biodiversity by using natural pest control methods.</div>
+                <div class="point-item">It reduces the pollution of groundwater and nearby water bodies.</div>
+                <div class="point-item">Organic farming is more sustainable and environment-friendly.</div>
+            </div>
+        </div>
+<div class="q-card">
+    <span class="q-number">Question 69</span>
+    <h3>Define "Carrying Capacity" of an ecosystem.</h3>
+    <div class="point-list">
+        <div class="point-item">It is the maximum population of a species an environment can support.</div>
+        <div class="point-item">It depends on available resources like food, water, and space.</div>
+        <div class="point-item">If the population exceeds this capacity, resources become depleted.</div>
+        <div class="point-item">This leads to competition, starvation, and a population crash.</div>
+        <div class="point-item">Maintaining populations within this limit is vital for stability.</div>
+        <div class="point-item">Human population growth is currently testing the Earth's carrying capacity.</div>
+    </div>
+</div>
+
+<div class="q-card">
+    <span class="q-number">Question 70</span>
+    <h3>What are the dangers of modern industrialization?</h3>
+    <div class="point-list">
+        <div class="point-item">Release of massive amounts of greenhouse gases into the air.</div>
+        <div class="point-item">Dumping of toxic chemical waste into rivers and oceans.</div>
+        <div class="point-item">High demand for raw materials leading to the destruction of forests.</div>
+        <div class="point-item">Creation of large landfills filled with non-biodegradable waste.</div>
+        <div class="point-item">Increased risk of industrial accidents like gas leaks or oil spills.</div>
+        <div class="point-item">Disruption of the traditional lifestyles of local and indigenous people.</div>
+    </div>
+</div>
+
+<div class="q-card">
+    <span class="q-number">Question 71</span>
+    <h3>What is the role of microorganisms in the environment?</h3>
+    <div class="point-list">
+        <div class="point-item">They act as decomposers, recycling nutrients back into the soil.</div>
+        <div class="point-item">Some bacteria fix atmospheric nitrogen, helping plants to grow.</div>
+        <div class="point-item">Microbes help in the treatment of sewage in urban areas.</div>
+        <div class="point-item">They are used in "Bioremediation" to clean up oil spills.</div>
+        <div class="point-item">They form a crucial part of the food chain in many ecosystems.</div>
+        <div class="point-item">Certain microbes help in the production of oxygen in the oceans.</div>
+    </div>
+</div>
+
+<div class="q-card">
+    <span class="q-number">Question 72</span>
+    <h3>Mention the importance of the Tiger in our ecosystem.</h3>
+    <div class="point-list">
+        <div class="point-item">The tiger is an "Apex Predator" at the top of the food chain.</div>
+        <div class="point-item">It helps in regulating the population of large herbivores like deer.</div>
+        <div class="point-item">By controlling herbivores, it protects the forest vegetation.</div>
+        <div class="point-item">Protecting tigers requires protecting large areas of forest (Umbrella species).</div>
+        <div class="point-item">Tigers are indicators of the health of the entire forest ecosystem.</div>
+        <div class="point-item">Their presence ensures the survival of hundreds of other species.</div>
+    </div>
+</div>
+
+<div class="q-card">
+    <span class="q-number">Question 73</span>
+    <h3>What is "Ecotourism"?</h3>
+    <div class="point-list">
+        <div class="point-item">It is responsible travel to natural areas that conserves the environment.</div>
+        <div class="point-item">It aims to minimize the impact of tourists on the local habitat.</div>
+        <div class="point-item">Ecotourism provides financial benefits for local conservation efforts.</div>
+        <div class="point-item">It helps in educating visitors about the importance of biodiversity.</div>
+        <div class="point-item">It respects the culture and rights of the local indigenous people.</div>
+        <div class="point-item">When done correctly, it is a win-win for both people and nature.</div>
+    </div>
+</div>
+
+<div class="q-card">
+    <span class="q-number">Question 74</span>
+    <h3>Define "Biogeochemical Cycles."</h3>
+    
+    <div class="point-list">
+        <div class="point-item">These are pathways through which essential elements move through Earth.</div>
+        <div class="point-item">Major cycles include the Carbon, Nitrogen, Oxygen, and Water cycles.</div>
+        <div class="point-item">Elements move between biotic (living) and abiotic (non-living) parts.</div>
+        <div class="point-item">These cycles ensure that essential nutrients are never permanently lost.</div>
+        <div class="point-item">Human activity, like pollution, can disrupt the balance of these cycles.</div>
+        <div class="point-item">Maintaining these cycles is fundamental to the sustainability of life.</div>
+    </div>
+</div>
+
+<div class="q-card">
+    <span class="q-number">Question 75</span>
+    <h3>What is the impact of Mining on the environment?</h3>
+    <div class="point-list">
+        <div class="point-item">It causes the total destruction of forests and topsoil in the area.</div>
+        <div class="point-item">Mining leads to severe soil and water pollution from toxic minerals.</div>
+        <div class="point-item">It creates huge open pits that destroy the local landscape.</div>
+        <div class="point-item">The process uses large amounts of water, leading to local scarcity.</div>
+        <div class="point-item">It produces massive amounts of "tailings" or waste material.</div>
+        <div class="point-item">Dust from mining operations causes respiratory issues for locals.</div>
+    </div>
+</div>
+
+<div class="q-card">
+    <span class="q-number">Question 76</span>
+    <h3>What is the significance of the "Western Ghats"?</h3>
+    <div class="point-list">
+        <div class="point-item">It is one of the eight "hottest hotspots" of biodiversity in the world.</div>
+        <div class="point-item">It is home to thousands of species that are found nowhere else.</div>
+        <div class="point-item">The Western Ghats are a major source of several large Indian rivers.</div>
+        <div class="point-item">They act as a barrier to monsoon winds, providing rain to India.</div>
+        <div class="point-item">The region is rich in medicinal plants and valuable timber.</div>
+        <div class="point-item">Protecting the Western Ghats is vital for the climate of South India.</div>
+    </div>
+</div>
+
+<div class="q-card">
+    <span class="q-number">Question 77</span>
+    <h3>What is "Project Tiger"?</h3>
+    <div class="point-list">
+        <div class="point-item">It is a wildlife conservation project launched in India in 1973.</div>
+        <div class="point-item">It aims to ensure a viable population of Bengal tigers in the wild.</div>
+        <div class="point-item">The project established various "Tiger Reserves" across the country.</div>
+        <div class="point-item">It focuses on habitat protection and strict anti-poaching measures.</div>
+        <div class="point-item">It has successfully increased the tiger population over the years.</div>
+        <div class="point-item">Project Tiger is considered one of the world's most successful projects.</div>
+    </div>
+</div>
+
+<div class="q-card">
+    <span class="q-number">Question 78</span>
+    <h3>Mention the characters of a National Park.</h3>
+    <div class="point-list">
+        <div class="point-item">It is an area strictly reserved for the protection of wildlife.</div>
+        <div class="point-item">Activities like hunting, grazing, or farming are strictly prohibited.</div>
+        <div class="point-item">National Parks are owned and managed by the central government.</div>
+        <div class="point-item">They have fixed boundaries and are protected by law.</div>
+        <div class="point-item">They are used for scientific research and controlled tourism.</div>
+        <div class="point-item">Examples in India include Corbett, Kaziranga, and Tadoba.</div>
+    </div>
+</div>
+
+<div class="q-card">
+    <span class="q-number">Question 79</span>
+    <h3>Mention the characters of a Wildlife Sanctuary.</h3>
+    <div class="point-list">
+        <div class="point-item">It is a protected area where animals are safe from any disturbance.</div>
+        <div class="point-item">Limited human activities like timber harvesting are sometimes allowed.</div>
+        <div class="point-item">Unlike national parks, they do not always have strictly fixed boundaries.</div>
+        <div class="point-item">They are often focused on protecting a particular species.</div>
+        <div class="point-item">Private ownership of land is sometimes permitted within a sanctuary.</div>
+        <div class="point-item">They provide a safe haven for birds, animals, and reptiles.</div>
+    </div>
+</div>
+
+<div class="q-card">
+    <span class="q-number">Question 80</span>
+    <h3>What is "Environmental Auditing"?</h3>
+    <div class="point-list">
+        <div class="point-item">it is a systematic review of a company's environmental performance.</div>
+        <div class="point-item">It checks if the industry is following all environmental laws and norms.</div>
+        <div class="point-item">It identifies areas where a company can reduce waste and pollution.</div>
+        <div class="point-item">The goal is to minimize the industrial footprint on the environment.</div>
+        <div class="point-item">It helps companies save money by improving resource efficiency.</div>
+        <div class="point-item">Regular auditing is becoming mandatory for large corporations.</div>
+    </div>
+</div>
+
+<div class="q-card">
+    <span class="q-number">Question 81</span>
+    <h3>What are the dangers of over-fishing?</h3>
+    <div class="point-list">
+        <div class="point-item">It leads to the total collapse of fish populations in certain areas.</div>
+        <div class="point-item">It disrupts the marine food web, affecting sharks and sea birds.</div>
+        <div class="point-item">Over-fishing of one species can lead to an explosion of their prey.</div>
+        <div class="point-item">It threatens the livelihoods of traditional fishing communities.</div>
+        <div class="point-item">Many "by-catch" animals like turtles and dolphins are killed in nets.</div>
+        <div class="point-item">Oceans lose their ability to provide food for the growing world population.</div>
+    </div>
+</div>
+
+<div class="q-card">
+    <span class="q-number">Question 82</span>
+    <h3>What is "Composting"?</h3>
+    
+    <div class="point-list">
+        <div class="point-item">It is the process of decomposing organic waste into nutrient-rich soil.</div>
+        <div class="point-item">It uses kitchen waste like vegetable peels, fruit scraps, and leaves.</div>
+        <div class="point-item">Bacteria, fungi, and earthworms help in breaking down the matter.</div>
+        <div class="point-item">The final product, "Compost," is an excellent natural fertilizer.</div>
+        <div class="point-item">Composting reduces the amount of waste sent to city landfills.</div>
+        <div class="point-item">It is a simple and effective way to recycle nutrients at home.</div>
+    </div>
+</div>
+
+<div class="q-card">
+    <span class="q-number">Question 83</span>
+    <h3>Define "Secondary Pollutants."</h3>
+    <div class="point-list">
+        <div class="point-item">These are pollutants that are not emitted directly into the air.</div>
+        <div class="point-item">They form when primary pollutants react with other substances.</div>
+        <div class="point-item">Smog is a classic example of a secondary pollutant.</div>
+        <div class="point-item">Ground-level ozone is formed by reactions between NOx and sunlight.</div>
+        <div class="point-item">Acid rain is also a result of secondary chemical reactions.</div>
+        <div class="point-item">They are often more toxic and harder to control than primary ones.</div>
+    </div>
+</div>
+
+<div class="q-card">
+    <span class="q-number">Question 84</span>
+    <h3>Mention the role of the World Wildlife Fund (WWF).</h3>
+    <div class="point-list">
+        <div class="point-item">WWF is an international NGO working for wildlife conservation.</div>
+        <div class="point-item">Its famous logo is the Giant Panda.</div>
+        <div class="point-item">It focuses on protecting the world's most vulnerable species.</div>
+        <div class="point-item">WWF works to reduce the human footprint on the environment.</div>
+        <div class="point-item">It funds conservation projects in more than 100 countries.</div>
+        <div class="point-item">It promotes the transition to a sustainable, green global economy.</div>
+    </div>
+</div>
+
+<div class="q-card">
+    <span class="q-number">Question 85</span>
+    <h3>What is the impact of oil spills on the ocean?</h3>
+    
+    <div class="point-list">
+        <div class="point-item">Oil creates a thick layer on the surface, blocking sunlight and oxygen.</div>
+        <div class="point-item">It coats the feathers of birds, preventing them from flying or staying warm.</div>
+        <div class="point-item">It is toxic to fish, coral reefs, and marine mammals like seals.</div>
+        <div class="point-item">Oil spills cause long-term damage to the coastal tourism and fishing industries.</div>
+        <div class="point-item">Cleanup is extremely difficult and can take several years or decades.</div>
+        <div class="point-item">Major spills, like the Exxon Valdez, have caused ecological disasters.</div>
+    </div>
+</div>
+
+<div class="q-card">
+    <span class="q-number">Question 86</span>
+    <h3>What is "Bioremediation"?</h3>
+    <div class="point-list">
+        <div class="point-item">It is the use of living organisms to remove pollutants from a site.</div>
+        <div class="point-item">Certain bacteria can "eat" and break down oil or toxic chemicals.</div>
+        <div class="point-item">It is a natural and cost-effective way to clean up contaminated soil.</div>
+        <div class="point-item">Plants can also be used to absorb heavy metals (Phytoremediation).</div>
+        <div class="point-item">It is used after industrial leaks or oil spills in the ocean.</div>
+        <div class="point-item">Bioremediation helps in restoring the environment without using more chemicals.</div>
+    </div>
+</div>
+
+<div class="q-card">
+    <span class="q-number">Question 87</span>
+    <h3>What are the effects of burning agricultural waste (parali)?</h3>
+    <div class="point-list">
+        <div class="point-item">It releases huge amounts of smoke and $CO_2$ into the atmosphere.</div>
+        <div class="point-item">It contributes significantly to air pollution in nearby cities.</div>
+        <div class="point-item">Burning kills beneficial microorganisms and insects in the soil.</div>
+        <div class="point-item">The high heat destroys the nutrient content and structure of the soil.</div>
+        <div class="point-item">It increases the risk of uncontrolled forest or farm fires.</div>
+        <div class="point-item">Smoke from burning crops causes severe breathing issues for locals.</div>
+    </div>
+</div>
+
+<div class="q-card">
+    <span class="q-number">Question 88</span>
+    <h3>Mention the significance of the "Red Panda."</h3>
+    <div class="point-list">
+        <div class="point-item">It is a small mammal endemic to the high-altitude forests of the Himalayas.</div>
+        <div class="point-item">It is an endangered species due to habitat loss and fragmentation.</div>
+        <div class="point-item">It is an "Indicator Species" for the health of Himalayan forests.</div>
+        <div class="point-item">The Red Panda is primarily a herbivore, feeding on bamboo.</div>
+        <div class="point-item">Conservation efforts include habitat protection and captive breeding.</div>
+        <div class="point-item">It is a symbol of the unique biodiversity found in North-East India.</div>
+    </div>
+</div>
+
+<div class="q-card">
+    <span class="q-number">Question 89</span>
+    <h3>What is "Green Chemistry"?</h3>
+    <div class="point-list">
+        <div class="point-item">It is the design of chemical products that reduce the use of toxins.</div>
+        <div class="point-item">It aims to prevent pollution at the molecular level.</div>
+        <div class="point-item">Green chemistry focuses on using renewable raw materials.</div>
+        <div class="point-item">It encourages the use of safe solvents and energy-efficient processes.</div>
+        <div class="point-item">The goal is to make industrial production safer for people and nature.</div>
+        <div class="point-item">It is a key part of the modern sustainable industrial revolution.</div>
+    </div>
+</div>
+
+<div class="q-card">
+    <span class="q-number">Question 90</span>
+    <h3>Why are corals called the "Rainforests of the Ocean"?</h3>
+    
+    <div class="point-list">
+        <div class="point-item">Coral reefs support a massive variety of marine species in a small area.</div>
+        <div class="point-item">They provide food and shelter for about 25% of all marine life.</div>
+        <div class="point-item">Like rainforests, they are highly productive and diverse ecosystems.</div>
+        <div class="point-item">They protect coastlines from the impact of waves and storms.</div>
+        <div class="point-item">Corals are extremely sensitive to temperature changes and pollution.</div>
+        <div class="point-item">Their loss would lead to the extinction of thousands of marine species.</div>
+    </div>
+</div>
+
+<div class="q-card">
+    <span class="q-number">Question 91</span>
+    <h3>What is the role of the individual in waste management?</h3>
+    <div class="point-list">
+        <div class="point-item">To practice "source segregation" by separating wet and dry waste.</div>
+        <div class="point-item">To avoid buying products with excessive or unnecessary packaging.</div>
+        <div class="point-item">To use cloth bags instead of single-use plastic bags for shopping.</div>
+        <div class="point-item">To donate old clothes and electronics instead of throwing them away.</div>
+        <div class="point-item">To compost kitchen waste if space and facilities are available.</div>
+        <div class="point-item">To properly dispose of hazardous items like batteries and medicines.</div>
+    </div>
+</div>
+
+<div class="q-card">
+    <span class="q-number">Question 92</span>
+    <h3>What are the characters of a "Green Building"?</h3>
+    <div class="point-list">
+        <div class="point-item">It is designed to be energy-efficient and environmentally friendly.</div>
+        <div class="point-item">It uses natural light and ventilation to reduce electricity needs.</div>
+        <div class="point-item">Rainwater harvesting systems are installed to save water.</div>
+        <div class="point-item">Use of recycled or eco-friendly materials in construction.</div>
+        <div class="point-item">Installation of solar panels to generate clean energy on-site.</div>
+        <div class="point-item">It provides a healthier and more productive indoor environment.</div>
+    </div>
+</div>
+
+<div class="q-card">
+    <span class="q-number">Question 93</span>
+    <h3>What is the "Montreal Protocol"?</h3>
+    <div class="point-list">
+        <div class="point-item">It is an international treaty designed to protect the ozone layer.</div>
+        <div class="point-item">It was signed in 1987 to phase out the production of CFCs.</div>
+        <div class="point-item">It is considered one of the most successful environmental agreements.</div>
+        <div class="point-item">Almost every country in the world has joined the protocol.</div>
+        <div class="point-item">As a result, the ozone layer is slowly showing signs of recovery.</div>
+        <div class="point-item">It shows that global cooperation can solve environmental crises.</div>
+    </div>
+</div>
+
+<div class="q-card">
+    <span class="q-number">Question 94</span>
+    <h3>What is the "Kyoto Protocol"?</h3>
+    <div class="point-list">
+        <div class="point-item">It is an international agreement to reduce greenhouse gas emissions.</div>
+        <div class="point-item">It was adopted in Japan in 1997 to combat global warming.</div>
+        <div class="point-item">It set mandatory targets for developed nations to lower their $CO_2$.</div>
+        <div class="point-item">It introduced concepts like "Carbon Credits" and "Carbon Trading."</div>
+        <div class="point-item">While controversial, it was the first step toward global climate action.</div>
+        <div class="point-item">It has been succeeded by the broader "Paris Agreement."</div>
+    </div>
+</div>
+
+<div class="q-card">
+    <span class="q-number">Question 95</span>
+    <h3>What is "Carbon Footprint"?</h3>
+    <div class="point-list">
+        <div class="point-item">It is the total amount of greenhouse gases produced by an individual or entity.</div>
+        <div class="point-item">It is measured in tons of $CO_2$ emitted per year.</div>
+        <div class="point-item">Activities like driving cars and flying increase your carbon footprint.</div>
+        <div class="point-item">Eating meat and using lots of electricity also contribute significantly.</div>
+        <div class="point-item">Reducing your footprint is essential to slow down global warming.</div>
+        <div class="point-item">Many apps help individuals calculate and reduce their personal footprint.</div>
+    </div>
+</div>
+
+<div class="q-card">
+    <span class="q-number">Question 96</span>
+    <h3>What is the impact of loud crackers on the environment?</h3>
+    <div class="point-list">
+        <div class="point-item">They release huge amounts of toxic smoke and heavy metal particles.</div>
+        <div class="point-item">The sudden loud noise causes extreme stress to birds and animals.</div>
+        <div class="point-item">Crackers are a major source of temporary but intense air pollution.</div>
+        <div class="point-item">They create large amounts of chemical waste on streets and in soil.</div>
+        <div class="point-item">They can cause hearing damage and respiratory attacks in humans.</div>
+        <div class="point-item">Many cities now promote "Green Crackers" or "Cracker-free" festivals.</div>
+    </div>
+</div>
+
+<div class="q-card">
+    <span class="q-number">Question 97</span>
+    <h3>Mention the significance of the "Giant Squirrel" (Shekru).</h3>
+    <div class="point-list">
+        <div class="point-item">It is the State Animal of Maharashtra, India.</div>
+        <div class="point-item">It is an indeterminate species found in the dense forests of Bhimashankar.</div>
+        <div class="point-item">It lives in the upper canopy of trees and rarely comes to the ground.</div>
+        <div class="point-item">The squirrel plays a role in seed dispersal within the forest.</div>
+        <div class="point-item">Habitat fragmentation is the biggest threat to its survival.</div>
+        <div class="point-item">Protecting it means protecting the high-canopy forests of Maharashtra.</div>
+    </div>
+</div>
+
+<div class="q-card">
+    <span class="q-number">Question 98</span>
+    <h3>What is the "One Health" concept?</h3>
+    <div class="point-list">
+        <div class="point-item">It is the recognition that human health is linked to animal and environmental health.</div>
+        <div class="point-item">Most new infectious diseases (like COVID-19) come from animals.</div>
+        <div class="point-item">Protecting natural habitats reduces the risk of such "spillover" events.</div>
+        <div class="point-item">It requires cooperation between doctors, veterinarians, and ecologists.</div>
+        <div class="point-item">A healthy environment leads to healthy animals and healthy humans.</div>
+        <div class="point-item">It is the most modern approach to preventing future global pandemics.</div>
+    </div>
+</div>
+
+<div class="q-card">
+    <span class="q-number">Question 99</span>
+    <h3>Why is the South Pole more affected by ozone depletion?</h3>
+    <div class="point-list">
+        <div class="point-item">The extremely cold temperatures over Antarctica allow for special clouds.</div>
+        <div class="point-item">These "Polar Stratospheric Clouds" provide a surface for chemical reactions.</div>
+        <div class="point-item">During the spring, sunlight triggers the destruction of ozone by CFCs.</div>
+        <div class="point-item">The "Polar Vortex" winds keep the air trapped over the pole.</div>
+        <div class="point-item">This leads to the formation of the massive "Ozone Hole" every year.</div>
+        <div class="point-item">The effect is less severe at the North Pole due to different wind patterns.</div>
+    </div>
+</div>
+
+<div class="q-card">
+    <span class="q-number">Question 100</span>
+    <h3>Summarize the future of Environmental Management.</h3>
+    <div class="point-list">
+        <div class="point-item">It will focus more on digital technology and AI to monitor the Earth.</div>
+        <div class="point-item">Transitioning to 100% renewable energy is the top global goal.</div>
+        <div class="point-item">Restoration of degraded ecosystems (Nature-based solutions) is vital.</div>
+        <div class="point-item">Individual lifestyle changes will become mandatory through "Green Laws."</div>
+        <div class="point-item">Global cooperation will be tested as climate change impacts increase.</div>
+        <div class="point-item">The survival of humanity depends on how well we manage our environment.</div>
+    </div>
+</div>
+    </div>
+
+    <script>
+        function searchFunction() {
+            let input = document.getElementById('searchInput');
+            let filter = input.value.toUpperCase();
+            let cards = document.getElementsByClassName('q-card');
+            for (let i = 0; i < cards.length; i++) {
+                let text = cards[i].innerText || cards[i].textContent;
+                cards[i].style.display = text.toUpperCase().includes(filter) ? "" : "none";
+            }
+        }
+    </script>
+</body>
+</html>

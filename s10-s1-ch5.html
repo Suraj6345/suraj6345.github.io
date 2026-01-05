@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch 5: Heat | MituEdu Full Bank</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        .search-container {
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+#searchInput {
+    width: 100%;
+    max-width: 600px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    background: rgba(255,255, 255, 0.1);
+    color: rgb(255, 255, 255);
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#searchInput:focus {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: var(--primary-accent);
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.3);
+}
+
+#searchInput::placeholder {
+    color: var(--text-dim);
+}
+        :root {
+            --heat-red: #ff3e3e;
+            --ice-blue: #00d4ff;
+            --bg-dark: #0a0e14;
+            --card-bg: #161b22;
+            --text-main: #e6edf3;
+        }
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container { max-width: 900px; margin: auto; }
+        .header-box {
+            background: linear-gradient(135deg, var(--heat-red), #ff8c00);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 24px rgba(255, 62, 62, 0.2);
+        }
+        .q-card {
+            background: var(--card-bg);
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-top: 4px solid var(--ice-blue);
+        }
+        h3 { color: var(--ice-blue); margin-top: 0; font-size: 1.25rem; }
+        .point-list { list-style: none; padding: 0; }
+        .point-item { 
+            position: relative; 
+            padding-left: 25px; 
+            margin-bottom: 10px; 
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            padding-bottom: 8px;
+        }
+        .point-item::before {
+            content: "•";
+            color: var(--heat-red);
+            font-weight: bold;
+            position: absolute;
+            left: 5px;
+            font-size: 1.2rem;
+        }
+        .formula {
+            background: #000;
+            padding: 12px;
+            border-radius: 6px;
+            display: inline-block;
+            color: #fff;
+            margin: 10px 0;
+            border: 1px solid var(--heat-red);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-box">
+            <div class="search-container">
+    <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Search for questions or keywords...">
+</div>
+            <h1>SSC Science 1 - Chapter 5: Heat</h1>
+            <p>Point-Wise Study Guide • No Words Missing • MituEdu Pro</p>
+        </div>
+
+        
+        <div class="q-card">
+            <h3>1. Define Latent Heat of Fusion.</h3>
+            <div class="point-list">
+                <div class="point-item">It is the heat energy absorbed at a constant temperature when a solid converts into a liquid.</div>
+                <div class="point-item">This energy is utilized to weaken the bonds between the molecules of the solid.</div>
+                <div class="point-item">The temperature of the substance does not rise during this phase transition.</div>
+                <div class="point-item">For ice, the specific latent heat of fusion is 80 cal/g.</div>
+                <div class="point-item">In the SI system, it is measured in Joules per kilogram (J/kg).</div>
+                <div class="point-item">The process occurs specifically at the melting point of the substance.</div>
+            </div>
+        </div>
+
+        
+        <div class="q-card">
+            <h3>2. Explain the concept of Latent Heat of Vaporization.</h3>
+            <div class="point-list">
+                <div class="point-item">It is the heat energy absorbed at a constant temperature during the transformation of liquid into gas.</div>
+                <div class="point-item">The supplied heat is used to completely break the intermolecular forces of the liquid.</div>
+                <div class="point-item">The temperature remains stationary until the entire liquid has turned into vapor.</div>
+                <div class="point-item">For water, the specific latent heat of vaporization is 540 cal/g.</div>
+                <div class="point-item">This "hidden" heat does not increase the kinetic energy of the molecules.</div>
+                <div class="point-item">It explains why steam at 100°C is more dangerous than boiling water at the same temperature.</div>
+            </div>
+        </div>
+
+        
+        <div class="q-card">
+            <h3>3. Describe the phenomenon of Regelation.</h3>
+            <div class="point-list">
+                <div class="point-item">Regelation is the process where ice melts under pressure and refreezes when pressure is removed.</div>
+                <div class="point-item">When pressure is applied to ice, its melting point decreases below 0°C.</div>
+                <div class="point-item">This causes the ice to turn into water at a temperature lower than its normal melting point.</div>
+                <div class="point-item">As soon as the pressure is released, the melting point returns to 0°C.</div>
+                <div class="point-item">The water then immediately converts back into ice.</div>
+                <div class="point-item">This property allows a wire with weights to pass through a block of ice without cutting it in two.</div>
+            </div>
+        </div>
+
+        
+        <div class="q-card">
+            <h3>4. What is the Anomalous Behavior of Water?</h3>
+            <div class="point-list">
+                <div class="point-item">Most liquids expand on heating, but water shows an exception between 0°C and 4°C.</div>
+                <div class="point-item">If water is heated from 0°C, it contracts instead of expanding until it reaches 4°C.</div>
+                <div class="point-item">At 4°C, the volume of a given mass of water is at its minimum.</div>
+                <div class="point-item">As the temperature rises above 4°C, water begins to expand like other liquids.</div>
+                <div class="point-item">If water is cooled from 4°C to 0°C, its volume increases.</div>
+                <div class="point-item">This unique property is known as the anomalous expansion of water.</div>
+            </div>
+        </div>
+
+        [Image showing aquatic life in a frozen lake with ice on top and 4 degree Celsius water at the bottom]
+        <div class="q-card">
+            <h3>5. How does the anomalous behavior of water support aquatic life?</h3>
+            <div class="point-list">
+                <div class="point-item">In cold regions, the surface water of lakes cools down to 4°C first.</div>
+                <div class="point-item">Being dense, this 4°C water sinks to the bottom, pushing warmer water up.</div>
+                <div class="point-item">Eventually, the entire body of water reaches 4°C.</div>
+                <div class="point-item">If cooling continues, surface water becomes lighter (less than 4°C) and stays at the top.</div>
+                <div class="point-item">The surface eventually freezes into ice at 0°C, which floats on the denser 4°C water.</div>
+                <div class="point-item">Ice acts as an insulator, keeping the water below liquid and allowing fish to survive.</div>
+            </div>
+        </div>
+
+        
+        <div class="q-card">
+            <h3>6. Explain the construction of Hope’s Apparatus.</h3>
+            <div class="point-list">
+                <div class="point-item">It consists of a tall metallic cylinder designed to hold water.</div>
+                <div class="point-item">A flat trough or bowl is attached to the center of the cylinder.</div>
+                <div class="point-item">This central trough is filled with a freezing mixture of ice and salt.</div>
+                <div class="point-item">There are two thermometers, one at the top (T1) and one at the bottom (T2).</div>
+                <div class="point-item">These thermometers monitor the temperature changes in the different layers of water.</div>
+                <div class="point-item">It is specifically designed to study the density changes in water near 4°C.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <h3>7. Describe the observations of Hope’s experiment.</h3>
+            <div class="point-list">
+                <div class="point-item">Initially, both thermometers show the same room temperature.</div>
+                <div class="point-item">As the middle part cools, the bottom thermometer (T2) drops rapidly to 4°C.</div>
+                <div class="point-item">T2 then stays constant at 4°C while the top thermometer (T1) starts dropping.</div>
+                <div class="point-item">T1 eventually drops all the way to 0°C while T2 remains at 4°C.</div>
+                <div class="point-item">This happens because water at 4°C is at its maximum density and stays at the bottom.</div>
+                <div class="point-item">Water cooler than 4°C is lighter and rises to the top layer.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <h3>8. Define Dew Point Temperature.</h3>
+            <div class="point-list">
+                <div class="point-item">Air has a certain capacity to hold water vapor which depends on its temperature.</div>
+                <div class="point-item">If unsaturated air is cooled, its capacity to hold moisture decreases.</div>
+                <div class="point-item">A specific temperature is reached where the air becomes fully saturated with vapor.</div>
+                <div class="point-item">This temperature is called the dew point temperature.</div>
+                <div class="point-item">Below this temperature, excess water vapor condenses into liquid droplets.</div>
+                <div class="point-item">The dew point depends on the initial amount of vapor present in the air.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <h3>9. Distinguish between Saturated and Unsaturated Air.</h3>
+            <div class="point-list">
+                <div class="point-item">Saturated air contains the maximum possible water vapor at a given temperature.</div>
+                <div class="point-item">Unsaturated air contains less water vapor than its total holding capacity.</div>
+                <div class="point-item">Saturated air has a relative humidity of exactly 100%.</div>
+                <div class="point-item">Unsaturated air can still absorb more moisture if it is added.</div>
+                <div class="point-item">The amount of vapor for saturation decreases as the temperature drops.</div>
+                <div class="point-item">We feel humid in saturated air and dry in unsaturated air.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <h3>10. Define Absolute Humidity.</h3>
+            <div class="point-list">
+                <div class="point-item">It is the mass of water vapor present in a unit volume of air.</div>
+                <div class="point-item">It is typically expressed in the unit of grams per cubic meter (g/m³).</div>
+                <div class="point-item">It indicates the actual quantity of moisture without referring to temperature.</div>
+                <div class="point-item">It does not provide information about how close the air is to saturation.</div>
+                <div class="point-item">It is a critical measurement for meteorological studies.</div>
+                <div class="point-item">The absolute humidity of air changes as air volume changes with pressure.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <h3>11. Define Relative Humidity.</h3>
+            <div class="point-list">
+                <div class="point-item">It is the ratio of actual vapor mass in air to the mass needed for saturation.</div>
+                <div class="point-item">It is always expressed as a percentage value.</div>
+                <div class="point-item">The formula is: (Actual mass of vapor / Mass for saturation) × 100.</div>
+                <div class="point-item">If relative humidity is greater than 60%, we feel the air is humid.</div>
+                <div class="point-item">If relative humidity is less than 60%, we feel the air is dry.</div>
+                <div class="point-item">At the dew point, the relative humidity is always 100%.</div>
+            </div>
+        </div>
+
+        
+        <div class="q-card">
+            <h3>12. Why do we see water droplets on the outside of a cold glass?</h3>
+            <div class="point-list">
+                <div class="point-item">The air surrounding the cold glass contains invisible water vapor.</div>
+                <div class="point-item">When this air touches the cold surface, its temperature drops.</div>
+                <div class="point-item">As the temperature falls, the air reaches its dew point.</div>
+                <div class="point-item">The air becomes saturated and can no longer hold its water vapor.</div>
+                <div class="point-item">The excess vapor undergoes condensation into liquid water.</div>
+                <div class="point-item">These droplets then accumulate on the outer surface of the glass.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <h3>13. Explain the formation of white trails behind airplanes.</h3>
+            <div class="point-list">
+                <div class="point-item">Airplane engines release water vapor as a byproduct of fuel combustion.</div>
+                <div class="point-item">At high altitudes, the atmospheric temperature is extremely low.</div>
+                <div class="point-item">The vapor released by the engine condenses rapidly into ice crystals.</div>
+                <div class="point-item">If the surrounding air has high relative humidity, these trails last a long time.</div>
+                <div class="point-item">If the air is dry (low humidity), the trails disappear quickly.</div>
+                <div class="point-item">These trails are essentially narrow clouds formed by artificial condensation.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <h3>14. Define the unit 'Calorie'.</h3>
+            <div class="point-list">
+                <div class="point-item">One calorie is the heat needed to raise the temperature of 1g of water by 1°C.</div>
+                <div class="point-item">The temperature rise is specifically measured from 14.5°C to 15.5°C.</div>
+                <div class="point-item">It is the standard unit of heat in the CGS system.</div>
+                <div class="point-item">1 kilocalorie (kcal) is equal to 1000 calories.</div>
+                <div class="point-item">1 kcal is the heat needed to raise 1kg of water by 1°C.</div>
+                <div class="point-item">The conversion rate to work is 1 calorie = 4.18 Joules.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <h3>15. Define Specific Heat Capacity.</h3>
+            <div class="point-list">
+                <div class="point-item">It is the heat needed to raise the temperature of unit mass of a substance by 1°C.</div>
+                <div class="point-item">Every substance has a unique specific heat capacity based on its nature.</div>
+                <div class="point-item">It is denoted by the letter ‘c’.</div>
+                <div class="point-item">The SI unit for specific heat capacity is J/kg°C.</div>
+                <div class="point-item">The CGS unit for specific heat capacity is cal/g°C.</div>
+                <div class="point-item">Materials with low specific heat capacity heat up and cool down very quickly.</div>
+            </div>
+        </div>
+
+        
+        <div class="q-card">
+            <h3>16. State the Principle of Heat Exchange.</h3>
+            <div class="point-list">
+                <div class="point-item">This principle applies to an isolated system containing hot and cold objects.</div>
+                <div class="point-item">Heat energy always flows from the hot object to the cold object.</div>
+                <div class="point-item">The flow continues until both objects reach a common temperature.</div>
+                <div class="point-item">Law: Heat energy lost by hot object = Heat energy gained by cold object.</div>
+                <div class="point-item">It assumes that no heat is lost to the surrounding environment.</div>
+                <div class="point-item">This principle is used in calorimetry to find the specific heat of substances.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <h3>17. Give the formula for heat absorbed by an object.</h3>
+            <div class="point-list">
+                <div class="point-item">The heat absorbed (Q) is directly proportional to the mass (m) of the object.</div>
+                <div class="point-item">It is also proportional to the specific heat capacity (c) of the material.</div>
+                <div class="point-item">It depends on the change in temperature (ΔT).</div>
+                <div class="formula">Q = m × c × ΔT</div>
+                <div class="point-item">Here, ΔT is calculated as (Final temperature - Initial temperature).</div>
+                <div class="point-item">This formula is used only when there is no change in the state of matter.</div>
+            </div>
+        </div>
+
+        [Image showing the Wax Tray Experiment with iron, copper, and lead spheres sinking into paraffin wax at different depths]
+        <div class="q-card">
+            <h3>18. Describe the Wax Tray Experiment (Iron, Copper, Lead).</h3>
+            <div class="point-list">
+                <div class="point-item">Iron, copper, and lead spheres of equal mass are heated to 100°C.</div>
+                <div class="point-item">They are then placed simultaneously on a thick tray of paraffin wax.</div>
+                <div class="point-item">The iron sphere sinks deepest into the wax tray.</div>
+                <div class="point-item">The lead sphere sinks the least among the three.</div>
+                <div class="point-item">Iron sinks deeper because it absorbed and stored more heat than the others.</div>
+                <div class="point-item">This proves that different substances have different specific heat capacities.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <h3>19. Why is the specific heat of water significant?</h3>
+            <div class="point-list">
+                <div class="point-item">Water has a very high specific heat capacity of 1 cal/g°C.</div>
+                <div class="point-item">It can absorb a large amount of heat without a significant rise in temperature.</div>
+                <div class="point-item">This makes water an excellent coolant for car radiators and industrial machines.</div>
+                <div class="point-item">Oceans and lakes help regulate the Earth's temperature because of this property.</div>
+                <div class="point-item">Water is used in hot water bags for fermentation as it stays warm for a long time.</div>
+                <div class="point-item">High specific heat prevents biological cells from freezing or overheating easily.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <h3>20. Explain why steam causes more severe burns than boiling water.</h3>
+            <div class="point-list">
+                <div class="point-item">Both steam and boiling water can exist at a temperature of 100°C.</div>
+                <div class="point-item">Steam contains an additional amount of heat called the latent heat of vaporization.</div>
+                <div class="point-item">This extra energy is approximately 540 calories for every gram of steam.</div>
+                <div class="point-item">When steam hits the skin, it releases this extra energy during condensation.</div>
+                <div class="point-item">The total heat transferred to the skin is much higher than that of boiling water.</div>
+                <div class="point-item">Therefore, steam results in deeper and more painful tissue damage.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <h3>21. What are the factors affecting the boiling point of a liquid?</h3>
+            <div class="point-list">
+                <div class="point-item">Atmospheric pressure is the primary factor affecting the boiling point.</div>
+                <div class="point-item">As external pressure increases, the boiling point of the liquid also increases.</div>
+                <div class="point-item">In a pressure cooker, high pressure allows water to boil at temperatures above 100°C.</div>
+                <div class="point-item">At high altitudes, low pressure causes water to boil at less than 100°C.</div>
+                <div class="point-item">The presence of dissolved impurities like salt increases the boiling point.</div>
+                <div class="point-item">The nature of the chemical bonds in the liquid also determines its boiling point.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <h3>22. How does the melting point change with pressure?</h3>
+            <div class="point-list">
+                <div class="point-item">For substances like ice, the melting point decreases as pressure increases.</div>
+                <div class="point-item">This is the reason why ice melts when we apply pressure during regelation.</div>
+                <div class="point-item">For most other substances, the melting point increases with increased pressure.</div>
+                <div class="point-item">Increased pressure usually forces molecules closer, favoring the solid state.</div>
+                <div class="point-item">The change in melting point depends on whether the substance expands or contracts on melting.</div>
+                <div class="point-item">This relationship is crucial in geological processes deep within the Earth.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <h3>23. Define Thermal Equilibrium.</h3>
+            <div class="point-list">
+                <div class="point-item">It is the state where two objects in contact reach the same temperature.</div>
+                <div class="point-item">At this point, the net exchange of heat energy between them becomes zero.</div>
+                <div class="point-item">It is the final condition predicted by the principle of heat exchange.</div>
+                <div class="point-item">A thermometer measures the temperature of an object once it reaches thermal equilibrium.</div>
+                <div class="point-item">In an isolated system, the total energy remains constant during the reach for equilibrium.</div>
+                <div class="point-item">Objects in thermal equilibrium do not feel hot or cold relative to each other.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <h3>24. Why is salt used to melt ice on roads?</h3>
+            <div class="point-list">
+                <div class="point-item">Adding salt to ice creates an impurity in the pure substance.</div>
+                <div class="point-item">This impurity lowers the freezing point of water below 0°C.</div>
+                <div class="point-item">This phenomenon is known as the depression of freezing point.</div>
+                <div class="point-item">At normal winter temperatures, the salt-ice mixture stays in the liquid state.</div>
+                <div class="point-item">This prevents the formation of dangerous black ice on the road surface.</div>
+                <div class="point-item">It is a practical application of the effect of impurities on phase changes.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <h3>25. Distinguish between Heat and Temperature.</h3>
+            <div class="point-list">
+                <div class="point-item">Heat is the total thermal energy possessed by the molecules of a substance.</div>
+                <div class="point-item">Temperature is the measure of the average kinetic energy of the molecules.</div>
+                <div class="point-item">Heat flows from an object at higher temperature to one at lower temperature.</div>
+                <div class="point-item">The SI unit of heat is the Joule, while for temperature it is Kelvin.</div>
+                <div class="point-item">Heat is an extensive property, while temperature is an intensive property.</div>
+                <div class="point-item">Adding heat to a body usually increases its temperature (except during phase change).</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <h3>26. What happens to the temperature during the boiling of water?</h3>
+            <div class="point-list">
+                <div class="point-item">When water reaches 100°C at standard pressure, it begins to boil.</div>
+                <div class="point-item">As heat is continuously added, the temperature stays exactly at 100°C.</div>
+                <div class="point-item">The heat is absorbed as latent heat of vaporization to turn liquid to gas.</div>
+                <div class="point-item">The molecules use this energy to overcome the atmospheric pressure and escape.</div>
+                <div class="point-item">The kinetic energy of the molecules does not increase during this stage.</div>
+                <div class="point-item">The temperature only rises again once all the water has become steam.</div>
+            </div>
+        </div>
+
+        
+        <div class="q-card">
+            <h3>27. What is the role of a calorimeter in experiments?</h3>
+            <div class="point-list">
+                <div class="point-item">A calorimeter is a container used to measure the heat of chemical reactions or physical changes.</div>
+                <div class="point-item">It is usually made of a good conductor like copper to reach equilibrium quickly.</div>
+                <div class="point-item">It is placed in an insulating jacket to prevent heat loss to the environment.</div>
+                <div class="point-item">A thermometer is used to record the initial and final temperatures of the contents.</div>
+                <div class="point-item">It allows for the practical application of the principle of heat exchange.</div>
+                <div class="point-item">It is used to calculate specific heat, latent heat, or heat of reaction.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <h3>28. Define Humidity and its effect on our daily life.</h3>
+            <div class="point-list">
+                <div class="point-item">Humidity is the measure of the amount of water vapor present in the atmosphere.</div>
+                <div class="point-item">High humidity makes us feel "sticky" because sweat does not evaporate easily.</div>
+                <div class="point-item">Low humidity makes our skin feel dry and can cause chapped lips.</div>
+                <div class="point-item">It determines the rate at which wet clothes dry when hung outside.</div>
+                <div class="point-item">Humidity levels are crucial for weather forecasting and predicting rain.</div>
+                <div class="point-item">High humidity can lead to the growth of mold and mildew in houses.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <h3>29. Why does ice float on water?</h3>
+            <div class="point-list">
+                <div class="point-item">Ice floats because its density is lower than the density of liquid water.</div>
+                <div class="point-item">Due to anomalous expansion, water expands as it cools from 4°C to 0°C.</div>
+                <div class="point-item">This expansion increases the volume of the same mass of water.</div>
+                <div class="point-item">Increased volume leads to a decrease in density (Density = Mass / Volume).</div>
+                <div class="point-item">At 0°C, ice forms a crystalline structure with more space between molecules.</div>
+                <div class="point-item">Therefore, ice is lighter than the water it displaces and it floats.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <h3>30. Explain the conversion of units between Calorie and Joule.</h3>
+            <div class="point-list">
+                <div class="point-item">Both calories and Joules are units used to measure energy and heat.</div>
+                <div class="point-item">The Joule is the standard SI unit used globally in physics.</div>
+                <div class="point-item">The calorie is a CGS unit often used in chemistry and nutrition.</div>
+                <div class="point-item">1 calorie is defined as exactly 4.184 Joules of energy.</div>
+                <div class="point-item">For simple calculations, it is often taken as 4.2 Joules.</div>
+                <div class="point-item">To convert calories to Joules, we multiply the value by 4.184.</div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+function searchFunction() {
+    // 1. Get the text from the search bar
+    let input = document.getElementById('searchInput');
+    let filter = input.value.toUpperCase();
+    
+    // 2. Get all the Question Cards
+    let cards = document.getElementsByClassName('q-card');
+
+    // 3. Loop through cards and hide those that don't match
+    for (let i = 0; i < cards.length; i++) {
+        let textValue = cards[i].textContent || cards[i].innerText;
+        if (textValue.toUpperCase().indexOf(filter) > -1) {
+            cards[i].style.display = ""; // Show
+        } else {
+            cards[i].style.display = "none"; // Hide
+        }
+    }
+}
+</script>
+</body>
+</html>

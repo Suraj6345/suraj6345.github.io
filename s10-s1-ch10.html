@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch 10: Space Missions | MituEdu Pro</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        .search-container {
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+#searchInput {
+    width: 100%;
+    max-width: 600px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#searchInput:focus {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: var(--primary-accent);
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.3);
+}
+
+#searchInput::placeholder {
+    color: var(--text-dim);
+}
+        :root {
+            --primary-accent: #6366f1; /* Indigo for Space/Cosmos */
+            --secondary-accent: #4338ca;
+            --bg-dark: #0f172a;
+            --card-bg: #1e293b;
+            --text-bright: #f8fafc;
+            --text-dim: #94a3b8;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-bright);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container { max-width: 1000px; margin: auto; }
+
+        .header-section {
+            background: linear-gradient(135deg, var(--primary-accent), var(--secondary-accent));
+            padding: 50px 20px;
+            border-radius: 24px;
+            text-align: center;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
+        }
+
+        .nav-back {
+            display: inline-block;
+            color: var(--text-bright);
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .q-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+            transition: transform 0.2s;
+        }
+
+        .q-number {
+            color: var(--primary-accent);
+            font-weight: 800;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        h3 { margin: 0 0 20px 0; font-size: 1.4rem; border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 15px; }
+
+        .point-list { list-style: none; padding: 0; }
+
+        .point-item {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 12px;
+            color: var(--text-dim);
+        }
+
+        .point-item::before {
+            content: "✦";
+            position: absolute;
+            left: 0;
+            color: var(--primary-accent);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="index.html" class="nav-back">← Back to Dashboard</a>
+
+        <div class="header-section">
+            <div class="search-container">
+    <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Search for questions or keywords...">
+</div>
+            <h1>Chapter 10: Space Missions</h1>
+            <p>Full Professional Study Guide | SSC Science 1</p>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 01</span>
+            <h3>What is the difference between natural and artificial satellites?</h3>
+            <div class="point-list">
+                <div class="point-item">A natural satellite is a celestial body that orbits a planet, such as the Moon.</div>
+                <div class="point-item">An artificial satellite is a man-made object sent into space to orbit the Earth or other planets.</div>
+                <div class="point-item">Natural satellites are formed by astronomical processes over millions of years.</div>
+                <div class="point-item">Artificial satellites are designed by scientists for specific tasks like communication or weather monitoring.</div>
+                <div class="point-item">The Earth has only one natural satellite but thousands of artificial ones.</div>
+                <div class="point-item">Artificial satellites require launch vehicles (rockets) to reach their intended orbits.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 02</span>
+            <h3>State the primary objectives of space missions.</h3>
+            <div class="point-list">
+                <div class="point-item">To explore the celestial bodies in our solar system and beyond.</div>
+                <div class="point-item">To improve global communication systems using telecommunication satellites.</div>
+                <div class="point-item">To monitor weather patterns and provide early warnings for natural disasters.</div>
+                <div class="point-item">To conduct scientific experiments in a microgravity environment.</div>
+                <div class="point-item">To enhance national security through surveillance and reconnaissance.</div>
+                <div class="point-item">To study the Earth's resources and environmental changes from a global perspective.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 03</span>
+            <h3>Explain the concept of Critical Velocity ($v_c$).</h3>
+            
+            <div class="point-list">
+                <div class="point-item">Critical velocity is the minimum horizontal velocity required for a satellite to stay in a stable circular orbit.</div>
+                <div class="point-item">If the velocity is less than $v_c$, the satellite will fall back to Earth due to gravity.</div>
+                <div class="point-item">If the velocity is much higher than $v_c$, the satellite may escape Earth's gravity or move into an elliptical orbit.</div>
+                <div class="point-item">It is calculated using the formula $v_c = \sqrt{GM / (R+h)}$.</div>
+                <div class="point-item">Here, $G$ is the gravitational constant, $M$ is Earth's mass, $R$ is Earth's radius, and $h$ is the altitude.</div>
+                <div class="point-item">The critical velocity depends on the height of the satellite above the Earth's surface.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 04, 05, 06</span>
+            <h3>Types of Earth Orbits (LEO, MEO, HEO).</h3>
+            [Image comparing Low Earth Orbit, Medium Earth Orbit and High Earth Orbit altitudes]
+            <div class="point-list">
+                <div class="point-item"><strong>LEO:</strong> Altitude 180km to 2000km. Used for ISS and Hubble. Orbit time: 90-120 mins.</div>
+                <div class="point-item"><strong>MEO:</strong> Altitude 2000km to 35,780km. GPS satellites reside here. Orbit time: approx 12 hours.</div>
+                <div class="point-item"><strong>HEO:</strong> Altitude higher than 35,780km. Includes Geostationary orbits (24-hour period).</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 07 & 08</span>
+            <h3>Satellite Launch Vehicles and Multi-stage Rockets.</h3>
+            
+            <div class="point-list">
+                <div class="point-item">It works on the principle of Newton's Third Law: every action has an equal and opposite reaction.</div>
+                <div class="point-item">Modern launch vehicles usually have multiple stages to reduce weight during flight.</div>
+                <div class="point-item">As the fuel in one stage is exhausted, that part of the rocket is detached and falls off.</div>
+                <div class="point-item">Multi-stage rockets allow the vehicle to shed empty fuel tanks and heavy engines during flight.</div>
+                <div class="point-item">This significantly reduces the total mass that needs to be accelerated as the flight progresses.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 09</span>
+            <h3>Define Escape Velocity ($v_{esc}$).</h3>
+            <div class="point-list">
+                <div class="point-item">Escape velocity is the minimum speed an object must reach to break free from a planet's gravitational pull.</div>
+                <div class="point-item">For Earth, the escape velocity is approximately 11.2 km/s.</div>
+                <div class="point-item">If an object travels at this speed, it will never fall back to the planet.</div>
+                <div class="point-item">The formula for escape velocity is $v_{esc} = \sqrt{2GM/R}$.</div>
+                <div class="point-item">It is $\sqrt{2}$ times greater than the critical velocity at the Earth's surface.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 10</span>
+            <h3>What is Space Debris and why is it a problem?</h3>
+            [Image illustrating the Kessler Syndrome with space junk surrounding Earth]
+            <div class="point-list">
+                <div class="point-item">Space debris consists of non-functional man-made objects in orbit, such as old satellites.</div>
+                <div class="point-item">It includes broken pieces of rockets and fragments from satellite collisions.</div>
+                <div class="point-item">Even a small piece of debris can cause catastrophic damage to functional satellites or the ISS.</div>
+                <div class="point-item">The increasing amount of debris creates a risk known as the "Kessler Syndrome."</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 11, 12, 13</span>
+            <h3>ISRO's Major Achievements (Chandrayaan, Mangalyaan).</h3>
+            <div class="point-list">
+                <div class="point-item"><strong>Chandrayaan-1:</strong> India's first Moon mission (2008); discovered water molecules on the lunar surface.</div>
+                <div class="point-item"><strong>Mangalyaan (MOM):</strong> India reached Mars orbit on the first attempt (2013); studied Martian methane levels.</div>
+                <div class="point-item"><strong>ISRO:</strong> Established in 1969; developed indigenous rockets like PSLV and GSLV; provides data for farmers and disaster management.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 14, 15, 16</span>
+            <h3>Functions of Different Satellites.</h3>
+            <div class="point-list">
+                <div class="point-item"><strong>Weather Satellites:</strong> Monitor atmosphere for cyclones; INSAT and METSAT series are primary for India.</div>
+                <div class="point-item"><strong>Communication Satellites:</strong> Relay stations for TV and internet; GSAT series is India's backbone.</div>
+                <div class="point-item"><strong>Remote Sensing:</strong> Collect data on forests/minerals using sensors; India's IRS series is world-class.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 17 & 18</span>
+            <h3>Launch Vehicles: PSLV vs GSLV.</h3>
+            
+            <div class="point-list">
+                <div class="point-item"><strong>PSLV:</strong> 4-stage workhorse; uses solid and liquid propellants; launched Chandrayaan-1 and Mangalyaan.</div>
+                <div class="point-item"><strong>GSLV:</strong> Uses Cryogenic Upper Stage (liquid hydrogen and oxygen) for heavy communication satellites.</div>
+                <div class="point-item">GSLV Mark III (LVM3) is currently ISRO's most powerful rocket.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 19, 20, 21</span>
+            <h3>Space Stations and Exploration.</h3>
+            
+            <div class="point-list">
+                <div class="point-item"><strong>Future Needs:</strong> Space mining for rare minerals and providing a "Plan B" for humanity.</div>
+                <div class="point-item"><strong>ISS:</strong> Collaborative modular lab in LEO; astronauts research biology and physics in microgravity.</div>
+                <div class="point-item"><strong>The Moon:</strong> A stepping stone for Mars missions; contains Helium-3 for clean energy.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 22 & 23</span>
+            <h3>Manned Missions and Risks.</h3>
+            <div class="point-list">
+                <div class="point-item"><strong>Risks:</strong> Cosmic radiation, bone density loss in microgravity, and extreme re-entry heat.</div>
+                <div class="point-item"><strong>Gaganyaan:</strong> India's first manned mission to send a 3-member crew into LEO; features humanoid robot "Vyommitra".</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 24, 25, 26, 27</span>
+            <h3>Global Space Science.</h3>
+            [Image showing the Gravity Assist/Slingshot maneuver around a planet]
+            <div class="point-list">
+                <div class="point-item"><strong>NASA:</strong> Led Apollo Moon landings; operates Hubble and James Webb telescopes.</div>
+                <div class="point-item"><strong>Disaster Management:</strong> Satellites map flood areas and detect forest fire heat signatures.</div>
+                <div class="point-item"><strong>Gravity Assist:</strong> "Slingshot" technique to increase spacecraft speed using a planet's gravity.</div>
+                <div class="point-item"><strong>Hubble:</strong> Space-based telescope; determined the age of the universe to be 13.8 billion years.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 28, 29, 30</span>
+            <h3>Sun-Synchronous Orbit, Rakesh Sharma, and Future.</h3>
+            <div class="point-list">
+                <div class="point-item"><strong>Sun-Synchronous Orbit:</strong> Polar orbit used for consistent lighting in remote sensing images.</div>
+                <div class="point-item"><strong>Rakesh Sharma:</strong> First Indian in space (1984); said "Sare Jahan Se Achha" from space.</div>
+                <div class="point-item"><strong>Future of ISRO:</strong> Aditya-L1 (Sun study), Shukrayaan (Venus study), and building an Indian space station.</div>
+            </div>
+        </div>
+
+    </div>
+<script>
+function searchFunction() {
+    // 1. Get the text from the search bar
+    let input = document.getElementById('searchInput');
+    let filter = input.value.toUpperCase();
+    
+    // 2. Get all the Question Cards
+    let cards = document.getElementsByClassName('q-card');
+
+    // 3. Loop through cards and hide those that don't match
+    for (let i = 0; i < cards.length; i++) {
+        let textValue = cards[i].textContent || cards[i].innerText;
+        if (textValue.toUpperCase().indexOf(filter) > -1) {
+            cards[i].style.display = ""; // Show
+        } else {
+            cards[i].style.display = "none"; // Hide
+        }
+    }
+}
+</script>
+</body>
+</html>

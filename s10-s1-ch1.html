@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch 1: Gravitation | MituEdu Full Bank</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+    /* ... your existing code ... */
+
+    .point-item::before {
+        content: "✦";
+        position: absolute;
+        left: 0;
+        color: var(--primary-accent);
+    }
+
+    /* PASTE THE NEW SEARCH CSS HERE */
+    .search-container {
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+
+    #searchInput {
+        width: 100%;
+        max-width: 600px;
+        padding: 12px 20px;
+        font-size: 16px;
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        border-radius: 50px;
+        background: rgba(255, 255, 255, 0.1);
+        color: white;
+        outline: none;
+        transition: all 0.3s ease;
+    }
+
+    #searchInput:focus {
+        background: rgba(255, 255, 255, 0.2);
+        border-color: var(--primary-accent);
+        box-shadow: 0 0 15px rgba(99, 102, 241, 0.3);
+    }
+</style>
+    
+    <style>
+        :root {
+            --primary: #00d2ff;
+            --secondary: #9d50bb;
+            --bg: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.8);
+            --text: #f1f5f9;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container { max-width: 950px; margin: auto; }
+        .header {
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .q-card {
+            background: var(--card-bg);
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 6px solid var(--primary);
+            border: 1px solid rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+        }
+        h3 { color: var(--primary); margin-top: 0; font-size: 1.4rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
+        .point { margin-bottom: 15px; }
+        .point strong { color: var(--secondary); display: block; font-size: 1.1rem; margin-bottom: 4px; }
+        .math-block {
+            background: rgba(0,0,0,0.3);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+            text-align: center;
+            border: 1px dashed var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="search-container">
+    <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Search for questions or keywords...">
+</div>
+            <h1>Chapter 1: Gravitation</h1>
+            <p>Full 30 Question Concept Bank - No Text Missing</p>
+        </header>
+
+        <div class="q-card">
+            <h3>1. What is the definition of the universal force of gravitation and its scope?</h3>
+            <div class="point"><strong>Fundamental Attraction:</strong> Gravitation is a universal force of attraction that exists between any two objects in the universe that possess mass, regardless of their chemical composition or size.</div>
+            <div class="point"><strong>Universal Nature:</strong> This force is not restricted to objects on Earth; it operates between celestial bodies like stars, planets, and galaxies, maintaining the structure of the cosmos.</div>
+            <div class="point"><strong>Historical Discovery:</strong> Sir Isaac Newton pioneered this concept by realizing that the force pulling an apple to the ground is the same force keeping the Moon in its orbit around Earth.</div>
+            <div class="point"><strong>Physical Influence:</strong> It is responsible for diverse phenomena such as the weight of objects, the atmosphere surrounding planets, and the periodic rising and falling of ocean tides.</div>
+            <div class="point"><strong>Architect of the Universe:</strong> Ultimately, gravity acts as the silent architect of the universe, ensuring planetary systems remain stable and that matter aggregates into planets and stars.</div>
+        </div>
+
+        <div class="q-card">
+            <h3>2. Explain why a force is necessary to change the state of motion of an object.</h3>
+            <div class="point"><strong>Principle of Inertia:</strong> According to Newton's First Law, every object has an inherent property called inertia, which is its resistance to changing its current state of rest or motion.</div>
+            <div class="point"><strong>Speed Alteration:</strong> To change the speed of an object—either to accelerate it or bring it to a stop—an external unbalanced force must be applied to overcome this inertia.</div>
+            <div class="point"><strong>Directional Change:</strong> Even if an object's speed remains constant, a force is required to change its direction, which is why objects in circular motion are constantly under the influence of force.</div>
+            <div class="point"><strong>Vector Change:</strong> Since velocity is a vector quantity involving both speed and direction, any change in velocity constitutes acceleration, which fundamentally requires force ($F = ma$).</div>
+            <div class="point"><strong>Orbital Maintenance:</strong> In the context of gravity, the Earth's pull acts as the necessary force that constantly redirects the Moon's path, preventing it from flying off in a straight line.</div>
+        </div>
+
+        
+        <div class="q-card">
+            <h3>3. State Kepler’s First Law of Planetary Motion and its geometric implications.</h3>
+            <div class="point"><strong>The Law of Orbits:</strong> Kepler’s First Law states that the orbit of a planet revolving around the Sun is an ellipse rather than a perfect circle.</div>
+            <div class="point"><strong>Position of the Sun:</strong> In this elliptical trajectory, the Sun is not located at the center of the orbit but occupies one of the two fixed points known as the "foci."</div>
+            <div class="point"><strong>Departure from Tradition:</strong> This discovery was revolutionary as it overturned centuries of belief in "perfect" circular celestial motion, which had complicated astronomical calculations.</div>
+            <div class="point"><strong>Variable Distance:</strong> Because the orbit is elliptical, the distance between the planet and the Sun is not constant, changing every moment as the planet moves along its path.</div>
+            <div class="point"><strong>Perihelion and Aphelion:</strong> This geometry creates a "perihelion" point (closest to the Sun) and an "aphelion" point (furthest from the Sun), which directly influences the planet's orbital dynamics.</div>
+        </div>
+
+        
+        <div class="q-card">
+            <h3>4. Describe Kepler’s Second Law and explain how it affects a planet's speed in orbit.</h3>
+            <div class="point"><strong>The Law of Areas:</strong> Kepler’s Second Law states that an imaginary line segment joining a planet and the Sun sweeps out equal areas during equal intervals of time.</div>
+            <div class="point"><strong>Non-Uniform Speed:</strong> A major consequence of this law is that a planet does not move at a constant or uniform speed throughout its entire revolution around the Sun.</div>
+            <div class="point"><strong>Acceleration at Perihelion:</strong> When the planet is closer to the Sun (at perihelion), it must travel faster along its orbital path to ensure the area swept remains equal to other time segments.</div>
+            <div class="point"><strong>Deceleration at Aphelion:</strong> Conversely, when the planet is at its furthest point (aphelion), its linear speed decreases significantly because the longer distance from the Sun compensates for a shorter path.</div>
+            <div class="point"><strong>Energy Balance:</strong> This behavior illustrates the constant exchange between gravitational potential energy and kinetic energy, ensuring the conservation of angular momentum in the system.</div>
+        </div>
+
+        <div class="q-card">
+            <h3>5. Formulate Kepler’s Third Law mathematically and explain its importance.</h3>
+            <div class="point"><strong>The Law of Periods:</strong> This law states that the square of the orbital period ($T$) of a planet is directly proportional to the cube of its mean distance ($r$) from the Sun.</div>
+            <div class="math-block">$$T^2 \propto r^3 \text{ or } \frac{T^2}{r^3} = K$$</div>
+            <div class="point"><strong>Predictive Power:</strong> This formula allowed early astronomers to calculate the distance of distant planets simply by observing how long they took to complete one full revolution.</div>
+            <div class="point"><strong>Universal Consistency:</strong> It proves that all planets in the solar system are bound by the same mathematical logic, where outer planets naturally move much slower than inner ones.</div>
+            <div class="point"><strong>Foundation for Newton:</strong> This specific proportionality was the critical piece of evidence Sir Isaac Newton used to mathematically derive his Inverse Square Law of gravitation.</div>
+        </div>
+
+        <div class="q-card">
+            <h3>6. State Newton’s Universal Law of Gravitation and describe its two main components.</h3>
+            <div class="point"><strong>Definition of Attraction:</strong> The law states that every particle of matter in the universe attracts every other particle with a force that acts along the line joining their centers.</div>
+            <div class="point"><strong>Mass Proportionality:</strong> The magnitude of this force is directly proportional to the product of the masses ($m_1 \times m_2$) of the two bodies involved in the interaction.</div>
+            <div class="point"><strong>Distance Inversely Proportionality:</strong> The force is also inversely proportional to the square of the distance ($d^2$) between the centers of the two objects, known as the inverse square law.</div>
+            <div class="math-block">$$F = G \frac{m_1 m_2}{d^2}$$</div>
+            <div class="point"><strong>Broad Applicability:</strong> This single equation explains terrestrial phenomena like falling objects and celestial movements like the orbits of planets, unifying earthly and space mechanics.</div>
+        </div>
+
+        <div class="q-card">
+            <h3>7. What is the physical significance and SI value of the Universal Gravitational Constant (G)?</h3>
+            <div class="point"><strong>Physical Definition:</strong> The constant $G$ represents the gravitational force of attraction between two bodies, each of mass 1 kg, placed at a distance of 1 meter apart.</div>
+            <div class="point"><strong>Universal Status:</strong> It is called "universal" because its value remains identical regardless of where it is measured in the universe or what medium (water, air, vacuum) lies between the objects.</div>
+            <div class="point"><strong>Numerical Value:</strong> In the International System (SI), the value of $G$ is $6.673 \times 10^{-11} \text{ N m}^2/\text{kg}^2$, a value first determined experimentally by Henry Cavendish.</div>
+            <div class="point"><strong>Weakness of Gravity:</strong> The extremely small magnitude of $G$ (to the power of -11) proves that gravity is the weakest of the four fundamental forces in nature.</div>
+            <div class="point"><strong>Large-Scale Requirement:</strong> Because $G$ is so small, gravitational forces only become significant and observable when at least one of the masses involved is very large, like a planet.</div>
+        </div>
+
+        <div class="q-card">
+            <h3>8. Explain the "Inverse Square Law" and how it was derived by Newton.</h3>
+            <div class="point"><strong>Concept of Decay:</strong> The Inverse Square Law states that the strength of the gravitational force drops off rapidly as the distance between two objects increases ($F \propto 1/d^2$).</div>
+            <div class="point"><strong>Mathematical Impact:</strong> If you double the distance between two objects, the gravitational pull doesn't just halve; it becomes four times weaker (one-fourth of the original).</div>
+            <div class="point"><strong>Derivation Process:</strong> Newton derived this by analyzing circular motion ($F = mv^2/r$) and substituting the velocity of a planet ($v = 2\pi r / T$) into the equation.</div>
+            <div class="point"><strong>Use of Kepler:</strong> He then applied Kepler’s Third Law ($T^2/r^3 = K$) to replace the period variable, which left distance ($r^2$) in the denominator of the force formula.</div>
+            <div class="point"><strong>Proof of Distance:</strong> This mathematical synthesis provided the first rigorous proof that gravity's reach is determined by the square of the distance, explaining why distant planets feel less pull.</div>
+        </div>
+
+        
+        <div class="q-card">
+            <h3>9. Why is the value of gravitational acceleration (g) higher at the poles than at the equator?</h3>
+            <div class="point"><strong>Oblate Spheroid Shape:</strong> The Earth is not a perfect sphere; its rotation causes it to bulge at the equator and flatten significantly at the North and South poles.</div>
+            <div class="point"><strong>Radius Variation:</strong> As a result of this shape, the distance from the Earth's center to the surface at the poles is about 21 km less than the distance at the equator.</div>
+            <div class="point"><strong>Inverse Relationship:</strong> The acceleration due to gravity ($g$) is calculated using $g = GM/R^2$, meaning $g$ increases as the radius ($R$) of the planet decreases.</div>
+            <div class="point"><strong>Numerical Difference:</strong> Because the polar radius is smaller, the value of $g$ is highest at the poles (approx. 9.832 m/s²) and lowest at the equator (approx. 9.78 m/s²).</div>
+            <div class="point"><strong>Effect on Weight:</strong> This means a person would technically weigh slightly more at the poles than at the equator, although their mass would remain exactly the same.</div>
+        </div>
+
+        <div class="q-card">
+            <h3>10. How does the value of g change as we move from the Earth's surface to higher altitudes?</h3>
+            <div class="point"><strong>Increase in Distance:</strong> As an object moves away from the Earth's surface to a height ($h$), the total distance from the Earth's center becomes ($R + h$).</div>
+            <div class="point"><strong>Inverse Square Effect:</strong> Since $g$ is inversely proportional to the square of the distance from the center, increasing the height weakens the gravitational field strength.</div>
+            <div class="math-block">$$g_h = \frac{GM}{(R+h)^2}$$</div>
+            <div class="point"><strong>Atmospheric Impact:</strong> For small heights (like a building), the change is negligible, but at the height of Mt. Everest or orbiting satellites, the reduction in $g$ becomes measurable.</div>
+            <div class="point"><strong>Outer Space:</strong> As the height increases toward infinity, the value of $g$ approaches zero, which is why objects eventually escape the Earth's primary gravitational "well."</div>
+        </div>
+
+        <div class="q-card">
+            <h3>11. Why does the value of g decrease as we go deep inside the Earth's interior?</h3>
+            <div class="point"><strong>Decreasing Distance:</strong> As you move toward the Earth's center, the distance ($r$) from the center decreases, which would normally tend to increase the value of $g$.</div>
+            <div class="point"><strong>Effective Mass Reduction:</strong> However, the amount of Earth's mass ($M$) that is actually "below" you and pulling you toward the center also decreases as you go deeper.</div>
+            <div class="point"><strong>Mass-Distance Conflict:</strong> In this scenario, the decrease in the effective mass occurs much faster than the decrease in distance squared, leading to an overall reduction in pull.</div>
+            <div class="point"><strong>Shell Theorem:</strong> Gravity from the portion of the Earth "above" you (the outer shell) pulls in all directions and cancels out, leaving only the inner core to attract you.</div>
+            <div class="point"><strong>Linear Decrease:</strong> Because of this mass loss, the value of $g$ continues to decrease linearly as you move deeper, eventually reaching its minimum value at the very center.</div>
+        </div>
+
+        <div class="q-card">
+            <h3>12. What is the value of g at the center of the Earth and what is the scientific reason?</h3>
+            <div class="point"><strong>Zero Value:</strong> At the exact geometric center of the Earth, the acceleration due to gravity ($g$) becomes exactly zero.</div>
+            <div class="point"><strong>Symmetry of Pull:</strong> This occurs because the mass of the Earth is distributed all around you. Every part of the Earth pulls you with equal force in opposite directions.</div>
+            <div class="point"><strong>Vector Cancellation:</strong> Since gravitational forces are vectors, the pulls from the "top," "bottom," "left," and "right" sides of the Earth perfectly cancel each other out.</div>
+            <div class="point"><strong>Zero Effective Mass:</strong> Mathematically, the mass ($M$) within a radius of zero is zero; thus, the formula $g = GM/R^2$ results in a net force of zero at the core.</div>
+            <div class="point"><strong>Weightlessness:</strong> A person at the center would experience total weightlessness, though they would still be under immense pressure from the surrounding matter of the planet.</div>
+        </div>
+
+        <div class="q-card">
+            <h3>13. Define Mass and state its key properties in terms of inertia and location.</h3>
+            <div class="point"><strong>Quantity of Matter:</strong> Mass is defined as the total amount of matter or atoms present within an object, representing its physical "bulk."</div>
+            <div class="point"><strong>Measure of Inertia:</strong> In physics, mass is the direct quantitative measure of an object's inertia, meaning heavier objects are harder to start or stop moving.</div>
+            <div class="point"><strong>Scalar Quantity:</strong> Mass is a scalar quantity, possessing only magnitude and no direction, and it is measured in the SI unit of kilograms (kg).</div>
+            <div class="point"><strong>Universal Constancy:</strong> The mass of an object is an intrinsic property that remains constant everywhere in the universe, regardless of local gravity.</div>
+            <div class="point"><strong>Independent Property:</strong> Whether an object is on Earth, the Moon, or floating in deep space, its mass does not change unless matter is physically added or removed.</div>
+        </div>
+
+        <div class="q-card">
+            <h3>14. Define Weight and explain why it is considered a vector quantity.</h3>
+            <div class="point"><strong>Force of Attraction:</strong> Weight is defined as the gravitational force with which a planet or celestial body attracts an object toward its center.</div>
+            <div class="point"><strong>Calculated Value:</strong> It is determined by the product of the object's mass and the local acceleration due to gravity ($W = mg$), measured in Newtons (N).</div>
+            <div class="point"><strong>Vector Nature:</strong> Weight is a vector quantity because it has both a magnitude (how strong the pull is) and a specific direction (always pointing toward the planet's center).</div>
+            <div class="point"><strong>Local Variability:</strong> Unlike mass, weight changes depending on where the object is located because the value of $g$ varies from planet to planet.</div>
+            <div class="point"><strong>Zero Potential:</strong> Weight can become zero (weightlessness) in certain environments like the center of the Earth or in free-falling space stations, even if the mass remains high.</div>
+        </div>
+
+        <div class="q-card">
+            <h3>15. Contrast the mass and weight of an object on Earth versus its values on Mars.</h3>
+            <div class="point"><strong>Constant Mass:</strong> An object with a mass of 10 kg on Earth will still have a mass of exactly 10 kg on Mars because the number of atoms is unchanged.</div>
+            <div class="point"><strong>Lower Mars Gravity:</strong> Mars is smaller and less massive than Earth, resulting in a surface gravity ($g$) of only about 3.7 m/s², compared to Earth's 9.8 m/s².</div>
+            <div class="point"><strong>Weight Reduction:</strong> Consequently, the weight of the object on Mars would be $10 \times 3.7 = 37 \text{ N}$, whereas on Earth it was $10 \times 9.8 = 98 \text{ N}$.</div>
+            <div class="point"><strong>Physical Sensation:</strong> A human on Mars would feel roughly three times lighter, allowing them to jump higher and lift heavier objects with less effort.</div>
+            <div class="point"><strong>Fundamental Lesson:</strong> This comparison proves that while your "identity" (mass) is constant, your "burden" (weight) is defined by the planet you stand upon.</div>
+        </div>
+
+        <div class="q-card">
+            <h3>16. What is the definition of free fall and why can it only happen in a vacuum?</h3>
+            <div class="point"><strong>Gravity-Only Motion:</strong> Free fall is defined as the motion of an object where the only force acting upon it is the force of gravity.</div>
+            <div class="point"><strong>Acceleration Rate:</strong> During free fall near Earth, all objects accelerate downward at the constant rate of $g$ (9.8 m/s²), regardless of their size or mass.</div>
+            <div class="point"><strong>The Problem of Air:</strong> In a normal environment, air resistance and buoyancy act as upward forces that oppose gravity and slow down light objects.</div>
+            <div class="point"><strong>Vacuum Requirement:</strong> True free fall can only occur in a vacuum because the absence of air molecules removes these opposing forces, leaving gravity as the sole influence.</div>
+            <div class="point"><strong>Practical Example:</strong> While we say a stone is in free fall when dropped, it is only "near" free fall; a feather and a stone only fall together in a vacuum chamber.</div>
+        </div>
+
+        
+        <div class="q-card">
+            <h3>17. Describe the results of the "Feather and Coin" experiment in a vacuum chamber.</h3>
+            <div class="point"><strong>Simultaneous Drop:</strong> In a famous physics demonstration, a heavy coin and a light, airy feather are placed inside a tall glass tube from which all air has been pumped out.</div>
+            <div class="point"><strong>Identical Acceleration:</strong> When the tube is inverted, both the feather and the coin fall at exactly the same speed and hit the bottom at the same precise moment.</div>
+            <div class="point"><strong>Mass Independence:</strong> This result proves that the acceleration due to gravity does not depend on the mass or shape of the object being dropped.</div>
+            <div class="point"><strong>Confirmation of Theory:</strong> It confirms Galileo’s hypothesis that without air resistance, a light object falls just as fast as a heavy one because gravity's pull scales with mass.</div>
+            <div class="point"><strong>Visual Proof:</strong> This experiment is the most striking visual evidence we have for the uniform nature of gravitational acceleration in a controlled environment.</div>
+        </div>
+
+        <div class="q-card">
+            <h3>18. Explain the significance of the negative sign in the gravitational potential energy formula.</h3>
+            <div class="point"><strong>Potential Formula:</strong> The formula for gravitational potential energy is $PE = -GMM / (R+h)$, where the negative sign is a critical mathematical convention.</div>
+            <div class="point"><strong>Reference Point:</strong> In physics, potential energy is defined as being zero at an infinite distance from the Earth, where gravity no longer has any influence.</div>
+            <div class="point"><strong>Binding Energy:</strong> Since gravity is an attractive force, you must "spend" energy to move an object away from Earth toward infinity; therefore, energy on the surface must be "less than zero."</div>
+            <div class="point"><strong>Mathematical logic:</strong> As you move further away ($h$ increases), the value becomes a "smaller" negative number (closer to zero), which physically means the energy is increasing.</div>
+            <div class="point"><strong>The Gravitational Well:</strong> The negative sign signifies that the object is "trapped" or bound within the Earth's gravitational field and requires an input of energy to get out.</div>
+        </div>
+
+        <div class="q-card">
+            <h3>19. Define escape velocity and state its numerical value and formula for Earth.</h3>
+            <div class="point"><strong>Threshold Speed:</strong> Escape velocity is the minimum initial speed an object must have at the surface of a planet to escape its gravitational pull forever without falling back.</div>
+            <div class="math-block">$$v_{esc} = \sqrt{\frac{2GM}{R}} \text{ or } v_{esc} = \sqrt{2gR}$$</div>
+            <div class="point"><strong>Earth's Value:</strong> For the planet Earth, the escape velocity is approximately 11.2 km/s (or about 40,320 km/h), which is why rockets require immense thrust.</div>
+            <div class="point"><strong>Atmospheric Retention:</strong> This velocity also determines which gases a planet can keep; if a gas molecule moves faster than $v_{esc}$ due to heat, it escapes into space.</div>
+        </div>
+
+        
+        <div class="q-card">
+            <h3>20. Explain why an astronaut feels weightless in an orbiting satellite.</h3>
+            <div class="point"><strong>Continuous Free Fall:</strong> An astronaut feels weightless not because there is no gravity (gravity is actually quite strong in orbit), but because they are in a state of constant free fall.</div>
+            <div class="point"><strong>Orbital Balance:</strong> The satellite and the astronaut are both falling toward Earth at the same rate, but their high sideways speed causes them to "miss" the Earth and curve around it.</div>
+            <div class="point"><strong>No Reaction Force:</strong> Since the spacecraft floor and the astronaut are falling together, the floor never pushes back against the astronaut's feet to create the sensation of weight.</div>
+            <div class="point"><strong>Apparent Weightlessness:</strong> Weight is a sensation caused by the "normal force" of a surface resisting gravity; without that resistance, the brain perceives the body as floating.</div>
+            <div class="point"><strong>Internal Environment:</strong> Inside the station, objects stay where they are placed because every single atom in the station is accelerating at the same $g$ value toward the Earth.</div>
+        </div>
+
+        <div class="q-card">
+            <h3>21. If the distance between two bodies is tripled, explain the change in gravitational force using the law.</h3>
+            <div class="point"><strong>Inverse Square Relationship:</strong> Newton’s law states that force is inversely proportional to the square of the distance ($F \propto 1/d^2$).</div>
+            <div class="point"><strong>Mathematical Substitution:</strong> If the original distance is $d$, and the new distance becomes $3d$, we substitute this into the denominator as $(3d)^2$.</div>
+            <div class="point"><strong>Resulting Factor:</strong> Squaring the three gives a factor of 9, meaning the new force becomes $1/9$ of the original gravitational force.</div>
+            <div class="point"><strong>Rapid Decay:</strong> This illustrates how even a small increase in distance leads to a massive reduction in the strength of the gravitational bond between objects.</div>
+            <div class="point"><strong>Planetary Implications:</strong> This explains why outer planets like Neptune feel a significantly weaker pull from the Sun than inner planets like Mercury or Earth.</div>
+        </div>
+
+        <div class="q-card">
+            <h3>22. Calculate g on a planet where an object takes 5s to fall from a height of 5m.</h3>
+            <div class="point"><strong>Equation Selection:</strong> To solve this, we use the kinematic equation for displacement in free fall: $s = ut + 0.5 gt^2$.</div>
+            <div class="point"><strong>Initial Conditions:</strong> Since the object is "falling," we assume it starts from rest, meaning initial velocity $u = 0$, which simplifies the formula to $s = 0.5 gt^2$.</div>
+            <div class="point"><strong>Substitution:</strong> Plugging in the given values: $5 \text{ m} = 0.5 \times g \times (5 \text{ s})^2$, which becomes $5 = 0.5 \times g \times 25$.</div>
+            <div class="point"><strong>Calculation:</strong> Multiplying $0.5$ by $25$ gives $12.5$; therefore, the equation is $5 = 12.5g$. Solving for $g$ gives $5 / 12.5 = 0.4 \text{ m/s}^2$.</div>
+            <div class="point"><strong>Conclusion:</strong> The acceleration due to gravity on this mystery planet is $0.4 \text{ m/s}^2$, which is much weaker than Earth's gravity, suggesting a small moon-like body.</div>
+        </div>
+
+        <div class="q-card">
+            <h3>23. If planet A's radius is half of planet B's and $g_B$ is half of $g_A$, find the mass relationship.</h3>
+            <div class="point"><strong>Gravity Equation:</strong> We use the base formula $g = GM/R^2$ for both planets to establish a ratio.</div>
+            <div class="point"><strong>Substituting A's values:</strong> Since $R_A = R_B / 2$, we can write $g_A = G M_A / (R_B/2)^2$, which simplifies to $g_A = 4 G M_A / R_B^2$.</div>
+            <div class="point"><strong>Substituting B's values:</strong> For planet B, the formula is simply $g_B = G M_B / R_B^2$.</div>
+            <div class="point"><strong>Relating the two:</strong> We are told $g_B = g_A / 2$. Substituting our expressions: $G M_B / R_B^2 = (4 G M_A / R_B^2) / 2$.</div>
+            <div class="point"><strong>Final Mass Ratio:</strong> This simplifies to $M_B = 2 M_A$, meaning planet B must have exactly twice the mass of planet A to satisfy the given gravity and radius conditions.</div>
+        </div>
+
+        <div class="q-card">
+            <h3>24. Find the mass and weight on the Moon for an object weighing 49 N (mass 5 kg) on Earth.</h3>
+            <div class="point"><strong>Constant Mass:</strong> The mass of the object is an intrinsic property, so it remains exactly 5 kg on the Moon, just as it was on Earth.</div>
+            <div class="point"><strong>Gravity Comparison:</strong> The Moon's gravity is roughly $1/6$ of Earth's gravity ($g_m \approx 1.63 \text{ m/s}^2$).</div>
+            <div class="point"><strong>Weight Calculation:</strong> To find the weight on the Moon, we use $W = m \times g_m$, which is $5 \text{ kg} \times 1.63 \text{ m/s}^2 = 8.15 \text{ N}$.</div>
+            <div class="point"><strong>Simplified Method:</strong> Alternatively, one can simply take the Earth weight and divide by 6: $49 \text{ N} / 6 \approx 8.17 \text{ N}$ (allowing for rounding).</div>
+            <div class="point"><strong>Observations:</strong> The object feels significantly lighter on the Moon, making it much easier to handle, even though the amount of matter inside it is unchanged.</div>
+        </div>
+
+        <div class="q-card">
+            <h3>25. A ball reaches a height of 500m. Calculate the initial velocity required. (g = 10 m/s²)</h3>
+            <div class="point"><strong>Kinematic Choice:</strong> We use the third equation of motion: $v^2 = u^2 + 2as$ to find the initial velocity ($u$).</div>
+            <div class="point"><strong>Endpoint Values:</strong> At the maximum height of 500m, the final velocity ($v$) is 0 m/s. The acceleration ($a$) is $-10 \text{ m/s}^2$ because it acts against the motion.</div>
+            <div class="point"><strong>Equation Setup:</strong> $0 = u^2 + 2(-10)(500)$, which simplifies to $0 = u^2 - 10,000$.</div>
+            <div class="point"><strong>Solving for u:</strong> Moving $10,000$ to the other side gives $u^2 = 10,000$. Taking the square root gives $u = 100 \text{ m/s}$.</div>
+            <div class="point"><strong>Magnitude:</strong> An initial speed of 100 m/s (360 km/h) is required for an object to reach half a kilometer in height against Earth's gravity.</div>
+        </div>
+
+        <div class="q-card">
+            <h3>26. How long will the ball from the previous question take to return to Earth?</h3>
+            <div class="point"><strong>Time to Peak:</strong> Using $v = u + at$, we find the time taken to reach the top: $0 = 100 + (-10) \times t$, which gives $10t = 100$, so $t = 10 \text{ seconds}$.</div>
+            <div class="point"><strong>Symmetry Principle:</strong> In a frictionless environment, the time taken to rise to a certain height is exactly equal to the time taken to fall back to the start.</div>
+            <div class="point"><strong>Descent Time:</strong> Therefore, the ball will take another 10 seconds to fall from 500m back to the ground.</div>
+            <div class="point"><strong>Total Flight Time:</strong> The total time of flight is the sum of the upward and downward journeys: $10 \text{ s} + 10 \text{ s} = 20 \text{ seconds}$.</div>
+            <div class="point"><strong>Assumption:</strong> This calculation assumes there is no air resistance; in reality, air would slow the ball and change these times slightly.</div>
+        </div>
+
+        <div class="q-card">
+            <h3>27. A ball falls from a table in 1s. Find its impact speed and the height of the table. (g = 10 m/s²)</h3>
+            <div class="point"><strong>Impact Speed:</strong> Using $v = u + at$ with $u = 0$, the speed after 1 second is $v = 0 + (10 \times 1) = 10 \text{ m/s}$.</div>
+            <div class="point"><strong>Height Calculation:</strong> To find the height ($s$), we use $s = ut + 0.5 gt^2$. Since $u = 0$, it simplifies to $s = 0.5 \times 10 \times (1)^2$.</div>
+            <div class="point"><strong>Result:</strong> The height is $5 \text{ meters}$. This is a common benchmark: objects falling for one second on Earth travel exactly 5 meters.</div>
+            <div class="point"><strong>Velocity Context:</strong> The impact speed of 10 m/s is equivalent to 36 km/h, illustrating how quickly gravity accelerates objects even over short distances.</div>
+            <div class="point"><strong>Standard Values:</strong> These values are useful for mental estimations of heights when watching objects fall in daily life.</div>
+        </div>
+
+        <div class="q-card">
+            <h3>28. Calculate the gravitational force between Earth and Moon with the given parameters.</h3>
+            <div class="point"><strong>Law of Gravitation:</strong> We use $F = G M_1 M_2 / d^2$. The masses are $6 \times 10^{24} \text{ kg}$ and $7.4 \times 10^{22} \text{ kg}$.</div>
+            <div class="point"><strong>Distance Conversion:</strong> The distance $3.84 \times 10^5 \text{ km}$ must be converted to meters: $3.84 \times 10^8 \text{ m}$.</div>
+            <div class="math-block">$$F = \frac{6.67 \times 10^{-11} \times 6 \times 10^{24} \times 7.4 \times 10^{22}}{(3.84 \times 10^8)^2} \approx 2.01 \times 10^{20} \text{ N}$$</div>
+            <div class="point"><strong>Significance:</strong> This incredibly large force is what keeps the Moon locked in its orbit and prevents it from wandering away into deep space.</div>
+        </div>
+
+        
+        <div class="q-card">
+            <h3>29. What is the source of the tidal force in the sea and which body has more influence?</h3>
+            <div class="point"><strong>Lunar Pull:</strong> The primary cause of ocean tides is the gravitational attraction of the Moon pulling on the Earth's liquid oceans.</div>
+            <div class="point"><strong>Differential Gravity:</strong> Because the Earth has a large diameter, the Moon's pull is stronger on the side facing it than on the Earth's center, causing the water to "bulge."</div>
+            <div class="point"><strong>Solar Contribution:</strong> The Sun also exerts a gravitational pull on the oceans, but its influence is only about 46% as strong as the Moon's.</div>
+            <div class="point"><strong>Distance Factor:</strong> Even though the Sun is 27 million times more massive than the Moon, it is 400 times further away, and tidal forces depend on the cube of distance ($1/d^3$).</div>
+            <div class="point"><strong>Tidal Cycle:</strong> As the Earth rotates through these water bulges, different coastal areas experience high and low tides twice every 24 hours.</div>
+        </div>
+
+        
+        <div class="q-card">
+            <h3>30. Why does an orbiting object not fall into the planet despite the constant downward pull?</h3>
+            <div class="point"><strong>Centripetal Balance:</strong> An orbiting satellite is indeed falling toward Earth, but it is also moving sideways at a very high tangential velocity.</div>
+            <div class="point"><strong>Curvature of Earth:</strong> As the satellite falls a few meters toward the center, the Earth's curved surface "drops away" beneath it by the same amount.</div>
+            <div class="point"><strong>Perpetual Fall:</strong> Because of this balance, the satellite never actually gets closer to the surface; it perpetually falls "around" the curve of the planet.</div>
+            <div class="point"><strong>Speed Requirement:</strong> To maintain this orbit near Earth, an object must travel at about 8 km/s; if it slows down, gravity will win and it will crash.</div>
+            <div class="point"><strong>Vacuum Advantage:</strong> Since there is no air in space to cause friction and slow the satellite down, it can maintain this high-speed "sideways fall" for years or decades.</div>
+        </div>
+        <div class="q-card">
+            <h3> bhai tu pagal heavier</h3>
+            <div class
+        </div>>
+    </div>
+    <script>
+function searchFunction() {
+    // 1. Get the text from the search bar
+    let input = document.getElementById('searchInput');
+    let filter = input.value.toUpperCase();
+    
+    // 2. Get all the Question Cards
+    let cards = document.getElementsByClassName('q-card');
+
+    // 3. Loop through cards and hide those that don't match
+    for (let i = 0; i < cards.length; i++) {
+        let textValue = cards[i].textContent || cards[i].innerText;
+        if (textValue.toUpperCase().indexOf(filter) > -1) {
+            cards[i].style.display = ""; // Show
+        } else {
+            cards[i].style.display = "none"; // Hide
+        }
+    }
+}
+</script>
+</body>
+</html>
