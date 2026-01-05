@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MituEdu | Science 1 Dashboard</title>
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
+            --accent-purple: #a855f7;
+            --bg-deep: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --text-bright: #f8fafc;
+            --text-dim: #94a3b8;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-deep);
+            background-image: radial-gradient(circle at top right, rgba(58, 123, 213, 0.1), transparent),
+                              radial-gradient(circle at bottom left, rgba(168, 85, 247, 0.1), transparent);
+            color: var(--text-bright);
+            margin: 0;
+            padding: 40px 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin: 0;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -1px;
+        }
+
+        header p {
+            color: var(--text-dim);
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .chapter-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .chapter-card:hover {
+            transform: translateY(-10px);
+            border-color: #00d2ff;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 
+                        0 0 20px rgba(0, 210, 255, 0.2);
+        }
+
+        .chapter-card::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 4px;
+            background: var(--primary-gradient);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .chapter-card:hover::before {
+            opacity: 1;
+        }
+
+        .chapter-id {
+            font-size: 0.85rem;
+            font-weight: 800;
+            color: #00d2ff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .chapter-name {
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 25px;
+        }
+
+        .go-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 10px 20px;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-align: center;
+            transition: all 0.3s;
+            display: inline-block;
+            align-self: flex-start;
+        }
+
+        .chapter-card:hover .go-btn {
+            background: var(--primary-gradient);
+            border-color: transparent;
+            color: white;
+            box-shadow: 0 4px 15px rgba(58, 123, 213, 0.4);
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 2rem; }
+            .dashboard-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Science 1 Master Portal</h1>
+        <p>Select a chapter to begin your 30-Question intensive study.</p>
+    </header>
+
+    <div class="dashboard-grid">
+        
+        
+        <a href="s10-s1-ch1.html" class="chapter-card">
+            <div class="chapter-id">Unit 01</div>
+            <div class="chapter-name">Gravitation</div>
+            <div class="go-btn">Start Practice →</div>
+        </a>
+
+        <a href="s10-s1-ch2.html" class="chapter-card">
+            <div class="chapter-id">Unit 02</div>
+            <div class="chapter-name">Periodic Classification</div>
+            <div class="go-btn">Start Practice →</div>
+        </a>
+
+        <a href="s10-s1-ch3.html" class="chapter-card">
+            <div class="chapter-id">Unit 03</div>
+            <div class="chapter-name">Chemical Reactions</div>
+            <div class="go-btn">Start Practice →</div>
+        </a>
+
+        <a href="s10-s1-ch4.html" class="chapter-card">
+            <div class="chapter-id">Unit 04</div>
+            <div class="chapter-name">Effects of Electric Current</div>
+            <div class="go-btn">Start Practice →</div>
+        </a>
+
+        <a href="s10-s1-ch5.html" class="chapter-card">
+            <div class="chapter-id">Unit 05</div>
+            <div class="chapter-name">Heat</div>
+            <div class="go-btn">Start Practice →</div>
+        </a>
+
+        <a href="s10-s1-ch6.html" class="chapter-card">
+            <div class="chapter-id">Unit 06</div>
+            <div class="chapter-name">Refraction of Light</div>
+            <div class="go-btn">Start Practice →</div>
+        </a>
+
+        <a href="s10-s1-ch7.html" class="chapter-card">
+            <div class="chapter-id">Unit 07</div>
+            <div class="chapter-name">Lenses</div>
+            <div class="go-btn">Start Practice →</div>
+        </a>
+
+        <a href="s10-s1-ch8.html" class="chapter-card">
+            <div class="chapter-id">Unit 08</div>
+            <div class="chapter-name">Metallurgy</div>
+            <div class="go-btn">Start Practice →</div>
+        </a>
+
+        <a href="s10-s1-ch9.html" class="chapter-card">
+            <div class="chapter-id">Unit 09</div>
+            <div class="chapter-name">Carbon Compounds</div>
+            <div class="go-btn">Start Practice →</div>
+        </a>
+
+<a href="s10-s1-ch10.html" class="chapter-card">
+            <div class="chapter-id">Unit 10</div>
+            <div class="chapter-name">Space Missions</div>
+            <div class="go-btn">Start Practice →</div>
+        </a>
+    </div>
+
+</body>
+</html>

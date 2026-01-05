@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch 2: Life Processes Part 1 | MituEdu Science 2</title>
+    <style>
+        :root {
+            --primary-accent: #10b981; /* Emerald Green for Life Processes */
+            --secondary-accent: #059669;
+            --bg-dark: #0f172a;
+            --card-bg: #1e293b;
+            --text-bright: #f8fafc;
+            --text-dim: #94a3b8;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-bright);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container { max-width: 1000px; margin: auto; }
+
+        .header-section {
+            background: linear-gradient(135deg, var(--primary-accent), var(--secondary-accent));
+            padding: 40px 20px;
+            border-radius: 24px;
+            text-align: center;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.2);
+        }
+
+        .search-container { margin-top: 20px; padding: 0 20px; }
+
+        #searchInput {
+            width: 100%;
+            max-width: 600px;
+            padding: 12px 24px;
+            font-size: 16px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 50px;
+            background: rgba(0, 0, 0, 0.2);
+            color: white;
+            outline: none;
+        }
+
+        .nav-back { display: inline-block; color: var(--text-bright); text-decoration: none; margin-bottom: 20px; font-weight: 600; }
+
+        .q-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 20px;
+            transition: transform 0.2s ease;
+        }
+
+        .q-card:hover { transform: translateY(-3px); border-color: var(--primary-accent); }
+
+        .q-number { color: var(--primary-accent); font-weight: 800; font-size: 0.8rem; text-transform: uppercase; display: block; margin-bottom: 5px; }
+
+        h3 { margin: 0 0 15px 0; font-size: 1.3rem; color: #fff; }
+
+        .point-list { list-style: none; padding: 0; }
+
+        .point-item {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 10px;
+            color: var(--text-dim);
+            font-size: 0.95rem;
+        }
+
+        .point-item::before {
+            content: "✦";
+            position: absolute;
+            left: 0;
+            color: var(--primary-accent);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="index.html" class="nav-back">← Back to Index</a>
+
+        <div class="header-section">
+            <h1>Chapter 02: Life Processes Part-1</h1>
+            <p>Full Study Guide | ATP, Respiration & Cell Division</p>
+            <div class="search-container">
+                <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Search (e.g. Mitosis, ATP, Glycolysis)...">
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 01</span>
+            <h3>Define Life Processes.</h3>
+            <div class="point-list">
+                <div class="point-item">Life processes are the various functions carried out by living beings to maintain life.</div>
+                <div class="point-item">These include nutrition, respiration, excretion, sensation, and response to stimuli.</div>
+                <div class="point-item">Every life process requires a continuous supply of energy to function effectively.</div>
+                <div class="point-item">Coordination between these processes is essential for the survival of the organism.</div>
+                <div class="point-item">In multicellular organisms, different organ systems work together for these processes.</div>
+                <div class="point-item">Failure of any major life process can lead to the death of the organism.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 02</span>
+            <h3>What is the main source of energy for living organisms?</h3>
+            <div class="point-list">
+                <div class="point-item">Carbohydrates are the primary source of energy for all living organisms.</div>
+                <div class="point-item">We obtain them through our daily diet in the form of starch and sugars.</div>
+                <div class="point-item">Glucose is the simplest carbohydrate used by cells to produce energy.</div>
+                <div class="point-item">Excess carbohydrates are stored in the liver and muscles in the form of glycogen.</div>
+                <div class="point-item">In plants, the excess energy is stored in the form of starch.</div>
+                <div class="point-item">We get 4 kcal of energy per gram of carbohydrates consumed.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 03</span>
+            <h3>Define Cellular Respiration.</h3>
+            
+
+[Image of cellular respiration overview]
+
+            <div class="point-list">
+                <div class="point-item">It is the process by which food (glucose) is oxidized to release energy inside the cell.</div>
+                <div class="point-item">It occurs in two main ways: Aerobic respiration and Anaerobic respiration.</div>
+                <div class="point-item">In Aerobic respiration, oxygen is used to break down glucose completely.</div>
+                <div class="point-item">In Anaerobic respiration, glucose is partially broken down without using oxygen.</div>
+                <div class="point-item">The energy released is stored in the form of ATP molecules.</div>
+                <div class="point-item">It involves three main steps: Glycolysis, Tricarboxylic Acid Cycle, and Electron Transfer Chain.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 04</span>
+            <h3>Explain the process of Glycolysis.</h3>
+            <div class="point-list">
+                <div class="point-item">Glycolysis occurs in the cytoplasm of the cell and is common to both types of respiration.</div>
+                <div class="point-item">One molecule of glucose is oxidized step-by-step to produce two molecules of pyruvic acid.</div>
+                <div class="point-item">Additionally, two molecules each of ATP, $NADH_2$, and water are formed.</div>
+                <div class="point-item">Pyruvic acid molecules are then converted into molecules of Acetyl-Coenzyme-A.</div>
+                <div class="point-item">During this conversion, two molecules of $NADH_2$ and two molecules of $CO_2$ are released.</div>
+                <div class="point-item">Glycolysis does not require oxygen to initiate the breakdown of glucose.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 05</span>
+            <h3>What is the Tricarboxylic Acid (TCA) Cycle?</h3>
+            
+            <div class="point-list">
+                <div class="point-item">This cycle is also known as the Krebs Cycle, named after Sir Hans Krebs.</div>
+                <div class="point-item">Both molecules of Acetyl-CoA enter the mitochondria to begin this process.</div>
+                <div class="point-item">The acetyl part of Acetyl-CoA is completely oxidized through a cyclic chain of reactions.</div>
+                <div class="point-item">The molecules $CO_2$, $H_2O$, $NADH_2$, and $FADH_2$ are produced as result.</div>
+                <div class="point-item">This cycle is essential for extracting high-energy electrons from carbon compounds.</div>
+                <div class="point-item">It takes place specifically in the mitochondrial matrix.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 06</span>
+            <h3>Describe the Electron Transfer Chain (ETC) reaction.</h3>
+            <div class="point-list">
+                <div class="point-item">The ETC reaction occurs only in the mitochondria of the cell.</div>
+                <div class="point-item">Molecules of $NADH_2$ and $FADH_2$ produced in previous steps participate here.</div>
+                <div class="point-item">For every molecule of $NADH_2$, three molecules of ATP are produced.</div>
+                <div class="point-item">For every molecule of $FADH_2$, two molecules of ATP are produced.</div>
+                <div class="point-item">Water molecules are also formed during this series of complex reactions.</div>
+                <div class="point-item">ATP is generated using energy released by the flow of electrons.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 07</span>
+            <h3>What is ATP?</h3>
+            
+            <div class="point-list">
+                <div class="point-item">ATP stands for Adenosine Triphosphate and is the energy currency of the cell.</div>
+                <div class="point-item">It is an energy-rich molecule where energy is stored in the phosphate bonds.</div>
+                <div class="point-item">It consists of an adenosine nucleoside and three phosphate groups.</div>
+                <div class="point-item">When a phosphate bond is broken, energy is released for cellular work.</div>
+                <div class="point-item">ATP is consumed for various processes like muscle contraction and protein synthesis.</div>
+                <div class="point-item">It is constantly regenerated from ADP (Adenosine Diphosphate) using food energy.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 08</span>
+            <h3>Why is ATP called the "Energy Currency"?</h3>
+            <div class="point-list">
+                <div class="point-item">Energy is stored in ATP in a form that cells can easily access.</div>
+                <div class="point-item">It can be transported to any part of the cell where energy is needed.</div>
+                <div class="point-item">Just as we use money to buy goods, cells "spend" ATP to perform functions.</div>
+                <div class="point-item">The amount of ATP in a cell reflects its immediate energy status.</div>
+                <div class="point-item">Without ATP, biochemical reactions would not have the energy to proceed.</div>
+                <div class="point-item">Cells do not store large amounts of ATP but produce it as per demand.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 09</span>
+            <h3>Explain Anaerobic Respiration in living organisms.</h3>
+            <div class="point-list">
+                <div class="point-item">It is the process of energy production without the involvement of oxygen.</div>
+                <div class="point-item">It involves only two stages: Glycolysis and Fermentation.</div>
+                <div class="point-item">Glucose is incompletely oxidized, resulting in less energy compared to aerobic respiration.</div>
+                <div class="point-item">Pyruvic acid produced by glycolysis is converted into organic acids or alcohol.</div>
+                <div class="point-item">This process is common in some bacteria, yeast, and even human muscle cells.</div>
+                <div class="point-item">Only 2 molecules of ATP are gained from one molecule of glucose in this process.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 10</span>
+            <h3>What happens during Fermentation?</h3>
+            <div class="point-list">
+                <div class="point-item">Fermentation is the second stage of anaerobic respiration.</div>
+                <div class="point-item">Pyruvic acid is converted into other products like ethanol or lactic acid.</div>
+                <div class="point-item">This conversion is carried out with the help of various enzymes.</div>
+                <div class="point-item">Yeast performs alcoholic fermentation to produce ethanol and $CO_2$.</div>
+                <div class="point-item">Lactobacilli perform lactic acid fermentation, used in making yogurt from milk.</div>
+                <div class="point-item">No additional ATP is produced during the fermentation stage itself.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 11</span>
+            <h3>Why do we feel tired after heavy exercise?</h3>
+            <div class="point-list">
+                <div class="point-item">During heavy exercise, our muscles require more energy than usual.</div>
+                <div class="point-item">If the oxygen supply is insufficient, muscles switch to anaerobic respiration.</div>
+                <div class="point-item">This leads to the accumulation of lactic acid in the muscle tissues.</div>
+                <div class="point-item">Lactic acid is a byproduct of anaerobic metabolism in human cells.</div>
+                <div class="point-item">The buildup of this acid causes muscle fatigue, pain, and soreness.</div>
+                <div class="point-item">Once we rest and oxygen supply restores, the lactic acid is eventually cleared.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 12</span>
+            <h3>How do we get energy from Amino Acids?</h3>
+            <div class="point-list">
+                <div class="point-item">Amino acids are the breakdown products of proteins we consume.</div>
+                <div class="point-item">If carbohydrates are insufficient, the body uses proteins for energy.</div>
+                <div class="point-item">Excess amino acids are not stored in the body; they are broken down.</div>
+                <div class="point-item">The amino group is removed (deamination) and converted into ammonia.</div>
+                <div class="point-item">Ammonia is then eliminated from the body through the urea cycle.</div>
+                <div class="point-item">The remaining carbon skeleton is converted into glucose or other intermediates.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 13</span>
+            <h3>What is the role of Fatty Acids in energy production?</h3>
+            <div class="point-list">
+                <div class="point-item">Fatty acids are obtained from the digestion of lipids (fats).</div>
+                <div class="point-item">They are converted into Acetyl-Coenzyme-A through a process called beta-oxidation.</div>
+                <div class="point-item">This Acetyl-CoA then enters the Krebs cycle in the mitochondria.</div>
+                <div class="point-item">Lipids provide about 9 kcal of energy per gram, which is more than carbohydrates.</div>
+                <div class="point-item">Excess lipids are stored in adipose connective tissue in the body.</div>
+                <div class="point-item">These stores serve as an energy reserve during periods of fasting.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 14</span>
+            <h3>Explain the importance of Vitamins.</h3>
+            <div class="point-list">
+                <div class="point-item">Vitamins are a group of heterogeneous compounds required in small quantities.</div>
+                <div class="point-item">They are essential for the smooth operation of various life processes.</div>
+                <div class="point-item">Vitamins like B-complex and C are water-soluble.</div>
+                <div class="point-item">Vitamins A, D, E, and K are fat-soluble and stored in the body.</div>
+                <div class="point-item">Riboflavin (Vitamin $B_2$) and Nicotinamide (Vitamin $B_3$) are precursors for $FADH_2$ and $NADH_2$.</div>
+                <div class="point-item">Deficiency of vitamins can lead to specific diseases and metabolic disorders.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 15</span>
+            <h3>What is the role of Water in our body?</h3>
+            <div class="point-list">
+                <div class="point-item">There is about 65-70% water in the human body by weight.</div>
+                <div class="point-item">Every cell contains 70% water by its own weight (cytoplasm).</div>
+                <div class="point-item">Blood plasma also contains 90% water to maintain its fluidity.</div>
+                <div class="point-item">Water acts as a universal solvent for biochemical reactions.</div>
+                <div class="point-item">Even a slight loss of water (dehydration) can disturb body functions.</div>
+                <div class="point-item">It helps in temperature regulation through the process of sweating.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 16</span>
+            <h3>Why are Fibers considered an essential nutrient?</h3>
+            <div class="point-list">
+                <div class="point-item">Fibers are indigestible substances found in plants, like cellulose.</div>
+                <div class="point-item">Although we cannot digest them, they are crucial for the digestive system.</div>
+                <div class="point-item">They help in the easy egestion of undigested substances (bowel movement).</div>
+                <div class="point-item">Fibers prevent constipation and maintain a healthy gut environment.</div>
+                <div class="point-item">We obtain fibers from leafy vegetables, fruits, and cereals.</div>
+                <div class="point-item">They also play a role in regulating blood sugar and cholesterol levels.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 17</span>
+            <h3>Define Cell Division.</h3>
+            <div class="point-list">
+                <div class="point-item">Cell division is a fundamental property of all living organisms.</div>
+                <div class="point-item">It is the process by which a parent cell divides into two or more daughter cells.</div>
+                <div class="point-item">It is essential for the growth of a multicellular organism.</div>
+                <div class="point-item">It is necessary for the restoration of emaciated or injured bodies.</div>
+                <div class="point-item">It plays a key role in asexual and sexual reproduction.</div>
+                <div class="point-item">There are two main types of cell division: Mitosis and Meiosis.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 18</span>
+            <h3>What is Mitosis?</h3>
+            
+
+[Image of mitosis process summary]
+
+            <div class="point-list">
+                <div class="point-item">Mitosis is a type of cell division that occurs in somatic cells and stem cells.</div>
+                <div class="point-item">It results in two daughter cells that are genetically identical to the parent.</div>
+                <div class="point-item">The chromosome number remains the same (diploid to diploid).</div>
+                <div class="point-item">It is completed in two main steps: Karyokinesis and Cytokinesis.</div>
+                <div class="point-item">Mitosis is responsible for the growth and repair of the body.</div>
+                <div class="point-item">It ensures that every cell in the body has the same genetic information.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 19</span>
+            <h3>Describe Karyokinesis (Nuclear Division).</h3>
+            <div class="point-list">
+                <div class="point-item">Karyokinesis is the division of the cell nucleus during mitosis.</div>
+                <div class="point-item">It is completed in four stages: Prophase, Metaphase, Anaphase, and Telophase.</div>
+                <div class="point-item">It involves the condensation of chromatin into visible chromosomes.</div>
+                <div class="point-item">The nuclear membrane and nucleolus disappear during the early stages.</div>
+                <div class="point-item">Duplicated chromosomes are separated and moved to opposite poles.</div>
+                <div class="point-item">It ensures that each daughter nucleus receives an equal set of chromosomes.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 20</span>
+            <h3>What happens during Prophase?</h3>
+            
+
+[Image of cell in prophase]
+
+            <div class="point-list">
+                <div class="point-item">Thin, thread-like chromosomes start to condense and become thick.</div>
+                <div class="point-item">Each chromosome appears with its pair of sister chromatids.</div>
+                <div class="point-item">Centrioles duplicate and move to opposite poles of the cell.</div>
+                <div class="point-item">The nuclear membrane starts to disappear gradually.</div>
+                <div class="point-item">The nucleolus also begins to vanish from the nucleus.</div>
+                <div class="point-item">Spindle fibers start forming between the two centrioles.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 21</span>
+            <h3>What happens during Metaphase?</h3>
+            
+            <div class="point-list">
+                <div class="point-item">The nuclear membrane disappears completely by the start of this phase.</div>
+                <div class="point-item">Chromosomes finish their condensation and are clearly visible.</div>
+                <div class="point-item">All chromosomes arrange themselves on the equatorial plane (center) of the cell.</div>
+                <div class="point-item">Special flexible protein fibers called spindle fibers are formed.</div>
+                <div class="point-item">These fibers attach to the centromere of each chromosome.</div>
+                <div class="point-item">This stage is ideal for counting and studying the shape of chromosomes.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 22</span>
+            <h3>What happens during Anaphase?</h3>
+            
+            <div class="point-list">
+                <div class="point-item">The centromeres of the chromosomes split into two.</div>
+                <div class="point-item">Sister chromatids of each chromosome are pulled apart by spindle fibers.</div>
+                <div class="point-item">These separated chromatids are now called "daughter chromosomes."</div>
+                <div class="point-item">They are pulled towards the opposite poles of the cell.</div>
+                <div class="point-item">The moving chromosomes look like a bunch of bananas.</div>
+                <div class="point-item">An equal number of chromosomes reach each pole by the end of this phase.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 23</span>
+            <h3>What happens during Telophase?</h3>
+            
+            <div class="point-list">
+                <div class="point-item">Chromosomes that reached the poles start to de-condense and become thin.</div>
+                <div class="point-item">They turn back into thread-like chromatin and become invisible.</div>
+                <div class="point-item">A nuclear membrane forms around each set of chromosomes at the poles.</div>
+                <div class="point-item">Two daughter nuclei are formed within the single cell.</div>
+                <div class="point-item">The nucleolus reappears in each daughter nucleus.</div>
+                <div class="point-item">Spindle fibers disappear completely, concluding karyokinesis.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 24</span>
+            <h3>Define Cytokinesis.</h3>
+            [Image comparing cytokinesis in animal and plant cells]
+            <div class="point-list">
+                <div class="point-item">Cytokinesis is the division of the cytoplasm after nuclear division.</div>
+                <div class="point-item">In animal cells, a notch (furrow) forms at the equatorial plane.</div>
+                <div class="point-item">This notch deepens gradually and eventually joins to divide the cell.</div>
+                <div class="point-item">In plant cells, a cell plate is formed along the midline of the cell.</div>
+                <div class="point-item">This plate grows outwards to meet the existing cell walls.</div>
+                <div class="point-item">Two separate daughter cells are finally formed through this process.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 25</span>
+            <h3>Why is Mitosis important for wound healing?</h3>
+            <div class="point-list">
+                <div class="point-item">When a tissue is injured, cells are lost or damaged.</div>
+                <div class="point-item">Mitosis allows neighboring healthy cells to divide and produce new cells.</div>
+                <div class="point-item">These new cells replace the dead or damaged ones in the tissue.</div>
+                <div class="point-item">Since mitosis produces identical cells, the tissue function is restored perfectly.</div>
+                <div class="point-item">It ensures that the skin or organ regains its original structure.</div>
+                <div class="point-item">Continuous mitosis is necessary to maintain the integrity of our body surfaces.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 26</span>
+            <h3>Define Meiosis.</h3>
+            
+            <div class="point-list">
+                <div class="point-item">Meiosis is a special type of cell division that occurs in germ cells.</div>
+                <div class="point-item">It reduces the chromosome number by half (diploid to haploid).</div>
+                <div class="point-item">It results in the formation of four daughter cells from one parent cell.</div>
+                <div class="point-item">Meiosis is essential for sexual reproduction and gamete formation.</div>
+                <div class="point-item">It consists of two stages: Meiosis-I and Meiosis-II.</div>
+                <div class="point-item">Genetic recombination occurs during this process, leading to variation.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 27</span>
+            <h3>Explain Meiosis-I.</h3>
+            <div class="point-list">
+                <div class="point-item">It is the first stage of meiosis where the diploid cell becomes haploid.</div>
+                <div class="point-item">Homologous chromosomes undergo crossing over (genetic exchange).</div>
+                <div class="point-item">It is divided into Prophase-I, Metaphase-I, Anaphase-I, and Telophase-I.</div>
+                <div class="point-item">Prophase-I is very long and further divided into five sub-stages.</div>
+                <div class="point-item">Homologous chromosomes are separated into two daughter nuclei.</div>
+                <div class="point-item">It ensures that offspring receive a unique mix of parental genes.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 28</span>
+            <h3>What is "Crossing Over"?</h3>
+            [Image showing crossing over between homologous chromosomes]
+            <div class="point-list">
+                <div class="point-item">It occurs during the Pachytene stage of Prophase-I in Meiosis.</div>
+                <div class="point-item">It is the exchange of genetic material between non-sister chromatids of homologous chromosomes.</div>
+                <div class="point-item">This process leads to new combinations of genes in the gametes.</div>
+                <div class="point-item">It is the primary reason why siblings look different from each other.</div>
+                <div class="point-item">Crossing over increases genetic diversity within a species.</div>
+                <div class="point-item">It provides the variation necessary for the process of evolution.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 29</span>
+            <h3>Explain Meiosis-II.</h3>
+            <div class="point-list">
+                <div class="point-item">Meiosis-II is very similar to a standard mitotic division.</div>
+                <div class="point-item">Two haploid daughter cells formed in Meiosis-I participate in this stage.</div>
+                <div class="point-item">Sister chromatids are separated and move to opposite poles.</div>
+                <div class="point-item">No further reduction in chromosome number occurs here.</div>
+                <div class="point-item">It results in the final production of four haploid daughter cells.</div>
+                <div class="point-item">These four cells eventually develop into gametes (sperm or eggs).</div>
+                <div class="point-item">Each gamete receives one copy of each chromosome from the parent cell.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 30</span>
+            <h3>Compare Mitosis and Meiosis.</h3>
+            [Image comparing Mitosis and Meiosis side by side]
+            <div class="point-list">
+                <div class="point-item">Mitosis occurs in somatic cells, while meiosis occurs in germ cells.</div>
+                <div class="point-item">Mitosis produces two daughter cells; meiosis produces four.</div>
+                <div class="point-item">Mitosis maintains the chromosome number (2n); meiosis halves it (n).</div>
+                <div class="point-item">No genetic recombination occurs in mitosis; it is a key feature of meiosis.</div>
+                <div class="point-item">Mitosis is for growth and repair; meiosis is for reproduction.</div>
+                <div class="point-item">Mitosis involves one division; meiosis involves two successive divisions.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 31-50</span>
+            <h3>Remaining Topics: Metabolism, Stem Cells, & Chromosomes</h3>
+            <div class="point-list">
+                <div class="point-item"><strong>NADH2/FADH2:</strong> Electron carriers produced from B-vitamins for ATP production.</div>
+                <div class="point-item"><strong>Stem Cells:</strong> Undifferentiated cells used in regenerative medicine and growth.</div>
+                <div class="point-item"><strong>Chromosome Structure:</strong> DNA + Histone proteins, centromeres, and p/q arms. 
+
+[Image of chromosome structure]
+</div>
+                <div class="point-item"><strong>Diploid vs Haploid:</strong> Somatic cells (2n=46) vs Germ cells (n=23).</div>
+            </div>
+        </div>
+<div class="q-card">
+            <span class="q-number">Question 31</span>
+            <h3>What are $NADH_2$ and $FADH_2$?</h3>
+            <div class="point-list">
+                <div class="point-item">They are co-enzymes that act as electron carriers in cellular respiration.</div>
+                <div class="point-item">$NADH_2$ stands for Nicotinamide Adenine Dinucleotide.</div>
+                <div class="point-item">$FADH_2$ stands for Flavin Adenine Dinucleotide.</div>
+                <div class="point-item">They carry high-energy electrons from the Krebs cycle to the ETC.</div>
+                <div class="point-item">They are produced using vitamins (B3 and B2) from our diet.</div>
+                <div class="point-item">Their oxidation in the mitochondria results in the production of ATP.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 32</span>
+            <h3>What happens if there is a lack of carbohydrates?</h3>
+            <div class="point-list">
+                <div class="point-item">The body shifts its metabolism to alternative energy sources.</div>
+                <div class="point-item">First, stored glycogen in the liver is converted back into glucose.</div>
+                <div class="point-item">If glycogen is exhausted, the body begins to break down lipids (fats).</div>
+                <div class="point-item">Lipids are converted into fatty acids and then into Acetyl-CoA.</div>
+                <div class="point-item">If lipids are also low, proteins are finally used for energy production.</div>
+                <div class="point-item">This shift ensures the brain and vital organs continue to receive energy.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 33</span>
+            <h3>Define "Gluconeogenesis".</h3>
+            <div class="point-list">
+                <div class="point-item">It is the metabolic pathway that results in the generation of glucose.</div>
+                <div class="point-item">This happens from non-carbohydrate carbon substrates like amino acids or glycerol.</div>
+                <div class="point-item">It occurs primarily in the liver during periods of fasting or starvation.</div>
+                <div class="point-item">It is essential for maintaining blood glucose levels for the brain.</div>
+                <div class="point-item">The process is essentially the reverse of glycolysis with different enzymes.</div>
+                <div class="point-item">It ensures that life-sustaining cellular respiration never stops.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 34</span>
+            <h3>What is the role of Oxygen in Aerobic Respiration?</h3>
+            <div class="point-list">
+                <div class="point-item">Oxygen acts as the final electron acceptor in the Electron Transfer Chain.</div>
+                <div class="point-item">It combines with electrons and hydrogen ions to form water.</div>
+                <div class="point-item">Without oxygen, the entire ETC would back up and stop functioning.</div>
+                <div class="point-item">This would prevent the regeneration of $NAD^+$ and $FAD$ from their reduced forms.</div>
+                <div class="point-item">Consequently, the Krebs cycle and glycolysis would also eventually halt.</div>
+                <div class="point-item">Thus, oxygen is vital for the maximum yield of ATP from glucose.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 35</span>
+            <h3>How is energy released from ATP?</h3>
+            
+            <div class="point-list">
+                <div class="point-item">ATP molecules have high-energy chemical bonds between phosphate groups.</div>
+                <div class="point-item">A process called hydrolysis (adding water) breaks the terminal phosphate bond.</div>
+                <div class="point-item">This converts ATP into ADP (Adenosine Diphosphate) and an inorganic phosphate.</div>
+                <div class="point-item">The breaking of this bond releases a significant amount of free energy.</div>
+                <div class="point-item">This energy is immediately captured by the cell to perform work.</div>
+                <div class="point-item">The cell then uses food energy to re-attach the phosphate and "recharge" the ATP.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 36</span>
+            <h3>What are the proteins found in the Skin?</h3>
+            <div class="point-list">
+                <div class="point-item">Melanin is the primary pigment protein that gives skin its color.</div>
+                <div class="point-item">It protects the underlying tissues from harmful UV radiation.</div>
+                <div class="point-item">Keratin is a tough, fibrous protein found in the outer layer of the skin.</div>
+                <div class="point-item">It provides structural strength and makes the skin waterproof.</div>
+                <div class="point-item">Collagen is found in the deeper layers to provide elasticity and firmness.</div>
+                <div class="point-item">These proteins are synthesized from amino acids obtained through our diet.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 37</span>
+            <h3>List proteins found in other parts of the body.</h3>
+            <div class="point-list">
+                <div class="point-item">Ossein is the major protein found in the matrix of bones.</div>
+                <div class="point-item">Actin and Myosin are contractile proteins found in all types of muscles.</div>
+                <div class="point-item">Hemoglobin is the protein in blood that transports oxygen to tissues.</div>
+                <div class="point-item">Various hormones like Insulin and Pituitary hormones are also proteins.</div>
+                <div class="point-item">Enzymes that catalyze biochemical reactions are essentially globular proteins.</div>
+                <div class="point-item">Antibodies produced by the immune system are specialized defensive proteins.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 38</span>
+            <h3>Explain the importance of "Stem Cells" in cell division.</h3>
+            <div class="point-list">
+                <div class="point-item">Stem cells are undifferentiated cells that have the potential to become any cell type.</div>
+                <div class="point-item">They undergo mitosis to produce more stem cells or specialized cells.</div>
+                <div class="point-item">They are found in embryos, umbilical cord blood, and adult bone marrow.</div>
+                <div class="point-item">Stem cells are used in regenerative medicine to treat damaged tissues.</div>
+                <div class="point-item">They play a vital role in the initial development of an organism.</div>
+                <div class="point-item">Understanding their division helps in treating diseases like leukemia and Parkinson's.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 39</span>
+            <h3>What is a "Haploid" cell?</h3>
+            <div class="point-list">
+                <div class="point-item">A haploid cell contains only one complete set of chromosomes (n).</div>
+                <div class="point-item">In humans, gametes (sperm and egg) are haploid cells.</div>
+                <div class="point-item">They are formed as a result of meiotic cell division.</div>
+                <div class="point-item">Haploid cells in humans contain 23 chromosomes.</div>
+                <div class="point-item">When two haploid gametes fuse during fertilization, they form a diploid zygote.</div>
+                <div class="point-item">This ensures the species-specific chromosome number is maintained across generations.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 40</span>
+            <h3>What is a "Diploid" cell?</h3>
+            <div class="point-list">
+                <div class="point-item">A diploid cell contains two complete sets of chromosomes (2n).</div>
+                <div class="point-item">One set is inherited from the father and one from the mother.</div>
+                <div class="point-item">All somatic cells in the human body (like skin, muscle, bone) are diploid.</div>
+                <div class="point-item">In humans, the diploid number is 46 chromosomes (23 pairs).</div>
+                <div class="point-item">Diploid cells divide by mitosis to maintain the chromosome count.</div>
+                <div class="point-item">The zygote is the first diploid cell of a new organism.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 41</span>
+            <h3>Describe the structure of a Chromosome.</h3>
+            
+            <div class="point-list">
+                <div class="point-item">A chromosome is a condensed structure of DNA and proteins (histones).</div>
+                <div class="point-item">It consists of two sister chromatids joined at a point called the centromere.</div>
+                <div class="point-item">It has two arms: a shorter 'p' arm and a longer 'q' arm.</div>
+                <div class="point-item">The tips of the chromosomes are called telomeres, which protect the DNA.</div>
+                <div class="point-item">Chromosomes carry genes that determine the traits of an individual.</div>
+                <div class="point-item">They are only visible under a microscope during the stages of cell division.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 42</span>
+            <h3>What is the role of Centrioles in animal cell division?</h3>
+            <div class="point-list">
+                <div class="point-item">Centrioles are pair of cylinder-shaped organelles found near the nucleus.</div>
+                <div class="point-item">Before mitosis starts, the centrioles duplicate.</div>
+                <div class="point-item">They move to the opposite poles of the cell during prophase.</div>
+                <div class="point-item">They act as anchors for the organization of spindle fibers.</div>
+                <div class="point-item">Spindle fibers originate from the centrioles and attach to chromosomes.</div>
+                <div class="point-item">They help in the precise separation of sister chromatids during anaphase.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 43</span>
+            <h3>Why do seeds germinate? (Link to life processes)</h3>
+            <div class="point-list">
+                <div class="point-item">A seed contains an embryo that is in a dormant (resting) state.</div>
+                <div class="point-item">Upon receiving water and warmth, cellular respiration increases rapidly.</div>
+                <div class="point-item">Stored food in the seed (starch) is broken down to produce ATP.</div>
+                <div class="point-item">This energy triggers rapid mitosis in the embryonic cells.</div>
+                <div class="point-item">New cells lead to the growth of the radicle (root) and plumule (shoot).</div>
+                <div class="point-item">Thus, germination is a result of active metabolism and cell division.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 44</span>
+            <h3>What is the purpose of the Cell Plate in plants?</h3>
+            
+            <div class="point-list">
+                <div class="point-item">Plant cells have a rigid cell wall that cannot be "pinched" like animal cells.</div>
+                <div class="point-item">During cytokinesis, vesicles from the Golgi apparatus align at the center.</div>
+                <div class="point-item">These vesicles fuse to form a structure called the cell plate.</div>
+                <div class="point-item">The cell plate grows outward until it reaches the parent cell wall.</div>
+                <div class="point-item">It eventually matures into a new primary cell wall between the daughter cells.</div>
+                <div class="point-item">This allows plant cells to divide effectively despite their rigid exterior.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 45</span>
+            <h3>Explain the significance of Meiosis in evolution.</h3>
+            <div class="point-list">
+                <div class="point-item">Meiosis introduces genetic variation through the process of crossing over.</div>
+                <div class="point-item">It ensures that no two gametes produced by an individual are exactly the same.</div>
+                <div class="point-item">This variation is passed on to the offspring during sexual reproduction.</div>
+                <div class="point-item">Genetic diversity allows a population to adapt to changing environments.</div>
+                <div class="point-item">It prevents the accumulation of harmful mutations through recombination.</div>
+                <div class="point-item">Without meiosis, all offspring would be clones, slowing down the evolutionary process.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 46</span>
+            <h3>What are "Homologous Chromosomes"?</h3>
+            
+
+[Image of homologous chromosome pair]
+
+            <div class="point-list">
+                <div class="point-item">They are a pair of chromosomes, one from each parent, that are similar in shape and size.</div>
+                <div class="point-item">They carry the same genes at the same locations (loci).</div>
+                <div class="point-item">However, they may carry different versions (alleles) of those genes.</div>
+                <div class="point-item">They pair up during Prophase-I of meiosis to undergo crossing over.</div>
+                <div class="point-item">During Anaphase-I, they are separated into different daughter cells.</div>
+                <div class="point-item">Humans have 22 pairs of homologous autosomes and 1 pair of sex chromosomes.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 47</span>
+            <h3>What is the importance of "Sister Chromatids"?</h3>
+            <div class="point-list">
+                <div class="point-item">Sister chromatids are two identical copies of a single replicated chromosome.</div>
+                <div class="point-item">They are produced during the S-phase (Synthesis phase) of the cell cycle.</div>
+                <div class="point-item">They remain attached at the centromere until anaphase of mitosis or meiosis-II.</div>
+                <div class="point-item">Their separation ensures that each daughter cell gets an exact copy of the DNA.</div>
+                <div class="point-item">Any error in their separation can lead to genetic disorders like Down Syndrome.</div>
+                <div class="point-item">They are the units of genetic material that move during the division process.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 48</span>
+            <h3>How do bacteria produce energy?</h3>
+            <div class="point-list">
+                <div class="point-item">Most bacteria produce energy through glycolysis and fermentation (anaerobic).</div>
+                <div class="point-item">Some bacteria are capable of aerobic respiration if oxygen is present.</div>
+                <div class="point-item">Because they lack mitochondria, respiration occurs in the cytoplasm and cell membrane.</div>
+                <div class="point-item">Bacteria can use a wide variety of substrates like sulfur or iron for energy.</div>
+                <div class="point-item">The total yield of ATP is much lower in anaerobic bacteria (2 ATP).</div>
+                <div class="point-item">This energy is used for binary fission, which is their method of reproduction.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 49</span>
+            <h3>What is the role of the Nucleolus in cell division?</h3>
+            <div class="point-list">
+                <div class="point-item">The nucleolus is a dense region inside the nucleus responsible for ribosome production.</div>
+                <div class="point-item">It disappears during prophase as the chromatin condenses into chromosomes.</div>
+                <div class="point-item">This disappearance signals the suspension of normal protein synthesis.</div>
+                <div class="point-item">It reappears during telophase in each of the new daughter nuclei.</div>
+                <div class="point-item">Once it reappears, the cell can resume making ribosomes and proteins.</div>
+                <div class="point-item">Its cycle of disappearance and reappearance is a key landmark of cell division.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 50</span>
+            <h3>Why is "Life Process Part-1" focused on energy and division?</h3>
+            <div class="point-list">
+                <div class="point-item">Energy (ATP) is the prerequisite for all other biological activities.</div>
+                <div class="point-item">Without cellular respiration, no life process can take place.</div>
+                <div class="point-item">Cell division is the prerequisite for the growth of any living being.</div>
+                <div class="point-item">Together, they explain how a single zygote becomes a complex organism.</div>
+                <div class="point-item">They explain how the body repairs itself and maintains its functions daily.</div>
+                <div class="point-item">These topics form the foundation for understanding reproduction and heredity.</div>
+            </div>
+    </div>
+
+    <script>
+        function searchFunction() {
+            let input = document.getElementById('searchInput');
+            let filter = input.value.toUpperCase();
+            let cards = document.getElementsByClassName('q-card');
+            for (let i = 0; i < cards.length; i++) {
+                let text = cards[i].innerText || cards[i].textContent;
+                cards[i].style.display = text.toUpperCase().includes(filter) ? "" : "none";
+            }
+        }
+    </script>
+</body>
+</html>

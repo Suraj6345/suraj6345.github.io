@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch 3: Life Processes Part 2 | MituEdu Science 2</title>
+    <style>
+        :root {
+            --primary-accent: #f43f5e; 
+            --secondary-accent: #be123c;
+            --bg-dark: #0f172a;
+            --card-bg: #1e293b;
+            --text-bright: #f8fafc;
+            --text-dim: #94a3b8;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-bright);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container { max-width: 1000px; margin: auto; }
+
+        .header-section {
+            background: linear-gradient(135deg, var(--primary-accent), var(--secondary-accent));
+            padding: 40px 20px;
+            border-radius: 24px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .search-container { margin-top: 20px; padding: 0 20px; }
+
+        #searchInput {
+            width: 100%;
+            max-width: 600px;
+            padding: 12px 24px;
+            border-radius: 50px;
+            border: none;
+            background: rgba(0, 0, 0, 0.2);
+            color: white;
+            outline: none;
+        }
+
+        .nav-back { display: inline-block; color: var(--text-bright); text-decoration: none; margin-bottom: 20px; }
+
+        .q-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .q-number { color: var(--primary-accent); font-weight: 800; font-size: 0.8rem; display: block; margin-bottom: 5px; }
+
+        h3 { margin: 0 0 15px 0; font-size: 1.25rem; color: #fff; }
+
+        .point-list { list-style: none; padding: 0; }
+
+        .point-item {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 8px;
+            color: var(--text-dim);
+            font-size: 0.95rem;
+        }
+
+        .point-item::before {
+            content: "🌸";
+            position: absolute;
+            left: 0;
+            font-size: 0.7rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="index.html" class="nav-back">← Back to Index</a>
+
+        <div class="header-section">
+            <h1>Chapter 03: Life Processes in Living Organisms Part-2</h1>
+            <div class="search-container">
+                <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Search questions...">
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 1</span>
+            <h3>Define Reproduction and its significance.</h3>
+            <div class="point-list">
+                <div class="point-item">Reproduction is the process by which a living organism produces a new organism of its own kind.</div>
+                <div class="point-item">It is one of the most important characteristics of all living organisms.</div>
+                <div class="point-item">It does not help an individual to remain alive, but it is essential for the survival of the species.</div>
+                <div class="point-item">It ensures the continuity of a particular species over many generations.</div>
+                <div class="point-item">Reproduction is responsible for passing genetic information from parents to offspring.</div>
+                <div class="point-item">It plays a vital role in the process of evolution by introducing variations.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 2</span>
+            <h3>What is Asexual Reproduction?</h3>
+            <div class="point-list">
+                <div class="point-item">It is the process of formation of a new organism without the involvement of gametes.</div>
+                <div class="point-item">This process involves only one parent (uniparental) and occurs through mitosis.</div>
+                <div class="point-item">Since there is no fusion of gametes, the offspring is genetically identical to the parent.</div>
+                <div class="point-item">It is a faster method of multiplication compared to sexual reproduction.</div>
+                <div class="point-item">It is commonly observed in unicellular organisms and some simple multicellular organisms.</div>
+                <div class="point-item">The lack of genetic variation is the primary disadvantage of this method.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 3</span>
+            <h3>Explain Binary Fission in unicellular organisms.</h3>
+            
+            <div class="point-list">
+                <div class="point-item">In this method, the parent cell divides into two equal daughter cells.</div>
+                <div class="point-item">It is observed in prokaryotes like bacteria and eukaryotes like Amoeba and Paramoecium.</div>
+                <div class="point-item">Amoeba can divide in any plane due to its lack of a specific shape (Simple binary fission).</div>
+                <div class="point-item">Paramoecium divides horizontally, which is known as transverse binary fission.</div>
+                <div class="point-item">Euglena divides vertically, referred to as longitudinal binary fission.</div>
+                <div class="point-item">This process usually occurs when there is an abundant supply of food and favorable conditions.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 4</span>
+            <h3>Describe Multiple Fission in Amoeba.</h3>
+            
+            <div class="point-list">
+                <div class="point-item">Multiple fission is an asexual method used by Amoeba during unfavorable conditions.</div>
+                <div class="point-item">The Amoeba stops moving by withdrawing its pseudopodia and becomes spherical.</div>
+                <div class="point-item">It forms a hard protective covering around its body called a "Cyst."</div>
+                <div class="point-item">Inside the cyst, the nucleus divides many times through repeated nuclear division.</div>
+                <div class="point-item">This is followed by cytoplasmic division, creating many small "amoebulae."</div>
+                <div class="point-item">When favorable conditions return, the cyst breaks open, releasing many daughter amoebae.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 5</span>
+            <h3>What is Budding in Yeast?</h3>
+            
+            <div class="point-list">
+                <div class="point-item">Yeast is a unicellular fungus that reproduces asexually through the process of budding.</div>
+                <div class="point-item">The parent cell develops a small outgrowth or bulge called a "Bud."</div>
+                <div class="point-item">The nucleus of the parent cell divides mitotically into two daughter nuclei.</div>
+                <div class="point-item">One of these nuclei enters the newly formed bud.</div>
+                <div class="point-item">The bud grows in size and eventually separates from the parent cell to live independently.</div>
+                <div class="point-item">Sometimes, multiple buds form before separation, resulting in a chain of yeast cells.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 6</span>
+            <h3>Explain Fragmentation in multicellular organisms.</h3>
+            
+            <div class="point-list">
+                <div class="point-item">This method is common in organisms with simple body organization like Spirogyra.</div>
+                <div class="point-item">The body of the parent organism breaks into several small pieces or fragments.</div>
+                <div class="point-item">Each fragment then starts to grow and live as a new, independent individual.</div>
+                <div class="point-item">In Spirogyra, this occurs when there is plenty of water and nutrients available.</div>
+                <div class="point-item">Sponges like Sycon also use fragmentation to reproduce when their body is broken.</div>
+                <div class="point-item">This method relies purely on the regenerative capacity of the cells in the fragments.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 7</span>
+            <h3>Define Regeneration in Planaria.</h3>
+            
+
+[Image of regeneration in planaria]
+
+            <div class="point-list">
+                <div class="point-item">Regeneration is the ability of an organism to regrow lost or broken body parts.</div>
+                <div class="point-item">Some animals like lizards use limited regeneration to escape predators (tail regrowth).</div>
+                <div class="point-item">Planaria uses regeneration as a method of reproduction under certain conditions.</div>
+                <div class="point-item">If a Planaria is cut into pieces, each piece can grow back its missing parts.</div>
+                <div class="point-item">This results in the formation of multiple new individuals from a single parent.</div>
+                <div class="point-item">It involves complex cellular processes to reorganize and create new tissues.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 8</span>
+            <h3>Explain Budding in Hydra.</h3>
+            
+
+[Image of budding in hydra]
+
+            <div class="point-list">
+                <div class="point-item">In favorable conditions, an outgrowth is formed on the body wall of Hydra due to repeated cell division.</div>
+                <div class="point-item">This outgrowth is called a "Bud" and it grows gradually to form a small Hydra.</div>
+                <div class="point-item">The dermal layers and digestive cavity of the budding Hydra are continuous with the parent.</div>
+                <div class="point-item">The parent Hydra provides nutrition and support to the developing bud.</div>
+                <div class="point-item">Once the small Hydra is sufficiently developed, it detaches from the parent body.</div>
+                <div class="point-item">After separation, it starts an independent life as a new individual.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 9</span>
+            <h3>What is Vegetative Propagation?</h3>
+            <div class="point-list">
+                <div class="point-item">It is the reproduction in plants with the help of vegetative parts like roots, stems, leaves, and buds.</div>
+                <div class="point-item">In potatoes, it occurs through the "eyes" (buds) present on the tuber.</div>
+                <div class="point-item">In Bryophyllum, new plantlets grow from the buds present on the leaf margins.</div>
+                <div class="point-item">In plants like sugarcane and grasses, propagation occurs through buds on the nodes of the stem.</div>
+                <div class="point-item">Carrots and radishes use their modified roots for vegetative reproduction.</div>
+                <div class="point-item">This method is widely used in agriculture and horticulture to produce clones of plants.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 10</span>
+            <h3>Explain Spore Formation in Mucor.</h3>
+            
+            <div class="point-list">
+                <div class="point-item">Fungi like Mucor (bread mold) have a filamentous body with structures called sporangia.</div>
+                <div class="point-item">Inside the sporangia, thousands of tiny, dust-like spores are produced.</div>
+                <div class="point-item">Once the spores are mature, the sporangium bursts open to release them.</div>
+                <div class="point-item">Spores are lightweight and can be carried by air or water over long distances.</div>
+                <div class="point-item">When spores land on a moist and warm surface (like bread), they germinate.</div>
+                <div class="point-item">Upon germination, a new fungal colony (mycelium) is formed.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 11</span>
+            <h3>What is Sexual Reproduction?</h3>
+            <div class="point-list">
+                <div class="point-item">It is the production of a new organism through the fusion of male and female gametes.</div>
+                <div class="point-item">This process always involves two parents: one male and one female.</div>
+                <div class="point-item">It involves two major steps: Gamete formation (meiosis) and Fertilization.</div>
+                <div class="point-item">The zygote formed is diploid (2n) and contains genetic material from both parents.</div>
+                <div class="point-item">Because of genetic recombination, the offspring are not identical to the parents.</div>
+                <div class="point-item">This variation is the basis for evolution and adaptation to changing environments.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 12</span>
+            <h3>Describe the structure of a Flower.</h3>
+            
+            <div class="point-list">
+                <div class="point-item">A flower is the structural unit of sexual reproduction in plants.</div>
+                <div class="point-item">It consists of four whorls: Calyx, Corolla, Androecium, and Gynoecium.</div>
+                <div class="point-item">Calyx (sepals) and Corolla (petals) are called accessory whorls as they protect inner parts.</div>
+                <div class="point-item">Androecium (stamens) is the male reproductive part of the flower.</div>
+                <div class="point-item">Gynoecium (carpels) is the female reproductive part of the flower.</div>
+                <div class="point-item">If a flower has both Androecium and Gynoecium, it is called a "Bisexual" flower.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 13</span>
+            <h3>Explain the parts of the Androecium.</h3>
+            <div class="point-list">
+                <div class="point-item">The Androecium is made up of individual units called stamens.</div>
+                <div class="point-item">Each stamen consists of a long stalk called a "Filament."</div>
+                <div class="point-item">At the top of the filament is a sac-like structure called the "Anther."</div>
+                <div class="point-item">Inside the anther, pollen grains are produced through the process of meiosis.</div>
+                <div class="point-item">Each pollen grain contains the male gametes required for fertilization.</div>
+                <div class="point-item">When mature, the anther bursts to release the pollen into the environment.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 14</span>
+            <h3>Explain the parts of the Gynoecium.</h3>
+            <div class="point-list">
+                <div class="point-item">The Gynoecium is the female whorl, made up of one or more carpels.</div>
+                <div class="point-item">Each carpel consists of three parts: Stigma, Style, and Ovary.</div>
+                <div class="point-item">The "Stigma" is the sticky top part that receives the pollen grains.</div>
+                <div class="point-item">The "Style" is a long tube that connects the stigma to the ovary.</div>
+                <div class="point-item">The "Ovary" is the swollen basal part containing one or more ovules.</div>
+                <div class="point-item">Inside each ovule, an embryo sac is formed where the egg cell resides.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 15</span>
+            <h3>Define Pollination and its types.</h3>
+            <div class="point-list">
+                <div class="point-item">Pollination is the transfer of pollen grains from the anther to the stigma of a flower.</div>
+                <div class="point-item">It is the first step toward fertilization in flowering plants.</div>
+                <div class="point-item">"Self-pollination" occurs when pollen is transferred within the same flower or plant.</div>
+                <div class="point-item">"Cross-pollination" occurs between flowers of two different plants of the same species.</div>
+                <div class="point-item">Abiotic agents like wind and water can help in the transfer of pollen.</div>
+                <div class="point-item">Biotic agents like insects, birds, and animals are also frequently involved.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 16</span>
+            <h3>Explain Double Fertilization in plants.</h3>
+            
+
+[Image of double fertilization in angiosperms]
+
+            <div class="point-list">
+                <div class="point-item">After pollination, a pollen tube grows from the pollen grain down through the style.</div>
+                <div class="point-item">The pollen tube carries two male gametes into the ovule.</div>
+                <div class="point-item">One male gamete fuses with the egg cell to form a diploid zygote.</div>
+                <div class="point-item">The second male gamete fuses with two polar nuclei to form the endosperm.</div>
+                <div class="point-item">Because two fusions take place, it is called "Double Fertilization."</div>
+                <div class="point-item">The zygote develops into the embryo, while the endosperm provides nutrition.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 17</span>
+            <h3>What happens after fertilization in plants?</h3>
+            <div class="point-list">
+                <div class="point-item">The ovule develops into a seed, which contains the dormant embryo.</div>
+                <div class="point-item">The ovary ripens and turns into a fruit to protect the seeds.</div>
+                <div class="point-item">Other parts of the flower like petals and stamens usually wither and fall off.</div>
+                <div class="point-item">Under favorable conditions, the seed germinates to form a new plantlet.</div>
+                <div class="point-item">This process of a zygote becoming a plantlet is called seed germination.</div>
+                <div class="point-item">The endosperm stored in the seed provides energy for initial growth.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 18</span>
+            <h3>Describe the Male Reproductive System in humans.</h3>
+            
+
+[Image of the male reproductive system]
+
+            <div class="point-list">
+                <div class="point-item">It consists of testes, various ducts, and accessory glands.</div>
+                <div class="point-item">Testes are located in the scrotum outside the abdominal cavity.</div>
+                <div class="point-item">Testes produce sperms and the male hormone, testosterone.</div>
+                <div class="point-item">Sperms travel through the vas deferens to the ejaculatory duct.</div>
+                <div class="point-item">Glands like the prostate and seminal vesicles add secretions to form semen.</div>
+                <div class="point-item">The penis is the organ through which semen is delivered out of the body.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 19</span>
+            <h3>Why are Testes located in the Scrotum?</h3>
+            <div class="point-list">
+                <div class="point-item">Sperm production (spermatogenesis) is a temperature-sensitive process.</div>
+                <div class="point-item">It requires a temperature that is 2 to 3 degrees Celsius lower than the normal body temperature.</div>
+                <div class="point-item">The internal body temperature of 37°C is too high for healthy sperm development.</div>
+                <div class="point-item">The scrotum is a pouch of skin that hangs outside the warm abdominal cavity.</div>
+                <div class="point-item">This external position allows the testes to remain cool for optimal sperm production.</div>
+                <div class="point-item">Without this temperature regulation, male fertility would be significantly compromised.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 20</span>
+            <h3>Describe the Female Reproductive System in humans.</h3>
+            
+
+[Image of the female reproductive system]
+
+            <div class="point-list">
+                <div class="point-item">It consists of a pair of ovaries, a pair of oviducts, a uterus, and a vagina.</div>
+                <div class="point-item">Ovaries produce the egg cells (oocytes) and hormones like estrogen and progesterone.</div>
+                <div class="point-item">Every month, one mature egg is released from either of the ovaries into the oviduct.</div>
+                <div class="point-item">The oviducts (Fallopian tubes) are the site where fertilization usually occurs.</div>
+                <div class="point-item">The uterus is a muscular, bag-like organ where the fetus develops during pregnancy.</div>
+                <div class="point-item">The vagina is the birth canal and the passage for menstrual flow.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 21</span>
+            <h3>Explain the process of Gamete Formation in humans.</h3>
+            <div class="point-list">
+                <div class="point-item">Gametes (sperms and eggs) are formed through the process of meiosis.</div>
+                <div class="point-item">In males, sperms are produced in the testes starting from puberty until old age.</div>
+                <div class="point-item">In females, oocytes (eggs) are produced in the ovaries before birth.</div>
+                <div class="point-item">However, the maturation of these eggs starts only after reaching puberty.</div>
+                <div class="point-item">Meiosis results in haploid gametes containing 23 chromosomes.</div>
+                <div class="point-item">This ensures that the zygote formed after fusion has 46 chromosomes.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 22</span>
+            <h3>Explain Fertilization in humans.</h3>
+            
+
+[Image of sperm fertilizing an egg]
+
+            <div class="point-list">
+                <div class="point-item">Fertilization is the fusion of a haploid sperm with a haploid egg cell.</div>
+                <div class="point-item">In humans, this process is internal and occurs in the oviduct.</div>
+                <div class="point-item">Out of millions of sperms, only one successfully penetrates the egg.</div>
+                <div class="point-item">The fusion results in the formation of a diploid cell called a "Zygote."</div>
+                <div class="point-item">The zygote then begins to divide by mitosis as it moves toward the uterus.</div>
+                <div class="point-item">Fertilization determines the genetic makeup of the future individual.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 23</span>
+            <h3>Describe Development and Birth in humans.</h3>
+            
+
+[Image of human fetal development stages]
+
+            <div class="point-list">
+                <div class="point-item">The zygote undergoes repeated mitotic divisions to form an embryo.</div>
+                <div class="point-item">The embryo reaches the uterus and gets implanted in its thick wall.</div>
+                <div class="point-item">An organ called the "Placenta" is formed to provide nutrition from the mother.</div>
+                <div class="point-item">The development of the fetus inside the uterus takes about 9 months (36-40 weeks).</div>
+                <div class="point-item">During this period, organs are formed and the fetus grows in size.</div>
+                <div class="point-item">Once development is complete, the baby is delivered through the vagina.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 24</span>
+            <h3>What is the Menstrual Cycle?</h3>
+            <div class="point-list">
+                <div class="point-item">It is a natural, cyclic change that occurs in the female reproductive system every month.</div>
+                <div class="point-item">It is controlled by four main hormones: FSH, LH, Estrogen, and Progesterone.</div>
+                <div class="point-item">The cycle lasts for approximately 28 to 30 days.</div>
+                <div class="point-item">It involves the maturation of a follicle, ovulation, and thickening of the uterine wall.</div>
+                <div class="point-item">If the egg is not fertilized, the uterine lining breaks down and is shed.</div>
+                <div class="point-item">This shedding of blood and tissue is called menstruation or a "period."</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 25</span>
+            <h3>Explain the four phases of the Menstrual Cycle.</h3>
+            
+
+[Image of the phases of the menstrual cycle and hormone levels]
+
+            <div class="point-list">
+                <div class="point-item">The "Menstrual Phase" (Days 1-5) involves the discharge of blood and mucus.</div>
+                <div class="point-item">The "Follicular Phase" (Days 6-13) involves the maturation of an oocyte due to FSH.</div>
+                <div class="point-item">The "Ovulatory Phase" (Day 14) is when the mature egg is released from the ovary.</div>
+                <div class="point-item">The "Luteal Phase" (Days 15-28) involves the thickening of the uterus for potential pregnancy.</div>
+                <div class="point-item">If no pregnancy occurs, the Corpus Luteum degenerates, leading to low hormone levels.</div>
+                <div class="point-item">This drop in hormones triggers the start of the next menstrual phase.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 26</span>
+            <h3>What is Menopause?</h3>
+            <div class="point-list">
+                <div class="point-item">Menopause is the permanent stoppage of the menstrual cycle in females.</div>
+                <div class="point-item">It usually occurs between the ages of 45 and 50.</div>
+                <div class="point-item">It happens because the ovaries stop responding to hormones and egg production ceases.</div>
+                <div class="point-item">The production of estrogen and progesterone decreases significantly.</div>
+                <div class="point-item">This leads to various physical and emotional changes in the woman's body.</div>
+                <div class="point-item">Menopause marks the end of the reproductive phase of a woman's life.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 27</span>
+            <h3>Explain IVF (In Vitro Fertilization).</h3>
+            <div class="point-list">
+                <div class="point-item">IVF is a modern medical technique used to help couples with fertility issues.</div>
+                <div class="point-item">Fertilization is carried out in a laboratory glass dish (in vitro) instead of the body.</div>
+                <div class="point-item">Eggs are collected from the mother and sperms are collected from the father.</div>
+                <div class="point-item">The resulting zygote or embryo is then implanted into the mother's uterus.</div>
+                <div class="point-item">It is used when there are problems like blocked oviducts or low sperm count.</div>
+                <div class="point-item">IVF has helped millions of couples worldwide to have their own children.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 28</span>
+            <h3>What is Surrogacy?</h3>
+            <div class="point-list">
+                <div class="point-item">Surrogacy is a method where a woman carries a pregnancy for another couple.</div>
+                <div class="point-item">The woman who carries the baby is known as the "Surrogate Mother."</div>
+                <div class="point-item">It is used when a woman has issues with her uterus or cannot carry a pregnancy safely.</div>
+                <div class="point-item">In many cases, the embryo is created using IVF and then implanted into the surrogate.</div>
+                <div class="point-item">The surrogate mother has no genetic link to the baby if the couple's gametes are used.</div>
+                <div class="point-item">Legal agreements are made to ensure the baby is handed over to the intended parents.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 29</span>
+            <h3>What is a Sperm Bank?</h3>
+            <div class="point-list">
+                <div class="point-item">A sperm bank is a facility that collects, stores, and provides human semen.</div>
+                <div class="point-item">It is similar to a blood bank and is used by couples facing male infertility.</div>
+                <div class="point-item">Donors undergo thorough physical and genetic screening before donation.</div>
+                <div class="point-item">The semen is frozen and stored at very low temperatures.</div>
+                <div class="point-item">When needed, the sperm is used to fertilize the woman's egg via IVF or IUI.</div>
+                <div class="point-item">The identity of the donor is usually kept confidential by the bank.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 30</span>
+            <h3>Explain the formation of Monozygotic Twins.</h3>
+            
+            <div class="point-list">
+                <div class="point-item">Monozygotic (identical) twins are formed from a single embryo.</div>
+                <div class="point-item">Within 8 days of zygote formation, the embryo cells divide into two separate groups.</div>
+                <div class="point-item">These two groups develop independently as two separate fetuses.</div>
+                <div class="point-item">Since they come from the same zygote, they have exactly the same genetic makeup.</div>
+                <div class="point-item">They are always of the same gender and look very similar to each other.</div>
+                <div class="point-item">If the division occurs after 8 days, there is a risk of "Siamese twins" (joined twins).</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 31</span>
+            <h3>Explain the formation of Dizygotic Twins.</h3>
+            
+            <div class="point-list">
+                <div class="point-item">Dizygotic (fraternal) twins are formed from two separate eggs and two separate sperms.</div>
+                <div class="point-item">Occasionally, two eggs are released from the ovaries at the same time.</div>
+                <div class="point-item">Both eggs are fertilized by two different sperms, forming two separate zygotes.</div>
+                <div class="point-item">These two zygotes develop into two separate embryos in the uterus.</div>
+                <div class="point-item">Genetically, they are no more similar than ordinary siblings.</div>
+                <div class="point-item">They can be of the same gender or different genders.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 32</span>
+            <h3>What is Reproductive Health?</h3>
+            <div class="point-list">
+                <div class="point-item">According to the WHO, it is the total well-being in all aspects of reproduction.</div>
+                <div class="point-item">This includes physical, emotional, social, and behavioral aspects.</div>
+                <div class="point-item">Maintaining hygiene of the reproductive organs is crucial for preventing infections.</div>
+                <div class="point-item">Awareness about sexually transmitted diseases (STDs) is a part of reproductive health.</div>
+                <div class="point-item">In India, social taboos and lack of education often hinder reproductive health.</div>
+                <div class="point-item">Regular check-ups and open communication are necessary for a healthy lifestyle.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 33</span>
+            <h3>What is Syphilis?</h3>
+            <div class="point-list">
+                <div class="point-item">Syphilis is a sexually transmitted disease caused by a bacterium.</div>
+                <div class="point-item">The primary symptom is the appearance of painless sores (chancres) on the genitals.</div>
+                <div class="point-item">Other symptoms include skin rashes, fever, and inflammation of the joints.</div>
+                <div class="point-item">If left untreated, it can cause hair loss and damage to the brain and heart.</div>
+                <div class="point-item">It is primarily spread through sexual contact with an infected person.</div>
+                <div class="point-item">It can be treated effectively with antibiotics if diagnosed early.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 34</span>
+            <h3>What is Gonorrhea?</h3>
+            <div class="point-list">
+                <div class="point-item">Gonorrhea is a bacterial infection spread through sexual contact.</div>
+                <div class="point-item">Symptoms in men include pain during urination and discharge from the penis.</div>
+                <div class="point-item">In women, symptoms may include pelvic pain and abnormal vaginal discharge.</div>
+                <div class="point-item">It can also affect the throat, eyes, and rectum.</div>
+                <div class="point-item">If untreated, it can lead to infertility in both men and women.</div>
+                <div class="point-item">Like syphilis, it is treated using specific antibiotics prescribed by a doctor.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 35</span>
+            <h3>Discuss the issue of Population Explosion in India.</h3>
+            <div class="point-list">
+                <div class="point-item">Population explosion is the rapid increase in the number of people in a country.</div>
+                <div class="point-item">India's population has grown significantly over the last few decades.</div>
+                <div class="point-item">It creates immense pressure on resources like food, water, and housing.</div>
+                <div class="point-item">It leads to problems like unemployment, poverty, and environmental pollution.</div>
+                <div class="point-item">High birth rates and improved medical facilities contributing to lower death rates are the causes.</div>
+                <div class="point-item">Controlling the population is essential for the sustainable development of the nation.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 36</span>
+            <h3>Explain the importance of Family Planning.</h3>
+            <div class="point-list">
+                <div class="point-item">Family planning allows couples to decide the number and spacing of their children.</div>
+                <div class="point-item">It helps in maintaining the health of the mother and the quality of life for children.</div>
+                <div class="point-item">Various contraceptive methods like condoms, pills, and IUCDs are used for this.</div>
+                <div class="point-item">It is a key tool in controlling the national population growth.</div>
+                <div class="point-item">"Small family, happy family" is a popular slogan promoting this concept.</div>
+                <div class="point-item">Government programs provide free or subsidized family planning services to the public.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 37</span>
+            <h3>Why is there a gender imbalance in some societies?</h3>
+            <div class="point-list">
+                <div class="point-item">Many societies have a traditional preference for male children.</div>
+                <div class="point-item">This leads to the illegal practice of female foeticide (killing the female fetus).</div>
+                <div class="point-item">Prenatal sex determination is a major cause of this imbalance.</div>
+                <div class="point-item">Social evils like the dowry system contribute to the view of daughters as a burden.</div>
+                <div class="point-item">This imbalance leads to social problems and a decrease in the female population.</div>
+                <div class="point-item">Laws like the PCPNDT Act have been enacted in India to stop sex-selective abortion.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 38</span>
+            <h3>What are the accessory glands in the male reproductive system?</h3>
+            <div class="point-list">
+                <div class="point-item">The three main glands are the Seminal Vesicles, Prostate Gland, and Cowper's Gland.</div>
+                <div class="point-item">Seminal vesicles secrete a fluid rich in fructose to provide energy to sperms.</div>
+                <div class="point-item">The prostate gland secretes an alkaline fluid to neutralize the acidity of the vagina.</div>
+                <div class="point-item">Cowper's glands (bulbourethral) produce a lubricating fluid for the urethra.</div>
+                <div class="point-item">The combined secretions of these glands and the sperms form the "Semen."</div>
+                <div class="point-item">These secretions are essential for the survival and motility of the sperms.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 39</span>
+            <h3>Describe the structure of a human Sperm.</h3>
+            
+            <div class="point-list">
+                <div class="point-item">A sperm is a microscopic, single-celled male gamete.</div>
+                <div class="point-item">It consists of three main parts: the Head, Middle piece, and Tail.</div>
+                <div class="point-item">The head contains the nucleus with 23 chromosomes and an acrosome at the tip.</div>
+                <div class="point-item">The acrosome contains enzymes to help the sperm penetrate the egg.</div>
+                <div class="point-item">The middle piece contains numerous mitochondria to provide energy for swimming.</div>
+                <div class="point-item">The long tail provides motility, allowing the sperm to swim toward the egg.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 40</span>
+            <h3>What is the role of FSH and LH in the menstrual cycle?</h3>
+            <div class="point-list">
+                <div class="point-item">FSH (Follicle Stimulating Hormone) stimulates the growth of follicles in the ovary.</div>
+                <div class="point-item">It also triggers the follicle to secrete the hormone estrogen.</div>
+                <div class="point-item">LH (Luteinizing Hormone) triggers the release of the mature egg (ovulation).</div>
+                <div class="point-item">After ovulation, LH helps convert the empty follicle into the Corpus Luteum.</div>
+                <div class="point-item">These hormones are secreted by the pituitary gland in the brain.</div>
+                <div class="point-item">Their balance is crucial for a regular and healthy menstrual cycle.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 41</span>
+            <h3>What is the role of Estrogen and Progesterone?</h3>
+            <div class="point-list">
+                <div class="point-item">Estrogen is produced by the developing follicle and thickens the uterine lining.</div>
+                <div class="point-item">It also develops secondary sexual characteristics in females.</div>
+                <div class="point-item">Progesterone is produced by the Corpus Luteum after ovulation.</div>
+                <div class="point-item">It prepares the uterus for the implantation of a fertilized egg.</div>
+                <div class="point-item">Progesterone maintains the pregnancy if fertilization occurs.</div>
+                <div class="point-item">If progesterone levels drop, the uterine lining sheds, leading to menstruation.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 42</span>
+            <h3>Explain the process of 'Implantation'.</h3>
+            
+
+[Image of blastocyst implantation in the uterine lining]
+
+            <div class="point-list">
+                <div class="point-item">After fertilization in the oviduct, the zygote divides into a ball of cells.</div>
+                <div class="point-item">This ball of cells (blastocyst) travels down to the uterus.</div>
+                <div class="point-item">It attaches itself to the thick, nutrient-rich lining of the uterus.</div>
+                <div class="point-item">This attachment process is known as "Implantation."</div>
+                <div class="point-item">Once implanted, the embryo starts receiving oxygen and nutrients from the mother.</div>
+                <div class="point-item">Implantation marks the official beginning of a pregnancy.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 43</span>
+            <h3>What is the role of the Placenta?</h3>
+            
+            <div class="point-list">
+                <div class="point-item">The placenta is a temporary organ formed between the mother and the fetus.</div>
+                <div class="point-item">It connects to the fetus through the umbilical cord.</div>
+                <div class="point-item">Its main function is to supply oxygen and nutrients from the mother's blood.</div>
+                <div class="point-item">It also removes waste products like CO2 and urea from the fetal blood.</div>
+                <div class="point-item">The placenta acts as a barrier, protecting the fetus from certain infections.</div>
+                <div class="point-item">It also produces hormones necessary for maintaining the pregnancy.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 44</span>
+            <h3>Define 'Ovulation'.</h3>
+            <div class="point-list">
+                <div class="point-item">Ovulation is the release of a mature egg from the ovary.</div>
+                <div class="point-item">It usually happens around the 14th day of a 28-day menstrual cycle.</div>
+                <div class="point-item">It is triggered by a sudden surge in the level of Luteinizing Hormone (LH).</div>
+                <div class="point-item">The egg enters the oviduct where it survives for about 24 hours.</div>
+                <div class="point-item">This is the "fertile window" when the chance of pregnancy is highest.</div>
+                <div class="point-item">If the egg is not fertilized during this time, it begins to disintegrate.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 45</span>
+            <h3>What are Sexually Transmitted Diseases (STDs)?</h3>
+            <div class="point-list">
+                <div class="point-item">STDs are infections passed from one person to another through sexual contact.</div>
+                <div class="point-item">They can be caused by bacteria, viruses, or parasites.</div>
+                <div class="point-item">Common STDs include HIV/AIDS, Syphilis, Gonorrhea, and Herpes.</div>
+                <div class="point-item">Many STDs do not show symptoms initially but can cause long-term damage.</div>
+                <div class="point-item">Prevention includes using protection and maintaining a single faithful partner.</div>
+                <div class="point-item">Early diagnosis and treatment are essential to prevent complications and spread.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 46</span>
+            <h3>Explain the difference between primary and accessory whorls.</h3>
+            <div class="point-list">
+                <div class="point-item">Primary whorls are directly involved in the process of reproduction.</div>
+                <div class="point-item">In a flower, the Androecium and Gynoecium are the primary whorls.</div>
+                <div class="point-item">Accessory whorls do not produce gametes but help in the process.</div>
+                <div class="point-item">The Calyx and Corolla are the accessory whorls of a flower.</div>
+                <div class="point-item">Accessory whorls protect the inner parts and attract pollinators with color or scent.</div>
+                <div class="point-item">A flower can survive without accessory whorls, but not without primary ones for sexual reproduction.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 47</span>
+            <h3>What is 'Bisexual' and 'Unisexual' in terms of organisms?</h3>
+            <div class="point-list">
+                <div class="point-item">A bisexual organism (hermaphrodite) has both male and female reproductive organs.</div>
+                <div class="point-item">Earthworms and leeches are examples of bisexual animals.</div>
+                <div class="point-item">Hibiscus is an example of a bisexual flower.</div>
+                <div class="point-item">A unisexual organism has either male or female reproductive organs, not both.</div>
+                <div class="point-item">Humans and most mammals are unisexual organisms.</div>
+                <div class="point-item">Papaya and watermelon are examples of unisexual flowers.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 48</span>
+            <h3>Why is cleanliness important for reproductive health?</h3>
+            <div class="point-list">
+                <div class="point-item">The reproductive organs are prone to bacterial and fungal infections.</div>
+                <div class="point-item">Menstrual hygiene is vital for women to prevent pelvic inflammatory diseases.</div>
+                <div class="point-item">Lack of cleanliness can lead to itching, burning, and foul odors.</div>
+                <div class="point-item">Infections can spread to the urinary tract or internal organs if not managed.</div>
+                <div class="point-item">Simple habits like washing and wearing clean cotton underwear are effective.</div>
+                <div class="point-item">Health education helps in removing myths about reproductive hygiene.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 49</span>
+            <h3>What is 'Tuberous Root' propagation?</h3>
+            
+
+[Image of tuberous roots in sweet potato]
+
+            <div class="point-list">
+                <div class="point-item">Some plants store food in their roots, which become swollen and tuberous.</div>
+                <div class="point-item">Sweet potatoes and Dahlias are common examples of this.</div>
+                <div class="point-item">These roots contain adventitious buds that can grow into new plants.</div>
+                <div class="point-item">When planted in soil, these buds sprout using the stored nutrients.</div>
+                <div class="point-item">This is a form of natural vegetative propagation.</div>
+                <div class="point-item">It allows the plant to survive through unfavorable seasons and multiply.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 50</span>
+            <h3>Summarize the role of science in improving reproductive outcomes.</h3>
+            <div class="point-list">
+                <div class="point-item">Science has provided a deep understanding of the hormonal control of reproduction.</div>
+                <div class="point-item">Medical advancements like IVF and surrogacy have solved infertility problems.</div>
+                <div class="point-item">Modern contraception has allowed for effective family planning and population control.</div>
+                <div class="point-item">Diagnostic tools like ultrasound help in monitoring the health of the fetus.</div>
+                <div class="point-item">Treatments for STDs have improved life expectancy and quality of life.</div>
+                <div class="point-item">Genetic screening allows for the early detection of hereditary disorders in the fetus.</div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function searchFunction() {
+            let input = document.getElementById('searchInput');
+            let filter = input.value.toUpperCase();
+            let cards = document.getElementsByClassName('q-card');
+            for (let i = 0; i < cards.length; i++) {
+                let text = cards[i].innerText || cards[i].textContent;
+                cards[i].style.display = text.toUpperCase().includes(filter) ? "" : "none";
+            }
+        }
+    </script>
+</body>
+</html>

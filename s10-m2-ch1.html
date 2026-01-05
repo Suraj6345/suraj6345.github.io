@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch 1: Similarity | MituEdu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Mitu<span>Edu</span></div>
+        <a href="std10-math2.html" class="back-link">← Geometry List</a>
+    </nav>
+
+    <div class="main-container">
+        <header class="chapter-header">
+            <h1>Similarity</h1>
+            <button class="btn-audio" onclick="playGeo1()">🔊 Listen to Theorems</button>
+        </header>
+
+        <div class="question-card">
+            <div class="q-header"><span class="q-no">Q1.</span><h3>State the Basic Proportionality Theorem (BPT).</h3></div>
+            <div class="answer-box">
+                <ul class="point-list">
+                    <li><strong>Statement:</strong> If a line parallel to a side of a triangle intersects the other two sides in distinct points, then the line divides those sides in the same ratio.</li>
+                    <li>If in $\triangle ABC$, $DE \parallel BC$, then $\frac{AD}{DB} = \frac{AE}{EC}$.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="question-card">
+            <div class="q-header"><span class="q-no">Q2.</span><h3>Explain the AAA, SAS, and SSS tests of similarity.</h3></div>
+            <div class="answer-box">
+                <ul class="point-list">
+                    <li><strong>AAA:</strong> All three corresponding angles are congruent.</li>
+                    <li><strong>SAS:</strong> Two corresponding sides are in proportion and the included angle is congruent.</li>
+                    <li><strong>SSS:</strong> All three corresponding sides are in the same proportion.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="question-card">
+            <div class="q-header"><span class="q-no">Q3.</span><h3>Theorem of Areas of Similar Triangles.</h3></div>
+            <div class="answer-box">
+                <p>When two triangles are similar, the ratio of their areas is equal to the ratio of the <strong>squares of their corresponding sides</strong>.</p>
+                <p>$\frac{A(\triangle 1)}{A(\triangle 2)} = \frac{(s_1)^2}{(s_2)^2}$</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function playGeo1() {
+            const msg = new SpeechSynthesisUtterance("Similarity is about triangles having the same shape but different sizes. Don't forget the Basic Proportionality Theorem!");
+            window.speechSynthesis.speak(msg);
+        }
+    </script>
+</body>
+</html>

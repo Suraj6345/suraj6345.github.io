@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch 1: Heredity and Evolution | MituEdu Science 2</title>
+    <style>
+        :root {
+            --primary-accent: #f43f5e; 
+            --secondary-accent: #be123c;
+            --bg-dark: #0f172a;
+            --card-bg: #1e293b;
+            --text-bright: #f8fafc;
+            --text-dim: #94a3b8;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-bright);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container { max-width: 1000px; margin: auto; }
+
+        .header-section {
+            background: linear-gradient(135deg, var(--primary-accent), var(--secondary-accent));
+            padding: 40px 20px;
+            border-radius: 24px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .search-container { margin-top: 20px; padding: 0 20px; }
+
+        #searchInput {
+            width: 100%;
+            max-width: 600px;
+            padding: 12px 24px;
+            border-radius: 50px;
+            border: none;
+            background: rgba(0, 0, 0, 0.2);
+            color: white;
+            outline: none;
+        }
+
+        .nav-back { display: inline-block; color: var(--text-bright); text-decoration: none; margin-bottom: 20px; }
+
+        .q-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .q-number { color: var(--primary-accent); font-weight: 800; font-size: 0.8rem; display: block; margin-bottom: 5px; }
+
+        h3 { margin: 0 0 15px 0; font-size: 1.25rem; color: #fff; }
+
+        .point-list { list-style: none; padding: 0; }
+
+        .point-item {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 8px;
+            color: var(--text-dim);
+            font-size: 0.95rem;
+        }
+
+        .point-item::before {
+            content: "•";
+            position: absolute;
+            left: 5px;
+            color: var(--primary-accent);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="index.html" class="nav-back">← Back to Index</a>
+
+        <div class="header-section">
+            <h1>Chapter 01: Heredity and Evolution</h1>
+            <div class="search-container">
+                <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Search questions...">
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 01</span>
+            <h3>Define Heredity.</h3>
+            <div class="point-list">
+                <div class="point-item">Heredity is the transfer of biological characters from one generation to another via genes.</div>
+                <div class="point-item">It explains why offspring resemble their parents in physical and mental traits.</div>
+                <div class="point-item">Johann Gregor Mendel is considered the pioneer of modern genetics.</div>
+                <div class="point-item">It involves the transmission of DNA from the parents' gametes to the zygote.</div>
+                <div class="point-item">Heredity is responsible for the maintenance of species characteristics over time.</div>
+                <div class="point-item">Mechanism of heredity helps in understanding the cause of many genetic disorders.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 02</span>
+            <h3>What is Transcription?</h3>
+            
+            <div class="point-list">
+                <div class="point-item">It is the process of synthesis of mRNA from the DNA strand.</div>
+                <div class="point-item">The sequence of nucleotides in mRNA is complementary to the DNA strand used for synthesis.</div>
+                <div class="point-item">Only one of the two strands of DNA is used in this process.</div>
+                <div class="point-item">The enzyme RNA polymerase plays a vital role in the formation of mRNA.</div>
+                <div class="point-item">This process occurs inside the nucleus of the eukaryotic cell.</div>
+                <div class="point-item">The synthesized mRNA then leaves the nucleus and enters the cytoplasm.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 03</span>
+            <h3>Define Translation.</h3>
+            
+            <div class="point-list">
+                <div class="point-item">It is the process where the code on mRNA is converted into a chain of amino acids.</div>
+                <div class="point-item">tRNA molecules bring specific amino acids as per the codons on the mRNA.</div>
+                <div class="point-item">Each tRNA has an 'anticodon' that matches the 'codon' on the mRNA.</div>
+                <div class="point-item">The ribosome moves along the mRNA strand during this process.</div>
+                <div class="point-item">Peptide bonds are formed between the amino acids brought by the tRNA.</div>
+                <div class="point-item">This process continues until a 'stop codon' is reached on the mRNA.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 04</span>
+            <h3>What is Translocation?</h3>
+            <div class="point-list">
+                <div class="point-item">It is the movement of the ribosome from one end of mRNA to the other.</div>
+                <div class="point-item">The ribosome shifts by the distance of one triplet codon at a time.</div>
+                <div class="point-item">This movement is essential for the continuous reading of the genetic code.</div>
+                <div class="point-item">It ensures that amino acids are added in the correct sequence to the protein chain.</div>
+                <div class="point-item">Energy in the form of GTP is utilized during this ribosomal movement.</div>
+                <div class="point-item">Translocation is a sub-step of the broader process of protein synthesis.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 05</span>
+            <h3>Define Mutation.</h3>
+            
+            <div class="point-list">
+                <div class="point-item">A mutation is any sudden and permanent change in the nucleotide sequence of a gene.</div>
+                <div class="point-item">It can involve the replacement, addition, or deletion of a single nucleotide.</div>
+                <div class="point-item">Mutations can be minor or major enough to cause visible changes in traits.</div>
+                <div class="point-item">Genetic disorders like Sickle Cell Anemia are caused by such mutations.</div>
+                <div class="point-item">Mutations provide the raw material for variation and evolution.</div>
+                <div class="point-item">They can occur naturally or be induced by environmental factors like radiation.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 06</span>
+            <h3>Explain the concept of Central Dogma.</h3>
+            <div class="point-list">
+                <div class="point-item">Central Dogma is the flow of genetic information from DNA to proteins.</div>
+                <div class="point-item">It states that proteins are synthesized by DNA through the medium of RNA.</div>
+                <div class="point-item">The process involves two main stages: Transcription and Translation.</div>
+                <div class="point-item">DNA holds the master blueprint, while RNA acts as the messenger.</div>
+                <div class="point-item">It is a universal process occurring in all living organisms.</div>
+                <div class="point-item">Understanding this dogma is fundamental to the study of molecular biology.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 07</span>
+            <h3>What is a Triplet Codon?</h3>
+            <div class="point-list">
+                <div class="point-item">It is a sequence of three nucleotides on the mRNA that codes for a specific amino acid.</div>
+                <div class="point-item">There are 64 possible triplet codons formed from the four nitrogen bases.</div>
+                <div class="point-item">Dr. Har Gobind Khorana made significant contributions to discovering these codons.</div>
+                <div class="point-item">Each codon is specific for one particular amino acid (Genetic Code).</div>
+                <div class="point-item">AUG is a famous 'start codon' that also codes for Methionine.</div>
+                <div class="point-item">Three specific codons act as 'stop codons' to terminate protein synthesis.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 08</span>
+            <h3>Define Evolution.</h3>
+            <div class="point-list">
+                <div class="point-item">Evolution is the gradual and continuous change occurring in living organisms over a long duration.</div>
+                <div class="point-item">It leads to the formation of new species from pre-existing ones.</div>
+                <div class="point-item">It is a multi-dimensional process involving physical, chemical, and biological changes.</div>
+                <div class="point-item">Evolution explains the vast diversity of life present on Earth today.</div>
+                <div class="point-item">It is a very slow process that takes millions of years to show significant results.</div>
+                <div class="point-item">The theory suggests that all living organisms share a common ancestor.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 09</span>
+            <h3>What are Morphological Evidences of evolution?</h3>
+            <div class="point-list">
+                <div class="point-item">These involve similarities in the external features of different animals.</div>
+                <div class="point-item">Examples include the structure of the mouth, position of eyes, and nostril shape.</div>
+                <div class="point-item">Similarities in ear pinnae and hair distribution on the body are also considered.</div>
+                <div class="point-item">These similarities suggest that different groups of animals share a common origin.</div>
+                <div class="point-item">It is the most visible form of evidence used to classify organisms.</div>
+                <div class="point-item">Morphological traits help in tracing the evolutionary path of a species.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 10</span>
+            <h3>What are Anatomical Evidences of evolution?</h3>
+            
+            <div class="point-list">
+                <div class="point-item">These refer to similarities in the internal bone structure and arrangement of organs.</div>
+                <div class="point-item">For example, the structure of a human hand, cat's foreleg, and whale's flipper.</div>
+                <div class="point-item">Although their functions are different, the underlying bone arrangement is similar.</div>
+                <div class="point-item">This suggests that these animals evolved from a common ancestor with a similar structure.</div>
+                <div class="point-item">These organs are often called homologous organs.</div>
+                <div class="point-item">Anatomical evidence provides a deeper understanding of evolutionary relationships.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 11</span>
+            <h3>Define Vestigial Organs.</h3>
+            
+            <div class="point-list">
+                <div class="point-item">These are degenerated or underdeveloped organs that have no function in an organism.</div>
+                <div class="point-item">They were functional in the ancestors but became useless due to environmental changes.</div>
+                <div class="point-item">In humans, the appendix is a vestigial organ as we cannot digest cellulose.</div>
+                <div class="point-item">The tailbone (coccyx) and wisdom teeth are other examples in humans.</div>
+                <div class="point-item">Ear pinna muscles are useless to humans but functional in monkeys to move ears.</div>
+                <div class="point-item">The presence of these organs proves that organisms undergo structural changes over time.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 12</span>
+            <h3>Explain Paleontological Evidences.</h3>
+            <div class="point-list">
+                <div class="point-item">Paleontology is the study of fossils preserved in the Earth's crust.</div>
+                <div class="point-item">Fossils are the remnants or impressions of organisms that lived in the past.</div>
+                <div class="point-item">They provide direct evidence of the types of life that existed in different eras.</div>
+                <div class="point-item">The depth at which a fossil is found indicates the geological period it belongs to.</div>
+                <div class="point-item">Carbon dating is used to determine the exact age of these fossils.</div>
+                <div class="point-item">This evidence shows the transition from simple to complex organisms over time.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 13</span>
+            <h3>What is Carbon Dating?</h3>
+            <div class="point-list">
+                <div class="point-item">It is a method used to determine the age of biological samples like fossils.</div>
+                <div class="point-item">It is based on the radioactive decay of the Carbon-14 ($C^{14}$) isotope.</div>
+                <div class="point-item">When an organism dies, it stops consuming carbon, and $C^{14}$ begins to decay.</div>
+                <div class="point-item">The ratio of $C^{14}$ to $C^{12}$ (stable isotope) changes continuously over time.</div>
+                <div class="point-item">By measuring this ratio, the time since the death of the organism can be calculated.</div>
+                <div class="point-item">This technique was developed by Willard Libby and is crucial for paleontology.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 14</span>
+            <h3>Define Connecting Links.</h3>
+            
+            <div class="point-list">
+                <div class="point-item">Connecting links are organisms that show characteristics of two different groups.</div>
+                <div class="point-item">They act as "evolutionary bridges" between two distinct classes of animals.</div>
+                <div class="point-item">Peripatus is a connecting link between Annelida and Arthropoda.</div>
+                <div class="point-item">Duck-billed Platypus is a connecting link between Reptiles and Mammals.</div>
+                <div class="point-item">Lungfish is a connecting link between Fishes and Amphibians.</div>
+                <div class="point-item">They provide strong evidence that one group of animals evolved from another.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 15</span>
+            <h3>What are Embryological Evidences?</h3>
+            [Image comparing initial and final stages of vertebrate embryos]
+            <div class="point-list">
+                <div class="point-item">This involves the comparative study of embryos of different vertebrates.</div>
+                <div class="point-item">In the initial stages, embryos of fish, salamanders, tortoises, and humans look identical.</div>
+                <div class="point-item">As the embryos develop, they begin to show the specific features of their species.</div>
+                <div class="point-item">The similarity in early stages suggests a common ancestry for all vertebrates.</div>
+                <div class="point-item">This is summarized by the phrase "Ontogeny recapitulates Phylogeny."</div>
+                <div class="point-item">Embryology helps in understanding the developmental history of a species.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 16</span>
+            <h3>State Darwin's Theory of Natural Selection.</h3>
+            <div class="point-list">
+                <div class="point-item">Charles Darwin published his theory in the book "Origin of Species."</div>
+                <div class="point-item">He stated that all organisms reproduce prolifically, leading to a struggle for existence.</div>
+                <div class="point-item">Only those organisms that possess favorable variations survive (Survival of the Fittest).</div>
+                <div class="point-item">The "unfit" organisms are eliminated by nature through various pressures.</div>
+                <div class="point-item">Nature "selects" the organisms with the best traits to reproduce.</div>
+                <div class="point-item">These selected traits are then passed on to the next generation.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 17</span>
+            <h3>What are the objections to Darwin’s Theory?</h3>
+            <div class="point-list">
+                <div class="point-item">Natural selection is not the only factor responsible for evolution.</div>
+                <div class="point-item">Darwin did not explain the origin of useful and useless modifications.</div>
+                <div class="point-item">The theory does not explain the mechanism of slow versus sudden changes.</div>
+                <div class="point-item">It does not provide information about the source of genetic variations.</div>
+                <div class="point-item">Many scientists felt that Darwin focused too much on competition and not cooperation.</div>
+                <div class="point-item">Despite these objections, Darwin's work remains a milestone in biological science.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 18</span>
+            <h3>Explain Lamarckism (Theory of Inheritance of Acquired Characters).</h3>
+            
+            <div class="point-list">
+                <div class="point-item">Jean-Baptiste Lamarck proposed that morphological changes are due to activities or laziness.</div>
+                <div class="point-item">He called this the principle of 'use or disuse of organs.'</div>
+                <div class="point-item">For example, a giraffe's neck became long due to stretching for leaves over generations.</div>
+                <div class="point-item">The iron-smith has strong shoulders because of constant heavy hammering work.</div>
+                <div class="point-item">These acquired characters are supposedly passed on to the next generation.</div>
+                <div class="point-item">However, the idea that acquired traits can be inherited was later disproved.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 19</span>
+            <h3>Why was Lamarckism rejected?</h3>
+            <div class="point-list">
+                <div class="point-item">Science proved that changes occurring in the body (somatic cells) are not inherited.</div>
+                <div class="point-item">Only those changes that occur in the germ cells (DNA) can be passed to offspring.</div>
+                <div class="point-item">If a person develops strong muscles through exercise, their child is not born with them.</div>
+                <div class="point-item">Experiments with mice (cutting tails for generations) showed offspring are still born with tails.</div>
+                <div class="point-item">The theory failed to distinguish between genetic and environmental influences.</div>
+                <div class="point-item">While the idea of 'use/disuse' was interesting, the inheritance part was incorrect.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 20</span>
+            <h3>Define Speciation.</h3>
+            <div class="point-list">
+                <div class="point-item">Speciation is the formation of new species from existing ones through evolution.</div>
+                <div class="point-item">A species is a group of organisms that can produce fertile offspring through natural reproduction.</div>
+                <div class="point-item">It can occur due to geographical isolation, such as mountains or oceans.</div>
+                <div class="point-item">Reproductive isolation also leads to the development of new species over time.</div>
+                <div class="point-item">Changes in food habits, habitat, and genetic makeup contribute to speciation.</div>
+                <div class="point-item">It is the process that accounts for the immense biodiversity on our planet.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 21</span>
+            <h3>Explain the evolution of Mankind.</h3>
+            
+            <div class="point-list">
+                <div class="point-item">Human evolution began roughly 7 crore years ago after the disappearance of dinosaurs.</div>
+                <div class="point-item">Monkey-like animals evolved from ancient lemur-like ancestors.</div>
+                <div class="point-item">The tails of these ancestors disappeared about 4 crore years ago.</div>
+                <div class="point-item">"Ramapithecus" from East Africa was one of the first human-like apes.</div>
+                <div class="point-item">The brain size increased, and they started walking upright (bipedal locomotion).</div>
+                <div class="point-item">"Cro-Magnon man" evolved about 50,000 years ago, marking the start of modern humans.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 22</span>
+            <h3>Who was the Neanderthal Man?</h3>
+            <div class="point-list">
+                <div class="point-item">Neanderthal man is considered the first example of "Wise-man" (Homo sapiens).</div>
+                <div class="point-item">They lived approximately 1,50,000 years ago in parts of Europe and Asia.</div>
+                <div class="point-item">They had a larger brain capacity and used sophisticated stone tools.</div>
+                <div class="point-item">They were the first to develop the practice of burying their dead.</div>
+                <div class="point-item">Evidence suggests they used fire and lived in social groups or caves.</div>
+                <div class="point-item">They eventually became extinct, possibly due to competition with modern humans.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 23</span>
+            <h3>What is the importance of the Appendix in humans?</h3>
+            <div class="point-list">
+                <div class="point-item">In humans, the appendix is a vestigial organ with no significant digestive function.</div>
+                <div class="point-item">It is a small, finger-like projection located at the junction of the small and large intestines.</div>
+                <div class="point-item">In ruminant animals (like cows), it is fully functional and helps digest cellulose.</div>
+                <div class="point-item">In humans, it sometimes gets inflamed, leading to a condition called appendicitis.</div>
+                <div class="point-item">Some recent theories suggest it might store beneficial gut bacteria.</div>
+                <div class="point-item">Evolutionarily, it proves our ancestors had a diet much higher in raw plant matter.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 24</span>
+            <h3>Explain the process of Protein Synthesis in brief.</h3>
+            
+            <div class="point-list">
+                <div class="point-item">The process begins with transcription where mRNA is formed from a DNA template.</div>
+                <div class="point-item">mRNA carries the genetic code from the nucleus to the cytoplasm.</div>
+                <div class="point-item">Ribosomes attach to the mRNA to begin the translation process.</div>
+                <div class="point-item">tRNA molecules bring amino acids corresponding to the mRNA codons.</div>
+                <div class="point-item">Amino acids are linked by peptide bonds to form a polypeptide chain.</div>
+                <div class="point-item">The chain folds into a specific 3D shape to become a functional protein.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 25</span>
+            <h3>Define a Gene.</h3>
+            <div class="point-list">
+                <div class="point-item">A gene is a segment of DNA that contains information for a specific protein.</div>
+                <div class="point-item">It is the basic physical and functional unit of heredity.</div>
+                <div class="point-item">Genes are located in a linear fashion on the chromosomes.</div>
+                <div class="point-item">They control all physical and physiological characteristics of an organism.</div>
+                <div class="point-item">An organism inherits two copies of each gene, one from each parent.</div>
+                <div class="point-item">Changes or mutations in genes lead to variations in the population.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 26</span>
+            <h3>What is the role of tRNA?</h3>
+            <div class="point-list">
+                <div class="point-item">tRNA stands for transfer RNA and acts as an adapter molecule.</div>
+                <div class="point-item">Its main job is to carry specific amino acids to the ribosome.</div>
+                <div class="point-item">One end of the tRNA has an anticodon that is complementary to the mRNA codon.</div>
+                <div class="point-item">The other end of the tRNA binds to a specific amino acid.</div>
+                <div class="point-item">It ensures that the correct amino acid is added to the growing protein chain.</div>
+                <div class="point-item">There is at least one type of tRNA for each of the 20 amino acids.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 27</span>
+            <h3>What is the significance of Fossils?</h3>
+            <div class="point-list">
+                <div class="point-item">Fossils allow us to reconstruct the history of life on Earth.</div>
+                <div class="point-item">They show the existence of extinct animals like dinosaurs and mammoths.</div>
+                <div class="point-item">They help in determining the chronological order of evolutionary events.</div>
+                <div class="point-item">Fossils provide evidence of the climate and environment of ancient times.</div>
+                <div class="point-item">They reveal the "missing links" between different groups of organisms.</div>
+                <div class="point-item">They are the most convincing evidence for the theory of evolution.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 28</span>
+            <h3>Explain the Wiseman (Homo sapiens) stages.</h3>
+            <div class="point-list">
+                <div class="point-item">The journey started with the Australopithecus, who had a small brain but walked upright.</div>
+                <div class="point-item">Homo habilis was the "skilled man" who first used primitive tools.</div>
+                <div class="point-item">Homo erectus walked perfectly upright and discovered the use of fire.</div>
+                <div class="point-item">Neanderthal man showed increased brain size and social behaviors.</div>
+                <div class="point-item">Cro-Magnon man was anatomically identical to modern humans.</div>
+                <div class="point-item">Agricultural and cultural development started around 10,000 years ago.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 29</span>
+            <h3>What is the contribution of the Wiseman to civilization?</h3>
+            <div class="point-list">
+                <div class="point-item">Humans started practicing agriculture about 10,000 years ago.</div>
+                <div class="point-item">They began domesticating animals for food, transport, and protection.</div>
+                <div class="point-item">The development of language allowed for the sharing of knowledge across generations.</div>
+                <div class="point-item">They created art, music, and complex social structures.</div>
+                <div class="point-item">Scientific and technological advancements led to the modern industrial era.</div>
+                <div class="point-item">Human intelligence has allowed us to manipulate the environment unlike any other species.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 30</span>
+            <h3>Describe the structure of DNA briefly.</h3>
+            
+            <div class="point-list">
+                <div class="point-item">DNA is a double-stranded helical structure made of nucleotides.</div>
+                <div class="point-item">Each nucleotide consists of a sugar, a phosphate, and a nitrogenous base.</div>
+                <div class="point-item">The four nitrogenous bases are Adenine, Guanine, Cytosine, and Thymine.</div>
+                <div class="point-item">Adenine always pairs with Thymine, and Guanine pairs with Cytosine.</div>
+                <div class="point-item">The two strands are held together by hydrogen bonds between the bases.</div>
+                <div class="point-item">It carries the genetic instructions for the development and functioning of all organisms.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 31</span>
+            <h3>What is the role of RNA in heredity?</h3>
+            <div class="point-list">
+                <div class="point-item">RNA acts as a messenger between DNA and the protein-making machinery.</div>
+                <div class="point-item">mRNA (messenger RNA) carries the genetic code from the nucleus.</div>
+                <div class="point-item">rRNA (ribosomal RNA) forms the structural part of the ribosome.</div>
+                <div class="point-item">tRNA (transfer RNA) brings amino acids for protein synthesis.</div>
+                <div class="point-item">In some viruses, RNA acts as the primary genetic material.</div>
+                <div class="point-item">RNA is essential for expressing the characters stored in the DNA.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 32</span>
+            <h3>Explain "Survival of the Fittest."</h3>
+            <div class="point-list">
+                <div class="point-item">It is the core concept of Darwin's theory of natural selection.</div>
+                <div class="point-item">It does not necessarily mean the strongest or fastest, but the best adapted.</div>
+                <div class="point-item">Organisms with traits suited to their environment are more likely to survive.</div>
+                <div class="point-item">These survivors reproduce and pass their "fit" genes to the next generation.</div>
+                <div class="point-item">Organisms that cannot adapt to changes in the environment eventually die out.</div>
+                <div class="point-item">This process leads to the gradual improvement and evolution of the species.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 33</span>
+            <h3>What are the nitrogenous bases in RNA?</h3>
+            <div class="point-list">
+                <div class="point-item">RNA contains four nitrogenous bases: Adenine, Guanine, Cytosine, and Uracil.</div>
+                <div class="point-item">Unlike DNA, RNA contains Uracil instead of Thymine.</div>
+                <div class="point-item">Adenine pairs with Uracil during the transcription process.</div>
+                <div class="point-item">Guanine always pairs with Cytosine, similar to DNA.</div>
+                <div class="point-item">These bases are part of the nucleotides that make up the single-stranded RNA.</div>
+                <div class="point-item">The sequence of these bases determines the genetic information on the mRNA.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 34</span>
+            <h3>Explain the significance of the tailbone in humans.</h3>
+            <div class="point-list">
+                <div class="point-item">The coccyx or tailbone is a small triangular structure at the base of the spine.</div>
+                <div class="point-item">In our primate ancestors, it was part of a functional tail used for balance.</div>
+                <div class="point-item">As humans began walking upright, the need for a tail disappeared.</div>
+                <div class="point-item">The tail shortened and fused into the modern vestigial coccyx.</div>
+                <div class="point-item">It still serves as an attachment point for various muscles and ligaments.</div>
+                <div class="point-item">Its presence is a clear anatomical evidence of our primate ancestry.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 35</span>
+            <h3>What is the difference between Transcription and Translation?</h3>
+            <div class="point-list">
+                <div class="point-item">Transcription happens in the nucleus; Translation happens in the cytoplasm.</div>
+                <div class="point-item">Transcription produces mRNA; Translation produces a protein chain.</div>
+                <div class="point-item">Transcription uses DNA as a template; Translation uses mRNA as a template.</div>
+                <div class="point-item">The main enzyme in transcription is RNA polymerase; ribosomes are the "factories" for translation.</div>
+                <div class="point-item">Transcription involves nitrogen base pairing; Translation involves codon-anticodon matching.</div>
+                <div class="point-item">Transcription is the first step of gene expression; Translation is the final step.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 36</span>
+            <h3>Explain the concept of 'Geographical Isolation'.</h3>
+            <div class="point-list">
+                <div class="point-item">It occurs when a population is divided by a physical barrier like a river or mountain.</div>
+                <div class="point-item">The two groups can no longer interbreed with each other.</div>
+                <div class="point-item">Each group faces different environmental conditions and selection pressures.</div>
+                <div class="point-item">Over time, genetic mutations and variations accumulate differently in both groups.</div>
+                <div class="point-item">Eventually, the groups become so different that they cannot interbreed even if reunited.</div>
+                <div class="point-item">This is a primary driver for the formation of new species (Speciation).</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 37</span>
+            <h3>What is the "Theory of Use and Disuse"?</h3>
+            <div class="point-list">
+                <div class="point-item">This theory was proposed by Lamarck as the basis for evolution.</div>
+                <div class="point-item">It states that if an organ is used constantly, it becomes stronger and more developed.</div>
+                <div class="point-item">If an organ is not used, it gradually weakens and eventually disappears.</div>
+                <div class="point-item">The example of the blacksmith's strong arms illustrates the "use" part.</div>
+                <div class="point-item">The lack of legs in snakes (due to burrowing) illustrates the "disuse" part.</div>
+                <div class="point-item">While logically appealing, it lacks a genetic mechanism for inheritance.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 38</span>
+            <h3>Define a Species.</h3>
+            <div class="point-list">
+                <div class="point-item">A species is the basic unit of biological classification.</div>
+                <div class="point-item">It consists of a group of organisms that are physically similar.</div>
+                <div class="point-item">The most important criterion is the ability to interbreed in nature.</div>
+                <div class="point-item">They must produce fertile offspring (offspring that can also reproduce).</div>
+                <div class="point-item">Members of a species share a common gene pool.</div>
+                <div class="point-item">Different species are reproductively isolated from each other.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 39</span>
+            <h3>What is the role of ribosomes in translocation?</h3>
+            
+            <div class="point-list">
+                <div class="point-item">Ribosomes act as the platform where protein synthesis takes place.</div>
+                <div class="point-item">They hold the mRNA and the tRNA in the correct positions.</div>
+                <div class="point-item">During translocation, the ribosome moves exactly one triplet codon forward.</div>
+                <div class="point-item">This movement allows the next codon on the mRNA to be read.</div>
+                <div class="point-item">It ensures the peptide chain is built one amino acid at a time without skips.</div>
+                <div class="point-item">Without this coordinated movement, protein synthesis would stop or become faulty.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 40</span>
+            <h3>Why is human evolution considered a continuous process?</h3>
+            <div class="point-list">
+                <div class="point-item">Humans are still subjected to natural selection and environmental pressures.</div>
+                <div class="point-item">Our diet, lifestyle, and environment continue to change, forcing adaptations.</div>
+                <div class="point-item">Genetic mutations occur in every generation, introducing new variations.</div>
+                <div class="point-item">Recent changes include the loss of wisdom teeth in many individuals.</div>
+                <div class="point-item">Resistance to certain diseases is an example of ongoing genetic evolution.</div>
+                <div class="point-item">As long as there is reproduction and environmental change, evolution continues.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 41</span>
+            <h3>What is the function of the Iris and Pupil? (General knowledge related to evolution)</h3>
+            <div class="point-list">
+                <div class="point-item">The iris is the colored part of the eye that regulates the size of the pupil.</div>
+                <div class="point-item">The pupil is the opening that allows light to enter the eye.</div>
+                <div class="point-item">This mechanism evolved to protect the retina from excessive light.</div>
+                <div class="point-item">It also allows for better vision in low-light conditions.</div>
+                <div class="point-item">Complex eyes evolved through millions of years from simple light-sensitive spots.</div>
+                <div class="point-item">The similarity in eye structure across vertebrates points to a shared evolution.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 42</span>
+            <h3>How does the position of nostrils provide morphological evidence?</h3>
+            <div class="point-list">
+                <div class="point-item">The position of nostrils is similar in various groups of mammals.</div>
+                <div class="point-item">This suggests that these animals are adapted to similar breathing mechanisms.</div>
+                <div class="point-item">It indicates that they originated from a common land-dwelling ancestor.</div>
+                <div class="point-item">In aquatic mammals like whales, the nostrils shifted to the top (blowholes) over time.</div>
+                <div class="point-item">Comparative study of nostril placement helps scientists map the transition of species.</div>
+                <div class="point-item">It is one of the many external traits used to establish evolutionary links.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 43</span>
+            <h3>What is the importance of the Peripatus?</h3>
+            <div class="point-list">
+                <div class="point-item">Peripatus is a unique animal known as a "walking worm."</div>
+                <div class="point-item">It shows segmented body and thin cuticle, which are characters of Annelida.</div>
+                <div class="point-item">It also shows tracheal respiration and open circulatory system, like Arthropoda.</div>
+                <div class="point-item">It proves that Arthropods evolved from Annelids.</div>
+                <div class="point-item">Because it bridges these two major phyla, it is a classic connecting link.</div>
+                <div class="point-item">It provides a "snapshot" of evolution in progress.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 44</span>
+            <h3>Explain the 'Survival of the Fittest' in the context of disease.</h3>
+            <div class="point-list">
+                <div class="point-item">When a population is exposed to a new disease, some individuals may have natural resistance.</div>
+                <div class="point-item">These individuals have a higher chance of surviving the outbreak.</div>
+                <div class="point-item">The survivors then reproduce and pass the resistance genes to their children.</div>
+                <div class="point-item">Over time, the entire population becomes resistant to that disease.</div>
+                <div class="point-item">Those who were susceptible (unfit) were eliminated from the gene pool.</div>
+                <div class="point-item">This is natural selection acting on a microscopic and genetic level.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 45</span>
+            <h3>What is the role of Dr. Har Gobind Khorana?</h3>
+            <div class="point-list">
+                <div class="point-item">He was an Indian-American biochemist who won the Nobel Prize.</div>
+                <div class="point-item">He played a key role in deciphering the genetic code.</div>
+                <div class="point-item">He helped identify which triplet codons correspond to which amino acids.</div>
+                <div class="point-item">He also synthesized the first artificial gene in a laboratory.</div>
+                <div class="point-item">His work confirmed that the genetic code is universal for all life.</div>
+                <div class="point-item">His research laid the foundation for modern biotechnology and genetic engineering.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 46</span>
+            <h3>How do wisdom teeth act as vestigial organs?</h3>
+            <div class="point-list">
+                <div class="point-item">Wisdom teeth are the third set of molars that appear in late adolescence.</div>
+                <div class="point-item">Our ancestors needed them to chew tough, raw plants and hard nuts.</div>
+                <div class="point-item">As humans discovered fire and started cooking, food became softer.</div>
+                <div class="point-item">The human jaw has gradually become smaller over thousands of years.</div>
+                <div class="point-item">Now, there is often no space for these teeth, causing pain or misalignment.</div>
+                <div class="point-item">They are no longer necessary for survival and are considered vestigial.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 47</span>
+            <h3>What are the characters of the Apes that evolved into humans?</h3>
+            <div class="point-list">
+                <div class="point-item">They lived in the forests of Africa about 2 crore years ago.</div>
+                <div class="point-item">They had large brains compared to other animals of their time.</div>
+                <div class="point-item">They used their hands for eating and performing simple tasks.</div>
+                <div class="point-item">Due to thinning forests, they started living on the ground and walking upright.</div>
+                <div class="point-item">Their lumbar bones developed to support a vertical posture.</div>
+                <div class="point-item">This transition from forest-dwellers to ground-dwellers was the birth of the human line.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 48</span>
+            <h3>Why are homologous organs significant?</h3>
+            
+            <div class="point-list">
+                <div class="point-item">Homologous organs have the same basic structure but different functions.</div>
+                <div class="point-item">They provide evidence that different species are related to one another.</div>
+                <div class="point-item">They show how a single ancestral structure can be modified for different needs.</div>
+                <div class="point-item">For example, a bird's wing and a human's arm are used for flying and grasping.</div>
+                <div class="point-item">Yet, both have the same bones (humerus, radius, ulna, etc.) in their structure.</div>
+                <div class="point-item">This divergent evolution is a key evidence in anatomical studies.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 49</span>
+            <h3>What is the role of the Environment in Evolution?</h3>
+            <div class="point-list">
+                <div class="point-item">The environment acts as a selection pressure on all living organisms.</div>
+                <div class="point-item">Changes in climate, food availability, or predators force species to adapt.</div>
+                <div class="point-item">Only those with mutations that help them survive in the new environment will live.</div>
+                <div class="point-item">Environment determines which traits are "favorable" and which are not.</div>
+                <div class="point-item">Extreme environmental changes can lead to mass extinctions.</div>
+                <div class="point-item">Evolution is essentially a response to the ever-changing conditions of the Earth.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 50</span>
+            <h3>Summarize the importance of the study of Evolution.</h3>
+            <div class="point-list">
+                <div class="point-item">It helps us understand our own origins and our place in the natural world.</div>
+                <div class="point-item">It explains the biological basis for the similarities between all living things.</div>
+                <div class="point-item">It is crucial for medicine, as it explains how bacteria and viruses evolve.</div>
+                <div class="point-item">It aids in the conservation of endangered species by understanding their needs.</div>
+                <div class="point-item">Evolution provides a scientific framework for the classification of life.</div>
+                <div class="point-item">It allows us to predict how life might respond to future changes like global warming.</div>
+            </div>
+        </div>
+<div class="q-card">
+    <span class=""q-number">YOYO</span>
+    <h1>More Question Coming Soon</h1>
+</div>
+    </div>
+
+    <script>
+        function searchFunction() {
+            let input = document.getElementById('searchInput');
+            let filter = input.value.toUpperCase();
+            let cards = document.getElementsByClassName('q-card');
+            for (let i = 0; i < cards.length; i++) {
+                let text = cards[i].innerText || cards[i].textContent;
+                cards[i].style.display = text.toUpperCase().includes(filter) ? "" : "none";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch 8: Metallurgy | MituEdu Pro</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        .search-container {
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+#searchInput {
+    width: 100%;
+    max-width: 600px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#searchInput:focus {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: var(--primary-accent);
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.3);
+}
+
+#searchInput::placeholder {
+    color: var(--text-dim);
+}
+        :root {
+            --primary-accent: #f59e0b; /* Amber/Gold for Metallurgy */
+            --secondary-accent: #d97706;
+            --bg-dark: #0f172a;
+            --card-bg: #1e293b;
+            --text-bright: #f8fafc;
+            --text-dim: #94a3b8;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-bright);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container { max-width: 1000px; margin: auto; }
+
+        .header-section {
+            background: linear-gradient(135deg, var(--primary-accent), var(--secondary-accent));
+            padding: 50px 20px;
+            border-radius: 24px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .nav-back {
+            display: inline-block;
+            color: var(--text-bright);
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .q-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .q-number {
+            color: var(--primary-accent);
+            font-weight: 800;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        h3 { margin: 0 0 20px 0; font-size: 1.4rem; border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 15px; }
+
+        .point-list { list-style: none; padding: 0; }
+
+        .point-item {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 12px;
+            color: var(--text-dim);
+        }
+
+        .point-item::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--primary-accent);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="index.html" class="nav-back">← Back to Dashboard</a>
+
+        <div class="header-section">
+            <div class="search-container">
+    <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Search for questions or keywords...">
+</div>
+            <h1>Chapter 08: Metallurgy</h1>
+            <p>Comprehensive Study Guide | SSC Science 1</p>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 01</span>
+            <h3>Define Metallurgy and its basic purpose.</h3>
+            <div class="point-list">
+                <div class="point-item">Metallurgy is the science and technology used for the extraction of metals from their ores.</div>
+                <div class="point-item">It involves various physical and chemical processes to purify metals for industrial use.</div>
+                <div class="point-item">The primary goal is to obtain metals in their pure form from naturally occurring minerals.</div>
+                <div class="point-item">It includes the study of properties of metals and the production of alloys.</div>
+                <div class="point-item">Natural resources found in the earth's crust serve as the raw material for metallurgy.</div>
+                <div class="point-item">The process must be economically viable and environmentally sustainable for large-scale production.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 02</span>
+            <h3>State the physical properties of metals.</h3>
+            <div class="point-list">
+                <div class="point-item">Metals generally exist in a solid state at room temperature, except for mercury and gallium.</div>
+                <div class="point-item">They possess a characteristic shine known as metallic luster on their fresh surfaces.</div>
+                <div class="point-item">Most metals are hard, although alkali metals like sodium can be cut with a knife.</div>
+                <div class="point-item">They exhibit malleability, meaning they can be beaten into very thin sheets.</div>
+                <div class="point-item">They are ductile, allowing them to be drawn into long, thin wires.</div>
+                <div class="point-item">Metals are excellent conductors of both heat and electricity due to free electrons.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 03</span>
+            <h3>State the physical properties of non-metals.</h3>
+            <div class="point-list">
+                <div class="point-item">Non-metals can exist in solid, liquid, or gaseous states at room temperature.</div>
+                <div class="point-item">They generally lack luster and appear dull, with the exception of iodine crystals.</div>
+                <div class="point-item">They are usually brittle in their solid form and break into pieces when hit.</div>
+                <div class="point-item">They are poor conductors of heat and electricity, except for graphite (carbon).</div>
+                <div class="point-item">Non-metals have relatively low melting and boiling points compared to metals.</div>
+                <div class="point-item">They do not possess the properties of malleability or ductility seen in metals.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 04</span>
+            <h3>Describe the reaction of metals with oxygen.</h3>
+            <div class="point-list">
+                <div class="point-item">Most metals react with oxygen when heated to form their respective metal oxides.</div>
+                <div class="point-item">Sodium and potassium react vigorously even at room temperature and are stored in kerosene.</div>
+                <div class="point-item">Magnesium burns in air with a dazzling white flame to form magnesium oxide.</div>
+                <div class="point-item">Some metal oxides, like those of aluminum and zinc, are amphoteric in nature.</div>
+                <div class="point-item">Amphoteric oxides can react with both acids and bases to form salt and water.</div>
+                <div class="point-item">The reactivity of a metal determines the speed and intensity of its oxidation.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 05</span>
+            <h3>Explain the reaction of metals with water.</h3>
+            <div class="point-list">
+                <div class="point-item">Sodium and potassium react violently with cold water, releasing hydrogen gas and heat.</div>
+                <div class="point-item">Calcium reacts less vigorously, and the hydrogen bubbles formed make the metal float.</div>
+                <div class="point-item">Magnesium does not react with cold water but reacts with hot water to form hydroxide.</div>
+                <div class="point-item">Aluminum, iron, and zinc react only with steam to form metal oxides and hydrogen.</div>
+                <div class="point-item">Metals like gold, silver, and copper do not react with water at any temperature.</div>
+                <div class="point-item">The reaction with water is a key indicator of a metal's position in the reactivity series.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 06</span>
+            <h3>Explain the reaction of metals with dilute acids.</h3>
+            <div class="point-list">
+                <div class="point-item">Most metals react with dilute hydrochloric or sulfuric acid to produce a salt and hydrogen gas.</div>
+                <div class="point-item">The rate of evolution of hydrogen gas depends on the reactivity of the specific metal.</div>
+                <div class="point-item">Magnesium reacts the fastest, followed by aluminum, zinc, and then iron.</div>
+                <div class="point-item">Copper does not react with dilute hydrochloric acid as it is below hydrogen in reactivity.</div>
+                <div class="point-item">With nitric acid, hydrogen gas is usually not evolved because it is a strong oxidizing agent.</div>
+                <div class="point-item">Instead, nitric acid produces water and various oxides of nitrogen during the reaction.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 07</span>
+            <h3>Define Aqua Regia.</h3>
+            <div class="point-list">
+                <div class="point-item">Aqua Regia is a highly corrosive and fuming liquid mixture of concentrated acids.</div>
+                <div class="point-item">It is prepared by mixing concentrated hydrochloric acid and concentrated nitric acid.</div>
+                <div class="point-item">The acids are mixed specifically in a volume ratio of 3:1 respectively.</div>
+                <div class="point-item">It is one of the few reagents capable of dissolving noble metals like gold and platinum.</div>
+                <div class="point-item">The name "Aqua Regia" is Latin for "Royal Water," reflecting its power over noble metals.</div>
+                <div class="point-item">It must be prepared fresh as it decomposes quickly and loses its potency.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 08</span>
+            <h3>What is the Reactivity Series of metals?</h3>
+            
+            <div class="point-list">
+                <div class="point-item">It is an arrangement of metals in the decreasing order of their chemical reactivity.</div>
+                <div class="point-item">Highly reactive metals like potassium and sodium are placed at the very top.</div>
+                <div class="point-item">Least reactive metals like gold and platinum are placed at the very bottom.</div>
+                <div class="point-item">Hydrogen is included in the series as a reference point for comparing reactivity.</div>
+                <div class="point-item">Metals above hydrogen can displace it from dilute acids, while those below cannot.</div>
+                <div class="point-item">This series helps predict the outcome of displacement reactions between metals and salts.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 09</span>
+            <h3>Explain Displacement Reactions in metals.</h3>
+            <div class="point-list">
+                <div class="point-item">A displacement reaction occurs when a more reactive metal displaces a less reactive metal.</div>
+                <div class="point-item">The more reactive metal takes the place of the less reactive metal in its salt solution.</div>
+                <div class="point-item">For example, iron can displace copper from a blue copper sulfate solution.</div>
+                <div class="point-item">This results in the formation of a green iron sulfate solution and copper deposits.</div>
+                <div class="point-item">If a less reactive metal is added to a salt of a more reactive metal, no reaction occurs.</div>
+                <div class="point-item">These reactions are used to determine the relative positions of metals in the reactivity series.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 10</span>
+            <h3>Define Minerals and Ores.</h3>
+            <div class="point-list">
+                <div class="point-item">Minerals are naturally occurring chemical compounds of metals found in the earth's crust.</div>
+                <div class="point-item">They are often associated with impurities like soil, sand, and rocky matter.</div>
+                <div class="point-item">Ores are specific minerals from which a metal can be extracted profitably and easily.</div>
+                <div class="point-item">All ores are minerals, but all minerals are not necessarily ores.</div>
+                <div class="point-item">Bauxite is the primary ore used for the extraction of aluminum.</div>
+                <div class="point-item">The economic value of an ore depends on the percentage of the metal it contains.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 11</span>
+            <h3>Define Gangue.</h3>
+            <div class="point-list">
+                <div class="point-item">Gangue refers to the unwanted rocky, earthy, or sandy impurities present in an ore.</div>
+                <div class="point-item">It includes materials like silica, clay, and various silicates found in the earth.</div>
+                <div class="point-item">The removal of gangue is the first major step in the concentration of ores.</div>
+                <div class="point-item">The physical and chemical properties of gangue determine the method of its removal.</div>
+                <div class="point-item">Effective removal of gangue increases the percentage of metal in the raw material.</div>
+                <div class="point-item">In some cases, chemicals called fluxes are added to react with and remove gangue.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 12</span>
+            <h3>Describe the Hydraulic Separation Method.</h3>
+            
+            <div class="point-list">
+                <div class="point-item">This is a physical method of ore concentration based on the difference in specific gravities.</div>
+                <div class="point-item">It is typically used for heavy ores like tin and lead to separate them from lighter gangue.</div>
+                <div class="point-item">The powdered ore is treated with a fast-flowing upward stream of water.</div>
+                <div class="point-item">The lighter gangue particles are washed away by the force of the water stream.</div>
+                <div class="point-item">The heavier ore particles settle down at the bottom of the separation tank.</div>
+                <div class="point-item">This method is also known as levigation or gravity separation.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 13</span>
+            <h3>Describe the Magnetic Separation Method.</h3>
+            
+
+[Image of magnetic separation method diagram]
+
+            <div class="point-list">
+                <div class="point-item">This method is used when either the ore or the gangue possesses magnetic properties.</div>
+                <div class="point-item">The machine consists of two rollers, one of which is magnetic, and a conveyor belt.</div>
+                <div class="point-item">Powdered ore is dropped onto the moving belt from one end.</div>
+                <div class="point-item">Non-magnetic particles fall straight down into a separate heap away from the roller.</div>
+                <div class="point-item">Magnetic particles cling to the belt longer and fall into a separate collector near the roller.</div>
+                <div class="point-item">It is commonly used for concentrating ores of iron, such as magnetite.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 14</span>
+            <h3>Describe the Froth Floatation Method.</h3>
+            
+            <div class="point-list">
+                <div class="point-item">This method is primarily used for the concentration of sulfide ores.</div>
+                <div class="point-item">Powdered ore is mixed with water and certain oils like pine oil in a large tank.</div>
+                <div class="point-item">Compressed air is blown through the mixture to create a thick froth.</div>
+                <div class="point-item">Sulfide ore particles are preferentially wetted by the oil and rise to the surface with the froth.</div>
+                <div class="point-item">The gangue particles are wetted by water and settle down at the bottom of the tank.</div>
+                <div class="point-item">The froth is then skimmed off and dried to obtain the concentrated ore.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 15</span>
+            <h3>Explain the process of Leaching.</h3>
+            <div class="point-list">
+                <div class="point-item">Leaching is a chemical method used for the concentration of certain specific ores.</div>
+                <div class="point-item">The ore is soaked in a suitable chemical solution for a long period of time.</div>
+                <div class="point-item">The metal in the ore reacts with the chemical and dissolves into the solution.</div>
+                <div class="point-item">The insoluble impurities (gangue) remain behind and can be filtered out.</div>
+                <div class="point-item">For example, bauxite is leached using a hot solution of sodium hydroxide.</div>
+                <div class="point-item">This process is essential when the impurities have similar physical properties to the ore.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 16</span>
+            <h3>Describe the extraction of Aluminum (Bayer's Process).</h3>
+            <div class="point-list">
+                <div class="point-item">Bauxite ore is first ground and then heated with concentrated sodium hydroxide under pressure.</div>
+                <div class="point-item">The aluminum oxide dissolves to form water-soluble sodium aluminate.</div>
+                <div class="point-item">Iron oxide impurities do not dissolve and are removed by filtration.</div>
+                <div class="point-item">The solution is then diluted and cooled to precipitate aluminum hydroxide.</div>
+                <div class="point-item">This precipitate is filtered, washed, and then ignited at 1000°C.</div>
+                <div class="point-item">The final product is pure alumina ($Al_2O_3$) ready for electrolysis.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 17</span>
+            <h3>Explain the Electrolytic Reduction of Alumina.</h3>
+            
+            <div class="point-list">
+                <div class="point-item">This process is carried out in a steel tank with a lining of graphite (carbon).</div>
+                <div class="point-item">The graphite lining acts as the cathode, while graphite rods act as the anode.</div>
+                <div class="point-item">Alumina is dissolved in a mixture of molten cryolite and fluorspar to lower its melting point.</div>
+                <div class="point-item">When electricity is passed, aluminum ions are reduced at the cathode to form liquid metal.</div>
+                <div class="point-item">Oxygen gas is evolved at the anode and reacts with the carbon rods to form $CO_2$.</div>
+                <div class="point-item">Because the anodes get oxidized and consumed, they must be replaced periodically.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 18</span>
+            <h3>How are highly reactive metals extracted?</h3>
+            <div class="point-list">
+                <div class="point-item">Metals like sodium, calcium, and magnesium are at the top of the reactivity series.</div>
+                <div class="point-item">They cannot be reduced using carbon as they have a higher affinity for oxygen.</div>
+                <div class="point-item">They are extracted by the electrolysis of their molten chloride salts.</div>
+                <div class="point-item">The metal is deposited at the cathode (negative electrode) during the process.</div>
+                <div class="point-item">Chlorine gas is evolved at the anode (positive electrode) as a byproduct.</div>
+                <div class="point-item">This method ensures the production of metals with very high purity.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 19</span>
+            <h3>How are moderately reactive metals extracted?</h3>
+            <div class="point-list">
+                <div class="point-item">Metals like zinc, iron, and lead are usually found as sulfides or carbonates.</div>
+                <div class="point-item">These ores are first converted into metal oxides before the reduction process.</div>
+                <div class="point-item">Sulfide ores are heated strongly in the presence of air, a process called roasting.</div>
+                <div class="point-item">Carbonate ores are heated strongly in limited air, a process called calcination.</div>
+                <div class="point-item">The resulting metal oxides are then reduced to metal using carbon (coke).</div>
+                <div class="point-item">Carbon acts as a reducing agent by removing oxygen from the metal oxide.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 20</span>
+            <h3>Explain the Thermit Reaction.</h3>
+            
+            <div class="point-list">
+                <div class="point-item">It is a highly exothermic reaction between a metal oxide and aluminum powder.</div>
+                <div class="point-item">Aluminum acts as a strong reducing agent due to its high reactivity.</div>
+                <div class="point-item">For example, iron oxide reacts with aluminum to produce molten iron and alumina.</div>
+                <div class="point-item">The heat released is so intense that the iron is produced in a liquid state.</div>
+                <div class="point-item">This reaction is commonly used for welding broken railway tracks on-site.</div>
+                <div class="point-item">It is an effective way to extract metals from oxides that are hard to reduce with carbon.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 21</span>
+            <h3>How are less reactive metals extracted?</h3>
+            <div class="point-list">
+                <div class="point-item">Metals like mercury and copper are found near the bottom of the reactivity series.</div>
+                <div class="point-item">They can be extracted simply by heating their ores in the presence of air.</div>
+                <div class="point-item">Cinnabar (HgS) is heated to form mercuric oxide, which then decomposes to mercury.</div>
+                <div class="point-item">Copper glance ($Cu_2S$) is heated to form copper oxide, which reacts with remaining $Cu_2S$.</div>
+                <div class="point-item">This self-reduction process yields copper metal without needing external reducing agents.</div>
+                <div class="point-item">These metals are relatively easy to extract compared to more reactive ones.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 22</span>
+            <h3>Explain the Refining of Metals (Electrolytic Refining).</h3>
+            
+
+[Image of electrolytic refining of copper]
+
+            <div class="point-list">
+                <div class="point-item">Electrolytic refining is used to obtain highly pure metals from impure samples.</div>
+                <div class="point-item">A thick block of the impure metal is made the anode in an electrolytic cell.</div>
+                <div class="point-item">A thin strip of pure metal is made the cathode in the same cell.</div>
+                <div class="point-item">The electrolyte is a soluble salt solution of the same metal being refined.</div>
+                <div class="point-item">On passing current, pure metal from the anode dissolves and deposits onto the cathode.</div>
+                <div class="point-item">Soluble impurities go into the solution, while insoluble ones settle as "anode mud."</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 23</span>
+            <h3>What is Corrosion of metals?</h3>
+            <div class="point-list">
+                <div class="point-item">Corrosion is the slow degradation of metals due to reaction with environmental gases.</div>
+                <div class="point-item">It occurs when a metal surface reacts with oxygen, moisture, and pollutants in the air.</div>
+                <div class="point-item">The most common example is the rusting of iron, which forms a reddish-brown layer.</div>
+                <div class="point-item">Silver articles turn black due to the formation of silver sulfide with $H_2S$ gas.</div>
+                <div class="point-item">Copper develops a green coating of basic copper carbonate due to $CO_2$ and moisture.</div>
+                <div class="point-item">Corrosion weakens the structural strength of metals and leads to significant economic loss.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 24</span>
+            <h3>What are the conditions necessary for rusting?</h3>
+            
+            <div class="point-list">
+                <div class="point-item">Both air (oxygen) and moisture (water) must be present simultaneously for rusting.</div>
+                <div class="point-item">Iron does not rust in dry air even if oxygen is plentiful.</div>
+                <div class="point-item">Similarly, iron does not rust in boiled water that is covered with a layer of oil.</div>
+                <div class="point-item">The presence of salts in water, like in seawater, speeds up the rusting process.</div>
+                <div class="point-item">Acidic pollutants in the atmosphere also accelerate the rate of corrosion.</div>
+                <div class="point-item">Rusting is an electrochemical process that occurs on the surface of iron.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 25</span>
+            <h3>Explain Galvanization as a prevention method.</h3>
+            <div class="point-list">
+                <div class="point-item">Galvanization is the process of coating iron or steel with a thin layer of zinc.</div>
+                <div class="point-item">The metal is dipped into molten zinc to ensure a uniform coating.</div>
+                <div class="point-item">Zinc acts as a sacrificial layer because it is more reactive than iron.</div>
+                <div class="point-item">Even if the zinc coating is scratched, it continues to protect the underlying iron.</div>
+                <div class="point-item">Zinc reacts with air to form a tough protective layer of zinc oxide.</div>
+                <div class="point-item">It is widely used for iron pipes, roof sheets, and fencing wires.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 26</span>
+            <h3>Explain Tinning (Kalhai).</h3>
+            <div class="point-list">
+                <div class="point-item">Tinning is the process of coating a metal surface with a thin layer of molten tin.</div>
+                <div class="point-item">It is traditionally used in India for copper and brass cooking utensils.</div>
+                <div class="point-item">Tin is non-toxic and prevents the food from reacting with the copper or brass.</div>
+                <div class="point-item">This prevents the formation of "verdigris," a poisonous green copper compound.</div>
+                <div class="point-item">The process involves heating the vessel and rubbing tin over it with ammonium chloride.</div>
+                <div class="point-item">Tinned vessels are safe for storing acidic food items like buttermilk or pickles.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 27</span>
+            <h3>Explain Anodization.</h3>
+            
+            <div class="point-list">
+                <div class="point-item">Anodization is an electrolytic process used to thicken the natural oxide layer on metals.</div>
+                <div class="point-item">It is most commonly performed on aluminum to increase its corrosion resistance.</div>
+                <div class="point-item">The aluminum object is made the anode in an acid bath (like sulfuric acid).</div>
+                <div class="point-item">During electrolysis, oxygen gas released at the anode reacts with the aluminum.</div>
+                <div class="point-item">This forms a hard, uniform, and porous layer of aluminum oxide on the surface.</div>
+                <div class="point-item">This layer can be dyed in various colors, making it useful for decorative purposes.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 28</span>
+            <h3>What is Alloying?</h3>
+            <div class="point-list">
+                <div class="point-item">An alloy is a homogeneous mixture of two or more metals, or a metal and a non-metal.</div>
+                <div class="point-item">Alloying is done to enhance the properties of the base metal, such as strength.</div>
+                <div class="point-item">Stainless steel is an alloy of iron, chromium, and nickel that does not rust.</div>
+                <div class="point-item">Brass is an alloy made of copper and zinc, used for making musical instruments.</div>
+                <div class="point-item">Bronze is an alloy of copper and tin, used for making statues and medals.</div>
+                <div class="point-item">Amalgam is a special type of alloy where one of the components is mercury.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 29</span>
+            <h3>Why is pure Gold not used for making jewelry?</h3>
+            <div class="point-list">
+                <div class="point-item">Pure gold (24 karat) is extremely soft and easily bends or breaks.</div>
+                <div class="point-item">It is difficult to set gemstones securely into ornaments made of pure gold.</div>
+                <div class="point-item">To make it harder, it is alloyed with small amounts of copper or silver.</div>
+                <div class="point-item">Usually, 22-karat gold is used for jewelry, containing 22 parts gold and 2 parts other metals.</div>
+                <div class="point-item">Alloying improves the durability and wear resistance of the gold ornaments.</div>
+                <div class="point-item">It also slightly changes the color of the gold, depending on the metals added.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 30</span>
+            <h3>Explain the role of Carbon in the reduction of metal oxides.</h3>
+            <div class="point-list">
+                <div class="point-item">Carbon (in the form of coke) is a cheap and effective reducing agent for many metals.</div>
+                <div class="point-item">It is used for metals that have a lower affinity for oxygen than carbon does.</div>
+                <div class="point-item">During the reaction, carbon combines with oxygen from the metal oxide to form $CO$ or $CO_2$.</div>
+                <div class="point-item">This leaves the metal in its free, reduced state.</div>
+                <div class="point-item">It is commonly used in the smelting of iron, zinc, lead, and tin ores.</div>
+                <div class="point-item">Highly reactive metals cannot be reduced this way because they bind too strongly to oxygen.</div>
+            </div>
+        </div>
+
+    </div>
+<script>
+function searchFunction() {
+    // 1. Get the text from the search bar
+    let input = document.getElementById('searchInput');
+    let filter = input.value.toUpperCase();
+    
+    // 2. Get all the Question Cards
+    let cards = document.getElementsByClassName('q-card');
+
+    // 3. Loop through cards and hide those that don't match
+    for (let i = 0; i < cards.length; i++) {
+        let textValue = cards[i].textContent || cards[i].innerText;
+        if (textValue.toUpperCase().indexOf(filter) > -1) {
+            cards[i].style.display = ""; // Show
+        } else {
+            cards[i].style.display = "none"; // Hide
+        }
+    }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch 7: Lenses | MituEdu Pro</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        .search-container {
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+#searchInput {
+    width: 100%;
+    max-width: 600px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#searchInput:focus {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: var(--primary-accent);
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.3);
+}
+
+#searchInput::placeholder {
+    color: var(--text-dim);
+}
+        :root {
+            --primary-accent: #38bdf8; /* Sky Blue for Physics/Lenses */
+            --secondary-accent: #3b82f6;
+            --bg-dark: #0f172a;
+            --card-bg: #1e293b;
+            --text-bright: #f8fafc;
+            --text-dim: #94a3b8;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-bright);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container { max-width: 1000px; margin: auto; }
+
+        .header-section {
+            background: linear-gradient(135deg, var(--primary-accent), var(--secondary-accent));
+            padding: 50px 20px;
+            border-radius: 24px;
+            text-align: center;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(56, 189, 248, 0.3);
+        }
+
+        .header-section h1 { margin: 0; font-size: 2.5rem; }
+
+        .nav-back {
+            display: inline-block;
+            color: var(--text-bright);
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-weight: 600;
+            opacity: 0.7;
+        }
+
+        .q-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .q-number {
+            color: var(--primary-accent);
+            font-weight: 800;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        h3 {
+            margin: 0 0 20px 0;
+            font-size: 1.4rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 15px;
+        }
+
+        .point-list { list-style: none; padding: 0; }
+
+        .point-item {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 12px;
+            color: var(--text-dim);
+            font-size: 1.05rem;
+        }
+
+        .point-item::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--primary-accent);
+            font-weight: bold;
+        }
+
+        .img-box {
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px dashed rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            margin: 20px 0;
+            color: var(--primary-accent);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="index.html" class="nav-back">← Back to Dashboard</a>
+
+        <div class="header-section">
+            <div class="search-container">
+    <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Search for questions or keywords...">
+</div>
+            <h1>Chapter 07: Lenses</h1>
+            <p>Comprehensive Study Guide | SSC Science 1</p>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 01</span>
+            <h3>Define a Lens and its types.</h3>
+            
+
+[Image of convex and concave lenses]
+
+            <div class="point-list">
+                <div class="point-item">A lens is a transparent material bound by two surfaces, out of which at least one is spherical.</div>
+                <div class="point-item">A convex lens is thicker in the middle than at the edges and is also called a converging lens.</div>
+                <div class="point-item">A concave lens is thinner in the middle than at the edges and is also called a diverging lens.</div>
+                <div class="point-item">Lenses work on the principle of refraction of light as it passes through the transparent medium.</div>
+                <div class="point-item">They are commonly made of glass or high-quality plastic with specific refractive indices.</div>
+                <div class="point-item">Lenses are used in spectacles, cameras, telescopes, and microscopes to manipulate light.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 02</span>
+            <h3>Define Center of Curvature and Radius of Curvature.</h3>
+            
+            <div class="point-list">
+                <div class="point-item">The center of the sphere whose parts form the surfaces of the lens is the center of curvature (C).</div>
+                <div class="point-item">Since a lens has two spherical surfaces, it has two centers of curvature, $C_1$ and $C_2$.</div>
+                <div class="point-item">The radius of the sphere whose parts form the lens surfaces is the radius of curvature (R).</div>
+                <div class="point-item">Similar to the center, there are two radii of curvature, $R_1$ and $R_2$.</div>
+                <div class="point-item">These points determine the curvature and the focal length of the lens.</div>
+                <div class="point-item">The distance from the center of the sphere to the surface is the radius of curvature.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 03</span>
+            <h3>Define Principal Axis and Optical Center.</h3>
+            <div class="point-list">
+                <div class="point-item">The imaginary line passing through both centers of curvature is called the principal axis.</div>
+                <div class="point-item">The optical center (O) is a point inside the lens on the principal axis.</div>
+                <div class="point-item">A ray of light passing through the optical center does not suffer any deviation.</div>
+                <div class="point-item">It is considered the origin for all distance measurements in the Cartesian sign convention.</div>
+                <div class="point-item">For a symmetric lens, the optical center is the exact geometric center of the lens.</div>
+                <div class="point-item">All incident rays passing through this point emerge parallel to their original path.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 04</span>
+            <h3>Define Principal Focus and Focal Length.</h3>
+            [Image showing principal focus for convex and concave lenses]
+            <div class="point-list">
+                <div class="point-item">For a convex lens, light rays parallel to the principal axis converge to a point called the focus (F).</div>
+                <div class="point-item">For a concave lens, parallel rays appear to diverge from a point on the principal axis called the focus (F).</div>
+                <div class="point-item">Every lens has two foci, $F_1$ and $F_2$, located on either side of the lens.</div>
+                <div class="point-item">The distance between the optical center and the principal focus is the focal length (f).</div>
+                <div class="point-item">The focal length of a convex lens is taken as positive in sign conventions.</div>
+                <div class="point-item">The focal length of a concave lens is taken as negative in sign conventions.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 05</span>
+            <h3>State the rules for drawing ray diagrams for a convex lens.</h3>
+            [Image showing rules for ray diagrams of convex lenses]
+            <div class="point-list">
+                <div class="point-item">If the incident ray is parallel to the principal axis, the refracted ray passes through the focus.</div>
+                <div class="point-item">If the incident ray passes through the principal focus, the refracted ray is parallel to the principal axis.</div>
+                <div class="point-item">If the incident ray passes through the optical center, it travels without changing its direction.</div>
+                <div class="point-item">At least two rays from these rules are needed to locate the image of an object.</div>
+                <div class="point-item">The point where the refracted rays intersect (or appear to intersect) is the image position.</div>
+                <div class="point-item">These rules are based on the fundamental laws of refraction and the geometry of the lens.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 06</span>
+            <h3>Describe the image formed by a convex lens when the object is at infinity.</h3>
+            <div class="point-list">
+                <div class="point-item">The incident rays coming from an object at infinity are parallel to the principal axis.</div>
+                <div class="point-item">After refraction, these rays converge at the principal focus ($F_2$) on the other side.</div>
+                <div class="point-item">The image formed is real, meaning it can be captured on a screen.</div>
+                <div class="point-item">The image is inverted (upside down) relative to the object.</div>
+                <div class="point-item">The size of the image is highly diminished, appearing as a point.</div>
+                <div class="point-item">This setup is used in simple burning glasses and astronomical telescopes.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 07</span>
+            <h3>Describe the image when the object is beyond 2F1 in a convex lens.</h3>
+            <div class="point-list">
+                <div class="point-item">The object is placed at a finite distance further than twice the focal length.</div>
+                <div class="point-item">The image is formed between $F_2$ and $2F_2$ on the opposite side of the lens.</div>
+                <div class="point-item">The nature of the image is real and inverted.</div>
+                <div class="point-item">The size of the image is diminished compared to the actual object.</div>
+                <div class="point-item">This position is commonly used in camera lenses to capture large scenes on a small sensor.</div>
+                <div class="point-item">As the object moves closer to $2F_1$, the image moves further away from $F_2$.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 08</span>
+            <h3>Describe the image when the object is at 2F1 in a convex lens.</h3>
+            <div class="point-list">
+                <div class="point-item">The object is placed exactly at twice the focal length from the optical center.</div>
+                <div class="point-item">The refracted rays meet exactly at $2F_2$ on the other side of the lens.</div>
+                <div class="point-item">The image formed is real and inverted in nature.</div>
+                <div class="point-item">The size of the image is exactly the same as the size of the object.</div>
+                <div class="point-item">The magnification produced in this specific case is exactly -1.</div>
+                <div class="point-item">This position is used in terrestrial telescopes to invert images without changing size.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 09</span>
+            <h3>Describe the image when the object is between F1 and 2F1.</h3>
+            <div class="point-list">
+                <div class="point-item">The object is situated between the focus and twice the focal length.</div>
+                <div class="point-item">The image is formed beyond $2F_2$ on the other side of the lens.</div>
+                <div class="point-item">The nature of the image is real and inverted.</div>
+                <div class="point-item">The size of the image is magnified (larger than the object).</div>
+                <div class="point-item">This principle is utilized in film projectors to show large images on a screen.</div>
+                <div class="point-item">Moving the object closer to $F_1$ increases the magnification and image distance.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 10</span>
+            <h3>Describe the image when the object is at F1 in a convex lens.</h3>
+            <div class="point-list">
+                <div class="point-item">The object is placed exactly at the principal focus of the lens.</div>
+                <div class="point-item">The refracted rays emerge parallel to each other.</div>
+                <div class="point-item">Theoretically, these parallel rays meet at infinity.</div>
+                <div class="point-item">The image formed is real, inverted, and highly magnified.</div>
+                <div class="point-item">This position is used in searchlights and spotlights to produce a parallel beam of light.</div>
+                <div class="point-item">The image cannot be clearly captured on a nearby screen due to its distance.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 11</span>
+            <h3>Describe the image when the object is between O and F1.</h3>
+            <div class="point-list">
+                <div class="point-item">This is the only case where a convex lens produces a virtual image.</div>
+                <div class="point-item">The object is placed very close to the lens, within its focal length.</div>
+                <div class="point-item">The refracted rays diverge, so they appear to meet on the same side as the object.</div>
+                <div class="point-item">The image formed is virtual, erect (upright), and magnified.</div>
+                <div class="point-item">This is the principle behind the working of a simple microscope or magnifying glass.</div>
+                <div class="point-item">The image can be seen through the lens but cannot be projected onto a screen.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 12</span>
+            <h3>Explain the image formation by a concave lens.</h3>
+            
+
+[Image of image formation in concave lens]
+
+            <div class="point-list">
+                <div class="point-item">A concave lens always produces a virtual, erect, and diminished image.</div>
+                <div class="point-item">Regardless of the object's position, the image is formed on the same side as the object.</div>
+                <div class="point-item">The image is always located between the optical center and the focus.</div>
+                <div class="point-item">As the object moves closer to the lens, the image also moves closer to the lens.</div>
+                <div class="point-item">The size of the image increases slightly as the object approaches but remains diminished.</div>
+                <div class="point-item">Concave lenses are used to correct myopia (near-sightedness).</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 13</span>
+            <h3>State the Cartesian Sign Convention for lenses.</h3>
+            [Image showing Cartesian sign convention for lenses]
+            <div class="point-list">
+                <div class="point-item">The optical center (O) is taken as the origin of the coordinate system.</div>
+                <div class="point-item">The principal axis is taken as the X-axis of the system.</div>
+                <div class="point-item">Distances measured in the direction of incident light (right) are positive.</div>
+                <div class="point-item">Distances measured against the direction of incident light (left) are negative.</div>
+                <div class="point-item">Heights measured perpendicular to and above the principal axis are positive.</div>
+                <div class="point-item">Heights measured perpendicular to and below the principal axis are negative.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 14</span>
+            <h3>State the Lens Formula and its significance.</h3>
+            <div class="point-list">
+                <div class="point-item">The lens formula gives the relationship between object distance (u), image distance (v), and focal length (f).</div>
+                <div class="point-item">The mathematical expression is: $(1/v) - (1/u) = (1/f)$.</div>
+                <div class="point-item">This formula is applicable to both convex and concave lenses.</div>
+                <div class="point-item">It is used to calculate the position and nature of the image formed.</div>
+                <div class="point-item">The values of u, v, and f must be substituted with their proper signs.</div>
+                <div class="point-item">It assumes that the lens is thin and the aperture is small.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 15</span>
+            <h3>Define Magnification (M) of a lens.</h3>
+            <div class="point-list">
+                <div class="point-item">Magnification is the ratio of the height of the image ($h_2$) to the height of the object ($h_1$).</div>
+                <div class="point-item">The formula is $M = h_2 / h_1$.</div>
+                <div class="point-item">It is also related to distances as $M = v / u$.</div>
+                <div class="point-item">A positive magnification indicates a virtual and erect image.</div>
+                <div class="point-item">A negative magnification indicates a real and inverted image.</div>
+                <div class="point-item">If $|M| > 1$, the image is magnified; if $|M| < 1$, it is diminished.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 16</span>
+            <h3>Define Power of a Lens and its unit.</h3>
+            <div class="point-list">
+                <div class="point-item">Power (P) is the ability of a lens to converge or diverge light rays.</div>
+                <div class="point-item">It is defined as the numerical reciprocal of the focal length (f) in meters.</div>
+                <div class="point-item">The formula is $P = 1/f$ (where f is in meters).</div>
+                <div class="point-item">The SI unit of power of a lens is Dioptre (D).</div>
+                <div class="point-item">1 Dioptre is the power of a lens whose focal length is 1 meter.</div>
+                <div class="point-item">Power is positive for convex lenses and negative for concave lenses.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 17</span>
+            <h3>Explain the combination of lenses.</h3>
+            <div class="point-list">
+                <div class="point-item">When lenses are placed in contact, their total power is the algebraic sum of individual powers.</div>
+                <div class="point-item">The formula is $P_{total} = P_1 + P_2 + P_3 + \dots$</div>
+                <div class="point-item">This helps in obtaining a desired magnification or sharpness.</div>
+                <div class="point-item">The effective focal length is given by $(1/F) = (1/f_1) + (1/f_2) + \dots$</div>
+                <div class="point-item">Lens combinations are used extensively in camera lenses and compound microscopes.</div>
+                <div class="point-item">This method reduces optical aberrations and improves image quality.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 18</span>
+            <h3>Describe the structure of the Human Eye.</h3>
+            
+
+[Image of the structure of human eye]
+
+            <div class="point-list">
+                <div class="point-item">The eye is a spherical organ protected by a tough white layer called the sclera.</div>
+                <div class="point-item">Light enters through a transparent front part called the cornea.</div>
+                <div class="point-item">Behind the cornea is the iris, a dark muscular diaphragm that controls the pupil size.</div>
+                <div class="point-item">The pupil is the small opening that regulates the amount of light entering the eye.</div>
+                <div class="point-item">The crystalline lens is a double convex transparent layer that focuses light.</div>
+                <div class="point-item">The retina is the light-sensitive inner screen where images are formed.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 19</span>
+            <h3>What is the function of the Ciliary Muscles?</h3>
+            <div class="point-list">
+                <div class="point-item">Ciliary muscles hold the eye lens in its position.</div>
+                <div class="point-item">They help in changing the curvature of the eye lens to adjust focal length.</div>
+                <div class="point-item">When the eye looks at distant objects, these muscles relax, making the lens thin.</div>
+                <div class="point-item">When looking at nearby objects, the muscles contract, making the lens thick and rounded.</div>
+                <div class="point-item">This process of adjusting the focal length is called accommodation.</div>
+                <div class="point-item">The flexibility of these muscles decreases with age, leading to vision problems.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 20</span>
+            <h3>Define Accommodation and the Near Point.</h3>
+            <div class="point-list">
+                <div class="point-item">Accommodation is the ability of the eye lens to change its focal length.</div>
+                <div class="point-item">This allows the eye to see both distant and near objects clearly on the retina.</div>
+                <div class="point-item">The minimum distance at which an object is seen clearly without strain is the near point.</div>
+                <div class="point-item">For a healthy young adult, the near point of the eye is $25 \text{ cm}$.</div>
+                <div class="point-item">Objects placed closer than $25 \text{ cm}$ appear blurred to the normal eye.</div>
+                <div class="point-item">The lens reaches its maximum possible thickness at the near point.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 21</span>
+            <h3>Define the Far Point of the eye.</h3>
+            <div class="point-list">
+                <div class="point-item">The farthest distance up to which an object can be seen clearly is the far point.</div>
+                <div class="point-item">For a normal human eye, the far point is at infinity.</div>
+                <div class="point-item">When looking at the far point, the ciliary muscles are in a fully relaxed state.</div>
+                <div class="point-item">The eye lens is thinnest and has its maximum focal length at this stage.</div>
+                <div class="point-item">In some defects like myopia, the far point shifts closer to the eye.</div>
+                <div class="point-item">A clear far point is essential for tasks like driving and observing nature.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 22</span>
+            <h3>Explain Myopia (Near-sightedness).</h3>
+            [Image showing myopia and its correction using a concave lens]
+            <div class="point-list">
+                <div class="point-item">A person with myopia can see nearby objects clearly but distant objects appear blurred.</div>
+                <div class="point-item">The far point of the eye is no longer at infinity but shifts closer.</div>
+                <div class="point-item">The image of a distant object is formed in front of the retina instead of on it.</div>
+                <div class="point-item">Causes include excessive curvature of the cornea or elongation of the eyeball.</div>
+                <div class="point-item">This defect is corrected by using a concave lens of suitable focal length.</div>
+                <div class="point-item">The concave lens diverges the rays so they can focus exactly on the retina.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 23</span>
+            <h3>Explain Hypermetropia (Far-sightedness).</h3>
+            [Image showing hypermetropia and its correction using a convex lens]
+            <div class="point-list">
+                <div class="point-item">A person can see distant objects clearly but nearby objects appear blurred.</div>
+                <div class="point-item">The near point of the eye shifts further away from the standard $25 \text{ cm}$.</div>
+                <div class="point-item">The image of a nearby object is formed behind the retina.</div>
+                <div class="point-item">Causes include the eyeball becoming too small or the lens being too thin.</div>
+                <div class="point-item">This defect is corrected by using a convex lens of suitable power.</div>
+                <div class="point-item">The convex lens provides additional converging power to focus the image on the retina.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 24</span>
+            <h3>Explain Presbyopia.</h3>
+            <div class="point-list">
+                <div class="point-item">Presbyopia is a vision defect that occurs generally due to aging.</div>
+                <div class="point-item">The ciliary muscles lose their flexibility and cannot change the lens shape easily.</div>
+                <div class="point-item">People find it difficult to see nearby objects clearly (similar to hypermetropia).</div>
+                <div class="point-item">Sometimes a person may suffer from both myopia and hypermetropia.</div>
+                <div class="point-item">This is corrected using bifocal lenses, which have both concave and convex parts.</div>
+                <div class="point-item">The upper part of a bifocal lens is concave, and the lower part is convex.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 25</span>
+            <h3>Describe the use of a Simple Microscope.</h3>
+            
+            <div class="point-list">
+                <div class="point-item">A simple microscope consists of a single convex lens of small focal length.</div>
+                <div class="point-item">The object is placed within the focal length (between O and $F_1$) of the lens.</div>
+                <div class="point-item">It produces a virtual, erect, and highly magnified image of the object.</div>
+                <div class="point-item">It can provide a magnification of up to 20 times the original size.</div>
+                <div class="point-item">It is used by watchmakers, jewelers, and for reading small print.</div>
+                <div class="point-item">The final image is formed at the least distance of distinct vision ($25 \text{ cm}$).</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 26</span>
+            <h3>Describe the construction of a Compound Microscope.</h3>
+            
+            <div class="point-list">
+                <div class="point-item">It consists of two convex lenses: the objective lens and the eye lens.</div>
+                <div class="point-item">The objective lens has a small aperture and a small focal length.</div>
+                <div class="point-item">The eye lens has a larger aperture and a larger focal length than the objective.</div>
+                <div class="point-item">The objective lens forms a real, inverted, and magnified image of the tiny object.</div>
+                <div class="point-item">This first image acts as an object for the eye lens, which magnifies it further.</div>
+                <div class="point-item">The final image is virtual, inverted relative to the original object, and highly magnified.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 27</span>
+            <h3>Describe the working of a Refracting Telescope.</h3>
+            
+            <div class="point-list">
+                <div class="point-item">A telescope is used to see distant objects like stars and planets clearly.</div>
+                <div class="point-item">It uses two convex lenses: a large objective and a smaller eye lens.</div>
+                <div class="point-item">The objective lens has a large focal length and aperture to collect more light.</div>
+                <div class="point-item">It forms a real and inverted image of the distant object at its focus.</div>
+                <div class="point-item">The eye lens then magnifies this image to produce a large virtual image.</div>
+                <div class="point-item">Refracting telescopes are limited by the size and weight of the large glass lenses.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 28</span>
+            <h3>What is Persistence of Vision?</h3>
+            <div class="point-list">
+                <div class="point-item">The image of an object formed on the retina does not disappear immediately.</div>
+                <div class="point-item">It remains on the retina for about $1/16$-th of a second after the object is removed.</div>
+                <div class="point-item">If multiple images are shown faster than this rate, the eye perceives continuous motion.</div>
+                <div class="point-item">This phenomenon is called the persistence of vision.</div>
+                <div class="point-item">This principle is the basis for cinematography, movies, and television.</div>
+                <div class="point-item">It allows our brain to bridge the gap between static frames.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 29</span>
+            <h3>Explain the function of Rods and Cones in the retina.</h3>
+            [Image showing rod and cone cells in the retina]
+            <div class="point-list">
+                <div class="point-item">The retina contains millions of light-sensitive cells called photoreceptors.</div>
+                <div class="point-item">Rod cells are sensitive to the intensity of light (dim or bright light).</div>
+                <div class="point-item">They help us see in low-light conditions but do not detect color.</div>
+                <div class="point-item">Cone cells are sensitive to the frequency of light, which we perceive as color.</div>
+                <div class="point-item">Different cones respond to red, green, and blue light respectively.</div>
+                <div class="point-item">Absence or defect in specific cone cells leads to color blindness.</div>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-number">Question 30</span>
+            <h3>What is Color Blindness?</h3>
+            <div class="point-list">
+                <div class="point-item">Color blindness is a genetic condition where a person cannot distinguish between certain colors.</div>
+                <div class="point-item">It occurs due to the lack of specific color-sensitive cone cells in the retina.</div>
+                <div class="point-item">The most common type is red-green color blindness.</div>
+                <div class="point-item">Apart from color perception, the vision of such individuals is otherwise normal.</div>
+                <div class="point-item">There is no permanent cure for this condition as it is usually hereditary.</div>
+                <div class="point-item">It can be a limiting factor in certain professions like pilot or electrical engineer.</div>
+            </div>
+        </div>
+
+    </div>
+<script>
+function searchFunction() {
+    // 1. Get the text from the search bar
+    let input = document.getElementById('searchInput');
+    let filter = input.value.toUpperCase();
+    
+    // 2. Get all the Question Cards
+    let cards = document.getElementsByClassName('q-card');
+
+    // 3. Loop through cards and hide those that don't match
+    for (let i = 0; i < cards.length; i++) {
+        let textValue = cards[i].textContent || cards[i].innerText;
+        if (textValue.toUpperCase().indexOf(filter) > -1) {
+            cards[i].style.display = ""; // Show
+        } else {
+            cards[i].style.display = "none"; // Hide
+        }
+    }
+}
+</script>
+</body>
+</html>
