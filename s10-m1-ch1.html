@@ -1,428 +1,853 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="/adsense.js"></script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SSC Maths 1 - Practice Set 1.1 Full</title>
+    <title>SSC Maths 1 - Practice Set 1.1 (Detailed Steps)</title>
     <style>
         :root {
             --bg-color: #0d1117;
             --card-bg: #161b22;
             --text-color: #c9d1d9;
-            --accent-color: #1e90ff; 
+            --accent-color: #58a6ff; 
             --border-color: #30363d;
+            --highlight: #f0883e;
+            --math-font: 'Courier New', Courier, monospace;
         }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            padding: 20px;
-            max-width: 900px;
-            margin: 0 auto;
-            line-height: 1.6;
-        }
-
-        header {
-            position: sticky;
-            top: 0;
-            background-color: var(--bg-color);
-            padding: 10px 0;
-            z-index: 1000;
-            border-bottom: 2px solid var(--border-color);
-            margin-bottom: 30px;
-        }
-
-        #search-input {
-            width: 100%;
-            padding: 15px;
-            border-radius: 8px;
-            border: 2px solid var(--border-color);
-            background: var(--card-bg);
-            color: white;
-            font-size: 1.1rem;
-            outline: none;
-        }
-
-        .q-card {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 25px;
-            margin-bottom: 25px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        }
-
-        .q-header {
-            color: var(--accent-color);
-            font-weight: bold;
-            font-size: 1.3rem;
-            margin-bottom: 15px;
-            display: block;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 10px;
-        }
-
-        .point-list {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        .point-item {
-            position: relative;
-            padding-left: 25px;
-        }
-
-        .point-item::before {
-            content: '•';
-            color: var(--accent-color);
-            position: absolute;
-            left: 0;
-            font-weight: bold;
-        }
-
-        .math-block {
-            background: rgba(0,0,0,0.4);
+        body { background-color: var(--bg-color); color: var(--text-color); font-family: 'Segoe UI', sans-serif; padding: 20px; max-width: 900px; margin: 0 auto; }
+        .q-card { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 25px; margin-bottom: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.5); }
+        .q-header { color: var(--accent-color); font-weight: bold; font-size: 1.3rem; margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px; }
+        
+        /* Vertical Math Styling */
+        .vertical-math {
+            font-family: var(--math-font);
+            background: #000;
             padding: 20px;
             border-radius: 8px;
+            line-height: 1.5;
+            display: inline-block;
             margin: 15px 0;
-            border: 1px solid var(--border-color);
-            overflow-x: auto;
+            font-size: 1.1rem;
+            border-left: 4px solid var(--highlight);
         }
-
-        h1 { text-align: center; color: var(--accent-color); font-size: 2.2rem; }
-        .ans-highlight { color: #58a6ff; font-weight: bold; border: 1px dashed #58a6ff; padding: 2px 5px; }
+        .line { border-top: 2px solid white; margin-top: 5px; margin-bottom: 5px; width: 100%; }
+        .ans-text { color: var(--highlight); font-weight: bold; margin-top: 10px; display: block; }
+        .instruction { color: #8b949e; margin-bottom: 10px; font-weight: bold; }
     </style>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
 
-    <header>
-        <input type="text" id="search-input" placeholder="Search Questions 1 to 8..." onkeyup="filterQuestions()">
-    </header>
-
-    <h1>Algebra: Practice Set 1.1</h1>
+    <h1 style="text-align: center; color: var(--accent-color);">Practice Set 1.1: Complete Vertical Solutions</h1>
 
     <div class="q-card">
-        <span class="q-header">Q.1 Complete the activity to solve simultaneous equations.</span>
-        <div class="point-list">
-            <div class="point-item">\(5x + 3y = 9\) --- (I)</div>
-            <div class="point-item">\(2x - 3y = 12\) --- (II)</div>
-            <div class="point-item">Adding equations (I) and (II):</div>
-            <div class="math-block">
-                $$\begin{aligned}
-                5x + 3y &= 9 \\
-                + \quad 2x - 3y &= 12 \\
-                \hline
-                7x &= 21 \\
-                x &= \frac{21}{7} \\
-                x &= 3
-                \end{aligned}$$
-            </div>
-            <div class="point-item">Place \(x = 3\) in equation (I).</div>
-            <div class="point-item">\(5 \times 3 + 3y = 9\)</div>
-            <div class="point-item">\(15 + 3y = 9\)</div>
-            <div class="point-item">\(3y = 9 - 15 \implies 3y = -6\)</div>
-            <div class="point-item">\(y = \frac{-6}{3} \implies y = -2\)</div>
-            <div class="point-item">Solution is <span class="ans-highlight">\((x, y) = (3, -2)\)</span>.</div>
+        <span class="q-header">Q.1 Complete the activity to solve simultaneous equations:</span>
+        <div class="instruction">Adding equations (I) and (II):</div>
+        <div class="vertical-math">
+            &nbsp;&nbsp;5x + 3y = &nbsp;9  &nbsp;...(I)<br>
+            + 2x - 3y = 12  &nbsp;...(II)<br>
+            <div class="line"></div>
+            &nbsp;&nbsp;7x &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 21<br>
+            &nbsp;&nbsp;&nbsp;x &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 21 / 7<br>
+            &nbsp;&nbsp;&nbsp;x &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 3
         </div>
+        <div class="instruction">Substitute x = 3 in eq. (I):</div>
+        <div class="vertical-math">
+            5(3) + 3y = 9<br>
+            15 + 3y = 9<br>
+            3y = 9 - 15<br>
+            3y = -6<br>
+            y = -2
+        </div>
+        <span class="ans-text">Solution: (x, y) = (3, -2)</span>
     </div>
 
     <div class="q-card">
-        <span class="q-header">Q.2 (1) Solve: \(3a + 5b = 26; \quad a + 5b = 22\)</span>
-        <div class="point-list">
-            <div class="point-item">Subtracting the second equation from the first:</div>
-            <div class="math-block">
-                $$\begin{aligned}
-                3a + 5b &= 26 \\
-                - \quad (a + 5b &= 22) \\
-                \hline
-                2a &= 4 \\
-                a &= 2
-                \end{aligned}$$
-            </div>
-            <div class="point-item">Substitute \(a = 2\) in \(a + 5b = 22\):</div>
-            <div class="point-item">\(2 + 5b = 22 \implies 5b = 20 \implies b = 4\)</div>
-            <div class="point-item">Solution: <span class="ans-highlight">\((a, b) = (2, 4)\)</span>.</div>
+        <span class="q-header">Q.2 (1) 3a + 5b = 26 ; a + 5b = 22</span>
+        <div class="instruction">Subtracting eq. (II) from (I) (Signs of eq II change):</div>
+        <div class="vertical-math">
+            &nbsp;&nbsp;3a + 5b = 26 &nbsp;...(I)<br>
+            - &nbsp;a + 5b = 22 &nbsp;...(II)<br>
+            &nbsp;(-)&nbsp;(-)&nbsp;&nbsp;(-)<br>
+            <div class="line"></div>
+            &nbsp;&nbsp;2a &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 4<br>
+            &nbsp;&nbsp;&nbsp;a &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 2
         </div>
+        <div class="instruction">Substitute a = 2 in eq. (II):</div>
+        <div class="vertical-math">
+            2 + 5b = 22<br>
+            5b = 20<br>
+            b = 4
+        </div>
+        <span class="ans-text">Solution: (a, b) = (2, 4)</span>
     </div>
 
     <div class="q-card">
-        <span class="q-header">Q.2 (2) Solve: \(x + 7y = 10; \quad 3x - 2y = 7\)</span>
-        <div class="point-list">
-            <div class="point-item">Multiply equation (I) by 3: \(3x + 21y = 30\)</div>
-            <div class="point-item">Subtract equation (II) from this:</div>
-            <div class="math-block">
-                $$\begin{aligned}
-                3x + 21y &= 30 \\
-                - \quad (3x - 2y &= 7) \\
-                \hline
-                23y &= 23 \\
-                y &= 1
-                \end{aligned}$$
-            </div>
-            <div class="point-item">Substitute \(y = 1\) in \(x + 7y = 10\):</div>
-            <div class="point-item">\(x + 7(1) = 10 \implies x = 3\)</div>
-            <div class="point-item">Solution: <span class="ans-highlight">\((x, y) = (3, 1)\)</span>.</div>
+        <span class="q-header">Q.2 (2) x + 7y = 10 ; 3x - 2y = 7</span>
+        <div class="instruction">Multiply eq. (I) by 3 to make coefficients equal:</div>
+        <div class="vertical-math">
+            3x + 21y = 30 &nbsp;...(III)
         </div>
+        <div class="instruction">Subtracting eq. (II) from (III):</div>
+        <div class="vertical-math">
+            &nbsp;&nbsp;3x + 21y = 30 &nbsp;...(III)<br>
+            - 3x - &nbsp;2y = &nbsp;7 &nbsp;...(II)<br>
+            &nbsp;(-)&nbsp;(+)&nbsp;&nbsp;&nbsp;(-)<br>
+            <div class="line"></div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;23y = 23<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y = 1
+        </div>
+        <div class="instruction">Substitute y = 1 in eq. (I):</div>
+        <div class="vertical-math">
+            x + 7(1) = 10<br>
+            x = 10 - 7<br>
+            x = 3
+        </div>
+        <span class="ans-text">Solution: (x, y) = (3, 1)</span>
     </div>
 
     <div class="q-card">
-        <span class="q-header">Q.2 (3) Solve: \(2x - 3y = 9; \quad 2x + y = 13\)</span>
-        <div class="point-list">
-            <div class="point-item">Subtracting equation (I) from (II):</div>
-            <div class="math-block">
-                $$\begin{aligned}
-                2x + y &= 13 \\
-                - \quad (2x - 3y &= 9) \\
-                \hline
-                4y &= 4 \\
-                y &= 1
-                \end{aligned}$$
-            </div>
-            <div class="point-item">Substitute \(y = 1\) in \(2x + y = 13\):</div>
-            <div class="point-item">\(2x + 1 = 13 \implies 2x = 12 \implies x = 6\)</div>
-            <div class="point-item">Solution: <span class="ans-highlight">\((x, y) = (6, 1)\)</span>.</div>
+        <span class="q-header">Q.2 (3) 2x - 3y = 9 ; 2x + y = 13</span>
+        <div class="instruction">Subtracting eq. (I) from (II):</div>
+        <div class="vertical-math">
+            &nbsp;&nbsp;2x + &nbsp;y = 13 &nbsp;...(II)<br>
+            - 2x - 3y = &nbsp;9 &nbsp;...(I)<br>
+            &nbsp;(-)&nbsp;(+)&nbsp;&nbsp;(-)<br>
+            <div class="line"></div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4y = 4<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y = 1
         </div>
+        <div class="instruction">Substitute y = 1 in eq. (II):</div>
+        <div class="vertical-math">
+            2x + 1 = 13<br>
+            2x = 12<br>
+            x = 6
+        </div>
+        <span class="ans-text">Solution: (x, y) = (6, 1)</span>
     </div>
 
     <div class="q-card">
-        <span class="q-header">Q.2 (4) Solve: \(5m - 3n = 19; \quad m - 6n = -7\)</span>
-        <div class="point-list">
-            <div class="point-item">Multiply second equation by 5: \(5m - 30n = -35\)</div>
-            <div class="point-item">Subtract from first equation:</div>
-            <div class="math-block">
-                $$\begin{aligned}
-                5m - 3n &= 19 \\
-                - \quad (5m - 30n &= -35) \\
-                \hline
-                27n &= 54 \\
-                n &= 2
-                \end{aligned}$$
-            </div>
-            <div class="point-item">Substitute \(n = 2\) in \(m - 6n = -7\):</div>
-            <div class="point-item">\(m - 6(2) = -7 \implies m - 12 = -7 \implies m = 5\)</div>
-            <div class="point-item">Solution: <span class="ans-highlight">\((m, n) = (5, 2)\)</span>.</div>
+        <span class="q-header">Q.2 (4) 5m - 3n = 19 ; m - 6n = -7</span>
+        <div class="instruction">Multiply eq. (II) by 5:</div>
+        <div class="vertical-math">
+            5m - 30n = -35 &nbsp;...(III)
         </div>
+        <div class="instruction">Subtracting eq. (III) from (I):</div>
+        <div class="vertical-math">
+            &nbsp;&nbsp;5m - &nbsp;3n = &nbsp;19 &nbsp;...(I)<br>
+            - 5m - 30n = -35 &nbsp;...(III)<br>
+            &nbsp;(-)&nbsp;(+)&nbsp;&nbsp;&nbsp;(+)<br>
+            <div class="line"></div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;27n = 54<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n = 2
+        </div>
+        <div class="instruction">Substitute n = 2 in eq. (II):</div>
+        <div class="vertical-math">
+            m - 6(2) = -7<br>
+            m - 12 = -7<br>
+            m = 5
+        </div>
+        <span class="ans-text">Solution: (m, n) = (5, 2)</span>
     </div>
 
     <div class="q-card">
-        <span class="q-header">Q.2 (5) Solve: \(5x + 2y = -3; \quad x + 5y = 4\)</span>
-        <div class="point-list">
-            <div class="point-item">Multiply second equation by 5: \(5x + 25y = 20\)</div>
-            <div class="point-item">Subtract first equation:</div>
-            <div class="math-block">
-                $$\begin{aligned}
-                5x + 25y &= 20 \\
-                - \quad (5x + 2y &= -3) \\
-                \hline
-                23y &= 23 \\
-                y &= 1
-                \end{aligned}$$
-            </div>
-            <div class="point-item">Substitute \(y = 1\) in \(x + 5y = 4\):</div>
-            <div class="point-item">\(x + 5(1) = 4 \implies x = -1\)</div>
-            <div class="point-item">Solution: <span class="ans-highlight">\((x, y) = (-1, 1)\)</span>.</div>
+        <span class="q-header">Q.2 (5) 5x + 2y = -3 ; x + 5y = 4</span>
+        <div class="instruction">Multiply eq. (II) by 5:</div>
+        <div class="vertical-math">
+            5x + 25y = 20 &nbsp;...(III)
         </div>
+        <div class="instruction">Subtracting eq. (I) from (III):</div>
+        <div class="vertical-math">
+            &nbsp;&nbsp;5x + 25y = 20 &nbsp;...(III)<br>
+            - 5x + &nbsp;2y = -3 &nbsp;...(I)<br>
+            &nbsp;(-)&nbsp;(-)&nbsp;&nbsp;&nbsp;(+)<br>
+            <div class="line"></div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;23y = 23<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y = 1
+        </div>
+        <span class="ans-text">Solution: (x, y) = (-1, 1)</span>
     </div>
 
     <div class="q-card">
-        <span class="q-header">Q.2 (6) Solve: \(\frac{1}{3}x + y = \frac{10}{3}; \quad 2x + \frac{1}{4}y = \frac{11}{4}\)</span>
-        <div class="point-list">
-            <div class="point-item">Multiply first by 3: \(x + 3y = 10\) ---(A)</div>
-            <div class="point-item">Multiply second by 4: \(8x + y = 11\) ---(B)</div>
-            <div class="point-item">Multiply (B) by 3: \(24x + 3y = 33\)</div>
-            <div class="point-item">Subtract (A):</div>
-            <div class="math-block">
-                $$\begin{aligned}
-                24x + 3y &= 33 \\
-                - \quad (x + 3y &= 10) \\
-                \hline
-                23x &= 23 \\
-                x &= 1
-                \end{aligned}$$
-            </div>
-            <div class="point-item">Substitute \(x = 1\) in (A): \(1 + 3y = 10 \implies y = 3\)</div>
-            <div class="point-item">Solution: <span class="ans-highlight">\((x, y) = (1, 3)\)</span>.</div>
+        <span class="q-header">Q.2 (6) (1/3)x + y = 10/3 ; 2x + (1/4)y = 11/4</span>
+        <div class="instruction">Multiply first by 3 and second by 4:</div>
+        <div class="vertical-math">
+            x + 3y = 10 &nbsp;...(I)<br>
+            8x + y = 11 &nbsp;...(II)
         </div>
+        <div class="instruction">Multiply eq. (II) by 3:</div>
+        <div class="vertical-math">
+            24x + 3y = 33 &nbsp;...(III)
+        </div>
+        <div class="instruction">Subtract eq. (I) from (III):</div>
+        <div class="vertical-math">
+            &nbsp;24x + 3y = 33 &nbsp;...(III)<br>
+            - x + 3y = 10 &nbsp;...(I)<br>
+            &nbsp;(-)&nbsp;(-)&nbsp;&nbsp;(-)<br>
+            <div class="line"></div>
+            &nbsp;23x &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 23<br>
+            &nbsp;&nbsp;&nbsp;x &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 1
+        </div>
+        <span class="ans-text">Solution: (x, y) = (1, 3)</span>
     </div>
 
     <div class="q-card">
-        <span class="q-header">Q.2 (7) Solve: \(99x + 101y = 499; \quad 101x + 99y = 501\)</span>
-        <div class="point-list">
-            <div class="point-item">Adding equations:</div>
-            <div class="math-block">
-                $$\begin{aligned}
-                99x + 101y &= 499 \\
-                + \quad 101x + 99y &= 501 \\
-                \hline
-                200x + 200y &= 1000 \\
-                x + y &= 5 \quad \text{---(III)}
-                \end{aligned}$$
-            </div>
-            <div class="point-item">Subtracting (I) from (II):</div>
-            <div class="math-block">
-                $$\begin{aligned}
-                101x + 99y &= 501 \\
-                - \quad (99x + 101y &= 499) \\
-                \hline
-                2x - 2y &= 2 \\
-                x - y &= 1 \quad \text{---(IV)}
-                \end{aligned}$$
-            </div>
-            <div class="point-item">Adding (III) and (IV):</div>
-            <div class="math-block">
-                $$\begin{aligned}
-                x + y &= 5 \\
-                + \quad x - y &= 1 \\
-                \hline
-                2x &= 6 \implies x = 3
-                \end{aligned}$$
-            </div>
-            <div class="point-item">Solution: <span class="ans-highlight">\((x, y) = (3, 2)\)</span>.</div>
+        <span class="q-header">Q.2 (7) 99x + 101y = 499 ; 101x + 99y = 501</span>
+        <div class="instruction">Adding eq. (I) and (II):</div>
+        <div class="vertical-math">
+            200x + 200y = 1000<br>
+            x + y = 5 &nbsp;...(III)
         </div>
+        <div class="instruction">Subtracting eq. (I) from (II):</div>
+        <div class="vertical-math">
+            2x - 2y = 2<br>
+            x - y = 1 &nbsp;...(IV)
+        </div>
+        <div class="instruction">Adding (III) and (IV):</div>
+        <div class="vertical-math">
+            &nbsp;x + y = 5<br>
+            + x - y = 1<br>
+            <div class="line"></div>
+            2x &nbsp;&nbsp;&nbsp;&nbsp;= 6<br>
+            &nbsp;x &nbsp;&nbsp;&nbsp;&nbsp;= 3
+        </div>
+        <span class="ans-text">Solution: (x, y) = (3, 2)</span>
     </div>
 
     <div class="q-card">
-        <span class="q-header">Q.2 (8) Solve: \(49x - 57y = 172; \quad 57x - 49y = 252\)</span>
-        <div class="point-list">
-            <div class="point-item">Adding equations:</div>
-            <div class="math-block">
-                $$\begin{aligned}
-                49x - 57y &= 172 \\
-                + \quad 57x - 49y &= 252 \\
-                \hline
-                106x - 106y &= 424 \\
-                x - y &= 4 \quad \text{---(III)}
-                \end{aligned}$$
-            </div>
-            <div class="point-item">Subtracting (I) from (II):</div>
-            <div class="math-block">
-                $$\begin{aligned}
-                57x - 49y &= 252 \\
-                - \quad (49x - 57y &= 172) \\
-                \hline
-                8x + 8y &= 80 \\
-                x + y &= 10 \quad \text{---(IV)}
-                \end{aligned}$$
-            </div>
-            <div class="point-item">Adding (III) and (IV):</div>
-            <div class="math-block">
-                $$\begin{aligned}
-                x - y &= 4 \\
-                + \quad x + y &= 10 \\
-                \hline
-                2x &= 14 \implies x = 7
-                \end{aligned}$$
-            </div>
-            <div class="point-item">Solution: <span class="ans-highlight">\((x, y) = (7, 3)\)</span>.</div>
+        <span class="q-header">Q.2 (8) 49x - 57y = 172 ; 57x - 49y = 252</span>
+        <div class="instruction">Adding eq. (I) and (II):</div>
+        <div class="vertical-math">
+            106x - 106y = 424<br>
+            x - y = 4 &nbsp;...(III)
         </div>
-        <h1>Algebra: Practice Set 1.2</h1>
-        <div class="q-card">
-        <span class="q-header">Q.1 Complete the following table to draw graph of the equations.</span>
+        <div class="instruction">Subtracting eq. (I) from (II):</div>
+        <div class="vertical-math">
+            8x + 8y = 80<br>
+            x + y = 10 &nbsp;...(IV)
+        </div>
+        <div class="instruction">Adding (III) and (IV):</div>
+        <div class="vertical-math">
+            &nbsp;x - y = 4<br>
+            + x + y = 10<br>
+            <div class="line"></div>
+            2x &nbsp;&nbsp;&nbsp;&nbsp;= 14<br>
+            &nbsp;x &nbsp;&nbsp;&nbsp;&nbsp;= 7
+        </div>
+        <span class="ans-text">Solution: (x, y) = (7, 3)</span>
+    </div>
+<section id="ps1.2">
+    <div class="set-title"></div><h2>Practice Set 1.2</h2></div>
+
+    <div class="q-card">
+        <span class="q-header">Q.1 Complete the following table to draw graph of the equations</span>
         
-        <p><strong>(I) \(x + y = 3\)</strong></p>
+        <p class="instruction"><strong>(I) x + y = 3</strong></p>
+        <div class="vertical-math">
+            When x = 3,  3 + y = 3  => y = 0  => (3, 0)<br>
+            When y = 5,  x + 5 = 3  => x = -2 => (-2, 5)<br>
+            When y = 3,  x + 3 = 3  => x = 0  => (0, 3)
+        </div>
         <table>
-            <tr><th>\(x\)</th><td>3</td><td>-2</td><td>0</td></tr>
-            <tr><th>\(y\)</th><td>0</td><td>5</td><td>3</td></tr>
-            <tr><th>\((x, y)\)</th><td>(3, 0)</td><td>(-2, 5)</td><td>(0, 3)</td></tr>
+            <tr><th>x</th><td>3</td><td>-2</td><td>0</td></tr>
+            <tr><th>y</th><td>0</td><td>5</td><td>3</td></tr>
+            <tr><th>(x, y)</th><td>(3, 0)</td><td>(-2, 5)</td><td>(0, 3)</td></tr>
         </table>
 
-        <p><strong>(II) \(x - y = 4\)</strong></p>
+        <p class="instruction"><strong>(II) x - y = 4</strong></p>
+        <div class="vertical-math">
+            When y = 0,  x - 0 = 4  => x = 4  => (4, 0)<br>
+            When x = -1, -1 - y = 4 => y = -5 => (-1, -5)<br>
+            When x = 0,  0 - y = 4  => y = -4 => (0, -4)
+        </div>
         <table>
-            <tr><th>\(x\)</th><td>4</td><td>-1</td><td>0</td></tr>
-            <tr><th>\(y\)</th><td>0</td><td>-5</td><td>-4</td></tr>
-            <tr><th>\((x, y)\)</th><td>(4, 0)</td><td>(-1, -5)</td><td>(0, -4)</td></tr>
+            <tr><th>x</th><td>4</td><td>-1</td><td>0</td></tr>
+            <tr><th>y</th><td>0</td><td>-5</td><td>-4</td></tr>
+            <tr><th>(x, y)</th><td>(4, 0)</td><td>(-1, -5)</td><td>(0, -4)</td></tr>
         </table>
     </div>
 
     <div class="q-card">
-        <span class="q-header">Q.2 (1) Solve graphically: \(x + y = 6; \quad x - y = 4\)</span>
+        <span class="q-header">Q.2 (1) x + y = 6 ; x - y = 4</span>
+        <div class="instruction">Step 1: Find coordinates for x + y = 6</div>
+        <table>
+            <tr><th>x</th><td>0</td><td>6</td><td>3</td></tr>
+            <tr><th>y</th><td>6</td><td>0</td><td>3</td></tr>
+            <tr><th>(x, y)</th><td>(0, 6)</td><td>(6, 0)</td><td>(3, 3)</td></tr>
+        </table>
+        <div class="instruction">Step 2: Find coordinates for x - y = 4</div>
+        <table>
+            <tr><th>x</th><td>4</td><td>0</td><td>5</td></tr>
+            <tr><th>y</th><td>0</td><td>-4</td><td>1</td></tr>
+            <tr><th>(x, y)</th><td>(4, 0)</td><td>(0, -4)</td><td>(5, 1)</td></tr>
+        </table>
         
-        <div class="math-text">
-            <p><strong>Step 1: Table for \(x + y = 6\)</strong></p>
-            <table>
-                <tr><th>\(x\)</th><td>0</td><td>6</td><td>3</td></tr>
-                <tr><th>\(y\)</th><td>6</td><td>0</td><td>3</td></tr>
-                <tr><th>\((x, y)\)</th><td>(0, 6)</td><td>(6, 0)</td><td>(3, 3)</td></tr>
-            </table>
+        <div class="ans-box">The lines intersect at point (5, 1). Solution: x = 5, y = 1</div>
+    </div>
 
-            <p><strong>Step 2: Table for \(x - y = 4\)</strong></p>
-            <table>
-                <tr><th>\(x\)</th><td>4</td><td>0</td><td>5</td></tr>
-                <tr><th>\(y\)</th><td>0</td><td>-4</td><td>1</td></tr>
-                <tr><th>\((x, y)\)</th><td>(4, 0)</td><td>(0, -4)</td><td>(5, 1)</td></tr>
-            </table>
-            
-            <p>The two lines intersect at point <strong>(5, 1)</strong>.</p>
-            <div class="ans-highlight">Solution: \((x, y) = (5, 1)\)</div>
+    <div class="q-card">
+        <span class="q-header">Q.2 (2) x + y = 5 ; x - y = 3</span>
+        <div class="instruction">Table for x + y = 5</div>
+        <table>
+            <tr><th>x</th><td>0</td><td>5</td><td>2</td></tr>
+            <tr><th>y</th><td>5</td><td>0</td><td>3</td></tr>
+            <tr><th>(x, y)</th><td>(0, 5)</td><td>(5, 0)</td><td>(2, 3)</td></tr>
+        </table>
+        <div class="instruction">Table for x - y = 3</div>
+        <table>
+            <tr><th>x</th><td>3</td><td>0</td><td>4</td></tr>
+            <tr><th>y</th><td>0</td><td>-3</td><td>1</td></tr>
+            <tr><th>(x, y)</th><td>(3, 0)</td><td>(0, -3)</td><td>(4, 1)</td></tr>
+        </table>
+        
+        <div class="ans-box">Solution: (x, y) = (4, 1)</div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-header">Q.2 (3) x + y = 0 ; 2x - y = 9</span>
+        <div class="instruction">Table for x + y = 0</div>
+        <table>
+            <tr><th>x</th><td>0</td><td>2</td><td>-2</td></tr>
+            <tr><th>y</th><td>0</td><td>-2</td><td>2</td></tr>
+            <tr><th>(x, y)</th><td>(0, 0)</td><td>(2, -2)</td><td>(-2, 2)</td></tr>
+        </table>
+        <div class="instruction">Table for 2x - y = 9</div>
+        <table>
+            <tr><th>x</th><td>4.5</td><td>5</td><td>3</td></tr>
+            <tr><th>y</th><td>0</td><td>1</td><td>-3</td></tr>
+            <tr><th>(x, y)</th><td>(4.5, 0)</td><td>(5, 1)</td><td>(3, -3)</td></tr>
+        </table>
+        
+        <div class="ans-box">Solution: (x, y) = (3, -3)</div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-header">Q.2 (4) 3x - y = 2 ; 2x - y = 3</span>
+        <div class="instruction">Table for 3x - y = 2 => y = 3x - 2</div>
+        <table>
+            <tr><th>x</th><td>0</td><td>1</td><td>-1</td></tr>
+            <tr><th>y</th><td>-2</td><td>1</td><td>-5</td></tr>
+            <tr><th>(x, y)</th><td>(0, -2)</td><td>(1, 1)</td><td>(-1, -5)</td></tr>
+        </table>
+        <div class="instruction">Table for 2x - y = 3 => y = 2x - 3</div>
+        <table>
+            <tr><th>x</th><td>0</td><td>3</td><td>-1</td></tr>
+            <tr><th>y</th><td>-3</td><td>3</td><td>-5</td></tr>
+            <tr><th>(x, y)</th><td>(0, -3)</td><td>(3, 3)</td><td>(-1, -5)</td></tr>
+        </table>
+        <div class="ans-box">Solution: (x, y) = (-1, -5)</div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-header">Q.2 (5) 3x - 4y = -7 ; 5x - 2y = 0</span>
+        <div class="instruction">Calculation for 5x - 2y = 0 => 2y = 5x => y = 2.5x</div>
+        <table>
+            <tr><th>x</th><td>0</td><td>2</td><td>-2</td></tr>
+            <tr><th>y</th><td>0</td><td>5</td><td>-5</td></tr>
+            <tr><th>(x, y)</th><td>(0, 0)</td><td>(2, 5)</td><td>(-2, -5)</td></tr>
+        </table>
+        <div class="instruction">Calculation for 3x - 4y = -7 => 4y = 3x + 7 => y = (3x+7)/4</div>
+        <table>
+            <tr><th>x</th><td>-1</td><td>3</td><td>1</td></tr>
+            <tr><th>y</th><td>1</td><td>4</td><td>2.5</td></tr>
+            <tr><th>(x, y)</th><td>(-1, 1)</td><td>(3, 4)</td><td>(1, 2.5)</td></tr>
+        </table>
+        <div class="ans-box">Solution: (x, y) = (1, 2.5)</div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-header">Q.2 (6) 2x - 3y = 4 ; 3y - x = 4</span>
+        <div class="instruction">Table for 2x - 3y = 4 => 3y = 2x - 4 => y = (2x - 4)/3</div>
+        <table>
+            <tr><th>x</th><td>2</td><td>5</td><td>-1</td></tr>
+            <tr><th>y</th><td>0</td><td>2</td><td>-2</td></tr>
+            <tr><th>(x, y)</th><td>(2, 0)</td><td>(5, 2)</td><td>(-1, -2)</td></tr>
+        </table>
+        <div class="instruction">Table for 3y - x = 4 => 3y = x + 4 => y = (x + 4)/3</div>
+        <table>
+            <tr><th>x</th><td>-4</td><td>2</td><td>8</td></tr>
+            <tr><th>y</th><td>0</td><td>2</td><td>4</td></tr>
+            <tr><th>(x, y)</th><td>(-4, 0)</td><td>(2, 2)</td><td>(8, 4)</td></tr>
+        </table>
+        <div class="ans-box">Solution: (x, y) = (8, 4)</div>
+    </div>
+</section>
+<section id="ps1.3">
+    <div class="set-title"><h2>Practice Set 1.3</h2></div>
+
+    <div class="q-card" data-search="1.3 Q1 determinant 3 2 4 5">
+        <span class="q-header">Q.1 Fill in the blanks with correct number:</span>
+        <div class="vertical-math">
+            | 3 &nbsp; 2 | <br>
+            | 4 &nbsp; 5 | <br>
+            = (3 × 5) - (2 × 4) <br>
+            = 15 - 8 <br>
+            = 7
+        </div>
+        <div class="ans-box">Value of determinant = 7</div>
+    </div>
+
+    <div class="q-card" data-search="1.3 Q2 find values of determinants">
+        <span class="q-header">Q.2 Find the values of following determinants:</span>
+        
+        <p class="instruction">(1) | -1 &nbsp; 7 | <br> &nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;2 &nbsp; 4 |</p>
+        <div class="vertical-math">
+            = (-1 × 4) - (7 × 2) <br>
+            = -4 - 14 <br>
+            = -18
+        </div>
+
+        <p class="instruction">(2) | 5 &nbsp; 3 | <br> &nbsp;&nbsp;&nbsp;&nbsp;| -7 &nbsp; 0 |</p>
+        <div class="vertical-math">
+            = (5 × 0) - (3 × -7) <br>
+            = 0 - (-21) <br>
+            = 0 + 21 = 21
+        </div>
+
+        <p class="instruction">(3) | 7/3 &nbsp; 5/3 | <br> &nbsp;&nbsp;&nbsp;&nbsp;| 3/2 &nbsp; 1/2 |</p>
+        <div class="vertical-math">
+            = (7/3 × 1/2) - (5/3 × 3/2) <br>
+            = 7/6 - 15/6 <br>
+            = -8/6 = -4/3
+        </div>
+    </div>
+
+    <div class="q-card" data-search="1.3 Q3 solve using cramers rule">
+        <span class="q-header">Q.3 Solve the following simultaneous equations using Cramer’s rule:</span>
+
+        <p class="instruction">(1) 3x - 4y = 10 ; 4x + 3y = 5</p>
+        <div class="vertical-math">
+            D = | 3 &nbsp; -4 | = (3×3) - (-4×4) = 9 + 16 = 25 <br>
+            | 4 &nbsp; &nbsp;3 | <br><br>
+            Dx = | 10 &nbsp; -4 | = (10×3) - (-4×5) = 30 + 20 = 50 <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 5 &nbsp; &nbsp; 3 | <br><br>
+            Dy = | 3 &nbsp; 10 | = (3×5) - (10×4) = 15 - 40 = -25 <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 4 &nbsp; &nbsp; 5 | <br><br>
+            x = Dx/D = 50/25 = 2 <br>
+            y = Dy/D = -25/25 = -1
+        </div>
+        <div class="ans-box">Solution: (x, y) = (2, -1)</div>
+
+        <p class="instruction">(2) 4x + 3y - 4 = 0 ; 6x = 8 - 5y</p>
+        <div class="instruction">Rearranging: 4x + 3y = 4 and 6x + 5y = 8</div>
+        <div class="vertical-math">
+            D = | 4 &nbsp; 3 | = (4×5) - (3×6) = 20 - 18 = 2 <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;| 6 &nbsp; 5 | <br><br>
+            Dx = | 4 &nbsp; 3 | = (4×5) - (3×8) = 20 - 24 = -4 <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 8 &nbsp; 5 | <br><br>
+            Dy = | 4 &nbsp; 4 | = (4×8) - (4×6) = 32 - 24 = 8 <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 6 &nbsp; 8 | <br><br>
+            x = -4/2 = -2 , y = 8/2 = 4
+        </div>
+        <div class="ans-box">Solution: (x, y) = (-2, 4)</div>
+
+        <p class="instruction">(3) x + 2y = -1 ; 2x - 3y = 12</p>
+        <div class="vertical-math">
+            D = | 1 &nbsp; 2 | = (1×-3) - (2×2) = -3 - 4 = -7 <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;| 2 &nbsp; -3 | <br><br>
+            Dx = | -1 &nbsp; 2 | = (-1×-3) - (2×12) = 3 - 24 = -21 <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 12 &nbsp; -3 | <br><br>
+            Dy = | 1 &nbsp; -1 | = (1×12) - (-1×2) = 12 + 2 = 14 <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 2 &nbsp; 12 | <br><br>
+            x = -21/-7 = 3 , y = 14/-7 = -2
+        </div>
+        <div class="ans-box">Solution: (x, y) = (3, -2)</div>
+
+        <p class="instruction">(4) 6x - 4y = -12 ; 8x - 3y = -2</p>
+        <div class="vertical-math">
+            D = | 6 &nbsp; -4 | = (6×-3) - (-4×8) = -18 + 32 = 14 <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;| 8 &nbsp; -3 | <br><br>
+            Dx = | -12 &nbsp; -4 | = (-12×-3) - (-4×-2) = 36 - 8 = 28 <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| -2 &nbsp; -3 | <br><br>
+            Dy = | 6 &nbsp; -12 | = (6×-2) - (-12×8) = -12 + 96 = 84 <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 8 &nbsp; -2 | <br><br>
+            x = 28/14 = 2 , y = 84/14 = 6
+        </div>
+        <div class="ans-box">Solution: (x, y) = (2, 6)</div>
+
+        <p class="instruction">(5) 4m + 6n = 54 ; 3m + 2n = 28</p>
+        <div class="vertical-math">
+            D = | 4 &nbsp; 6 | = 8 - 18 = -10 <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;| 3 &nbsp; 2 | <br><br>
+            Dm = | 54 &nbsp; 6 | = 108 - 168 = -60 <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 28 &nbsp; 2 | <br><br>
+            Dn = | 4 &nbsp; 54 | = 112 - 162 = -50 <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 3 &nbsp; 28 | <br><br>
+            m = -60/-10 = 6 , n = -50/-10 = 5
+        </div>
+        <div class="ans-box">Solution: (m, n) = (6, 5)</div>
+
+        <p class="instruction">(6) 2x + 3y = 2 ; x - y/2 = 1/2</p>
+        <div class="instruction">Rearranging eq 2: 2x - y = 1</div>
+        <div class="vertical-math">
+            D = | 2 &nbsp; 3 | = (2×-1) - (3×2) = -2 - 6 = -8 <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;| 2 &nbsp; -1 | <br><br>
+            Dx = | 2 &nbsp; 3 | = (2×-1) - (3×1) = -2 - 3 = -5 <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 1 &nbsp; -1 | <br><br>
+            Dy = | 2 &nbsp; 2 | = (2×1) - (2×2) = 2 - 4 = -2 <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 2 &nbsp; 1 | <br><br>
+            x = -5/-8 = 5/8 , y = -2/-8 = 1/4
+        </div>
+        <div class="ans-box">Solution: (x, y) = (5/8, 1/4)</div>
+    </div>
+</section>
+<section id="ps1.4">
+    <div class="set-title"><h2>Practice Set 1.4</h2></div>
+
+    <div class="q-card">
+        <span class="q-header">Q.1 (1) Solve: 2/x - 3/y = 15 ; 8/x + 5/y = 77</span>
+        <div class="instruction">Step 1: Substitute 1/x = m and 1/y = n</div>
+        <div class="vertical-math">
+            2m - 3n = 15  ...(I)<br>
+            8m + 5n = 77  ...(II)
+        </div>
+        <div class="instruction">Multiply eq. (I) by 4:</div>
+        <div class="vertical-math">
+            &nbsp;8m - 12n = 60  ...(III)<br>
+            - 8m + &nbsp;5n = 77  ...(II)<br>
+            &nbsp;(-)&nbsp;(-)&nbsp;&nbsp;(-)<br>
+            <div class="line"></div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-17n = -17<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n = 1
+        </div>
+        <div class="instruction">Substitute n = 1 in eq (I) to find m:</div>
+        <div class="vertical-math">
+            2m - 3(1) = 15 => 2m = 18 => m = 9
+        </div>
+        <div class="instruction">Step 2: Re-substituting values of m and n:</div>
+        <div class="vertical-math">
+            m = 1/x => 9 = 1/x => x = 1/9<br>
+            n = 1/y => 1 = 1/y => y = 1
+        </div>
+        <div class="ans-box">Solution: (x, y) = (1/9, 1)</div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-header">Q.1 (2) Solve: 10/(x+y) + 2/(x-y) = 4 ; 15/(x+y) - 5/(x-y) = -2</span>
+        <div class="instruction">Substitute 1/(x+y) = m and 1/(x-y) = n</div>
+        <div class="vertical-math">
+            10m + 2n = 4   => 5m + n = 2  ...(I)<br>
+            15m - 5n = -2  ...(II)
+        </div>
+        <div class="instruction">Multiply eq (I) by 5 and add to (II):</div>
+        <div class="vertical-math">
+            &nbsp;25m + 5n = 10<br>
+            + 15m - 5n = -2<br>
+            <div class="line"></div>
+            &nbsp;40m &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 8  => m = 8/40 = 1/5
+        </div>
+        <div class="instruction">Find n: 5(1/5) + n = 2 => 1 + n = 2 => n = 1</div>
+        <div class="instruction">Re-substituting:</div>
+        <div class="vertical-math">
+            1/(x+y) = 1/5 => x + y = 5 ...(III)<br>
+            1/(x-y) = 1 &nbsp;&nbsp;=> x - y = 1 ...(IV)
+        </div>
+        <div class="instruction">Solving (III) and (IV) vertically:</div>
+        <div class="vertical-math">
+            &nbsp;x + y = 5<br>
+            + x - y = 1<br>
+            <div class="line"></div>
+            2x &nbsp;&nbsp;&nbsp;&nbsp;= 6 => x = 3, y = 2
+        </div>
+        <div class="ans-box">Solution: (x, y) = (3, 2)</div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-header">Q.1 (3) Solve: 27/(x-2) + 31/(y+3) = 85 ; 31/(x-2) + 27/(y+3) = 89</span>
+        <div class="instruction">Substitute 1/(x-2) = m and 1/(y+3) = n</div>
+        <div class="vertical-math">
+            27m + 31n = 85  ...(I)<br>
+            31m + 27n = 89  ...(II)
+        </div>
+        <div class="instruction">Adding (I) and (II):</div>
+        <div class="vertical-math">
+            58m + 58n = 174 => m + n = 3 ...(III)
+        </div>
+        <div class="instruction">Subtracting (I) from (II):</div>
+        <div class="vertical-math">
+            4m - 4n = 4 => m - n = 1 ...(IV)
+        </div>
+        <div class="instruction">Solving (III) and (IV): 2m = 4 => m = 2, n = 1</div>
+        <div class="instruction">Re-substituting:</div>
+        <div class="vertical-math">
+            1/(x-2) = 2 => x-2 = 1/2 => x = 2.5<br>
+            1/(y+3) = 1 => y+3 = 1 &nbsp;=> y = -2
+        </div>
+        <div class="ans-box">Solution: (x, y) = (2.5, -2)</div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-header">Q.1 (4) Solve: 1/(3x+y) + 1/(3x-y) = 3/4 ; 1/2(3x+y) - 1/2(3x-y) = -1/8</span>
+        <div class="instruction">Substitute 1/(3x+y) = m and 1/(3x-y) = n</div>
+        <div class="vertical-math">
+            m + n = 3/4  => 4m + 4n = 3 ...(I)<br>
+            m/2 - n/2 = -1/8 => 4m - 4n = -1 ...(II)
+        </div>
+        <div class="instruction">Adding (I) and (II):</div>
+        <div class="vertical-math">
+            8m = 2 => m = 1/4<br>
+            Substitute m: 4(1/4) + 4n = 3 => 1 + 4n = 3 => n = 1/2
+        </div>
+        <div class="instruction">Re-substituting:</div>
+        <div class="vertical-math">
+            3x + y = 4 ...(III)<br>
+            3x - y = 2 ...(IV)
+        </div>
+        <div class="instruction">Adding (III) and (IV): 6x = 6 => x = 1, y = 1</div>
+        <div class="ans-box">Solution: (x, y) = (1, 1)</div>
+    </div>
+</section>
+<section id="ps1.5">
+    <div class="set-title"><h2>Practice Set 1.5</h2></div>
+
+    <div class="q-card">
+        <span class="q-header">Q.1 Two numbers differ by 3. The sum of twice the smaller number and thrice the greater number is 19. Find the numbers.</span>
+        <div class="instruction">Step 1: Let the greater number be 'x' and the smaller number be 'y'.</div>
+        <div class="instruction">From the first condition (difference is 3):</div>
+        <div class="vertical-math">
+            x - y = 3  ...(I)
+        </div>
+        <div class="instruction">From the second condition (3 times greater + 2 times smaller = 19):</div>
+        <div class="vertical-math">
+            3x + 2y = 19 ...(II)
+        </div>
+        <div class="instruction">Multiply equation (I) by 2 to align 'y':</div>
+        <div class="vertical-math">
+            &nbsp;&nbsp;2x - 2y = &nbsp;6  ...(III)<br>
+            + 3x + 2y = 19  ...(II)<br>
+            <div class="line"></div>
+            &nbsp;&nbsp;5x &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 25<br>
+            &nbsp;&nbsp;&nbsp;x &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 5
+        </div>
+        <div class="instruction">Substitute x = 5 in eq (I):</div>
+        <div class="vertical-math">
+            5 - y = 3 => y = 2
+        </div>
+        <div class="ans-box">The numbers are 5 and 2.</div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-header">Q.2 Complete the following (Rectangle Problem):</span>
+        <div class="instruction">Opposite sides of a rectangle are equal.</div>
+        <div class="vertical-math">
+            2x + y + 8 = 4x - y<br>
+            => 2x - 2y = 8 => x - y = 4 ...(I)<br><br>
+            x + 4 = 2y<br>
+            => x - 2y = -4 ...(II)
+        </div>
+        <div class="instruction">Subtracting (II) from (I):</div>
+        <div class="vertical-math">
+            &nbsp;&nbsp;x - &nbsp;y = &nbsp;4 ...(I)<br>
+            - x - 2y = -4 ...(II)<br>
+            &nbsp;(-)&nbsp;(+)&nbsp;&nbsp;(+)<br>
+            <div class="line"></div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y = 8
+        </div>
+        <div class="instruction">Find x: x - 8 = 4 => x = 12.</div>
+        <div class="instruction">Dimensions: Length = 4(12) - 8 = 40; Breadth = 2(8) = 16</div>
+        <div class="ans-box">Area = 40 × 16 = 640 sq units; Perimeter = 2(40 + 16) = 112 units.</div>
+    </div>
+    
+
+    <div class="q-card">
+        <span class="q-header">Q.3 The sum of father’s age and twice the age of his son is 70. If we double the age of the father and add it to the age of his son the sum is 95. Find their present ages.</span>
+        <div class="instruction">Let father's age be 'x' and son's age be 'y'.</div>
+        <div class="vertical-math">
+            x + 2y = 70 ...(I)<br>
+            2x + y = 95 ...(II)
+        </div>
+        <div class="instruction">Multiply (I) by 2 and subtract (II):</div>
+        <div class="vertical-math">
+            &nbsp;2x + 4y = 140 ...(III)<br>
+            - 2x + &nbsp;y = &nbsp;95 ...(II)<br>
+            &nbsp;(-)&nbsp;(-)&nbsp;&nbsp;&nbsp;(-)<br>
+            <div class="line"></div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3y = 45 => y = 15
+        </div>
+        <div class="instruction">Find x: x + 2(15) = 70 => x = 40.</div>
+        <div class="ans-box">Father's age: 40 years; Son's age: 15 years.</div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-header">Q.4 The denominator of a fraction is 4 more than twice its numerator. Denominator becomes 12 times the numerator, if both are reduced by 6. Find the fraction.</span>
+        <div class="instruction">Let numerator be 'x' and denominator be 'y'.</div>
+        <div class="vertical-math">
+            y = 2x + 4 => 2x - y = -4 ...(I)<br>
+            (y - 6) = 12(x - 6)<br>
+            y - 6 = 12x - 72 => 12x - y = 66 ...(II)
+        </div>
+        <div class="instruction">Subtract (I) from (II):</div>
+        <div class="vertical-math">
+            10x = 70 => x = 7<br>
+            Substitute x: 2(7) - y = -4 => 14 + 4 = y => y = 18
+        </div>
+        <div class="ans-box">The fraction is 7/18.</div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-header">Q.5 Two types of boxes A, B are to be placed in a truck having capacity of 10 tons. When 150 boxes of type A and 100 boxes of type B are loaded, it weighs 10 tons. But when 260 boxes of type A are loaded, it can still accommodate 40 boxes of type B so that it is fully loaded. Find the weight of each type of box.</span>
+        <div class="instruction">Let weight of box A be 'x' and box B be 'y' (in tons). (Note: 10 tons = 10000 kg)</div>
+        <div class="vertical-math">
+            150x + 100y = 10 ...(I)<br>
+            260x + 40y = 10  ...(II)
+        </div>
+        <div class="instruction">Divide (I) by 10 and (II) by 10:</div>
+        <div class="vertical-math">
+            15x + 10y = 1  => 30x + 20y = 2 ...(III)<br>
+            26x + 4y = 1   => 130x + 20y = 5 ...(IV)
+        </div>
+        <div class="instruction">Subtract (III) from (IV):</div>
+        <div class="vertical-math">
+            100x = 3 => x = 3/100 ton = 30 kg<br>
+            Substitute x: 15(3/100) + 10y = 1 => y = 55/1000 ton = 55 kg
+        </div>
+        <div class="ans-box">Weight of Box A: 30 kg; Weight of Box B: 55 kg.</div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-header">Q.6 Out of 1900 km, Vishal travelled some distance by bus and some by aeroplane. Bus travels with average speed 60 km/hr and the average speed of aeroplane is 700 km/hr. It takes 5 hours to complete the journey. Find the distance, Vishal travelled by bus.</span>
+        <div class="instruction">Let distance by bus be 'x' km and by plane be 'y' km.</div>
+        <div class="vertical-math">
+            x + y = 1900 ...(I)<br>
+            Time = Distance / Speed<br>
+            x/60 + y/700 = 5
+        </div>
+        <div class="instruction">Multiply by 2100:</div>
+        <div class="vertical-math">
+            35x + 3y = 10500 ...(II)
+        </div>
+        <div class="instruction">Multiply (I) by 3 and subtract from (II):</div>
+        <div class="vertical-math">
+            &nbsp;35x + 3y = 10500<br>
+            - 3x + 3y = &nbsp;5700<br>
+            <div class="line"></div>
+            &nbsp;32x &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 4800 => x = 150
+        </div>
+        <div class="ans-box">Distance travelled by bus is 150 km.</div>
+    </div>
+</section>
+<section id="problem-set-1">
+    <div class="set-title"><h1>Problem Set 1</h1></div>
+
+    <div class="q-card">
+        <span class="q-header">Q.1 Choose correct alternative for each of the following questions:</span>
+        <div class="math-solve">
+            1. To draw graph of 4x + 5y = 19, find y when x = 1.<br>
+            4(1) + 5y = 19 => 5y = 15 => <b>y = 3</b> (Option B)<br><br>
+            2. For simultaneous equations in x and y, if Dx = 49, Dy = -63, D = 7 then what is x?<br>
+            x = Dx/D = 49/7 = <b>7</b> (Option A)<br><br>
+            3. Find the value of | 5 &nbsp; 3 | / | -7 &nbsp; -4 |<br>
+            (5 × -4) - (3 × -7) = -20 + 21 = <b>1</b> (Option D)<br><br>
+            4. To solve x + y = 3; 3x - 2y - 4 = 0 by determinant method find D.<br>
+            D = | 1 &nbsp; 1 | = (1 × -2) - (1 × 3) = -2 - 3 = <b>-5</b> (Option C)<br><br>
+            5. ax + by = c and mx + ny = d and an ≠ bm then these equations have...<br>
+            <b>Only one common solution</b> (Option A)
         </div>
     </div>
 
     <div class="q-card">
-        <span class="q-header">Q.2 (2) Solve graphically: \(x + y = 5; \quad x - y = 3\)</span>
-        <div class="math-text">
-            <p><strong>Step 1: Table for \(x + y = 5\)</strong></p>
-            <table>
-                <tr><th>\(x\)</th><td>0</td><td>5</td><td>2</td></tr>
-                <tr><th>\(y\)</th><td>5</td><td>0</td><td>3</td></tr>
-                <tr><th>\((x, y)\)</th><td>(0, 5)</td><td>(5, 0)</td><td>(2, 3)</td></tr>
-            </table>
+        <span class="q-header">Q.2 Complete the following table to draw the graph of 2x - 6y = 3:</span>
+        <table>
+            <tr><th>x</th><td>-5</td><td>0</td></tr>
+            <tr><th>y</th><td>-13/6</td><td>-0.5</td></tr>
+            <tr><th>(x, y)</th><td>(-5, -2.17)</td><td>(0, -0.5)</td></tr>
+        </table>
+    </div>
 
-            <p><strong>Step 2: Table for \(x - y = 3\)</strong></p>
-            <table>
-                <tr><th>\(x\)</th><td>3</td><td>0</td><td>4</td></tr>
-                <tr><th>\(y\)</th><td>0</td><td>-3</td><td>1</td></tr>
-                <tr><th>\((x, y)\)</th><td>(3, 0)</td><td>(0, -3)</td><td>(4, 1)</td></tr>
-            </table>
-            
-            <p>The two lines intersect at point <strong>(4, 1)</strong>.</p>
-            <div class="ans-highlight">Solution: \((x, y) = (4, 1)\)</div>
+    <div class="q-card">
+        <span class="q-header">Q.3 Solve the following simultaneous equations graphically:</span>
+        <p class="instruction">(1) 2x + 3y = 12 ; x - y = 1</p>
+        <div class="instruction">Table for 2x + 3y = 12: (0,4), (6,0), (3,2)</div>
+        <div class="instruction">Table for x - y = 1: (0,-1), (1,0), (3,2)</div>
+        
+        <div class="ans-box">Solution: (3, 2)</div>
+
+        <p class="instruction">(2) x - 3y = 1 ; 3x - 2y + 4 = 0</p>
+        <div class="instruction">Table 1: (1,0), (4,1), (-2,-1)</div>
+        <div class="instruction">Table 2: (0,2), (-2,-1), (-4,-4)</div>
+        <div class="ans-box">Solution: (-2, -1)</div>
+        
+        <p class="instruction">(3) 5x - 6y + 30 = 0 ; 5x + 4y - 20 = 0</p>
+        <div class="ans-box">Solution: (0, 5)</div>
+
+        <p class="instruction">(4) 3x - y - 2 = 0 ; 2x + y = 8</p>
+        <div class="ans-box">Solution: (2, 4)</div>
+
+        <p class="instruction">(5) 3x + y = 10 ; x - y = 2</p>
+        <div class="ans-box">Solution: (3, 1)</div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-header">Q.4 Find the values of each of the following determinants:</span>
+        <div class="vertical-math">
+            (1) | 4 &nbsp; 3 | = (4 × 7) - (3 × 2) = 28 - 6 = <b>22</b><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;| 2 &nbsp; 7 | <br><br>
+            (2) | 5 &nbsp; -2 | = (5 × 1) - (-2 × -3) = 5 - 6 = <b>-1</b><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;| -3 &nbsp; 1 | <br><br>
+            (3) | 3 &nbsp; -1 | = (3 × 4) - (-1 × 1) = 12 + 1 = <b>13</b><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;| 1 &nbsp; 4 | 
         </div>
     </div>
 
     <div class="q-card">
-        <span class="q-header">Q.2 (3) Solve graphically: \(x + y = 0; \quad 2x - y = 9\)</span>
-        <div class="math-text">
-            <p><strong>Table for \(x + y = 0\)</strong>: (0, 0), (3, -3), (-3, 3)</p>
-            <p><strong>Table for \(2x - y = 9\)</strong>: (4.5, 0), (0, -9), (3, -3)</p>
-            <p>Intersection point: <strong>(3, -3)</strong></p>
-            <div class="ans-highlight">Solution: \((x, y) = (3, -3)\)</div>
+        <span class="q-header">Q.5 Solve the following equations by Cramer’s method:</span>
+        <p class="instruction">(1) 6x - 3y = -10 ; 3x + 5y - 8 = 0</p>
+        <div class="vertical-math">
+            D = | 6 &nbsp; -3 | = 30 - (-9) = 39 <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;| 3 &nbsp; 5 | <br><br>
+            Dx = | -10 &nbsp; -3 | = -50 - (-24) = -26 <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 8 &nbsp; 5 | <br><br>
+            Dy = | 6 &nbsp; -10 | = 48 - (-30) = 78 <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 3 &nbsp; 8 | <br><br>
+            x = -26/39 = -2/3 , y = 78/39 = 2
         </div>
+        <div class="ans-box">Solution: (-2/3, 2)</div>
+
+        <p class="instruction">(2) 4m - 2n = -4 ; 4m + 3n = 16</p>
+        <div class="vertical-math">
+            D = | 4 &nbsp; -2 | = 12 - (-8) = 20 <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;| 4 &nbsp; 3 | <br><br>
+            Dm = | -4 &nbsp; -2 | = -12 - (-32) = 20 <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 16 &nbsp; 3 | <br><br>
+            Dn = | 4 &nbsp; -4 | = 64 - (-16) = 80 <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 4 &nbsp; 16 | <br><br>
+            m = 20/20 = 1 , n = 80/20 = 4
+        </div>
+        <div class="ans-box">Solution: (1, 4)</div>
     </div>
 
     <div class="q-card">
-        <span class="q-header">Q.2 (5) Solve graphically: \(3x - 4y = -7; \quad 5x - 2y = 0\)</span>
-        <div class="math-text">
-            <p><strong>Table for \(3x - 4y = -7\)</strong>: (1, 2.5), (-1, 1), (3, 4)</p>
-            <p><strong>Table for \(5x - 2y = 0\)</strong>: (0, 0), (1, 2.5), (2, 5)</p>
-            <p>Intersection point: <strong>(1, 2.5)</strong></p>
-            <div class="ans-highlight">Solution: \((x, y) = (1, 2.5)\)</div>
+        <span class="q-header">Q.6 Solve the following simultaneous equations:</span>
+        <p class="instruction">(1) 2/x + 2/3y = 1/6 ; 3/x + 2/y = 0</p>
+        <div class="instruction">Substitute 1/x = a, 1/y = b:</div>
+        <div class="vertical-math">
+            2a + 2/3b = 1/6 => 12a + 4b = 1 ...(I)<br>
+            3a + 2b = 0 => 6a + 4b = 0 ...(II)
         </div>
+        <div class="instruction">Subtracting (II) from (I):</div>
+        <div class="vertical-math">
+            6a = 1 => a = 1/6 => <b>x = 6</b><br>
+            3(1/6) + 2b = 0 => 2b = -1/2 => b = -1/4 => <b>y = -4</b>
+        </div>
+        <div class="ans-box">Solution: (6, -4)</div>
     </div>
 
     <div class="q-card">
-        <span class="q-header">Q.2 (6) Solve graphically: \(2x - 3y = 4; \quad 3y - x = 4\)</span>
-        <div class="math-text">
-            <p><strong>Table for \(2x - 3y = 4\)</strong>: (2, 0), (5, 2), (-1, -2)</p>
-            <p><strong>Table for \(3y - x = 4\)</strong>: (-4, 0), (2, 2), (8, 4)</p>
-            <p>Intersection point: <strong>(8, 4)</strong></p>
-            <div class="ans-highlight">Solution: \((x, y) = (8, 4)\)</div>
+        <span class="q-header">Q.7 Solve the following word problems:</span>
+        <p class="instruction">(1) A two digit number and the number with digits interchanged add up to 143...</p>
+        <div class="math-solve">
+            Let unit digit be x, tens digit be y. Number = 10y + x.<br>
+            (10y+x) + (10x+y) = 143 => 11x + 11y = 143 => x + y = 13 ...(I)<br>
+            If digit in units place is 3 more than tens place: x = y + 3 => x - y = 3 ...(II)<br>
+            Adding (I) and (II): 2x = 16 => x = 8, y = 5.
         </div>
-    </div>
+        <div class="ans-box">The original number is 58.</div>
 
-    <script>
-        function filterQuestions() {
-            let input = document.getElementById('search-input').value.toLowerCase();
-            let cards = document.getElementsByClassName('q-card');
-            for (let i = 0; i < cards.length; i++) {
-                let cardText = cards[i].innerText.toLowerCase();
-                cards[i].style.display = cardText.includes(input) ? "block" : "none";
-            }
-        }
-    </script>
+        <p class="instruction">(2) Kantabai bought 1.5 kg tea and 5 kg sugar...</p>
+        <div class="ans-box">Rate of tea: ₹ 300/kg; Rate of sugar: ₹ 40/kg.</div>
+
+        <p class="instruction">(6) Places A and B are 30 km apart and they are on a straight road. Hamid travels from A to B on bike...</p>
+        <div class="ans-box">Hamid's speed: 20 km/hr; Joseph's speed: 10 km/hr.</div>
+    </div>
+</section>
 </body>
 </html>

@@ -3,22 +3,322 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ch 2: Quadratic Equations | MituEdu</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>SSC Maths 1 - Chapter 2: Quadratic Equations</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-color: #c9d1d9;
+            --accent-color: #58a6ff; 
+            --border-color: #30363d;
+            --highlight: #f0883e;
+            --math-font: 'Courier New', Courier, monospace;
+        }
+        body { background-color: var(--bg-color); color: var(--text-color); font-family: 'Segoe UI', sans-serif; padding: 20px; max-width: 900px; margin: 0 auto; }
+        .set-title { color: var(--highlight); font-size: 2rem; margin: 40px 0 20px; border-bottom: 2px solid var(--highlight); padding-bottom: 10px; }
+        .q-card { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 25px; margin-bottom: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.5); }
+        .q-header { color: var(--accent-color); font-weight: bold; font-size: 1.3rem; margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px; display: block;}
+        .vertical-math { font-family: var(--math-font); background: #000; padding: 20px; border-radius: 8px; line-height: 1.6; display: block; margin: 15px 0; border-left: 4px solid var(--highlight); }
+        .instruction { color: #8b949e; margin-bottom: 10px; font-weight: bold; }
+        .ans-box { color: var(--highlight); font-weight: bold; border: 1px dashed var(--highlight); padding: 10px; text-align: center; margin-top: 15px; }
+        .line { border-top: 1px solid #fff; margin: 5px 0; width: 100%; }
+    </style>
 </head>
 <body>
-    <nav class="navbar"><div class="logo">Mitu<span>Edu</span></div><a href="std10-math1.html" class="back-link">← Algebra List</a></nav>
-    <div class="main-container">
-        <h1>Quadratic Equations</h1>
-        <div class="question-card">
-            <h3>Q1. The Formula Method</h3>
-            <div class="answer-box">
-                <p>For $ax^2 + bx + c = 0$, the roots are:</p>
-                <p style="text-align:center; font-size:1.2rem;">$$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$</p>
+
+    <h1>Chapter 2: Quadratic Equations</h1>
+
+    <section id="ps2.1">
+        <div class="set-title">Practice Set 2.1</div>
+
+        <div class="q-card">
+            <span class="q-header">Q.1 Write any two quadratic equations.</span>
+            <div class="vertical-math">
+                1) x² + 5x + 6 = 0 <br>
+                2) 3m² - 7m + 2 = 0
             </div>
         </div>
+
+        <div class="q-card">
+            <span class="q-header">Q.2 Decide which of the following are quadratic equations.</span>
+            
+            <p class="instruction">(1) x² + 5x - 2 = 0</p>
+            <div class="vertical-math">
+                Here, x is the only variable and <br>
+                the maximum index of the variable is 2. <br>
+                <b>∴ It is a quadratic equation.</b>
+            </div>
+
+            <p class="instruction">(2) y² = 5y - 10</p>
+            <div class="vertical-math">
+                y² - 5y + 10 = 0 <br>
+                Here, y is the only variable and <br>
+                the maximum index of the variable is 2. <br>
+                <b>∴ It is a quadratic equation.</b>
+            </div>
+
+            <p class="instruction">(3) y² + 1/y = 2</p>
+            <div class="vertical-math">
+                Multiplying by y: <br>
+                y³ + 1 = 2y <br>
+                y³ - 2y + 1 = 0 <br>
+                The maximum index is 3 (not 2). <br>
+                <b>∴ It is NOT a quadratic equation.</b>
+            </div>
+
+            <p class="instruction">(4) x + 1/x = -2</p>
+            <div class="vertical-math">
+                Multiplying by x: <br>
+                x² + 1 = -2x <br>
+                x² + 2x + 1 = 0 <br>
+                Maximum index is 2. <br>
+                <b>∴ It is a quadratic equation.</b>
+            </div>
+
+            <p class="instruction">(5) (m + 2)(m - 5) = 0</p>
+            <div class="vertical-math">
+                m(m - 5) + 2(m - 5) = 0 <br>
+                m² - 5m + 2m - 10 = 0 <br>
+                m² - 3m - 10 = 0 <br>
+                <b>∴ It is a quadratic equation.</b>
+            </div>
+
+            <p class="instruction">(6) m³ + 3m² - 2 = 3m³</p>
+            <div class="vertical-math">
+                3m² - 2 = 3m³ - m³ <br>
+                2m³ - 3m² + 2 = 0 <br>
+                The maximum index is 3. <br>
+                <b>∴ It is NOT a quadratic equation.</b>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-header">Q.3 Write in form ax² + bx + c = 0 then find a, b, c.</span>
+            
+            <p class="instruction">(1) 2y = 10 - y²</p>
+            <div class="vertical-math">
+                y² + 2y - 10 = 0 <br>
+                Comparing with ay² + by + c = 0: <br>
+                <b>a = 1, b = 2, c = -10</b>
+            </div>
+
+            <p class="instruction">(2) (x - 1)² = 2x + 3</p>
+            <div class="vertical-math">
+                x² - 2x + 1 = 2x + 3 <br>
+                x² - 2x - 2x + 1 - 3 = 0 <br>
+                x² - 4x - 2 = 0 <br>
+                <b>a = 1, b = -4, c = -2</b>
+            </div>
+
+            <p class="instruction">(3) x² + 5x = -(3 - x)</p>
+            <div class="vertical-math">
+                x² + 5x = -3 + x <br>
+                x² + 5x - x + 3 = 0 <br>
+                x² + 4x + 3 = 0 <br>
+                <b>a = 1, b = 4, c = 3</b>
+            </div>
+
+            <p class="instruction">(4) 3m² = 2m² - 9</p>
+            <div class="vertical-math">
+                3m² - 2m² + 9 = 0 <br>
+                m² + 0m + 9 = 0 <br>
+                <b>a = 1, b = 0, c = 9</b>
+            </div>
+
+            <p class="instruction">(5) p(3 + 6p) = -5</p>
+            <div class="vertical-math">
+                3p + 6p² = -5 <br>
+                6p² + 3p + 5 = 0 <br>
+                <b>a = 6, b = 3, c = 5</b>
+            </div>
+
+            <p class="instruction">(6) x² - 9 = 13</p>
+            <div class="vertical-math">
+                x² - 9 - 13 = 0 <br>
+                x² + 0x - 22 = 0 <br>
+                <b>a = 1, b = 0, c = -22</b>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-header">Q.4 Determine if given values are roots:</span>
+            <p class="instruction">(1) x² + 4x - 5 = 0 ; x = 1, -1</p>
+            <div class="vertical-math">
+                LHS = x² + 4x - 5 <br>
+                For x = 1: (1)² + 4(1) - 5 = 1 + 4 - 5 = 0 <br>
+                LHS = RHS. <b>∴ 1 is a root.</b> <br><br>
+                For x = -1: (-1)² + 4(-1) - 5 = 1 - 4 - 5 = -8 <br>
+                LHS ≠ RHS. <b>∴ -1 is NOT a root.</b>
+            </div>
+
+            <p class="instruction">(2) 2m² - 5m = 0 ; m = 2, 5/2</p>
+            <div class="vertical-math">
+                For m = 2: 2(2)² - 5(2) = 8 - 10 = -2. <b>NOT a root.</b> <br>
+                For m = 5/2: 2(5/2)² - 5(5/2) = 2(25/4) - 25/2 <br>
+                = 25/2 - 25/2 = 0. <b>IS a root.</b>
+            </div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-header">Q.5 Find k if x = 3 is a root of kx² - 10x + 3 = 0</span>
+            <div class="vertical-math">
+                Substituting x = 3 in the equation: <br>
+                k(3)² - 10(3) + 3 = 0 <br>
+                9k - 30 + 3 = 0 <br>
+                9k - 27 = 0 <br>
+                9k = 27 <br>
+                k = 3
+            </div>
+            <div class="ans-box">Value of k = 3</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-header">Q.6 Complete activity for 5m² + 2m + k = 0 (root -7/5)</span>
+            <div class="vertical-math">
+                5(-7/5)² + 2(-7/5) + k = 0 <br>
+                5(49/25) - 14/5 + k = 0 <br>
+                49/5 - 14/5 + k = 0 <br>
+                35/5 + k = 0 <br>
+                7 + k = 0 <br>
+                k = -7
+            </div>
+            <div class="ans-box">Value of k = -7</div>
+        </div>
+    </section>
+<section id="ps2.2">
+    <div class="set-title">Practice Set 2.2</div>
+
+    <div class="q-card">
+        <span class="q-header">1) x² - 15x + 54 = 0</span>
+        <div class="instruction">Logic: Multiply to 54, Add to -15. Numbers: -9, -6</div>
+        <div class="vertical-math">
+            x² - 9x - 6x + 54 = 0 <br>
+            x(x - 9) - 6(x - 9) = 0 <br>
+            (x - 9)(x - 6) = 0 <br>
+            x - 9 = 0 OR x - 6 = 0 <br>
+            <b>x = 9 OR x = 6</b>
+        </div>
+        <div class="ans-box">Roots are 9 and 6.</div>
     </div>
+
+    <div class="q-card">
+        <span class="q-header">2) x² + x - 20 = 0</span>
+        <div class="instruction">Logic: Multiply to -20, Add to +1. Numbers: +5, -4</div>
+        <div class="vertical-math">
+            x² + 5x - 4x - 20 = 0 <br>
+            x(x + 5) - 4(x + 5) = 0 <br>
+            (x + 5)(x - 4) = 0 <br>
+            <b>x = -5 OR x = 4</b>
+        </div>
+        <div class="ans-box">Roots are -5 and 4.</div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-header">3) 2y² + 27y + 13 = 0</span>
+        <div class="instruction">Logic: Multiply (2 × 13) = 26, Add to 27. Numbers: 26, 1</div>
+        <div class="vertical-math">
+            2y² + 26y + 1y + 13 = 0 <br>
+            2y(y + 13) + 1(y + 13) = 0 <br>
+            (y + 13)(2y + 1) = 0 <br>
+            <b>y = -13 OR y = -1/2</b>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-header">4) 5m² = 22m + 15</span>
+        <div class="instruction">Standard form: 5m² - 22m - 15 = 0</div>
+        <div class="vertical-math">
+            Numbers: -25, 3 (Product -75, Sum -22) <br>
+            5m² - 25m + 3m - 15 = 0 <br>
+            5m(m - 5) + 3(m - 5) = 0 <br>
+            (m - 5)(5m + 3) = 0 <br>
+            <b>m = 5 OR m = -3/5</b>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-header">5) 2x² - 2x + 1/2 = 0</span>
+        <div class="instruction">Multiply equation by 2: 4x² - 4x + 1 = 0</div>
+        <div class="vertical-math">
+            4x² - 2x - 2x + 1 = 0 <br>
+            2x(2x - 1) - 1(2x - 1) = 0 <br>
+            (2x - 1)(2x - 1) = 0 <br>
+            <b>x = 1/2</b>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-header">6) 6x - 2/x = 1</span>
+        <div class="instruction">Multiply by x: 6x² - 2 = x => 6x² - x - 2 = 0</div>
+        <div class="vertical-math">
+            Numbers: -4, 3 (Product -12, Sum -1) <br>
+            6x² - 4x + 3x - 2 = 0 <br>
+            2x(3x - 2) + 1(3x - 2) = 0 <br>
+            <b>x = 2/3 OR x = -1/2</b>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-header">7) √2x² + 7x + 5√2 = 0</span>
+        <div class="instruction">Logic: Product = √2 × 5√2 = 10. Sum = 7. Numbers: 5, 2</div>
+        <div class="vertical-math">
+            √2x² + 5x + 2x + 5√2 = 0 <br>
+            x(√2x + 5) + √2(√2x + 5) = 0 <br>
+            (√2x + 5)(x + √2) = 0 <br>
+            <b>x = -5/√2 OR x = -√2</b>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-header">8) 3x² - 2√6x + 2 = 0</span>
+        <div class="instruction">Numbers: -√6, -√6 (Sum -2√6, Product 6)</div>
+        <div class="vertical-math">
+            3x² - √6x - √6x + 2 = 0 <br>
+            √3x(√3x - √2) - √2(√3x - √2) = 0 <br>
+            (√3x - √2)(√3x - √2) = 0 <br>
+            <b>x = √2/√3</b>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-header">9) 2m(m - 24) = 50</span>
+        <div class="vertical-math">
+            2m² - 48m - 50 = 0 <br>
+            m² - 24m - 25 = 0 <br>
+            m² - 25m + m - 25 = 0 <br>
+            m(m - 25) + 1(m - 25) = 0 <br>
+            <b>m = 25 OR m = -1</b>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-header">10) 25m² = 9</span>
+        <div class="vertical-math">
+            25m² - 9 = 0 <br>
+            (5m)² - (3)² = 0 <br>
+            (5m - 3)(5m + 3) = 0 <br>
+            <b>m = 3/5 OR m = -3/5</b>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-header">11) 7m² = 21m</span>
+        <div class="vertical-math">
+            7m² - 21m = 0 <br>
+            7m(m - 3) = 0 <br>
+            7m = 0 OR m - 3 = 0 <br>
+            <b>m = 0 OR m = 3</b>
+        </div>
+    </div>
+
+    <div class="q-card">
+        <span class="q-header">12) m² - 11 = 0</span>
+        <div class="vertical-math">
+            m² - (√11)² = 0 <br>
+            (m - √11)(m + √11) = 0 <br>
+            <b>m = √11 OR m = -√11</b>
+        </div>
+    </div>
+</section>
 </body>
 </html>
